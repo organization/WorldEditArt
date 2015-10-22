@@ -1,0 +1,24 @@
+---
+# For unspecified damage values and infinite maximum integers, put -1
+defaultConfig:
+  # the item to be used as a wand
+  wand:
+    id: 294
+    damage: -1
+  # the item to enable jump
+  jump:
+    id: 345
+    damage: -1
+
+  # options related to safety (avoid accidental destruction)
+  safety:
+    # when safe mode is enabled, only areas tagged as "under construction" can be edited.
+    safeMode: false
+    # when set to true, users have to run the //sudo command to enable WorldEditArt commands.
+    sudoRequired: true
+
+  # options related to optimization (to save memory, to reduce lag, etc.)
+
+# max number of sudoers at the same time
+max-sudoers: -1
+...

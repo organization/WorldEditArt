@@ -1,0 +1,52 @@
+<?php
+
+/*
+ * Small-ZC-Plugins
+ *
+ * Copyright (C) 2015 PEMapModder and contributors
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * @author PEMapModder
+ */
+
+namespace pemapmodder\worldeditart\libworldedit\space;
+
+use pocketmine\level\Position;
+use pocketmine\math\Vector3;
+
+class CuboidSpace implements Space{
+	/** @var int */
+	private $x1, $x2, $y1, $y2, $z1, $z2;
+	/** @var string */
+	private $levelName;
+	public function serialize(){
+		return "$this->x1:$this->x2:$this->y1:$this->y2:$this->z1:$this->z2:$this->levelName";
+	}
+	public function unserialize($serialized){
+		list($x1, $x2, $y1, $y2, $z1, $z2, $levelName) = unserialize($serialized);
+		$this->x1 = (int) $x1;
+		$this->y1 = (int) $y1;
+		$this->z1 = (int) $z1;
+		$this->x2 = (int) $x2;
+		$this->y2 = (int) $y2;
+		$this->z2 = (int) $z2;
+		$this->levelName = $levelName;
+	}
+	public function isInside(Vector3 $v){
+		return
+			min($this->x1, $this->x2) <= $v->x and
+			min($this->y1, $this->y2) <= $v->y and
+			min($this->z1, $this->z2) <= $v->z and
+			max($this->x1, $this->x2) >= $v->x and
+			max($this->y1, $this->y2) >= $v->y and
+			max($this->z1, $this->z2) >= $v->z and
+			!($v instanceof Position) or $v->getLevel()->getName() === $this->levelName;
+	}
+	public function isValid(){
+		return isset($this->x1, $this->x2, $this->y1, $this->y2, $this->z1, $this->z2);
+	}
+}
