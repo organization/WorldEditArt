@@ -1,6 +1,8 @@
 WorldEditArt - ![WorldEditArt](https://raw.githubusercontent.com/PEMapModder/Small-ZC-Plugins/master/WorldEditArt/plugin_icon.png)
 ===
 
+[![Join the chat at https://gitter.im/PEMapModder/WorldEditArt](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/PEMapModder/WorldEditArt?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 License: 
 
 Forum description
