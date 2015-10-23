@@ -29,6 +29,36 @@ Player guide
 ===
 > Concept introduction, commands documentation and user tips
 
+## Introduction
+> NOTE: This guide is written assuming that administrators use the default configuration of WorldEditArt.
+
+WorldEditArt is an innovative plugin. This plugin is not written to _"port"_ the MCPC WorldEdit plugin. This plugin is an entirely original work, except that some commands may follow the tradition of WorldEdit to make it easier for understanding. However, a lot of things are different, so don't rely on your knowledge on WorldEdit.
+
+## Concepts
+WorldEditArt introduces a number of new concepts into territory of world editing, as well as introduces a lot of improvements to make world editing easier to understand.
+
+#### Sudo mode
+World editing plugins are known as one of the most dangerous plugins - I can't imagine anything more dangerous than world editing plugins, except plugins that let players evaluate code/shell commands directly (BAD BAD BAD IDEA!!!). It can, even if not intended, have devastating destruction on the terrain. A simple example is that if you accidentally create a cuboid that spans over a large area of the map, you would probably delete everything that had been built on that world, and you may just be unable to undo that (although WorldEditArt **does** try to let you undo, there are still cases that there is irreversible consequence). Therefore, sudo mode is introduced to prevent users from misusing WorldEditArt accidentally, or "my cat clicked on my phone and all blocks to lava" (I'm sure many people have heard people saying that, most of the time excuses :grin:).
+
+TL;DR: sudo mode lets you use WorldEditArt. When you just joined a server, you cannot use any WorldEditArt commands, except `//sudo` (of course, only if you got that permission e.g. by getting op). When you do `//sudo`, you unlock the WorldEditArt commands for yourself, which will be locked once you leave the server (or if you specify sudo session length - read the commands section for more information).
+
+#### Safe mode and Under-Construction Zones (UCZs)
+We may occasionally encounter these cases:
+
+> * This server has a bad builder. He said he was building a stadium, so I went there and watched. Then he suddenly suffocated me with blocks! (The builder tried to set blocks of an area without noticing that a player entered the editing area)
+> * I just clicked an extra zero. Why did the selection get so big?
+
+If you have safe mode enabled, WorldEditArt will not change anything for you for blocks that are not in UCZs.
+
+To mark a zone as under-construction:
+1. Make a [selection](#selections).
+1. Run the command `//uc`.
+
+To unmark a zone as under-construction:
+1. Walk into a UCZ.
+1. Run the command `//uuc`.
+
+
 Developer guide
 ===
 > API documentation

@@ -1,0 +1,35 @@
+{
+	"worldeditart": {
+		"description": "WorldEditArt root permission",
+		"default": "false",
+		"children": {
+			"admin": {
+				"description": "Parent permission for permissions for builders and admins",
+				"default": "op",
+				"children": {
+					"ucz": {
+						"description": "Parent for permissions related to Under-Construction Zones",
+						"default": "op",
+						"children": {
+							"bypass": {
+								"description": "Allows entering Under-Construction Zones",
+								"default": "op"
+							},
+							"mark": {
+								"description": "Allows marking areas as Under-Construction Zones",
+								"default": "op"
+							}
+						}
+					}
+				}
+			},
+			"builder": {
+				"description": "Parent permission for permissions for builders",
+				"default": "op",
+				"children": {
+
+				}
+			}
+		}
+	}
+}

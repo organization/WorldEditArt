@@ -28,6 +28,41 @@ defaultConfig:
     # the maximum number of blocks to update per tick for this user
     tickEditThreshold: -1
 
-# max number of sudoers at the same time
-max-sudoers: -1
+# safety-related options
+safety:
+  # options related to safe mode and Under-Construction Zones
+  ucz:
+    # disallow players to enter UCZ unless they have the worldeditart.admin.ucz.entry permission node
+    disallowEntry: true
+  sudo:
+    # max number of sudoers at the same time
+    maxSudoers: -1
+
+# this lets you customize the names, descriptions, usages and aliases of commands.
+commands:
+  # note: do not modify the keys like "SudoCommand" and "UnderConstructionCommand"!
+  SudoCommand:
+    # the "name" attribute is the main name to use, shown in /help and //help.
+    # You can add more names at the "aliases" attribute.
+    # note: players have to type `//sudo` to run this command; put "sudo" if you want players to type `/sudo`
+    name: "/sudo"
+    description: Enable sudo mode
+    # note: changing this usage message doesn't modify the syntax of the command. It only changes the usage message when a user uses sudo mode incorrectly.
+    usageMessage: "//sudo [number of minutes until sudo mode ends, default forever]"
+    # note: sudoRequired is true by default. If sudo is required, you can delete this line.
+    sudoRequired: false
+    # note: if there are no aliases, you can delete this line.
+    aliases: ["/s"]
+  MarkUnderConstructionCommand:
+    name: "/muc"
+    description: Marks your current selection as under construction.
+    usageMessage: "//uc"
+    aliases: ["/uc"]
+  UnmarkUnderConstructionCommand:
+    name: "/nuc"
+    description: Remove the under-construction mark for the zone you are standing at
+    usageMessage: "//uuc [.anchor]"
+    aliases: ["/uuc"]
+
+
 ...
