@@ -5,6 +5,9 @@ License
 ===
 This software is licensed with GNU Lesser General Public License version 3.
 
+
+License: 
+
 ```
 WorldEditArt
 
@@ -37,4 +40,11 @@ Server: chat.freenode.net:6667
 Private message: PEMapModder
 
 ### Gitter
+[![Join the chat at https://gitter.im/PEMapModder/WorldEditArt](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/PEMapModder/WorldEditArt?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+### GitHub issues
+Note: use GitHub issues **only** for issue reporting and enhancement suggestions.
+https://github.com/PEMapModder/WorldEditArt/issues/new
+
+### Source code
+https://github.com/PEMapModder/WorldEditArt
