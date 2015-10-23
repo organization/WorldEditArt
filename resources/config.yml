@@ -1,4 +1,5 @@
 ---
+# DEFAULT settings for each user. A user CAN change these through commands restricted by permission nodes.
 # For unspecified damage values and infinite maximum integers, put -1
 defaultConfig:
   # the item to be used as a wand
@@ -16,8 +17,16 @@ defaultConfig:
     safeMode: false
     # when set to true, users have to run the //sudo command to enable WorldEditArt commands.
     sudoRequired: true
+    # number of seconds each sudo session should last for
+    # this value can be specified in //sudo to change.
+    defaultSudoSession: -1
 
-  # options related to optimization (to save memory, to reduce lag, etc.)
+  # options related to optimization (reduce RAM usage, reduce lag, etc.)
+  optimization:
+    # the maximum number of action entries undo-able
+    maxUndoQueue: 5
+    # the maximum number of blocks to update per tick for this user
+    tickEditThreshold: -1
 
 # max number of sudoers at the same time
 max-sudoers: -1

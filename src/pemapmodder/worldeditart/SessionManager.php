@@ -1,9 +1,9 @@
 <?php
 
 /*
- * Small-ZC-Plugins
+ * WorldEditArt
  *
- * Copyright (C) 2015 PEMapModder and contributors
+ * Copyright (C) 2015 PEMapModder
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by

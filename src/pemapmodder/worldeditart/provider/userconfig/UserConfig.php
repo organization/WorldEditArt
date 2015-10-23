@@ -1,9 +1,9 @@
 <?php
 
 /*
- * Small-ZC-Plugins
+ * WorldEditArt
  *
- * Copyright (C) 2015 PEMapModder and contributors
+ * Copyright (C) 2015 PEMapModder
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General private License as published by
@@ -39,15 +39,24 @@ class UserConfig{
 	/** @var bool */
 	private $sudoRequired;
 	/** @var int */
-	private $blockChangeThreshold;
+	private $defaultSudoSession;
 
 	//////////////////
 	// OPTIMIZATION //
 	//////////////////
-	private $maxUndoQueue = 5;
-	private $perSecondEdits = 5;
+	private $maxUndoQueue;
+	private $tickEditThreshold;
 
 	public function __construct(WorldEditArt $main){
-
+		$c = $main->getConfig();
+		$this->wandId = $c->getNested("defaultConfig.wand.id", 294);
+		$this->wandDamage = $c->getNested("defaultConfig.wand.damage", self::UNSPECIFIED_INT);
+		$this->jumpId = $c->getNested("defaultConfig.jump.id", 345);
+		$this->jumpDamage = $c->getNested("defaultConfig.jump.damage", self::UNSPECIFIED_INT);
+		$this->safeMode = $c->getNested("defaultConfig.safety.safeMode", false);
+		$this->sudoRequired = $c->getNested("defaultConfig.safety.sudoRequired", true);
+		$this->defaultSudoSession = $c->getNested("defaultConfig.safety.defaultSudoSession", self::UNSPECIFIED_INT);
+		$this->maxUndoQueue = $c->getNested("defaultConfig.optimization.maxUndoQueue", 5);
+		$this->tickEditThreshold = $c->getNested("defaultConfig.optimization.tickEditThreshold", self::UNSPECIFIED_INT);
 	}
 }
