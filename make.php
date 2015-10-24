@@ -96,3 +96,7 @@ $phar->addFromString("plugin.yml", $pluginYml);
 addDir($phar, realpath("src"), "src");
 addDir($phar, realpath("resources"), "resources");
 $phar->stopBuffering();
+
+if(is_file("priv\\postCompile.php")){
+	require_once("priv\\postCompile.php");
+}

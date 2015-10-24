@@ -27,7 +27,6 @@ class WorldEditArt extends PluginBase{
 		$perms = json_decode($json, true);
 		$stack = [];
 		$this->walkPerms($stack, $perms);
-		var_dump($perms);
 		Permission::loadPermissions($perms);
 	}
 	private function walkPerms(array $stack, array &$perms){
