@@ -1,0 +1,14 @@
+{
+    "dev": 3,
+    "beta": 0,
+    "rc": 0,
+    "global": 3,
+    "author": "PEMapModder",
+    "version": {
+        "stage": "Gamma",
+        "major": 2,
+        "minor": 0
+    },
+    "description": "A powerful advanced world editing plugin",
+    "website": "https://github.com/PEMapModder/Small-ZC-Plugins/tree/master/WorldEditArt"
+}
