@@ -20,4 +20,5 @@ use pemapmodder\worldeditart\user\User;
 interface UserConfigDataProvider{
 	public function loadUserConfig(User $user);
 	public function saveUserConfig(User $user, UserConfig $config);
+	public function close();
 }

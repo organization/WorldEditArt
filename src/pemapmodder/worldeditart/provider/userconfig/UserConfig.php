@@ -44,7 +44,9 @@ class UserConfig{
 	//////////////////
 	// OPTIMIZATION //
 	//////////////////
+	/** @var int */
 	private $maxUndoQueue;
+	/** @var int */
 	private $tickEditThreshold;
 
 	public function __construct(WorldEditArt $main){
@@ -58,5 +60,119 @@ class UserConfig{
 		$this->defaultSudoSession = $c->getNested("defaultConfig.safety.defaultSudoSession", self::UNSPECIFIED_INT);
 		$this->maxUndoQueue = $c->getNested("defaultConfig.optimization.maxUndoQueue", 5);
 		$this->tickEditThreshold = $c->getNested("defaultConfig.optimization.tickEditThreshold", self::UNSPECIFIED_INT);
+	}
+
+	/**
+	 * @return int
+	 */
+	public function getWandId(){
+		return $this->wandId;
+	}
+	/**
+	 * @return int
+	 */
+	public function getWandDamage(){
+		return $this->wandDamage;
+	}
+	/**
+	 * @return int
+	 */
+	public function getJumpId(){
+		return $this->jumpId;
+	}
+	/**
+	 * @return int
+	 */
+	public function getJumpDamage(){
+		return $this->jumpDamage;
+	}
+	/**
+	 * @return bool
+	 */
+	public function getSafeMode(){
+		return $this->safeMode;
+	}
+	/**
+	 * @return bool
+	 */
+	public function getSudoRequired(){
+		return $this->sudoRequired;
+	}
+	/**
+	 * @return int
+	 */
+	public function getDefaultSudoSession(){
+		return $this->defaultSudoSession;
+	}
+	/**
+	 * @return int
+	 */
+	public function getMaxUndoQueue(){
+		return $this->maxUndoQueue;
+	}
+	/**
+	 * @return int
+	 */
+	public function getTickEditThreshold(){
+		return $this->tickEditThreshold;
+	}
+	/**
+	 * @param int
+	 */
+	public function setWandId($wandId){
+		$this->wandId = $wandId;
+	}
+	/**
+	 * @param int
+	 */
+	public function setWandDamage($wandDamage){
+		$this->wandDamage = $wandDamage;
+	}
+	/**
+	 * @param int
+	 */
+	public function setJumpId($jumpId){
+		$this->jumpId = $jumpId;
+	}
+	/**
+	 * @param int
+	 */
+	public function setJumpDamage($jumpDamage){
+		$this->jumpDamage = $jumpDamage;
+	}
+	/**
+	 * @param bool
+	 */
+	public function setSafeMode($safeMode){
+		$this->safeMode = $safeMode;
+	}
+	/**
+	 * @param bool
+	 */
+	public function setSudoRequired($sudoRequired){
+		$this->sudoRequired = $sudoRequired;
+	}
+	/**
+	 * @param int
+	 */
+	public function setDefaultSudoSession($defaultSudoSession){
+		$this->defaultSudoSession = $defaultSudoSession;
+	}
+	/**
+	 * @param int
+	 */
+	public function setMaxUndoQueue($maxUndoQueue){
+		$this->maxUndoQueue = $maxUndoQueue;
+	}
+	/**
+	 * @param int
+	 */
+	public function setTickEditThreshold($tickEditThreshold){
+		$this->tickEditThreshold = $tickEditThreshold;
+	}
+	public function setDatum($name, $value){
+		if(isset($this->{$name})){
+			$this->{$name} = $value;
+		}
 	}
 }

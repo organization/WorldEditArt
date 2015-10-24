@@ -15,10 +15,17 @@
 
 namespace pemapmodder\worldeditart\user;
 
+use pemapmodder\worldeditart\provider\userconfig\UserConfig;
 use pemapmodder\worldeditart\WorldEditArt;
 use pocketmine\level\Location;
 
 abstract class User{
+	/** @var UserConfig */
+	private $userConfig;
+
+	/** @var bool */
+	private $sudo = false;
+
 	///////////////
 	// INTERFACE //
 	//  SECTION  //
@@ -39,7 +46,36 @@ abstract class User{
 		return $this->getType() . "/" . $this->getName();
 	}
 
+	/**
+	 * <em>WARNING</em>: Only use this function with user config callback!
+	 * @param UserConfig $config
+	 */
+	public function loadUserConfigCallback(UserConfig $config){
+		$this->userConfig = $config;
+	}
 	public function saveUserConfig(){
-		// TODO implement function
+		$this->getMain()->getUserConfigDataProvider()->saveUserConfig($this, $this->getUserConfig());
+	}
+	/**
+	 * @return UserConfig
+	 */
+	public function getUserConfig(){
+		return $this->userConfig;
+	}
+
+	public function isInitialized(){
+		return $this->userConfig instanceof UserConfig;
+	}
+	/**
+	 * @return boolean
+	 */
+	public function isSudo(){
+		return $this->sudo;
+	}
+	/**
+	 * @param boolean $sudo
+	 */
+	public function setSudo($sudo){
+		$this->sudo = $sudo;
 	}
 }

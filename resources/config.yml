@@ -64,5 +64,30 @@ commands:
     usageMessage: "//uuc [.anchor]"
     aliases: ["/uuc"]
 
-
+dataProvider:
+  # data provider (database) used for user configs
+  userConfig:
+    # type of user config data provider (UCDP)
+    # available: sqlite, mysql
+    type: sqlite
+    options:
+      # options related to SQLite UCDP
+      # ignore these if you aren't using SQLite UCDP
+      sqlite:
+        # file to save database at, relative to the plugin's data folder
+        path: users.sqlite3
+      # options related to MySQL UCDP
+      # ignore these if you aren't using MySQL UCDP
+      mysql:
+        # MySQL connection details
+        connection:
+          host: example.com
+          user: root
+          password: ""
+          # schema is also known as "database".
+          # You can run the MySQL query "CREATE SCHEMA schema_name" to create a schema called schema_name
+          schema: wea
+          port: 3306
+        # I am aware that some hosting companies only allocate you one schema, so all tables created by WorldEditArt will start with this prefix to avoid having the same table name as other plugins
+        tablePrefix: wea_
 ...

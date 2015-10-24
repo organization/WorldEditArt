@@ -28,6 +28,7 @@ class PlayerSession extends User{
 	/** @var Player */
 	private $player;
 
+	/** @var int */
 	private $blockTouchMode = self::TOUCH_MODE_NONE;
 
 	################
@@ -48,6 +49,7 @@ class PlayerSession extends User{
 	public function __construct(WorldEditArt $main, Player $player){
 		$this->player = $player;
 		$this->main = $main;
+
 	}
 	public function finalize(){
 		$this->saveUserConfig();
