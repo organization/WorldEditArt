@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Worldeditart by PEMapModder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Worldeditart</h1>
+      <h2 class="project-tagline">WorldEditArt Gamma, an advanced and innovative world editing plugin</h2>
+      <a href="https://github.com/PEMapModder/WorldEditArt" class="btn">View on GitHub</a>
+      <a href="https://github.com/PEMapModder/WorldEditArt/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/PEMapModder/WorldEditArt/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="worldeditart---" class="anchor" href="#worldeditart---" aria-hidden="true"><span class="octicon octicon-link"></span></a>WorldEditArt - <img src="plugin_icon.png" alt="WorldEditArt">
+</h1>
+
+<h1>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h1>
+
+<p>This software is licensed with GNU Lesser General Public License version 3.</p>
+
+<p>License: </p>
+
+<pre><code>WorldEditArt
+
+Copyright (C) 2015 PEMapModder
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+</code></pre>
+
+<p>You can obtain a full copy of the license at <a href="LICENSE.txt">LICENSE.txt</a>.</p>
+
+<h1>
+<a id="admin-guide" class="anchor" href="#admin-guide" aria-hidden="true"><span class="octicon octicon-link"></span></a>Admin guide</h1>
+
+<blockquote>
+<p>Installation, permission management, etc.</p>
+</blockquote>
+
+<h1>
+<a id="player-guide" class="anchor" href="#player-guide" aria-hidden="true"><span class="octicon octicon-link"></span></a>Player guide</h1>
+
+<blockquote>
+<p>Concept introduction, commands documentation and user tips</p>
+</blockquote>
+
+<h2>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h2>
+
+<blockquote>
+<p>NOTE: This guide is written assuming that administrators use the default configuration of WorldEditArt.</p>
+</blockquote>
+
+<p>WorldEditArt is an innovative plugin. This plugin is not written to <em>"port"</em> the MCPC WorldEdit plugin. This plugin is an entirely original work, except that some commands may follow the tradition of WorldEdit to make it easier for understanding. However, a lot of things are different, so don't rely on your knowledge on WorldEdit.</p>
+
+<h2>
+<a id="concepts" class="anchor" href="#concepts" aria-hidden="true"><span class="octicon octicon-link"></span></a>Concepts</h2>
+
+<p>WorldEditArt introduces a number of new concepts into territory of world editing, as well as introduces a lot of improvements to make world editing easier to understand.</p>
+
+<h4>
+<a id="sudo-mode" class="anchor" href="#sudo-mode" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sudo mode</h4>
+
+<p>World editing plugins are known as one of the most dangerous plugins - I can't imagine anything more dangerous than world editing plugins, except plugins that let players evaluate code/shell commands directly (BAD BAD BAD IDEA!!!). It can, even if not intended, have devastating destruction on the terrain. A simple example is that if you accidentally create a cuboid that spans over a large area of the map, you would probably delete everything that had been built on that world, and you may just be unable to undo that (although WorldEditArt <strong>does</strong> try to let you undo, there are still cases that there is irreversible consequence). Therefore, sudo mode is introduced to prevent users from misusing WorldEditArt accidentally, or "my cat clicked on my phone and all blocks to lava" (I'm sure many people have heard people saying that, most of the time excuses <img class="emoji" title=":grin:" alt=":grin:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f601.png" height="20" width="20" align="absmiddle">).</p>
+
+<p>TL;DR: sudo mode lets you use WorldEditArt. When you just joined a server, you cannot use any WorldEditArt commands, except <code>//sudo</code> (of course, only if you got that permission e.g. by getting op). When you do <code>//sudo</code>, you unlock the WorldEditArt commands for yourself, which will be locked once you leave the server (or if you specify sudo session length - read the commands section for more information).</p>
+
+<h4>
+<a id="safe-mode-and-under-construction-zones-uczs" class="anchor" href="#safe-mode-and-under-construction-zones-uczs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Safe mode and Under-Construction Zones (UCZs)</h4>
+
+<p>We may occasionally encounter these cases:</p>
+
+<blockquote>
+<ul>
+<li>This server has a bad builder. He said he was building a stadium, so I went there and watched. Then he suddenly suffocated me with blocks! (The builder tried to set blocks of an area without noticing that a player entered the editing area)</li>
+<li>I just clicked an extra zero. Why did the selection get so big?</li>
+</ul>
+</blockquote>
+
+<p>If you have safe mode enabled, WorldEditArt will not change anything for you for blocks that are not in UCZs.</p>
+
+<p>To mark a zone as under-construction:
+1. Make a <a href="#selections">selection</a>.
+1. Run the command <code>//uc</code>.</p>
+
+<p>To unmark a zone as under-construction:
+1. Walk into a UCZ.
+1. Run the command <code>//uuc</code>.</p>
+
+<h1>
+<a id="developer-guide" class="anchor" href="#developer-guide" aria-hidden="true"><span class="octicon octicon-link"></span></a>Developer guide</h1>
+
+<blockquote>
+<p>API documentation</p>
+</blockquote>
+
+<h1>
+<a id="contact" class="anchor" href="#contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact</h1>
+
+<h3>
+<a id="irc" class="anchor" href="#irc" aria-hidden="true"><span class="octicon octicon-link"></span></a>IRC</h3>
+
+<p>Server: chat.freenode.net:6667
+Private message: PEMapModder</p>
+
+<h3>
+<a id="gitter" class="anchor" href="#gitter" aria-hidden="true"><span class="octicon octicon-link"></span></a>Gitter</h3>
+
+<p><a href="https://gitter.im/PEMapModder/WorldEditArt?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/PEMapModder/WorldEditArt"></a></p>
+
+<h3>
+<a id="github-issues" class="anchor" href="#github-issues" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub issues</h3>
+
+<p>Note: use GitHub issues <strong>only</strong> for issue reporting and enhancement suggestions.
+<a href="https://github.com/PEMapModder/WorldEditArt/issues/new">https://github.com/PEMapModder/WorldEditArt/issues/new</a></p>
+
+<h3>
+<a id="source-code" class="anchor" href="#source-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Source code</h3>
+
+<p><a href="https://github.com/PEMapModder/WorldEditArt">https://github.com/PEMapModder/WorldEditArt</a></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/PEMapModder/WorldEditArt">Worldeditart</a> is maintained by <a href="https://github.com/PEMapModder">PEMapModder</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
