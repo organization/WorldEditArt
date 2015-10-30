@@ -1,33 +1,33 @@
 var hierarchy =
 [
-    [ "OrderedObjectPool", "classpemapmodder_1_1worldeditart_1_1utils_1_1_ordered_object_pool.html", null ],
+    [ "OrderedObjectPool", "d2/ded/classpemapmodder_1_1worldeditart_1_1utils_1_1OrderedObjectPool.html", null ],
     [ "Serializable", null, [
-      [ "Space", "interfacepemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1_space.html", [
-        [ "CuboidSpace", "classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1_cuboid_space.html", null ]
+      [ "Space", "d0/db2/interfacepemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1Space.html", [
+        [ "CuboidSpace", "db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html", null ]
       ] ]
     ] ],
-    [ "User", "classpemapmodder_1_1worldeditart_1_1user_1_1_user.html", [
-      [ "CommandControlledUser", "classpemapmodder_1_1worldeditart_1_1user_1_1_command_controlled_user.html", null ],
-      [ "PlayerSession", "classpemapmodder_1_1worldeditart_1_1user_1_1_player_session.html", null ]
+    [ "User", "d8/d9e/classpemapmodder_1_1worldeditart_1_1user_1_1User.html", [
+      [ "CommandControlledUser", "d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html", null ],
+      [ "PlayerSession", "d4/d28/classpemapmodder_1_1worldeditart_1_1user_1_1PlayerSession.html", null ]
     ] ],
-    [ "UserConfig", "classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1_user_config.html", null ],
-    [ "UserConfigDataProvider", "interfacepemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1_user_config_data_provider.html", [
-      [ "SqliteUserConfigDataProvider", "classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1_sqlite_user_config_data_provider.html", null ]
+    [ "UserConfig", "de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html", null ],
+    [ "UserConfigDataProvider", "d2/d55/interfacepemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfigDataProvider.html", [
+      [ "SqliteUserConfigDataProvider", "d3/d67/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1SqliteUserConfigDataProvider.html", null ]
     ] ],
-    [ "Zone", "classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1_zone.html", null ],
-    [ "ZoneDataProvider", "interfacepemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1_zone_data_provider.html", [
-      [ "BaseZoneDataProvider", "classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1_base_zone_data_provider.html", [
-        [ "MysqlZoneDataProvider", "classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1_mysql_zone_data_provider.html", null ]
+    [ "Zone", "dc/d6d/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1Zone.html", null ],
+    [ "ZoneDataProvider", "dd/d4f/interfacepemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1ZoneDataProvider.html", [
+      [ "BaseZoneDataProvider", "dd/df7/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1BaseZoneDataProvider.html", [
+        [ "MysqlZoneDataProvider", "d3/d52/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1MysqlZoneDataProvider.html", null ]
       ] ]
     ] ],
     [ "AsyncTask", null, [
-      [ "AsyncQuery", "classpemapmodder_1_1worldeditart_1_1provider_1_1_async_query.html", null ],
-      [ "ReportErrorTask", "classpemapmodder_1_1worldeditart_1_1utils_1_1_report_error_task.html", null ]
+      [ "AsyncQuery", "d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html", null ],
+      [ "ReportErrorTask", "d5/d25/classpemapmodder_1_1worldeditart_1_1utils_1_1ReportErrorTask.html", null ]
     ] ],
     [ "Listener", null, [
-      [ "SessionManager", "classpemapmodder_1_1worldeditart_1_1_session_manager.html", null ]
+      [ "SessionManager", "d4/d29/classpemapmodder_1_1worldeditart_1_1SessionManager.html", null ]
     ] ],
     [ "PluginBase", null, [
-      [ "WorldEditArt", "classpemapmodder_1_1worldeditart_1_1_world_edit_art.html", null ]
+      [ "WorldEditArt", "d4/d07/classpemapmodder_1_1worldeditart_1_1WorldEditArt.html", null ]
     ] ]
 ];
