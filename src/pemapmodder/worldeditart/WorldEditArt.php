@@ -18,11 +18,17 @@ namespace pemapmodder\worldeditart;
 use pemapmodder\worldeditart\provider\userconfig\UserConfigDataProvider;
 use pocketmine\permission\Permission;
 use pocketmine\plugin\PluginBase;
+use pocketmine\Server;
 
 class WorldEditArt extends PluginBase{
+	private static $PLUGIN_NAME = "WorldEditArt";
+
 	/** @var UserConfigDataProvider */
 	private $userConfigDataProvider;
 
+	public function onLoad(){
+		self::$PLUGIN_NAME = $this->getDescription()->getName();
+	}
 	public function onEnable(){
 		$this->saveDefaultConfig();
 		$json = $this->getResourceContents("permissions.json");
@@ -65,5 +71,17 @@ class WorldEditArt extends PluginBase{
 			$this->userConfigDataProvider->close();
 		}
 		$this->userConfigDataProvider = $userConfigDataProvider;
+	}
+
+	/**
+	 * @param Server $server
+	 * @return WorldEditArt|null
+	 */
+	public static function getInstance(Server $server){
+		$plugin = $server->getPluginManager()->getPlugin(self::$PLUGIN_NAME);
+		if($plugin instanceof self and $plugin->isEnabled()){
+			return $plugin;
+		}
+		return null;
 	}
 }

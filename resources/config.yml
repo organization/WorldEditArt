@@ -90,4 +90,9 @@ dataProvider:
           port: 3306
         # I am aware that some hosting companies only allocate you one schema, so all tables created by WorldEditArt will start with this prefix to avoid having the same table name as other plugins
         tablePrefix: wea_
+
+advanced:
+  objectPool:
+    # create a warning when the size of OrderedObjectPool reached this value
+    warningSize: 10
 ...

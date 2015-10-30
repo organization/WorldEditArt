@@ -27,7 +27,7 @@ class SqliteUserConfigDataProvider implements UserConfigDataProvider{
 	public function __construct(WorldEditArt $main){
 		$this->main = $main;
 		$this->db = new SQLite3($main->getDataFolder() . $main->getConfig()->getNested("dataProvider.userConfig.options.sqlite.path", "users.sqlite3"));
-		$this->db->exec($main->getResourceContents("sqlite_init.sql"));
+		$this->db->exec($main->getResourceContents("users/sqlite_init.sql"));
 	}
 	public function loadUserConfig(User $user){
 		$stmt = $this->db->prepare("SELECT * FROM users WHERE type=:type AND name=:name");

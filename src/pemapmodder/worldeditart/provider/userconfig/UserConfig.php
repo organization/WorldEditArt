@@ -117,55 +117,55 @@ class UserConfig{
 		return $this->tickEditThreshold;
 	}
 	/**
-	 * @param int
+	 * @param int $wandId
 	 */
 	public function setWandId($wandId){
 		$this->wandId = $wandId;
 	}
 	/**
-	 * @param int
+	 * @param int $wandDamage
 	 */
 	public function setWandDamage($wandDamage){
 		$this->wandDamage = $wandDamage;
 	}
 	/**
-	 * @param int
+	 * @param int $jumpId
 	 */
 	public function setJumpId($jumpId){
 		$this->jumpId = $jumpId;
 	}
 	/**
-	 * @param int
+	 * @param int $jumpDamage
 	 */
 	public function setJumpDamage($jumpDamage){
 		$this->jumpDamage = $jumpDamage;
 	}
 	/**
-	 * @param bool
+	 * @param bool $safeMode
 	 */
 	public function setSafeMode($safeMode){
 		$this->safeMode = $safeMode;
 	}
 	/**
-	 * @param bool
+	 * @param bool $sudoRequired
 	 */
 	public function setSudoRequired($sudoRequired){
 		$this->sudoRequired = $sudoRequired;
 	}
 	/**
-	 * @param int
+	 * @param int $defaultSudoSession
 	 */
 	public function setDefaultSudoSession($defaultSudoSession){
 		$this->defaultSudoSession = $defaultSudoSession;
 	}
 	/**
-	 * @param int
+	 * @param int $maxUndoQueue
 	 */
 	public function setMaxUndoQueue($maxUndoQueue){
 		$this->maxUndoQueue = $maxUndoQueue;
 	}
 	/**
-	 * @param int
+	 * @param int $tickEditThreshold
 	 */
 	public function setTickEditThreshold($tickEditThreshold){
 		$this->tickEditThreshold = $tickEditThreshold;
