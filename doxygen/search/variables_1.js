@@ -1,11 +1,24 @@
 var searchData=
 [
-  ['column_5fboolean',['COLUMN_BOOLEAN',['../d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#acaed44cc81966dd17b1a64bdb8ea670d',1,'pemapmodder::worldeditart::provider::AsyncQuery']]],
-  ['column_5fdouble',['COLUMN_DOUBLE',['../d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#acf411c1eb35216d72a230362d78d46ad',1,'pemapmodder::worldeditart::provider::AsyncQuery']]],
-  ['column_5ffloat',['COLUMN_FLOAT',['../d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a76ae7455e4a8faae53856fd651d9e9a0',1,'pemapmodder::worldeditart::provider::AsyncQuery']]],
-  ['column_5finteger',['COLUMN_INTEGER',['../d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a5baee1bc951c53ba42544c40037bbd24',1,'pemapmodder::worldeditart::provider::AsyncQuery']]],
-  ['column_5fmysql_5ftimestamp',['COLUMN_MYSQL_TIMESTAMP',['../d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a35ec82873a51587cb2c732d5e3dcddf0',1,'pemapmodder::worldeditart::provider::AsyncQuery']]],
-  ['column_5fstring',['COLUMN_STRING',['../d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#ab47bcaf8bedd364e0609b51e4db2cc02',1,'pemapmodder::worldeditart::provider::AsyncQuery']]],
-  ['column_5ftimestamp',['COLUMN_TIMESTAMP',['../d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a1761d2d9c3251c48807060fc39544f63',1,'pemapmodder::worldeditart::provider::AsyncQuery']]],
-  ['column_5funix_5ftimestamp',['COLUMN_UNIX_TIMESTAMP',['../d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a43f2ae0543c4bd697091c80e8da4e4b4',1,'pemapmodder::worldeditart::provider::AsyncQuery']]]
+  ['acacia',['ACACIA',['../da/d50/classpocketmine_1_1block_1_1Leaves.html#ae13c9598bde1a529baddef2fd4870d58',1,'pocketmine\block\Leaves\ACACIA()'],['../d3/d62/classpocketmine_1_1block_1_1Planks.html#ae13c9598bde1a529baddef2fd4870d58',1,'pocketmine\block\Planks\ACACIA()'],['../d0/de7/classpocketmine_1_1block_1_1Sapling.html#ae13c9598bde1a529baddef2fd4870d58',1,'pocketmine\block\Sapling\ACACIA()'],['../d0/d70/classpocketmine_1_1block_1_1Wood2.html#ae13c9598bde1a529baddef2fd4870d58',1,'pocketmine\block\Wood2\ACACIA()']]],
+  ['acacia_5fwood_5fstairs',['ACACIA_WOOD_STAIRS',['../d9/de8/classpocketmine_1_1block_1_1Block.html#a2a19a5588e74a229ca816ba6b295b6dd',1,'pocketmine\block\Block\ACACIA_WOOD_STAIRS()'],['../df/df8/classpocketmine_1_1item_1_1Item.html#a2a19a5588e74a229ca816ba6b295b6dd',1,'pocketmine\item\Item\ACACIA_WOOD_STAIRS()']]],
+  ['acacia_5fwooden_5fstairs',['ACACIA_WOODEN_STAIRS',['../d9/de8/classpocketmine_1_1block_1_1Block.html#ada530e0604f1f548cea845732d927a06',1,'pocketmine\block\Block\ACACIA_WOODEN_STAIRS()'],['../df/df8/classpocketmine_1_1item_1_1Item.html#ada530e0604f1f548cea845732d927a06',1,'pocketmine\item\Item\ACACIA_WOODEN_STAIRS()']]],
+  ['add_5fentity_5fpacket',['ADD_ENTITY_PACKET',['../d2/d92/interfacepocketmine_1_1network_1_1protocol_1_1Info.html#a913244b7fd03f72f75661e88e0b9a74e',1,'pocketmine::network::protocol::Info']]],
+  ['add_5fitem_5fentity_5fpacket',['ADD_ITEM_ENTITY_PACKET',['../d2/d92/interfacepocketmine_1_1network_1_1protocol_1_1Info.html#a52069ffd92ef5a380255057353fc0cad',1,'pocketmine::network::protocol::Info']]],
+  ['add_5fpainting_5fpacket',['ADD_PAINTING_PACKET',['../d2/d92/interfacepocketmine_1_1network_1_1protocol_1_1Info.html#a8a0f83f5e959c335c8b29f6c397b592b',1,'pocketmine::network::protocol::Info']]],
+  ['add_5fplayer_5fpacket',['ADD_PLAYER_PACKET',['../d2/d92/interfacepocketmine_1_1network_1_1protocol_1_1Info.html#af77ea3e68ba0ebe2c847eb9f7c457d14',1,'pocketmine::network::protocol::Info']]],
+  ['adventure',['ADVENTURE',['../db/db7/classpocketmine_1_1Player.html#a8c886bdebeb655db6a77b1c87d88cc15',1,'pocketmine::Player']]],
+  ['adventure_5fsettings_5fpacket',['ADVENTURE_SETTINGS_PACKET',['../d2/d92/interfacepocketmine_1_1network_1_1protocol_1_1Info.html#a4cba7ada4084ebcfed1be8f00a950db7',1,'pocketmine::network::protocol::Info']]],
+  ['air',['AIR',['../d9/de8/classpocketmine_1_1block_1_1Block.html#a8aeac6ceda74aaae3094cc53c9d0bdce',1,'pocketmine\block\Block\AIR()'],['../df/df8/classpocketmine_1_1item_1_1Item.html#a8aeac6ceda74aaae3094cc53c9d0bdce',1,'pocketmine\item\Item\AIR()']]],
+  ['alert',['ALERT',['../d1/d9a/interfaceLogLevel.html#a037a7f6e892e6adb07c2aa099fbaf69d',1,'LogLevel']]],
+  ['ambient_5fsound',['AMBIENT_SOUND',['../d0/d7e/classpocketmine_1_1network_1_1protocol_1_1EntityEventPacket.html#a091c177fc0ba09b1bae8697f21dbad6d',1,'pocketmine::network::protocol::EntityEventPacket']]],
+  ['andesite',['ANDESITE',['../d9/d41/classpocketmine_1_1block_1_1Stone.html#a1759d2852ac1a0576f349433f9bb8232',1,'pocketmine::block::Stone']]],
+  ['animate_5fpacket',['ANIMATE_PACKET',['../d2/d92/interfacepocketmine_1_1network_1_1protocol_1_1Info.html#ab3e87ce1de28cd8a727606cf460a82a4',1,'pocketmine::network::protocol::Info']]],
+  ['ansi',['ANSI',['../d2/d69/namespacepocketmine.html#aea9984efe2579e2495c78b36432a11b9',1,'pocketmine']]],
+  ['api_5fversion',['API_VERSION',['../d2/d69/namespacepocketmine.html#a0ed0d8617b3abaac92e82720d9fab3f3',1,'pocketmine']]],
+  ['apple',['APPLE',['../df/df8/classpocketmine_1_1item_1_1Item.html#a2a8319889a7999134490f9860288e43d',1,'pocketmine::item::Item']]],
+  ['aqua',['AQUA',['../d1/da3/classpocketmine_1_1utils_1_1TextFormat.html#a8161405c35361a8ec4f30e2e90d276b1',1,'pocketmine::utils::TextFormat']]],
+  ['arm_5fswing',['ARM_SWING',['../df/dd6/classpocketmine_1_1event_1_1player_1_1PlayerAnimationEvent.html#a3683cc9375e9eafecca6f77d29d32437',1,'pocketmine::event::player::PlayerAnimationEvent']]],
+  ['armor',['ARMOR',['../d3/d42/interfacepocketmine_1_1inventory_1_1SlotType.html#ae3f1bad6c78408f8093d255237c86a1e',1,'pocketmine::inventory::SlotType']]],
+  ['arrow',['ARROW',['../df/df8/classpocketmine_1_1item_1_1Item.html#aa46d0eadd9725ede0c9f26fde573e06e',1,'pocketmine::item::Item']]]
 ];

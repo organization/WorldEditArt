@@ -49,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="../../namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="../../annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="../../files.html"><span>Files</span></a></li>
@@ -73,6 +74,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="../../files.html"><span>File&#160;List</span></a></li>
+      <li><a href="../../globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -145,7 +147,7 @@ $(document).ready(function(){initNavTree('df/dbf/CuboidSpace_8php_source.html','
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        $this-&gt;z2 = (int) $z2;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        $this-&gt;levelName = $levelName;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#acf949cf74dbd51f1b04de8df58d3f0a5">   42</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#acf949cf74dbd51f1b04de8df58d3f0a5">isInside</a>(Vector3 $v){</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#acf949cf74dbd51f1b04de8df58d3f0a5">   42</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#acf949cf74dbd51f1b04de8df58d3f0a5">isInside</a>(<a class="code" href="../../db/d67/namespacepocketmine_1_1math_1_1Vector3.html">Vector3</a> $v){</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            min($this-&gt;x1, $this-&gt;x2) &lt;= $v-&gt;x and</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            min($this-&gt;y1, $this-&gt;y2) &lt;= $v-&gt;y and</div>
@@ -153,7 +155,7 @@ $(document).ready(function(){initNavTree('df/dbf/CuboidSpace_8php_source.html','
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            max($this-&gt;x1, $this-&gt;x2) &gt;= $v-&gt;x and</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            max($this-&gt;y1, $this-&gt;y2) &gt;= $v-&gt;y and</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            max($this-&gt;z1, $this-&gt;z2) &gt;= $v-&gt;z and</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            !($v instanceof Position) or $v-&gt;getLevel()-&gt;getName() === $this-&gt;levelName;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            !($v instanceof <a class="code" href="../../df/d53/classpocketmine_1_1level_1_1Position.html">Position</a>) or $v-&gt;getLevel()-&gt;getName() === $this-&gt;levelName;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
 <div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#a7b37efab7473a1effc29f8be2421f6e3">   52</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#a7b37efab7473a1effc29f8be2421f6e3">isValid</a>(){</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> isset($this-&gt;x1, $this-&gt;x2, $this-&gt;y1, $this-&gt;y2, $this-&gt;z1, $this-&gt;z2);</div>
@@ -169,6 +171,7 @@ $(document).ready(function(){initNavTree('df/dbf/CuboidSpace_8php_source.html','
 <div class="ttc" id="classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace_html_acf949cf74dbd51f1b04de8df58d3f0a5"><div class="ttname"><a href="../../db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#acf949cf74dbd51f1b04de8df58d3f0a5">pemapmodder\worldeditart\libworldedit\space\CuboidSpace\isInside</a></div><div class="ttdeci">isInside(Vector3 $v)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dbf/CuboidSpace_8php_source.html#l00042">CuboidSpace.php:42</a></div></div>
 <div class="ttc" id="classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace_html_a4d9813fea8525b19a1d370eeb8fe41d6"><div class="ttname"><a href="../../db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#a4d9813fea8525b19a1d370eeb8fe41d6">pemapmodder\worldeditart\libworldedit\space\CuboidSpace\serialize</a></div><div class="ttdeci">serialize()</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dbf/CuboidSpace_8php_source.html#l00029">CuboidSpace.php:29</a></div></div>
 <div class="ttc" id="classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace_html"><div class="ttname"><a href="../../db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html">pemapmodder\worldeditart\libworldedit\space\CuboidSpace</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/dbf/CuboidSpace_8php_source.html#l00024">CuboidSpace.php:24</a></div></div>
+<div class="ttc" id="classpocketmine_1_1level_1_1Position_html"><div class="ttname"><a href="../../df/d53/classpocketmine_1_1level_1_1Position.html">pocketmine\level\Position</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d3b/Position_8php_source.html#l00027">Position.php:27</a></div></div>
 <div class="ttc" id="classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace_html_aa221eb8e75642a380892e3f711e7274d"><div class="ttname"><a href="../../db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#aa221eb8e75642a380892e3f711e7274d">pemapmodder\worldeditart\libworldedit\space\CuboidSpace\$y2</a></div><div class="ttdeci">$y2</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dbf/CuboidSpace_8php_source.html#l00026">CuboidSpace.php:26</a></div></div>
 <div class="ttc" id="namespacepocketmine_1_1math_1_1Vector3_html"><div class="ttname"><a href="../../db/d67/namespacepocketmine_1_1math_1_1Vector3.html">Vector3</a></div></div>
 <div class="ttc" id="classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace_html_ac2f3a0997c46fd9bb24fe4190f738eb0"><div class="ttname"><a href="../../db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#ac2f3a0997c46fd9bb24fe4190f738eb0">pemapmodder\worldeditart\libworldedit\space\CuboidSpace\unserialize</a></div><div class="ttdeci">unserialize($serialized)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dbf/CuboidSpace_8php_source.html#l00032">CuboidSpace.php:32</a></div></div>

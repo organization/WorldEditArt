@@ -1,6 +1,0 @@
-var namespacepemapmodder_1_1worldeditart_1_1provider_1_1userconfig =
-[
-    [ "SqliteUserConfigDataProvider", "classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1_sqlite_user_config_data_provider.html", "classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1_sqlite_user_config_data_provider" ],
-    [ "UserConfig", "classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1_user_config.html", "classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1_user_config" ],
-    [ "UserConfigDataProvider", "interfacepemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1_user_config_data_provider.html", "interfacepemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1_user_config_data_provider" ]
-];
