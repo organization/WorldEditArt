@@ -15,10 +15,16 @@
 
 namespace pemapmodder\worldeditart\libworldedit\space;
 
+use pemapmodder\worldeditart\WorldEditArt;
+use pocketmine\level\Level;
 use pocketmine\level\Position;
 use pocketmine\math\Vector3;
 
-class CuboidSpace implements Space{
+/**
+ * Represents a space enclosed by two diagonal points of a cuboid.
+ */
+class CuboidSpace extends Space{
+
 	/** @var int */
 	private $x1, $x2, $y1, $y2, $z1, $z2;
 	/** @var string */
@@ -36,7 +42,11 @@ class CuboidSpace implements Space{
 		$this->z2 = (int) $z2;
 		$this->levelName = $levelName;
 	}
+
 	public function isInside(Vector3 $v){
+		if(!$this->isValid()){
+			return false;
+		}
 		return
 			min($this->x1, $this->x2) <= $v->x and
 			min($this->y1, $this->y2) <= $v->y and
@@ -46,7 +56,13 @@ class CuboidSpace implements Space{
 			max($this->z1, $this->z2) >= $v->z and
 			!($v instanceof Position) or $v->getLevel()->getName() === $this->levelName;
 	}
+
+	/**
+	 * Returns <code>true</code> if all constraints of this {@link CuboidSpace} are initialized, <code>false</code> otherwise.
+	 *
+	 * @return bool whether the {@link CuboidSpace} is valid.
+	 */
 	public function isValid(){
-		return isset($this->x1, $this->x2, $this->y1, $this->y2, $this->z1, $this->z2);
+		return parent::isValid() and isset($this->x1, $this->x2, $this->y1, $this->y2, $this->z1, $this->z2, $this->levelName);
 	}
 }

@@ -213,7 +213,7 @@ abstract class AsyncQuery extends AsyncTask{
 		return $this->assocNoResult;
 	}
 	/**
-	 * @return \array[]|null
+	 * @return array[]|null
 	 */
 	public function getAllRows(){
 		return $this->allRows;
