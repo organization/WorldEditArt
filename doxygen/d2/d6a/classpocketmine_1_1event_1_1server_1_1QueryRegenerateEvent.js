@@ -1,0 +1,26 @@
+var classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent =
+[
+    [ "__construct", "d2/d6a/classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent.html#ad5b137601372e50bfe7e057f21dd7866", null ],
+    [ "canListPlugins", "d2/d6a/classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent.html#a9e1a58222be63b3eaac7e3e3511e002a", null ],
+    [ "getExtraData", "d2/d6a/classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent.html#a98b24db0911e9918e9bd067d1e83043d", null ],
+    [ "getLongQuery", "d2/d6a/classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent.html#a8fe81c89d7c3b9423d37a4e2319fe95e", null ],
+    [ "getMaxPlayerCount", "d2/d6a/classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent.html#a064b85c1dec5cd92be40b9251efc0279", null ],
+    [ "getPlayerCount", "d2/d6a/classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent.html#a0df3c0685932e190f3dee16c520b2b3b", null ],
+    [ "getPlayerList", "d2/d6a/classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent.html#a3b905fbd079d4ea21b5a1cc56622fe31", null ],
+    [ "getPlugins", "d2/d6a/classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent.html#a3a6565e51f295a21bbcc386bac9dad46", null ],
+    [ "getServerName", "d2/d6a/classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent.html#ae8e894c5cd9aeeb004efbd032fb1dfc9", null ],
+    [ "getShortQuery", "d2/d6a/classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent.html#a9eb79793b401d837ba152b6f959514b5", null ],
+    [ "getTimeout", "d2/d6a/classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent.html#abac5019c5daf3a27d739aa3a249fdb31", null ],
+    [ "getWorld", "d2/d6a/classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent.html#ac3619f096a805c30f21e9794ea359758", null ],
+    [ "setExtraData", "d2/d6a/classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent.html#abda23979db3f39d1d0d872f10c2b6a62", null ],
+    [ "setListPlugins", "d2/d6a/classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent.html#ac91e90cac2f47cd0d181df3fcf419ca8", null ],
+    [ "setMaxPlayerCount", "d2/d6a/classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent.html#a3af17ffe05acf6cd3ac84a0bcea34ea0", null ],
+    [ "setPlayerCount", "d2/d6a/classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent.html#a2e9b20181f7f780ad9a644b3669682f6", null ],
+    [ "setPlayerList", "d2/d6a/classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent.html#a8b8e7cf9f8566a262095e1109e9932fb", null ],
+    [ "setPlugins", "d2/d6a/classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent.html#a570bb794209f9571d23fd07d5edf0c70", null ],
+    [ "setServerName", "d2/d6a/classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent.html#a146501775d8513fd0633992c7ac86d86", null ],
+    [ "setTimeout", "d2/d6a/classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent.html#a3d80d4d51ec21d8237d6ed6808d70b8e", null ],
+    [ "setWorld", "d2/d6a/classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent.html#a34e34d143928df996efe6d402c2149a1", null ],
+    [ "$handlerList", "d2/d6a/classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent.html#a695b2ac1746b0ab56b931fb8bcb9dc0b", null ],
+    [ "GAME_ID", "d2/d6a/classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent.html#a37a449f2710f6b4817039114924cc7a9", null ]
+];

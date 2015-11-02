@@ -49,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="../../namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="../../annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="../../files.html"><span>Files</span></a></li>
@@ -131,7 +132,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4d9813fea8525b19a1d370eeb8fe41d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2f3a0997c46fd9bb24fe4190f738eb0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#ac2f3a0997c46fd9bb24fe4190f738eb0">unserialize</a> ($serialized)</td></tr>
 <tr class="separator:ac2f3a0997c46fd9bb24fe4190f738eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf949cf74dbd51f1b04de8df58d3f0a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#acf949cf74dbd51f1b04de8df58d3f0a5">isInside</a> (Vector3 $v)</td></tr>
+<tr class="memitem:acf949cf74dbd51f1b04de8df58d3f0a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#acf949cf74dbd51f1b04de8df58d3f0a5">isInside</a> (<a class="el" href="../../da/d76/classpocketmine_1_1math_1_1Vector3.html">Vector3</a> $v)</td></tr>
 <tr class="separator:acf949cf74dbd51f1b04de8df58d3f0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b37efab7473a1effc29f8be2421f6e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#a7b37efab7473a1effc29f8be2421f6e3">isValid</a> ()</td></tr>
 <tr class="separator:a7b37efab7473a1effc29f8be2421f6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,8 +151,9 @@ Data Fields</h2></td></tr>
 <tr class="separator:aa45f807aa0c47159969e7f29c1a5afc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html#l00021">21</a> of file <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html">CuboidSpace.php</a>.</p>
+<div class="textblock"><p>Represents a space enclosed by two diagonal points of a cuboid. </p>
+
+<p>Definition at line <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html#l00024">24</a> of file <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html">CuboidSpace.php</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="acf949cf74dbd51f1b04de8df58d3f0a5"></a>
 <div class="memitem">
@@ -160,16 +162,26 @@ Data Fields</h2></td></tr>
         <tr>
           <td class="memname">isInside </td>
           <td>(</td>
-          <td class="paramtype">Vector3&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/d76/classpocketmine_1_1math_1_1Vector3.html">Vector3</a>&#160;</td>
           <td class="paramname"><em>$v</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Checks whether the passed <a class="el" href="../../">Vector3</a> is included in this <a class="el" href="../../d0/db2/interfacepemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1Space.html">Space</a>.<br />
+ Floating point vectors should be accepted.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">Vector3</td><td class="paramname">$v</td><td>the coordinates to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool whether<div class="fragment"><div class="line">$v </div>
+</div><!-- fragment --> is inside the space. </dd></dl>
 
 <p>Implements <a class="el" href="../../d0/db2/interfacepemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1Space.html#acf949cf74dbd51f1b04de8df58d3f0a5">Space</a>.</p>
 
-<p>Definition at line <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html#l00039">39</a> of file <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html">CuboidSpace.php</a>.</p>
+<p>Definition at line <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html#l00042">42</a> of file <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html">CuboidSpace.php</a>.</p>
 
 </div>
 </div>
@@ -186,7 +198,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html#l00049">49</a> of file <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html">CuboidSpace.php</a>.</p>
+<p>Definition at line <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html#l00052">52</a> of file <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html">CuboidSpace.php</a>.</p>
 
 </div>
 </div>
@@ -203,7 +215,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html#l00026">26</a> of file <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html">CuboidSpace.php</a>.</p>
+<p>Definition at line <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html#l00029">29</a> of file <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html">CuboidSpace.php</a>.</p>
 
 </div>
 </div>
@@ -221,7 +233,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html#l00029">29</a> of file <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html">CuboidSpace.php</a>.</p>
+<p>Definition at line <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html#l00032">32</a> of file <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html">CuboidSpace.php</a>.</p>
 
 </div>
 </div>
@@ -236,7 +248,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html#l00023">23</a> of file <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html">CuboidSpace.php</a>.</p>
+<p>Definition at line <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html#l00026">26</a> of file <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html">CuboidSpace.php</a>.</p>
 
 </div>
 </div>
@@ -250,7 +262,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html#l00023">23</a> of file <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html">CuboidSpace.php</a>.</p>
+<p>Definition at line <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html#l00026">26</a> of file <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html">CuboidSpace.php</a>.</p>
 
 </div>
 </div>
@@ -264,7 +276,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html#l00023">23</a> of file <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html">CuboidSpace.php</a>.</p>
+<p>Definition at line <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html#l00026">26</a> of file <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html">CuboidSpace.php</a>.</p>
 
 </div>
 </div>
@@ -278,7 +290,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html#l00023">23</a> of file <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html">CuboidSpace.php</a>.</p>
+<p>Definition at line <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html#l00026">26</a> of file <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html">CuboidSpace.php</a>.</p>
 
 </div>
 </div>
@@ -292,7 +304,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html#l00023">23</a> of file <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html">CuboidSpace.php</a>.</p>
+<p>Definition at line <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html#l00026">26</a> of file <a class="el" href="../../df/dbf/CuboidSpace_8php_source.html">CuboidSpace.php</a>.</p>
 
 </div>
 </div>

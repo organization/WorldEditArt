@@ -1,0 +1,25 @@
+var classpocketmine_1_1inventory_1_1CraftingManager =
+[
+    [ "__construct", "d5/d52/classpocketmine_1_1inventory_1_1CraftingManager.html#a095c5d389db211932136b53f25f39685", null ],
+    [ "getFurnaceRecipes", "d5/d52/classpocketmine_1_1inventory_1_1CraftingManager.html#a45b78be2be4afe2cac99c61159468995", null ],
+    [ "getRecipes", "d5/d52/classpocketmine_1_1inventory_1_1CraftingManager.html#a22d7a1b8871fa669dc4ad2fedd00dffd", null ],
+    [ "matchFurnaceRecipe", "d5/d52/classpocketmine_1_1inventory_1_1CraftingManager.html#a6ca88c5b0cf8f26034cd4f780a5aae72", null ],
+    [ "matchRecipe", "d5/d52/classpocketmine_1_1inventory_1_1CraftingManager.html#ab81a180290a9811c5d4a007cee15fd75", null ],
+    [ "matchTransaction", "d5/d52/classpocketmine_1_1inventory_1_1CraftingManager.html#ac8a0aacb23e08c492bbd7ea0d1c9972f", null ],
+    [ "registerArmor", "d5/d52/classpocketmine_1_1inventory_1_1CraftingManager.html#a42ba7b3ebaac56ce23fd533417b62d93", null ],
+    [ "registerDyes", "d5/d52/classpocketmine_1_1inventory_1_1CraftingManager.html#a5c00f932d5ef9e01dfe3daddce4385c7", null ],
+    [ "registerFood", "d5/d52/classpocketmine_1_1inventory_1_1CraftingManager.html#a127be94ae93a212e34dbee035ea47141", null ],
+    [ "registerFurnace", "d5/d52/classpocketmine_1_1inventory_1_1CraftingManager.html#ae3456d2c60c9c9d8797f26e49d2c690c", null ],
+    [ "registerFurnaceRecipe", "d5/d52/classpocketmine_1_1inventory_1_1CraftingManager.html#a3156d84cdcdabce9fe91f7f5c0d91a45", null ],
+    [ "registerIngots", "d5/d52/classpocketmine_1_1inventory_1_1CraftingManager.html#ac7fe6b5dfb62d5c4e07b5e7acafdaf34", null ],
+    [ "registerRecipe", "d5/d52/classpocketmine_1_1inventory_1_1CraftingManager.html#ad292f1105638e94bae2c41a6d421bbc4", null ],
+    [ "registerShapedRecipe", "d5/d52/classpocketmine_1_1inventory_1_1CraftingManager.html#aa2d65e4660ccbc923f58c2f92dff8640", null ],
+    [ "registerShapelessRecipe", "d5/d52/classpocketmine_1_1inventory_1_1CraftingManager.html#a0ddcfa5c5688d1c8704fe34077c1d315", null ],
+    [ "registerStonecutter", "d5/d52/classpocketmine_1_1inventory_1_1CraftingManager.html#a30a4a4256e36dbbda33ea8d0e2e1c705", null ],
+    [ "registerTools", "d5/d52/classpocketmine_1_1inventory_1_1CraftingManager.html#a7573c3356b437fb20fbc16a4e771d595", null ],
+    [ "registerWeapons", "d5/d52/classpocketmine_1_1inventory_1_1CraftingManager.html#a9d14d128bae1e196b3c16f8ebbb4bfe1", null ],
+    [ "sort", "d5/d52/classpocketmine_1_1inventory_1_1CraftingManager.html#a2d5d5bf1766e58ef4b35bed1a4c5157a", null ],
+    [ "$furnaceRecipes", "d5/d52/classpocketmine_1_1inventory_1_1CraftingManager.html#ad3dce265598adc418c3cb85d264291a5", null ],
+    [ "$recipeLookup", "d5/d52/classpocketmine_1_1inventory_1_1CraftingManager.html#a8217b1f3d9754e1e3ba3dfaf1493ee53", null ],
+    [ "$recipes", "d5/d52/classpocketmine_1_1inventory_1_1CraftingManager.html#a3bdbff95347ae6725834e997b39c73e9", null ]
+];

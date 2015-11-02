@@ -1,0 +1,28 @@
+var namespacepocketmine_1_1inventory =
+[
+    [ "BaseInventory", "de/d3a/classpocketmine_1_1inventory_1_1BaseInventory.html", "de/d3a/classpocketmine_1_1inventory_1_1BaseInventory" ],
+    [ "BaseTransaction", "da/d49/classpocketmine_1_1inventory_1_1BaseTransaction.html", "da/d49/classpocketmine_1_1inventory_1_1BaseTransaction" ],
+    [ "BigShapelessRecipe", "dc/d49/classpocketmine_1_1inventory_1_1BigShapelessRecipe.html", null ],
+    [ "ChestInventory", "de/d2b/classpocketmine_1_1inventory_1_1ChestInventory.html", "de/d2b/classpocketmine_1_1inventory_1_1ChestInventory" ],
+    [ "ContainerInventory", "d7/d3d/classpocketmine_1_1inventory_1_1ContainerInventory.html", "d7/d3d/classpocketmine_1_1inventory_1_1ContainerInventory" ],
+    [ "CraftingInventory", "db/d2b/classpocketmine_1_1inventory_1_1CraftingInventory.html", "db/d2b/classpocketmine_1_1inventory_1_1CraftingInventory" ],
+    [ "CraftingManager", "d5/d52/classpocketmine_1_1inventory_1_1CraftingManager.html", "d5/d52/classpocketmine_1_1inventory_1_1CraftingManager" ],
+    [ "CraftingTransactionGroup", "db/d2a/classpocketmine_1_1inventory_1_1CraftingTransactionGroup.html", "db/d2a/classpocketmine_1_1inventory_1_1CraftingTransactionGroup" ],
+    [ "CustomInventory", "d1/ded/classpocketmine_1_1inventory_1_1CustomInventory.html", null ],
+    [ "DoubleChestInventory", "d2/da4/classpocketmine_1_1inventory_1_1DoubleChestInventory.html", "d2/da4/classpocketmine_1_1inventory_1_1DoubleChestInventory" ],
+    [ "Fuel", "d3/d7b/classpocketmine_1_1inventory_1_1Fuel.html", "d3/d7b/classpocketmine_1_1inventory_1_1Fuel" ],
+    [ "FurnaceInventory", "d1/db6/classpocketmine_1_1inventory_1_1FurnaceInventory.html", "d1/db6/classpocketmine_1_1inventory_1_1FurnaceInventory" ],
+    [ "FurnaceRecipe", "db/dec/classpocketmine_1_1inventory_1_1FurnaceRecipe.html", "db/dec/classpocketmine_1_1inventory_1_1FurnaceRecipe" ],
+    [ "Inventory", "d7/d42/interfacepocketmine_1_1inventory_1_1Inventory.html", "d7/d42/interfacepocketmine_1_1inventory_1_1Inventory" ],
+    [ "InventoryHolder", "d3/da0/interfacepocketmine_1_1inventory_1_1InventoryHolder.html", "d3/da0/interfacepocketmine_1_1inventory_1_1InventoryHolder" ],
+    [ "InventoryType", "d9/db0/classpocketmine_1_1inventory_1_1InventoryType.html", "d9/db0/classpocketmine_1_1inventory_1_1InventoryType" ],
+    [ "PlayerInventory", "dc/d24/classpocketmine_1_1inventory_1_1PlayerInventory.html", "dc/d24/classpocketmine_1_1inventory_1_1PlayerInventory" ],
+    [ "Recipe", "da/d7d/interfacepocketmine_1_1inventory_1_1Recipe.html", "da/d7d/interfacepocketmine_1_1inventory_1_1Recipe" ],
+    [ "ShapedRecipe", "d1/d2a/classpocketmine_1_1inventory_1_1ShapedRecipe.html", "d1/d2a/classpocketmine_1_1inventory_1_1ShapedRecipe" ],
+    [ "ShapelessRecipe", "d4/d84/classpocketmine_1_1inventory_1_1ShapelessRecipe.html", "d4/d84/classpocketmine_1_1inventory_1_1ShapelessRecipe" ],
+    [ "SimpleTransactionGroup", "d3/d09/classpocketmine_1_1inventory_1_1SimpleTransactionGroup.html", "d3/d09/classpocketmine_1_1inventory_1_1SimpleTransactionGroup" ],
+    [ "SlotType", "d3/d42/interfacepocketmine_1_1inventory_1_1SlotType.html", "d3/d42/interfacepocketmine_1_1inventory_1_1SlotType" ],
+    [ "StonecutterShapelessRecipe", "d2/d3f/classpocketmine_1_1inventory_1_1StonecutterShapelessRecipe.html", null ],
+    [ "Transaction", "dc/dfe/interfacepocketmine_1_1inventory_1_1Transaction.html", "dc/dfe/interfacepocketmine_1_1inventory_1_1Transaction" ],
+    [ "TransactionGroup", "d2/d21/interfacepocketmine_1_1inventory_1_1TransactionGroup.html", "d2/d21/interfacepocketmine_1_1inventory_1_1TransactionGroup" ]
+];

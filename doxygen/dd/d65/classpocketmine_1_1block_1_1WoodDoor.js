@@ -1,0 +1,10 @@
+var classpocketmine_1_1block_1_1WoodDoor =
+[
+    [ "__construct", "dd/d65/classpocketmine_1_1block_1_1WoodDoor.html#a51fa98d0feed101ba73a8cfe07459dd6", null ],
+    [ "canBeActivated", "dd/d65/classpocketmine_1_1block_1_1WoodDoor.html#a14b41118ae12281fce56f4e1179d4420", null ],
+    [ "getDrops", "dd/d65/classpocketmine_1_1block_1_1WoodDoor.html#a18bbac3075310b14bec5573c1150bbab", null ],
+    [ "getHardness", "dd/d65/classpocketmine_1_1block_1_1WoodDoor.html#a4148d36ab8f8a463062163a7f9b3bf6e", null ],
+    [ "getName", "dd/d65/classpocketmine_1_1block_1_1WoodDoor.html#a3d0963e68bb313b163a73f2803c64600", null ],
+    [ "getToolType", "dd/d65/classpocketmine_1_1block_1_1WoodDoor.html#a98cefe47e5822a30038bfad7cb1bb9e9", null ],
+    [ "$id", "dd/d65/classpocketmine_1_1block_1_1WoodDoor.html#ae97941710d863131c700f069b109991e", null ]
+];

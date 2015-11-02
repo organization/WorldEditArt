@@ -1,0 +1,28 @@
+var classpocketmine_1_1command_1_1Command =
+[
+    [ "__construct", "d8/d9d/classpocketmine_1_1command_1_1Command.html#a71faf08b13090ed0b6551c81de30011e", null ],
+    [ "__toString", "d8/d9d/classpocketmine_1_1command_1_1Command.html#a7516ca30af0db3cdbf9a7739b48ce91d", null ],
+    [ "broadcastCommandMessage", "d8/d9d/classpocketmine_1_1command_1_1Command.html#a8af554dcc46923106d2ca5798501f40e", null ],
+    [ "execute", "d8/d9d/classpocketmine_1_1command_1_1Command.html#a5f26288ddc55fd228084f0b347ad3713", null ],
+    [ "getAliases", "d8/d9d/classpocketmine_1_1command_1_1Command.html#a1e9e143d493aedb855d3c5edadb17bb2", null ],
+    [ "getDescription", "d8/d9d/classpocketmine_1_1command_1_1Command.html#a2e7bb35c71bf1824456ceb944cb7a845", null ],
+    [ "getLabel", "d8/d9d/classpocketmine_1_1command_1_1Command.html#a14c4e7420d903d3e40342266333d2ecf", null ],
+    [ "getName", "d8/d9d/classpocketmine_1_1command_1_1Command.html#a3d0963e68bb313b163a73f2803c64600", null ],
+    [ "getPermission", "d8/d9d/classpocketmine_1_1command_1_1Command.html#a478067ecf173884c2ee3e5b94e746200", null ],
+    [ "getPermissionMessage", "d8/d9d/classpocketmine_1_1command_1_1Command.html#a5aec1d44d9350aaaf640f41027fe7447", null ],
+    [ "getUsage", "d8/d9d/classpocketmine_1_1command_1_1Command.html#a6c249ea1472e60e81f0f231bdc17eb28", null ],
+    [ "isRegistered", "d8/d9d/classpocketmine_1_1command_1_1Command.html#a44fdc77fb3da4e604dba3bcf98816b10", null ],
+    [ "register", "d8/d9d/classpocketmine_1_1command_1_1Command.html#ab762a105fc38bbad4683c33337794cdf", null ],
+    [ "setAliases", "d8/d9d/classpocketmine_1_1command_1_1Command.html#a001e434445d0ea16e017ec10d7bb872a", null ],
+    [ "setDescription", "d8/d9d/classpocketmine_1_1command_1_1Command.html#a31fad3e39336ea079ea758e051866627", null ],
+    [ "setLabel", "d8/d9d/classpocketmine_1_1command_1_1Command.html#a4bc9ee0e870d5a698de83d9bbc56372a", null ],
+    [ "setPermission", "d8/d9d/classpocketmine_1_1command_1_1Command.html#a8210ae206debf14f7d4e61c0b7efbf79", null ],
+    [ "setPermissionMessage", "d8/d9d/classpocketmine_1_1command_1_1Command.html#ab98780b9648191d5996dce2871dd88c0", null ],
+    [ "setUsage", "d8/d9d/classpocketmine_1_1command_1_1Command.html#a940266463e2a239a46e5a5327c806e50", null ],
+    [ "testPermission", "d8/d9d/classpocketmine_1_1command_1_1Command.html#a64c492e58d2b73db99943e66afaaca65", null ],
+    [ "testPermissionSilent", "d8/d9d/classpocketmine_1_1command_1_1Command.html#a38681c92fb7658a0743755a5cea58ded", null ],
+    [ "unregister", "d8/d9d/classpocketmine_1_1command_1_1Command.html#aaf10e6ea0ef4624f6dfaedfbdf7ff5ac", null ],
+    [ "$description", "d8/d9d/classpocketmine_1_1command_1_1Command.html#a87b032cba06009e3467abf1c8018d960", null ],
+    [ "$timings", "d8/d9d/classpocketmine_1_1command_1_1Command.html#aa2b0f826ea5af233fc842d8da610c502", null ],
+    [ "$usageMessage", "d8/d9d/classpocketmine_1_1command_1_1Command.html#abc57d489dfabfb054238ca4e58b14cb8", null ]
+];
