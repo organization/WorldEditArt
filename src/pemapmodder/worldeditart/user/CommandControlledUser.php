@@ -18,19 +18,22 @@ namespace pemapmodder\worldeditart\user;
 use pemapmodder\worldeditart\WorldEditArt;
 use pocketmine\command\CommandSender;
 use pocketmine\level\Location;
+use pocketmine\permission\PermissionAttachment;
+use pocketmine\plugin\Plugin;
 
 class CommandControlledUser extends User{
 	const TYPE = "worldeditart.cmdctrl";
+
 	/** @var WorldEditArt */
 	private $main;
-	/** @var string */
-	private $owner;
+	/** @var CommandSender */
+	private $parent; // I really want to use WeakRef for this :(
 	/** @var Location */
 	private $location;
 
 	public function __construct(WorldEditArt $main, CommandSender $owner, Location $initLoc){
 		$this->main = $main;
-		$this->owner = $owner->getName();
+		$this->parent = $owner;
 		$this->location = $initLoc;
 	}
 	public function getMain(){
@@ -43,6 +46,31 @@ class CommandControlledUser extends User{
 		return self::TYPE;
 	}
 	public function getName(){
-		return $this->owner;
+		return $this->parent->getName();
+	}
+
+	public function isPermissionSet($name){
+		return $this->parent->isPermissionSet($name);
+	}
+	public function hasPermission($name){
+		return $this->parent->hasPermission($name);
+	}
+	public function addAttachment(Plugin $plugin, $name = null, $value = null){
+		return $this->parent->addAttachment($plugin, $name, $value);
+	}
+	public function removeAttachment(PermissionAttachment $attachment){
+		$this->parent->removeAttachment($attachment);
+	}
+	public function recalculatePermissions(){
+		$this->parent->recalculatePermissions();
+	}
+	public function getEffectivePermissions(){
+		return $this->parent->getEffectivePermissions();
+	}
+	public function isOp(){
+		return $this->parent->isOp();
+	}
+	public function setOp($value){
+		$this->parent->setOp($value);
 	}
 }

@@ -18,8 +18,9 @@ namespace pemapmodder\worldeditart\user;
 use pemapmodder\worldeditart\provider\userconfig\UserConfig;
 use pemapmodder\worldeditart\WorldEditArt;
 use pocketmine\level\Location;
+use pocketmine\permission\Permissible;
 
-abstract class User{
+abstract class User implements Permissible{
 	/** @var UserConfig */
 	private $userConfig;
 
