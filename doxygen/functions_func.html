@@ -61,8 +61,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
                onmouseout="return searchBox.OnSearchSelectHide()"
                alt=""/>
           <input type="text" id="MSearchField" value="Search" accesskey="S"
-               onfocus="searchBox.OnSearchFieldFocus(true)" 
-               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onfocus="searchBox.OnSearchFieldFocus(true)"
+               onblur="searchBox.OnSearchFieldFocus(false)"
                onkeyup="searchBox.OnSearchFieldChange(event)"/>
           </span><span class="right">
             <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
@@ -91,14 +91,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index__"><span>_</span></a></li>
       <li><a href="#index_a"><span>a</span></a></li>
       <li><a href="#index_c"><span>c</span></a></li>
+        <li><a href="#index_e"><span>e</span></a></li>
       <li><a href="#index_f"><span>f</span></a></li>
       <li><a href="#index_g"><span>g</span></a></li>
+        <li><a href="#index_h"><span>h</span></a></li>
       <li><a href="#index_i"><span>i</span></a></li>
       <li><a href="#index_l"><span>l</span></a></li>
       <li><a href="#index_m"><span>m</span></a></li>
       <li><a href="#index_o"><span>o</span></a></li>
       <li><a href="#index_p"><span>p</span></a></li>
       <li><a href="#index_q"><span>q</span></a></li>
+        <li><a href="#index_r"><span>r</span></a></li>
       <li><a href="#index_s"><span>s</span></a></li>
       <li class="current"><a href="#index_u"><span>u</span></a></li>
     </ul>
@@ -110,7 +113,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
+  <div id="splitbar" style="-moz-user-select:none;"
        class="ui-resizable-handle">
   </div>
 </div>
@@ -127,7 +130,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
+<iframe src="javascript:void(0)" frameborder="0"
         name="MSearchResults" id="MSearchResults">
 </iframe>
 </div>
@@ -137,7 +140,10 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 <h3><a class="anchor" id="index__"></a>- _ -</h3><ul>
 <li>__construct()
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#afdfa07b860386bab66b7fffd7b951a61">AsyncQuery</a>
+    : <a class="el"
+         href="d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html#af40c91ecb166b1b52e0f70b3e058e7fd">WorldEditArtCommand</a>
+    , <a class="el"
+         href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#afdfa07b860386bab66b7fffd7b951a61">AsyncQuery</a>
 , <a class="el" href="d3/d67/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1SqliteUserConfigDataProvider.html#a02d0d556c5cbad4ccd5f6a67189099cf">SqliteUserConfigDataProvider</a>
 , <a class="el" href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#a02d0d556c5cbad4ccd5f6a67189099cf">UserConfig</a>
 , <a class="el" href="dd/df7/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1BaseZoneDataProvider.html#a02d0d556c5cbad4ccd5f6a67189099cf">BaseZoneDataProvider</a>
@@ -151,6 +157,10 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 
 <h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
+    <li>addAttachment()
+        : <a class="el"
+             href="d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html#a35759332a05d2d423b34847908ffb47f">CommandControlledUser</a>
+    </li>
 <li>addZone()
 : <a class="el" href="dd/df7/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1BaseZoneDataProvider.html#af6d1b5d352abd40e758de1f7f4a25009">BaseZoneDataProvider</a>
 , <a class="el" href="dd/d4f/interfacepemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1ZoneDataProvider.html#af6d1b5d352abd40e758de1f7f4a25009">ZoneDataProvider</a>
@@ -173,7 +183,16 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </ul>
 
 
-<h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
+    <h3><a class="anchor" id="index_e"></a>- e -</h3>
+    <ul>
+        <li>execute()
+            : <a class="el"
+                 href="d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html#a5f26288ddc55fd228084f0b347ad3713">WorldEditArtCommand</a>
+        </li>
+    </ul>
+
+
+    <h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
 <li>finalize()
 : <a class="el" href="d4/d28/classpemapmodder_1_1worldeditart_1_1user_1_1PlayerSession.html#a9caaa1f5ea6177e55f13ebe7dec2bd60">PlayerSession</a>
 </li>
@@ -208,6 +227,10 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>getDefaultSudoSession()
 : <a class="el" href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#a52c498d6fe160ecc47f93173f606b522">UserConfig</a>
 </li>
+    <li>getEffectivePermissions()
+        : <a class="el"
+             href="d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html#a10830c9b9480c79c226ee38d293fc31d">CommandControlledUser</a>
+    </li>
 <li>getError()
 : <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a24ada5decce3d1b79cd82f5a90ccf404">AsyncQuery</a>
 </li>
@@ -259,6 +282,10 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>getPlayer()
 : <a class="el" href="d4/d28/classpemapmodder_1_1worldeditart_1_1user_1_1PlayerSession.html#af4a017b5086e6f92b4c4811c165006ba">PlayerSession</a>
 </li>
+    <li>getPlugin()
+        : <a class="el"
+             href="d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html#a0ef78abf71f0b4f494774352d02697db">WorldEditArtCommand</a>
+    </li>
 <li>getQuery()
 : <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a7318d39b66a484d59849ed89fd3bb4d7">AsyncQuery</a>
 </li>
@@ -319,7 +346,16 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </ul>
 
 
-<h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
+    <h3><a class="anchor" id="index_h"></a>- h -</h3>
+    <ul>
+        <li>hasPermission()
+            : <a class="el"
+                 href="d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html#af106d7ea7a50b1e035489197975cbed3">CommandControlledUser</a>
+        </li>
+    </ul>
+
+
+    <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>isAssocNoResult()
 : <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a6c34aece0302567382f3736130741696">AsyncQuery</a>
 </li>
@@ -332,6 +368,14 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 , <a class="el" href="df/da6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1Space.html#acf949cf74dbd51f1b04de8df58d3f0a5">Space</a>
 , <a class="el" href="dd/d74/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1SphereSpace.html#acf949cf74dbd51f1b04de8df58d3f0a5">SphereSpace</a>
 </li>
+    <li>isOp()
+        : <a class="el"
+             href="d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html#ae7a6aebedfdaaadef723e82c308e1cc7">CommandControlledUser</a>
+    </li>
+    <li>isPermissionSet()
+        : <a class="el"
+             href="d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html#a35a3a7799a390952e889b6f46ba01487">CommandControlledUser</a>
+    </li>
 <li>isSuccess()
 : <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a619873d6cfe310657ba866caebd9b62b">AsyncQuery</a>
 </li>
@@ -408,7 +452,28 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </ul>
 
 
-<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+    <h3><a class="anchor" id="index_r"></a>- r -</h3>
+    <ul>
+        <li>recalculatePermissions()
+            : <a class="el"
+                 href="d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html#a849027fdcd5bff7c97fbd56f49ada3a2">CommandControlledUser</a>
+        </li>
+        <li>redo()
+            : <a class="el"
+                 href="d9/dfd/interfacepemapmodder_1_1worldeditart_1_1libworldedit_1_1action_1_1Action.html#a7e7bdebb2e29ddf03980e5de41a4b880">Action</a>
+        </li>
+        <li>registerAll()
+            : <a class="el"
+                 href="d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html#ac9d48ef2578b03cca43c8345a57902f0">WorldEditArtCommand</a>
+        </li>
+        <li>removeAttachment()
+            : <a class="el"
+                 href="d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html#a23007466457933512c7d5845c8405ca4">CommandControlledUser</a>
+        </li>
+    </ul>
+
+
+    <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
 <li>saveUserConfig()
 : <a class="el" href="d3/d67/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1SqliteUserConfigDataProvider.html#a045b0d51d1c90adee18a072c70fdd3ea">SqliteUserConfigDataProvider</a>
 , <a class="el" href="d2/d55/interfacepemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfigDataProvider.html#a045b0d51d1c90adee18a072c70fdd3ea">UserConfigDataProvider</a>
@@ -446,6 +511,10 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>setMaxUndoQueue()
 : <a class="el" href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#a10582328c775c015d536e5858168c06d">UserConfig</a>
 </li>
+    <li>setOp()
+        : <a class="el"
+             href="d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html#aeb311f00222005faca51d0a0fe4f0c64">CommandControlledUser</a>
+    </li>
 <li>setRadius()
 : <a class="el" href="d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a8bc49e5c1c1e748b8255b7c3ed3b7d1f">CylinderSpace</a>
 , <a class="el" href="dd/d74/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1SphereSpace.html#a8bc49e5c1c1e748b8255b7c3ed3b7d1f">SphereSpace</a>
@@ -481,6 +550,10 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 
 <h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
+    <li>undo()
+        : <a class="el"
+             href="d9/dfd/interfacepemapmodder_1_1worldeditart_1_1libworldedit_1_1action_1_1Action.html#a0347027efc0e46047792065615ac94eb">Action</a>
+    </li>
 <li>unserialize()
 : <a class="el" href="db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#ac2f3a0997c46fd9bb24fe4190f738eb0">CuboidSpace</a>
 , <a class="el" href="d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#ac2f3a0997c46fd9bb24fe4190f738eb0">CylinderSpace</a>

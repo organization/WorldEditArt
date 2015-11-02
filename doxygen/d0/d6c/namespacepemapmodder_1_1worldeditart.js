@@ -1,5 +1,6 @@
 var namespacepemapmodder_1_1worldeditart =
 [
+    ["cmd", "d9/dfe/namespacepemapmodder_1_1worldeditart_1_1cmd.html", "d9/dfe/namespacepemapmodder_1_1worldeditart_1_1cmd"],
     [ "libworldedit", "da/d56/namespacepemapmodder_1_1worldeditart_1_1libworldedit.html", "da/d56/namespacepemapmodder_1_1worldeditart_1_1libworldedit" ],
     [ "provider", "de/d28/namespacepemapmodder_1_1worldeditart_1_1provider.html", "de/d28/namespacepemapmodder_1_1worldeditart_1_1provider" ],
     [ "user", "df/da2/namespacepemapmodder_1_1worldeditart_1_1user.html", "df/da2/namespacepemapmodder_1_1worldeditart_1_1user" ],

@@ -1,5 +1,6 @@
 var dir_0dfb3965f9dadd84255140a9e86a9d32 =
 [
+    ["cmd", "dir_bef7c2c5d1ca7bedbdf30cc41a7fd380.html", "dir_bef7c2c5d1ca7bedbdf30cc41a7fd380"],
     [ "libworldedit", "dir_4c42f43621ddfe945570f5774e07df99.html", "dir_4c42f43621ddfe945570f5774e07df99" ],
     [ "provider", "dir_564d22622e9acbab6771efb4e24771e8.html", "dir_564d22622e9acbab6771efb4e24771e8" ],
     [ "user", "dir_3397be5b290c605cbafedb42cf165047.html", "dir_3397be5b290c605cbafedb42cf165047" ],

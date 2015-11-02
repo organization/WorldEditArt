@@ -1,5 +1,9 @@
 var hierarchy =
 [
+    ["Action", "d9/dfd/interfacepemapmodder_1_1worldeditart_1_1libworldedit_1_1action_1_1Action.html", null],
+    ["Command", "docs\html\doxygen/d8/d9d/classpocketmine_1_1command_1_1Command.html", [
+        ["WorldEditArtCommand", "d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html", null]
+    ]],
     [ "CommandExecutor", "docs\html\doxygen/d5/dd0/interfacepocketmine_1_1command_1_1CommandExecutor.html", [
       [ "Plugin", "docs\html\doxygen/dc/d75/interfacepocketmine_1_1plugin_1_1Plugin.html", [
         [ "PluginBase", "docs\html\doxygen/de/d14/classpocketmine_1_1plugin_1_1PluginBase.html", [
@@ -11,6 +15,17 @@ var hierarchy =
       [ "SessionManager", "d4/d29/classpemapmodder_1_1worldeditart_1_1SessionManager.html", null ]
     ] ],
     [ "OrderedObjectPool", "d2/ded/classpemapmodder_1_1worldeditart_1_1utils_1_1OrderedObjectPool.html", null ],
+    ["PluginIdentifiableCommand", "docs\html\doxygen/da/dbc/interfacepocketmine_1_1command_1_1PluginIdentifiableCommand.html", [
+        ["WorldEditArtCommand", "d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html", null]
+    ]],
+    ["ServerOperator", "docs\html\doxygen/dc/d0a/interfacepocketmine_1_1permission_1_1ServerOperator.html", [
+        ["Permissible", "docs\html\doxygen/d1/dc2/interfacepocketmine_1_1permission_1_1Permissible.html", [
+            ["User", "d8/d9e/classpemapmodder_1_1worldeditart_1_1user_1_1User.html", [
+                ["CommandControlledUser", "d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html", null],
+                ["PlayerSession", "d4/d28/classpemapmodder_1_1worldeditart_1_1user_1_1PlayerSession.html", null]
+            ]]
+        ]]
+    ]],
     [ "Threaded", "docs\html\doxygen/d1/d8c/classThreaded.html", [
       [ "Collectable", "docs\html\doxygen/d8/daa/classCollectable.html", [
         [ "AsyncTask", "docs\html\doxygen/d7/d67/classpocketmine_1_1scheduler_1_1AsyncTask.html", [
@@ -18,10 +33,6 @@ var hierarchy =
           [ "ReportErrorTask", "d5/d25/classpemapmodder_1_1worldeditart_1_1utils_1_1ReportErrorTask.html", null ]
         ] ]
       ] ]
-    ] ],
-    [ "User", "d8/d9e/classpemapmodder_1_1worldeditart_1_1user_1_1User.html", [
-      [ "CommandControlledUser", "d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html", null ],
-      [ "PlayerSession", "d4/d28/classpemapmodder_1_1worldeditart_1_1user_1_1PlayerSession.html", null ]
     ] ],
     [ "UserConfig", "de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html", null ],
     [ "UserConfigDataProvider", "d2/d55/interfacepemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfigDataProvider.html", [

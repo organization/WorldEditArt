@@ -38,8 +38,8 @@ var searchData=
   ['shears',['Shears',['docs\html\doxygen/d0/d22/classpocketmine_1_1item_1_1Shears.html',1,'pocketmine::item']]],
   ['sheep',['Sheep',['docs\html\doxygen/d3/d8e/classpocketmine_1_1entity_1_1Sheep.html',1,'pocketmine::entity']]],
   ['short',['Short',['docs\html\doxygen/dd/dbc/classpocketmine_1_1nbt_1_1tag_1_1Short.html',1,'pocketmine::nbt::tag']]],
-  ['sign',['Sign',['docs\html\doxygen/db/d9e/classpocketmine_1_1tile_1_1Sign.html',1,'pocketmine::tile']]],
   ['sign',['Sign',['docs\html\doxygen/d9/d56/classpocketmine_1_1item_1_1Sign.html',1,'pocketmine::item']]],
+  ['sign', ['Sign', ['docs\html\doxygen/db/d9e/classpocketmine_1_1tile_1_1Sign.html', 1, 'pocketmine::tile']]],
   ['signchangeevent',['SignChangeEvent',['docs\html\doxygen/dc/d63/classpocketmine_1_1event_1_1block_1_1SignChangeEvent.html',1,'pocketmine::event::block']]],
   ['signpost',['SignPost',['docs\html\doxygen/d3/da7/classpocketmine_1_1block_1_1SignPost.html',1,'pocketmine::block']]],
   ['silverfish',['Silverfish',['docs\html\doxygen/d8/da7/classpocketmine_1_1entity_1_1Silverfish.html',1,'pocketmine::entity']]],
@@ -54,8 +54,8 @@ var searchData=
   ['smallmountainsbiome',['SmallMountainsBiome',['docs\html\doxygen/d5/d72/classpocketmine_1_1level_1_1generator_1_1normal_1_1biome_1_1SmallMountainsBiome.html',1,'pocketmine::level::generator::normal::biome']]],
   ['smokeparticle',['SmokeParticle',['docs\html\doxygen/d8/d25/classpocketmine_1_1level_1_1particle_1_1SmokeParticle.html',1,'pocketmine::level::particle']]],
   ['snow',['Snow',['docs\html\doxygen/d3/d7e/classpocketmine_1_1block_1_1Snow.html',1,'pocketmine::block']]],
-  ['snowball',['Snowball',['docs\html\doxygen/db/d15/classpocketmine_1_1entity_1_1Snowball.html',1,'pocketmine::entity']]],
   ['snowball',['Snowball',['docs\html\doxygen/d1/d74/classpocketmine_1_1item_1_1Snowball.html',1,'pocketmine::item']]],
+  ['snowball', ['Snowball', ['docs\html\doxygen/db/d15/classpocketmine_1_1entity_1_1Snowball.html', 1, 'pocketmine::entity']]],
   ['snowlayer',['SnowLayer',['docs\html\doxygen/db/dca/classpocketmine_1_1block_1_1SnowLayer.html',1,'pocketmine::block']]],
   ['snowybiome',['SnowyBiome',['docs\html\doxygen/df/db7/classpocketmine_1_1level_1_1generator_1_1normal_1_1biome_1_1SnowyBiome.html',1,'pocketmine::level::generator::normal::biome']]],
   ['solid',['Solid',['docs\html\doxygen/de/dc3/classpocketmine_1_1block_1_1Solid.html',1,'pocketmine::block']]],
@@ -98,7 +98,7 @@ var searchData=
   ['stopcommand',['StopCommand',['docs\html\doxygen/d5/d06/classpocketmine_1_1command_1_1defaults_1_1StopCommand.html',1,'pocketmine::command::defaults']]],
   ['string',['String',['docs\html\doxygen/d4/d6a/classpocketmine_1_1nbt_1_1tag_1_1String.html',1,'pocketmine::nbt::tag']]],
   ['stringoutofboundsexception',['StringOutOfBoundsException',['docs\html\doxygen/d9/dfc/classStringOutOfBoundsException.html',1,'']]],
-  ['sugarcane',['Sugarcane',['docs\html\doxygen/d7/d54/classpocketmine_1_1item_1_1Sugarcane.html',1,'pocketmine::item']]],
   ['sugarcane',['Sugarcane',['docs\html\doxygen/dd/d68/classpocketmine_1_1block_1_1Sugarcane.html',1,'pocketmine::block']]],
+  ['sugarcane', ['Sugarcane', ['docs\html\doxygen/d7/d54/classpocketmine_1_1item_1_1Sugarcane.html', 1, 'pocketmine::item']]],
   ['swampbiome',['SwampBiome',['docs\html\doxygen/dd/de6/classpocketmine_1_1level_1_1generator_1_1normal_1_1biome_1_1SwampBiome.html',1,'pocketmine::level::generator::normal::biome']]]
 ];
