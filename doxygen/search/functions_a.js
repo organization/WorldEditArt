@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['join',['join',['../d0/d51/classThread.html#aa99149be8621fb1b53890ac267e504ef',1,'Thread']]]
+  ['quit',['quit',['../d4/d29/classpemapmodder_1_1worldeditart_1_1SessionManager.html#ada9e162a3a316cdb9eb8bbd5767d8ab0',1,'pemapmodder::worldeditart::SessionManager']]]
 ];

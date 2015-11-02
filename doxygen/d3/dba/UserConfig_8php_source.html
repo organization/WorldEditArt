@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="../../namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="../../annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="../../files.html"><span>Files</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="../../files.html"><span>File&#160;List</span></a></li>
-      <li><a href="../../globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -151,7 +149,7 @@ $(document).ready(function(){initNavTree('d3/dba/UserConfig_8php_source.html','.
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">private</span> $tickEditThreshold;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#a02d0d556c5cbad4ccd5f6a67189099cf">   52</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#a02d0d556c5cbad4ccd5f6a67189099cf">__construct</a>(<a class="code" href="../../d4/d07/classpemapmodder_1_1worldeditart_1_1WorldEditArt.html">WorldEditArt</a> $main){</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        $c = $main-&gt;<a class="code" href="../../de/d14/classpocketmine_1_1plugin_1_1PluginBase.html#a628300eb8464467d9344c7c59cc8770b">getConfig</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        $c = $main-&gt;getConfig();</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        $this-&gt;wandId = $c-&gt;getNested(<span class="stringliteral">&quot;defaultConfig.wand.id&quot;</span>, 294);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        $this-&gt;wandDamage = $c-&gt;getNested(<span class="stringliteral">&quot;defaultConfig.wand.damage&quot;</span>, self::UNSPECIFIED_INT);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        $this-&gt;jumpId = $c-&gt;getNested(<span class="stringliteral">&quot;defaultConfig.jump.id&quot;</span>, 345);</div>
@@ -242,7 +240,6 @@ $(document).ready(function(){initNavTree('d3/dba/UserConfig_8php_source.html','.
 <div class="ttc" id="classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig_html_acb1f7cf99dbf0602205333d72408a37f"><div class="ttname"><a href="../../de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#acb1f7cf99dbf0602205333d72408a37f">pemapmodder\worldeditart\provider\userconfig\UserConfig\getWandDamage</a></div><div class="ttdeci">getWandDamage()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dba/UserConfig_8php_source.html#l00074">UserConfig.php:74</a></div></div>
 <div class="ttc" id="classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig_html_ac826aa5c4f9e277df1550437748c218b"><div class="ttname"><a href="../../de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#ac826aa5c4f9e277df1550437748c218b">pemapmodder\worldeditart\provider\userconfig\UserConfig\getSudoRequired</a></div><div class="ttdeci">getSudoRequired()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dba/UserConfig_8php_source.html#l00098">UserConfig.php:98</a></div></div>
 <div class="ttc" id="classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig_html_a3a018c85188089f1288a811927a21153"><div class="ttname"><a href="../../de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#a3a018c85188089f1288a811927a21153">pemapmodder\worldeditart\provider\userconfig\UserConfig\UNSPECIFIED_INT</a></div><div class="ttdeci">const UNSPECIFIED_INT</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dba/UserConfig_8php_source.html#l00021">UserConfig.php:21</a></div></div>
-<div class="ttc" id="classpocketmine_1_1plugin_1_1PluginBase_html_a628300eb8464467d9344c7c59cc8770b"><div class="ttname"><a href="../../de/d14/classpocketmine_1_1plugin_1_1PluginBase.html#a628300eb8464467d9344c7c59cc8770b">pocketmine\plugin\PluginBase\getConfig</a></div><div class="ttdeci">getConfig()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d9d/PluginBase_8php_source.html#l00238">PluginBase.php:238</a></div></div>
 <div class="ttc" id="classpemapmodder_1_1worldeditart_1_1WorldEditArt_html"><div class="ttname"><a href="../../d4/d07/classpemapmodder_1_1worldeditart_1_1WorldEditArt.html">pemapmodder\worldeditart\WorldEditArt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d37/WorldEditArt_8php_source.html#l00023">WorldEditArt.php:23</a></div></div>
 <div class="ttc" id="classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig_html_a52c498d6fe160ecc47f93173f606b522"><div class="ttname"><a href="../../de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#a52c498d6fe160ecc47f93173f606b522">pemapmodder\worldeditart\provider\userconfig\UserConfig\getDefaultSudoSession</a></div><div class="ttdeci">getDefaultSudoSession()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dba/UserConfig_8php_source.html#l00104">UserConfig.php:104</a></div></div>
 <div class="ttc" id="classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig_html_a6e4ac580b0d7e5b5d4c124889b8eeb2c"><div class="ttname"><a href="../../de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#a6e4ac580b0d7e5b5d4c124889b8eeb2c">pemapmodder\worldeditart\provider\userconfig\UserConfig\setDefaultSudoSession</a></div><div class="ttdeci">setDefaultSudoSession($defaultSudoSession)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dba/UserConfig_8php_source.html#l00158">UserConfig.php:158</a></div></div>

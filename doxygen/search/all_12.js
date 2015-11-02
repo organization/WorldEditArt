@@ -1,19 +1,7 @@
 var searchData=
 [
-  ['quartz',['Quartz',['../dd/d9b/classpocketmine_1_1block_1_1Quartz.html',1,'pocketmine::block']]],
-  ['quartz',['QUARTZ',['../df/df8/classpocketmine_1_1item_1_1Item.html#aa91e2c20cd0e69e741d73bf239ee3a0c',1,'pocketmine::item::Item']]],
-  ['quartz_2ephp',['Quartz.php',['../d5/d97/Quartz_8php.html',1,'']]],
-  ['quartz_5fblock',['QUARTZ_BLOCK',['../d9/de8/classpocketmine_1_1block_1_1Block.html#ab044eecbbda9f6f0f58e49f2572e79ae',1,'pocketmine\block\Block\QUARTZ_BLOCK()'],['../df/df8/classpocketmine_1_1item_1_1Item.html#ab044eecbbda9f6f0f58e49f2572e79ae',1,'pocketmine\item\Item\QUARTZ_BLOCK()']]],
-  ['quartz_5fstairs',['QUARTZ_STAIRS',['../d9/de8/classpocketmine_1_1block_1_1Block.html#a7fb5fa82c69553a0ebfa2498e34d86de',1,'pocketmine\block\Block\QUARTZ_STAIRS()'],['../df/df8/classpocketmine_1_1item_1_1Item.html#a7fb5fa82c69553a0ebfa2498e34d86de',1,'pocketmine\item\Item\QUARTZ_STAIRS()']]],
-  ['quartzstairs',['QuartzStairs',['../de/d6f/classpocketmine_1_1block_1_1QuartzStairs.html',1,'pocketmine::block']]],
-  ['quartzstairs_2ephp',['QuartzStairs.php',['../de/daf/QuartzStairs_8php.html',1,'']]],
-  ['query_5ffetch_5fall',['QUERY_FETCH_ALL',['../d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a9b3d98ed49d143b52ab8f248cea727e2',1,'pemapmodder::worldeditart::provider::AsyncQuery']]],
-  ['query_5ffetch_5fassoc',['QUERY_FETCH_ASSOC',['../d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#aab5536e2b22653e4ceaf9daa9e96b61d',1,'pemapmodder::worldeditart::provider::AsyncQuery']]],
-  ['query_5finsert',['QUERY_INSERT',['../d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#abc0c228152333296126abccae96dfd98',1,'pemapmodder::worldeditart::provider::AsyncQuery']]],
-  ['query_5fneglect',['QUERY_NEGLECT',['../d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a89ea85215ac3bb013f0ec1db69e53a48',1,'pemapmodder::worldeditart::provider::AsyncQuery']]],
-  ['queryhandler',['QueryHandler',['../d7/ddd/classpocketmine_1_1network_1_1query_1_1QueryHandler.html',1,'pocketmine::network::query']]],
-  ['queryhandler_2ephp',['QueryHandler.php',['../d8/d0f/QueryHandler_8php.html',1,'']]],
-  ['queryregenerateevent',['QueryRegenerateEvent',['../d2/d6a/classpocketmine_1_1event_1_1server_1_1QueryRegenerateEvent.html',1,'pocketmine::event::server']]],
-  ['queryregenerateevent_2ephp',['QueryRegenerateEvent.php',['../de/d88/QueryRegenerateEvent_8php.html',1,'']]],
-  ['quit',['quit',['../d4/d29/classpemapmodder_1_1worldeditart_1_1SessionManager.html#ada9e162a3a316cdb9eb8bbd5767d8ab0',1,'pemapmodder\worldeditart\SessionManager\quit()'],['../d8/da3/classpocketmine_1_1Thread.html#a24c9a28cada7b725be33705a57dff8e7',1,'pocketmine\Thread\quit()'],['../d4/d3b/classpocketmine_1_1Worker.html#a24c9a28cada7b725be33705a57dff8e7',1,'pocketmine\Worker\quit()']]]
+  ['zone',['Zone',['../dc/d6d/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1Zone.html',1,'pemapmodder::worldeditart::provider::zone']]],
+  ['zone_2ephp',['Zone.php',['../d5/d67/Zone_8php.html',1,'']]],
+  ['zonedataprovider',['ZoneDataProvider',['../dd/d4f/interfacepemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1ZoneDataProvider.html',1,'pemapmodder::worldeditart::provider::zone']]],
+  ['zonedataprovider_2ephp',['ZoneDataProvider.php',['../db/d8a/ZoneDataProvider_8php.html',1,'']]]
 ];

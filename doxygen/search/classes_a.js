@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['kickcommand',['KickCommand',['../d7/d29/classpocketmine_1_1command_1_1defaults_1_1KickCommand.html',1,'pocketmine::command::defaults']]],
-  ['killcommand',['KillCommand',['../d3/de1/classpocketmine_1_1command_1_1defaults_1_1KillCommand.html',1,'pocketmine::command::defaults']]]
+  ['zone',['Zone',['../dc/d6d/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1Zone.html',1,'pemapmodder::worldeditart::provider::zone']]],
+  ['zonedataprovider',['ZoneDataProvider',['../dd/d4f/interfacepemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1ZoneDataProvider.html',1,'pemapmodder::worldeditart::provider::zone']]]
 ];
