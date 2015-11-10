@@ -1,15 +1,409 @@
 <html>
-  <head>
-    <title>WorldEditArt User Guide</title>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        
-      });
-    </script>
-  </head>
-  <body>
+<head>
+	<title>WorldEditArt Guide</title>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script>
+		var runtimeAutoId = 0;
 
-  </body>
+		/**
+		 * Registers a new spoiler.
+		 * @param el
+		 * @returns jQuery $(div of spoiler button)
+		 */
+		function registerSpoiler(el){
+			el.addClass("spoiler");
+			var id = runtimeAutoId++;
+			var before = $("<div><button class='button spoiler-opener' data-spoiler-name='" + id + "' onclick='switchSpoiler(" + id + ")'>Show</button></div>");
+			before.insertBefore(el);
+			el.attr("data-spoiler-name", id);
+			el.css("display", "none");
+			return before;
+		}
+
+		/**
+		 * Toggles a spoiler.
+		 * @param id
+		 * @returns {boolean} true if spoiler is opened, false if spoiler is closed
+		 */
+		var switchSpoiler = function(id){
+			var el = $(".spoiler[data-spoiler-name='" + id + "']");
+			var opener = $(".spoiler-opener[data-spoiler-name='" + id + "']");
+			if(el.css("display") === "none"){
+				el.css("display", "block");
+				opener.text("Hide");
+				return true;
+			}
+			el.css("display", "none");
+			opener.text("Show");
+			return false;
+		};
+
+		function Tree(name, id){
+			this.name = name;
+			this.id = id;
+			this.children = {};
+		}
+		Tree.prototype.addChild = function(child){
+			this.children[child.name] = child;
+		};
+		Tree.prototype.toOlJQuery = function(){
+			var out = $('<li><a href="#' + this.id + '">' + this.name + '</a></li>');
+			var $ol = $("<ol></ol>");
+			for(var name in this.children){
+				if(this.children.hasOwnProperty(name)){
+					this.children[name].toOlJQuery().appendTo($ol);
+				}
+			}
+			$ol.appendTo(out);
+			return out;
+		};
+
+		var tree;
+		var trees = {};
+
+		$(document).ready(function(){
+			var maxDepth = 12;
+			var nextAnchorId = 0;
+			$(".tree").each(function(){
+				var $this = $(this);
+				var name = $this.attr("data-name");
+				var parents = $this.parents(".tree");
+				var anchorId = "anchor-auto-" + (nextAnchorId++);
+				$this.prepend('<a name="' + anchorId + '"></a>');
+				if(parents.length == 0){
+					tree = new Tree(name, anchorId);
+					trees[name] = tree;
+				}else{
+					var $parent = $(parents[0]);
+					var parentTree = trees[$parent.attr("data-name")];
+					var t;
+					parentTree.addChild(t = new Tree(name, anchorId));
+					trees[name] = t;
+				}
+				var depth = parents.length;
+				maxDepth = Math.max(maxDepth, depth);
+				var $div = registerSpoiler($this);
+				$div.prepend(name + "&nbsp;");
+				$div.attr("data-depth", depth);
+				$div.addClass("heading");
+				if(depth > 0){
+					$div.before("<hr>");
+				}
+				$div.after("<br>");
+			});
+			$(".heading").each(function(){
+				var $this = $(this);
+				var depth = $this.attr("data-depth");
+				$this.css("font-size", (32 - Math.floor(depth / maxDepth * 20)) + "px");
+			});
+			switchSpoiler("0");
+			var $contents = $("#contents");
+			$contents.append("<p style='text-align: center;'><strong>Contents</strong></p>");
+			var $ol = $("<ol></ol>");
+			tree.toOlJQuery().appendTo($ol);
+			$contents.append($ol);
+		});
+	</script>
+	<style>
+		body{
+			font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+			margin:      20px 50px;
+		}
+		/*noinspection CssUnusedSymbol*/
+		.spoiler{
+			border:        groove;
+			border-radius: 10px;
+			padding:       10px 10px 10px 20px;
+		}
+		.note{
+			font-style: italic;
+		}
+		#contents{
+			border:        ridge;
+			border-radius: 5px;
+			width:         500px;
+		}
+	</style>
+</head>
+<body>
+<div id="contents"></div>
+<img src='plugin_icon.png'>
+
+<div class="tree" data-name="WorldEditArt Guide">
+	<div class="tree" data-name="License">
+		This software is licensed with GNU Lesser General Public License version 3.
+		<pre>
+WorldEditArt
+
+Copyright (C) 2015 PEMapModder
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+		</pre>
+		<div class="tree" data-name="Full license">
+			<pre>
+                   GNU LESSER GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. &lt;http://fsf.org/&gt;
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+
+  This version of the GNU Lesser General Public License incorporates
+the terms and conditions of version 3 of the GNU General Public
+License, supplemented by the additional permissions listed below.
+
+  0. Additional Definitions.
+
+  As used herein, "this License" refers to version 3 of the GNU Lesser
+General Public License, and the "GNU GPL" refers to version 3 of the GNU
+General Public License.
+
+  "The Library" refers to a covered work governed by this License,
+other than an Application or a Combined Work as defined below.
+
+  An "Application" is any work that makes use of an interface provided
+by the Library, but which is not otherwise based on the Library.
+Defining a subclass of a class defined by the Library is deemed a mode
+of using an interface provided by the Library.
+
+  A "Combined Work" is a work produced by combining or linking an
+Application with the Library.  The particular version of the Library
+with which the Combined Work was made is also called the "Linked
+Version".
+
+  The "Minimal Corresponding Source" for a Combined Work means the
+Corresponding Source for the Combined Work, excluding any source code
+for portions of the Combined Work that, considered in isolation, are
+based on the Application, and not on the Linked Version.
+
+  The "Corresponding Application Code" for a Combined Work means the
+object code and/or source code for the Application, including any data
+and utility programs needed for reproducing the Combined Work from the
+Application, but excluding the System Libraries of the Combined Work.
+
+  1. Exception to Section 3 of the GNU GPL.
+
+  You may convey a covered work under sections 3 and 4 of this License
+without being bound by section 3 of the GNU GPL.
+
+  2. Conveying Modified Versions.
+
+  If you modify a copy of the Library, and, in your modifications, a
+facility refers to a function or data to be supplied by an Application
+that uses the facility (other than as an argument passed when the
+facility is invoked), then you may convey a copy of the modified
+version:
+
+   a) under this License, provided that you make a good faith effort to
+   ensure that, in the event an Application does not supply the
+   function or data, the facility still operates, and performs
+   whatever part of its purpose remains meaningful, or
+
+   b) under the GNU GPL, with none of the additional permissions of
+   this License applicable to that copy.
+
+  3. Object Code Incorporating Material from Library Header Files.
+
+  The object code form of an Application may incorporate material from
+a header file that is part of the Library.  You may convey such object
+code under terms of your choice, provided that, if the incorporated
+material is not limited to numerical parameters, data structure
+layouts and accessors, or small macros, inline functions and templates
+(ten or fewer lines in length), you do both of the following:
+
+   a) Give prominent notice with each copy of the object code that the
+   Library is used in it and that the Library and its use are
+   covered by this License.
+
+   b) Accompany the object code with a copy of the GNU GPL and this license
+   document.
+
+  4. Combined Works.
+
+  You may convey a Combined Work under terms of your choice that,
+taken together, effectively do not restrict modification of the
+portions of the Library contained in the Combined Work and reverse
+engineering for debugging such modifications, if you also do each of
+the following:
+
+   a) Give prominent notice with each copy of the Combined Work that
+   the Library is used in it and that the Library and its use are
+   covered by this License.
+
+   b) Accompany the Combined Work with a copy of the GNU GPL and this license
+   document.
+
+   c) For a Combined Work that displays copyright notices during
+   execution, include the copyright notice for the Library among
+   these notices, as well as a reference directing the user to the
+   copies of the GNU GPL and this license document.
+
+   d) Do one of the following:
+
+       0) Convey the Minimal Corresponding Source under the terms of this
+       License, and the Corresponding Application Code in a form
+       suitable for, and under terms that permit, the user to
+       recombine or relink the Application with a modified version of
+       the Linked Version to produce a modified Combined Work, in the
+       manner specified by section 6 of the GNU GPL for conveying
+       Corresponding Source.
+
+       1) Use a suitable shared library mechanism for linking with the
+       Library.  A suitable mechanism is one that (a) uses at run time
+       a copy of the Library already present on the user's computer
+       system, and (b) will operate properly with a modified version
+       of the Library that is interface-compatible with the Linked
+       Version.
+
+   e) Provide Installation Information, but only if you would otherwise
+   be required to provide such information under section 6 of the
+   GNU GPL, and only to the extent that such information is
+   necessary to install and execute a modified version of the
+   Combined Work produced by recombining or relinking the
+   Application with a modified version of the Linked Version. (If
+   you use option 4d0, the Installation Information must accompany
+   the Minimal Corresponding Source and Corresponding Application
+   Code. If you use option 4d1, you must provide the Installation
+   Information in the manner specified by section 6 of the GNU GPL
+   for conveying Corresponding Source.)
+
+  5. Combined Libraries.
+
+  You may place library facilities that are a work based on the
+Library side by side in a single library together with other library
+facilities that are not Applications and are not covered by this
+License, and convey such a combined library under terms of your
+choice, if you do both of the following:
+
+   a) Accompany the combined library with a copy of the same work based
+   on the Library, uncombined with any other library facilities,
+   conveyed under the terms of this License.
+
+   b) Give prominent notice with the combined library that part of it
+   is a work based on the Library, and explaining where to find the
+   accompanying uncombined form of the same work.
+
+  6. Revised Versions of the GNU Lesser General Public License.
+
+  The Free Software Foundation may publish revised and/or new versions
+of the GNU Lesser General Public License from time to time. Such new
+versions will be similar in spirit to the present version, but may
+differ in detail to address new problems or concerns.
+
+  Each version is given a distinguishing version number. If the
+Library as you received it specifies that a certain numbered version
+of the GNU Lesser General Public License "or any later version"
+applies to it, you have the option of following the terms and
+conditions either of that published version or of any later version
+published by the Free Software Foundation. If the Library as you
+received it does not specify a version number of the GNU Lesser
+General Public License, you may choose any version of the GNU Lesser
+General Public License ever published by the Free Software Foundation.
+
+  If the Library as you received it specifies that a proxy can decide
+whether future versions of the GNU Lesser General Public License shall
+apply, that proxy's public statement of acceptance of any version is
+permanent authorization for you to choose that version for the
+Library.
+			</pre>
+		</div>
+	</div>
+
+	<div class="tree" data-name="Admin Guide">
+		<div class="note">
+			Installation, permission management, etc.
+		</div>
+	</div>
+
+	<div class="tree" data-name="Player Guide">
+		<div class="note">Concept introduction, commands documentation and user tips</div>
+		<div class="tree" data-name="Introduction">
+			<div class="note">
+				NOTE: This guide is written assuming that administrators use the default configuration of WorldEditArt.
+			</div>
+			<p>
+				WorldEditArt is an innovative plugin. This plugin is not written to <em>"port"</em> the MCPC WorldEdit
+				plugin. This plugin is an entirely original work, except that some commands may follow the tradition of
+				WorldEdit to make it easier for understanding. However, a lot of things are different, so don't rely on
+				your knowledge on WorldEdit.
+			</p>
+		</div>
+		<div class="tree" data-name="Concepts">
+			<p>
+				WorldEditArt introduces a number of new concepts into territory of world editing, as well as introduces
+				a lot of improvements to make world editing easier to understand.</p>
+
+			<div class="tree" data-name="Sudo mode">
+				<p>
+					World editing plugins are known as one of the most dangerous plugins - I can't imagine anything more
+					dangerous than world editing plugins, except plugins that let players evaluate code/shell commands
+					directly (BAD BAD BAD IDEA!!!).<br>
+					It can, even if not intended, have devastating destruction on the terrain. A simple example is that
+					if you accidentally create a
+					cuboid that spans over a large area of the map, you would probably delete everything that had been
+					built on that world, and you may just be unable to undo that (although WorldEditArt
+					<strong>does</strong> try to let you undo, there are still cases that there is irreversible
+					consequence). Therefore, sudo mode is introduced to prevent users from misusing WorldEditArt
+					accidentally, or "my cat clicked on my phone and all blocks to lava" (I'm sure many people have
+					heard that, most of the time excuses).<br>
+					<strong>TL;DR:</strong>
+					Sudo mode lets you use WorldEditArt. When you just joined a server, you cannot use any WorldEditArt
+					commands, except <code>//sudo</code> (of course, only if you got that permission e.g. by getting
+					op). When you do <code>//sudo</code>, you unlock the WorldEditArt commands for yourself, which will
+					be locked once you leave the server (or if you specify sudo session length - read the commands
+					section for more information).
+				</p>
+			</div>
+			<div class="tree" data-name="Safe mode and Under-Construction Zones (UCZs)">
+				<p>
+					We may occasionally encounter these cases:
+				</p>
+				<ul>
+					<li>This server has a bad builder. He said he was building a stadium, so I went there and watched.
+						Then he suddenly suffocated me with blocks!<br>
+						(The builder tried to set blocks of an area without noticing that a player entered the editing
+						area)
+					</li>
+					<li>I just clicked an extra zero. Why did the selection get so big?</li>
+				</ul>
+				<p>
+					If you have safe mode enabled, WorldEditArt will not change anything for you for blocks that are not
+					in UCZs.<br>
+					To mark a zone as under-construction:
+				</p>
+				<ol>
+					<li>Make a [selection](#selections).</li>
+					<li>Run the command <code>//uc</code>.</li>
+				</ol>
+				To unmark a zone as under-construction:
+				<ol>
+					<li>Walk into a UCZ.</li>
+					<li>Run the command <code>//uuc</code>.</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<div class="tree" data-name="Developer Guide">
+		<div class="note">API documentation</div>
+	</div>
+	<div class="tree" data-name="Contact">
+		<div class="tree" data-name="IRC"><p> Server: chat.freenode.net:6667<br> Private message: PEMapModder<br>
+			Channel: <code>#pmplugins</code></p></div>
+		<div class="tree" data-name="Gitter">
+			<a href="https://gitter.im/PEMapModder/WorldEditArt?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge">
+				<img src="https://badges.gitter.im/Join%20Chat.svg"
+				     alt="Join the chat at https://gitter.im/PEMapModder/WorldEditArt">
+			</a>
+		</div>
+		<div class="tree" data-name="GitHub issues">
+			<div class="note">Note: use GitHub issues **only** for issue reporting and enhancement suggestions.</div>
+			<a href="https://github.com/PEMapModder/WorldEditArt/issues/new">WorldEditArt Issues</a></div>
+		<div class="tree" data-name="Source code"><a href="https://github.com/PEMapModder/WorldEditArt">GitHub</a></div>
+	</div>
+</div>
+</body>
 </html>
-
