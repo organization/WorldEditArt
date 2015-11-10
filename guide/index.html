@@ -87,7 +87,7 @@
 				$div.attr("data-depth", depth);
 				$div.addClass("heading");
 				if(depth > 0){
-					$div.before("<hr>");
+					$div.before("<br>");
 				}
 				$div.after("<br>");
 			});
@@ -108,6 +108,7 @@
 		body{
 			font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 			margin:      20px 50px;
+			line-height: 150%;
 		}
 		/*noinspection CssUnusedSymbol*/
 		.spoiler{
@@ -390,9 +391,11 @@ Library.
 			</div>
 		</div>
 	</div>
+
 	<div class="tree" data-name="Developer Guide">
 		<div class="note">API documentation</div>
 	</div>
+
 	<div class="tree" data-name="Contact">
 		<div class="tree" data-name="IRC"><p> Server: chat.freenode.net:6667<br> Private message: PEMapModder<br>
 			Channel: <code>#pmplugins</code></p></div>
