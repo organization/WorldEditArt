@@ -13,12 +13,8 @@
  * @author PEMapModder
  */
 
-namespace pemapmodder\worldeditart\provider\userconfig;
+namespace pemapmodder\worldeditart\session;
 
-use pemapmodder\worldeditart\user\User;
+class WorldEditSession{
 
-interface UserConfigDataProvider{
-	public function loadUserConfig(User $user);
-	public function saveUserConfig(User $user, UserConfig $config);
-	public function close();
 }

@@ -15,16 +15,12 @@ namespace pemapmodder\worldeditart;
  * @author PEMapModder
  */
 
-use pemapmodder\worldeditart\provider\userconfig\UserConfigDataProvider;
 use pocketmine\permission\Permission;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Server;
 
 class WorldEditArt extends PluginBase{
 	private static $PLUGIN_NAME = "WorldEditArt";
-
-	/** @var UserConfigDataProvider */
-	private $userConfigDataProvider;
 
 	public function onLoad(){
 		self::$PLUGIN_NAME = $this->getDescription()->getName();
@@ -55,22 +51,6 @@ class WorldEditArt extends PluginBase{
 		$out = stream_get_contents($fh);
 		fclose($fh);
 		return $out;
-	}
-
-	/**
-	 * @return UserConfigDataProvider
-	 */
-	public function getUserConfigDataProvider(){
-		return $this->userConfigDataProvider;
-	}
-	/**
-	 * @param UserConfigDataProvider $userConfigDataProvider
-	 */
-	public function setUserConfigDataProvider($userConfigDataProvider){
-		if($this->userConfigDataProvider !== null){
-			$this->userConfigDataProvider->close();
-		}
-		$this->userConfigDataProvider = $userConfigDataProvider;
 	}
 
 	/**

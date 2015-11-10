@@ -13,15 +13,16 @@
  * @author PEMapModder
  */
 
-namespace pemapmodder\worldeditart\provider\zone;
+namespace pemapmodder\worldeditart;
 
-use pemapmodder\worldeditart\WorldEditArt;
+use pocketmine\event\Listener;
 
-class MysqlZoneDataProvider extends BaseZoneDataProvider{
-	protected function load(WorldEditArt $main){
+class MainEventListener implements Listener{
+	/** @var WorldEditArt */
+	private $main;
 
-	}
-	protected function addZoneImpl(Zone $zone){
-		// TODO: Implement addZoneImpl() method.
+	public function __construct(WorldEditArt $main){
+		$this->main = $main;
+		$main->getServer()->getPluginManager()->registerEvents($this, $main);
 	}
 }
