@@ -25,6 +25,7 @@ var searchData=
   ['wool_2ephp',['Wool.php',['docs\html\doxygen/dd/de2/Wool_8php.html',1,'']]],
   ['workbench_2ephp',['Workbench.php',['docs\html\doxygen/d3/dea/Workbench_8php.html',1,'']]],
   ['worker_2ephp',['Worker.php',['docs\html\doxygen/d3/d87/Worker_8php.html',1,'']]],
-  ['worldeditart_2ephp', ['WorldEditArt.php', ['../d6/d37/WorldEditArt_8php.html', 1, '']]],
-  ['worldeditartcommand_2ephp', ['WorldEditArtCommand.php', ['../d7/dbd/WorldEditArtCommand_8php.html', 1, '']]]
+  ['worldeditart_2ephp',['WorldEditArt.php',['../d6/d37/WorldEditArt_8php.html',1,'']]],
+  ['worldeditartcommand_2ephp',['WorldEditArtCommand.php',['../d7/dbd/WorldEditArtCommand_8php.html',1,'']]],
+  ['worldeditsession_2ephp',['WorldEditSession.php',['../d4/d5b/WorldEditSession_8php.html',1,'']]]
 ];

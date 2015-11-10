@@ -12,7 +12,7 @@ var searchData=
   ['redstoneore',['RedstoneOre',['docs\html\doxygen/dc/d21/classpocketmine_1_1block_1_1RedstoneOre.html',1,'pocketmine::block']]],
   ['redstoneparticle',['RedstoneParticle',['docs\html\doxygen/d7/d80/classpocketmine_1_1level_1_1particle_1_1RedstoneParticle.html',1,'pocketmine::level::particle']]],
   ['regionloader',['RegionLoader',['docs\html\doxygen/d7/d96/classpocketmine_1_1level_1_1format_1_1anvil_1_1RegionLoader.html',1,'pocketmine::level::format::anvil']]],
-  ['regionloader', ['RegionLoader', ['docs\html\doxygen/de/d11/classpocketmine_1_1level_1_1format_1_1mcregion_1_1RegionLoader.html', 1, 'pocketmine::level::format::mcregion']]],
+  ['regionloader',['RegionLoader',['docs\html\doxygen/de/d11/classpocketmine_1_1level_1_1format_1_1mcregion_1_1RegionLoader.html',1,'pocketmine::level::format::mcregion']]],
   ['registeredlistener',['RegisteredListener',['docs\html\doxygen/db/d6d/classpocketmine_1_1plugin_1_1RegisteredListener.html',1,'pocketmine::plugin']]],
   ['reloadcommand',['ReloadCommand',['docs\html\doxygen/d6/da0/classpocketmine_1_1command_1_1defaults_1_1ReloadCommand.html',1,'pocketmine::command::defaults']]],
   ['remoteconsolecommandsender',['RemoteConsoleCommandSender',['docs\html\doxygen/d6/db7/classpocketmine_1_1command_1_1RemoteConsoleCommandSender.html',1,'pocketmine::command']]],

@@ -22,8 +22,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-  "annotated.html",
-  "df/dbf/CuboidSpace_8php.html"
+"annotated.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

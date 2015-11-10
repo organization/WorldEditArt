@@ -12,7 +12,6 @@ var searchData=
   ['baselang_2ephp',['BaseLang.php',['docs\html\doxygen/d6/d27/BaseLang_8php.html',1,'']]],
   ['baselevelprovider_2ephp',['BaseLevelProvider.php',['docs\html\doxygen/d6/d00/BaseLevelProvider_8php.html',1,'']]],
   ['basetransaction_2ephp',['BaseTransaction.php',['docs\html\doxygen/d4/d83/BaseTransaction_8php.html',1,'']]],
-  ['basezonedataprovider_2ephp',['BaseZoneDataProvider.php',['../d3/d7a/BaseZoneDataProvider_8php.html',1,'']]],
   ['batchpacket_2ephp',['BatchPacket.php',['docs\html\doxygen/d4/dc7/BatchPacket_8php.html',1,'']]],
   ['batsound_2ephp',['BatSound.php',['docs\html\doxygen/d3/d0d/BatSound_8php.html',1,'']]],
   ['bed_2ephp',['Bed.php',['docs\html\doxygen/d2/d80/block_2Bed_8php.html',1,'(Global Namespace)'],['docs\html\doxygen/db/d27/item_2Bed_8php.html',1,'(Global Namespace)']]],

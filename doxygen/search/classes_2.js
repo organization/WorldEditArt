@@ -49,7 +49,6 @@ var searchData=
   ['collectable',['Collectable',['docs\html\doxygen/d8/daa/classCollectable.html',1,'']]],
   ['colorable',['Colorable',['docs\html\doxygen/de/d60/interfacepocketmine_1_1entity_1_1Colorable.html',1,'pocketmine::entity']]],
   ['command',['Command',['docs\html\doxygen/d8/d9d/classpocketmine_1_1command_1_1Command.html',1,'pocketmine::command']]],
-  ['commandcontrolleduser',['CommandControlledUser',['../d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html',1,'pemapmodder::worldeditart::user']]],
   ['commandexecutor',['CommandExecutor',['docs\html\doxygen/d5/dd0/interfacepocketmine_1_1command_1_1CommandExecutor.html',1,'pocketmine::command']]],
   ['commandmap',['CommandMap',['docs\html\doxygen/d0/db5/interfacepocketmine_1_1command_1_1CommandMap.html',1,'pocketmine::command']]],
   ['commandreader',['CommandReader',['docs\html\doxygen/d6/d0d/classpocketmine_1_1command_1_1CommandReader.html',1,'pocketmine::command']]],

@@ -61,8 +61,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
                onmouseout="return searchBox.OnSearchSelectHide()"
                alt=""/>
           <input type="text" id="MSearchField" value="Search" accesskey="S"
-               onfocus="searchBox.OnSearchFieldFocus(true)"
-               onblur="searchBox.OnSearchFieldFocus(false)"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
                onkeyup="searchBox.OnSearchFieldChange(event)"/>
           </span><span class="right">
             <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
@@ -86,7 +86,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;"
+  <div id="splitbar" style="-moz-user-select:none;" 
        class="ui-resizable-handle">
   </div>
 </div>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('annotated.html','');});
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0"
+<iframe src="javascript:void(0)" frameborder="0" 
         name="MSearchResults" id="MSearchResults">
 </iframe>
 </div>
@@ -117,234 +117,23 @@ $(document).ready(function(){initNavTree('annotated.html','');});
 <div class="levels">[detail level <span onclick="javascript:toggleLevel(1);">1</span><span onclick="javascript:toggleLevel(2);">2</span><span onclick="javascript:toggleLevel(3);">3</span><span onclick="javascript:toggleLevel(4);">4</span><span onclick="javascript:toggleLevel(5);">5</span>]</div><table class="directory">
 <tr id="row_0_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_0_" class="arrow" onclick="toggleFolder('0_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d3/d9d/namespacepemapmodder.html" target="_self">pemapmodder</a></td><td class="desc"></td></tr>
 <tr id="row_0_0_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_0_" class="arrow" onclick="toggleFolder('0_0_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d0/d6c/namespacepemapmodder_1_1worldeditart.html" target="_self">worldeditart</a></td><td class="desc"></td></tr>
-    <tr id="row_0_0_0_" class="even">
-        <td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span id="arr_0_0_0_"
-                                                                                            class="arrow"
-                                                                                            onclick="toggleFolder('0_0_0_')">&#9660;</span><span
-                class="icona"><span class="icon">N</span></span><a class="el"
-                                                                   href="d9/dfe/namespacepemapmodder_1_1worldeditart_1_1cmd.html"
-                                                                   target="_self">cmd</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_0_0_">
-        <td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span
-                class="icon">C</span></span><a class="el"
-                                               href="d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html"
-                                               target="_self">WorldEditArtCommand</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_1_" class="even">
-        <td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span id="arr_0_0_1_"
-                                                                                            class="arrow"
-                                                                                            onclick="toggleFolder('0_0_1_')">&#9660;</span><span
-                class="icona"><span class="icon">N</span></span><a class="el"
-                                                                   href="da/d56/namespacepemapmodder_1_1worldeditart_1_1libworldedit.html"
-                                                                   target="_self">libworldedit</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_1_0_">
-        <td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span id="arr_0_0_1_0_"
-                                                                                            class="arrow"
-                                                                                            onclick="toggleFolder('0_0_1_0_')">&#9660;</span><span
-                class="icona"><span class="icon">N</span></span><a class="el"
-                                                                   href="d2/d1a/namespacepemapmodder_1_1worldeditart_1_1libworldedit_1_1action.html"
-                                                                   target="_self">action</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_1_0_0_" class="even">
-        <td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span
-                class="icon">C</span></span><a class="el"
-                                               href="d9/dfd/interfacepemapmodder_1_1worldeditart_1_1libworldedit_1_1action_1_1Action.html"
-                                               target="_self">Action</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_1_1_">
-        <td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span id="arr_0_0_1_1_"
-                                                                                            class="arrow"
-                                                                                            onclick="toggleFolder('0_0_1_1_')">&#9660;</span><span
-                class="icona"><span class="icon">N</span></span><a class="el"
-                                                                   href="d2/d60/namespacepemapmodder_1_1worldeditart_1_1libworldedit_1_1space.html"
-                                                                   target="_self">space</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_1_1_0_" class="even">
-        <td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span
-                class="icon">C</span></span><a class="el"
-                                               href="db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html"
-                                               target="_self">CuboidSpace</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_1_1_1_">
-        <td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span
-                class="icon">C</span></span><a class="el"
-                                               href="d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html"
-                                               target="_self">CylinderSpace</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_1_1_2_" class="even">
-        <td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span
-                class="icon">C</span></span><a class="el"
-                                               href="df/da6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1Space.html"
-                                               target="_self">Space</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_1_1_3_">
-        <td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span
-                class="icon">C</span></span><a class="el"
-                                               href="dd/d74/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1SphereSpace.html"
-                                               target="_self">SphereSpace</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_2_" class="even">
-        <td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span id="arr_0_0_2_"
-                                                                                            class="arrow"
-                                                                                            onclick="toggleFolder('0_0_2_')">&#9660;</span><span
-                class="icona"><span class="icon">N</span></span><a class="el"
-                                                                   href="de/d28/namespacepemapmodder_1_1worldeditart_1_1provider.html"
-                                                                   target="_self">provider</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_2_0_">
-        <td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span id="arr_0_0_2_0_"
-                                                                                            class="arrow"
-                                                                                            onclick="toggleFolder('0_0_2_0_')">&#9660;</span><span
-                class="icona"><span class="icon">N</span></span><a class="el"
-                                                                   href="d3/dad/namespacepemapmodder_1_1worldeditart_1_1provider_1_1userconfig.html"
-                                                                   target="_self">userconfig</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_2_0_0_" class="even">
-        <td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span
-                class="icon">C</span></span><a class="el"
-                                               href="d3/d67/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1SqliteUserConfigDataProvider.html"
-                                               target="_self">SqliteUserConfigDataProvider</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_2_0_1_">
-        <td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span
-                class="icon">C</span></span><a class="el"
-                                               href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html"
-                                               target="_self">UserConfig</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_2_0_2_" class="even">
-        <td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span
-                class="icon">C</span></span><a class="el"
-                                               href="d2/d55/interfacepemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfigDataProvider.html"
-                                               target="_self">UserConfigDataProvider</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_2_1_">
-        <td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span id="arr_0_0_2_1_"
-                                                                                            class="arrow"
-                                                                                            onclick="toggleFolder('0_0_2_1_')">&#9660;</span><span
-                class="icona"><span class="icon">N</span></span><a class="el"
-                                                                   href="de/de2/namespacepemapmodder_1_1worldeditart_1_1provider_1_1zone.html"
-                                                                   target="_self">zone</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_2_1_0_" class="even">
-        <td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span
-                class="icon">C</span></span><a class="el"
-                                               href="dd/df7/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1BaseZoneDataProvider.html"
-                                               target="_self">BaseZoneDataProvider</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_2_1_1_">
-        <td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span
-                class="icon">C</span></span><a class="el"
-                                               href="d3/d52/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1MysqlZoneDataProvider.html"
-                                               target="_self">MysqlZoneDataProvider</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_2_1_2_" class="even">
-        <td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span
-                class="icon">C</span></span><a class="el"
-                                               href="dc/d6d/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1Zone.html"
-                                               target="_self">Zone</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_2_1_3_">
-        <td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span
-                class="icon">C</span></span><a class="el"
-                                               href="dd/d4f/interfacepemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1ZoneDataProvider.html"
-                                               target="_self">ZoneDataProvider</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_2_2_" class="even">
-        <td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span
-                class="icon">C</span></span><a class="el"
-                                               href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html"
-                                               target="_self">AsyncQuery</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_3_">
-        <td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span id="arr_0_0_3_"
-                                                                                            class="arrow"
-                                                                                            onclick="toggleFolder('0_0_3_')">&#9660;</span><span
-                class="icona"><span class="icon">N</span></span><a class="el"
-                                                                   href="df/da2/namespacepemapmodder_1_1worldeditart_1_1user.html"
-                                                                   target="_self">user</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_3_0_" class="even">
-        <td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span
-                class="icon">C</span></span><a class="el"
-                                               href="d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html"
-                                               target="_self">CommandControlledUser</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_3_1_">
-        <td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span
-                class="icon">C</span></span><a class="el"
-                                               href="d4/d28/classpemapmodder_1_1worldeditart_1_1user_1_1PlayerSession.html"
-                                               target="_self">PlayerSession</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_3_2_" class="even">
-        <td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span
-                class="icon">C</span></span><a class="el"
-                                               href="d8/d9e/classpemapmodder_1_1worldeditart_1_1user_1_1User.html"
-                                               target="_self">User</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_4_">
-        <td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span id="arr_0_0_4_"
-                                                                                            class="arrow"
-                                                                                            onclick="toggleFolder('0_0_4_')">&#9660;</span><span
-                class="icona"><span class="icon">N</span></span><a class="el"
-                                                                   href="d6/d01/namespacepemapmodder_1_1worldeditart_1_1utils.html"
-                                                                   target="_self">utils</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_4_0_" class="even">
-        <td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span
-                class="icon">C</span></span><a class="el"
-                                               href="d2/ded/classpemapmodder_1_1worldeditart_1_1utils_1_1OrderedObjectPool.html"
-                                               target="_self">OrderedObjectPool</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_4_1_">
-        <td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span
-                class="icon">C</span></span><a class="el"
-                                               href="d5/d25/classpemapmodder_1_1worldeditart_1_1utils_1_1ReportErrorTask.html"
-                                               target="_self">ReportErrorTask</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_5_" class="even">
-        <td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span
-                class="icon">C</span></span><a class="el"
-                                               href="d4/d29/classpemapmodder_1_1worldeditart_1_1SessionManager.html"
-                                               target="_self">SessionManager</a></td>
-        <td class="desc"></td>
-    </tr>
-    <tr id="row_0_0_6_">
-        <td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span
-                class="icon">C</span></span><a class="el"
-                                               href="d4/d07/classpemapmodder_1_1worldeditart_1_1WorldEditArt.html"
-                                               target="_self">WorldEditArt</a></td>
-        <td class="desc"></td>
-    </tr>
+<tr id="row_0_0_0_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span id="arr_0_0_0_" class="arrow" onclick="toggleFolder('0_0_0_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d9/dfe/namespacepemapmodder_1_1worldeditart_1_1cmd.html" target="_self">cmd</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_0_0_"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html" target="_self">WorldEditArtCommand</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_1_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span id="arr_0_0_1_" class="arrow" onclick="toggleFolder('0_0_1_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="da/d56/namespacepemapmodder_1_1worldeditart_1_1libworldedit.html" target="_self">libworldedit</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_1_0_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span id="arr_0_0_1_0_" class="arrow" onclick="toggleFolder('0_0_1_0_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d2/d1a/namespacepemapmodder_1_1worldeditart_1_1libworldedit_1_1action.html" target="_self">action</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_1_0_0_" class="even"><td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d9/dfd/interfacepemapmodder_1_1worldeditart_1_1libworldedit_1_1action_1_1Action.html" target="_self">Action</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_1_1_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span id="arr_0_0_1_1_" class="arrow" onclick="toggleFolder('0_0_1_1_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d2/d60/namespacepemapmodder_1_1worldeditart_1_1libworldedit_1_1space.html" target="_self">space</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_1_1_0_" class="even"><td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html" target="_self">CuboidSpace</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_1_1_1_"><td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html" target="_self">CylinderSpace</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_1_1_2_" class="even"><td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="df/da6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1Space.html" target="_self">Space</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_1_1_3_"><td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="dd/d74/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1SphereSpace.html" target="_self">SphereSpace</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_2_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span id="arr_0_0_2_" class="arrow" onclick="toggleFolder('0_0_2_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d6/d79/namespacepemapmodder_1_1worldeditart_1_1session.html" target="_self">session</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_2_0_"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html" target="_self">WorldEditSession</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_3_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span id="arr_0_0_3_" class="arrow" onclick="toggleFolder('0_0_3_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="d6/d01/namespacepemapmodder_1_1worldeditart_1_1utils.html" target="_self">utils</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_3_0_"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d2/ded/classpemapmodder_1_1worldeditart_1_1utils_1_1OrderedObjectPool.html" target="_self">OrderedObjectPool</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_3_1_" class="even"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d5/d25/classpemapmodder_1_1worldeditart_1_1utils_1_1ReportErrorTask.html" target="_self">ReportErrorTask</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_4_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d4/d6d/classpemapmodder_1_1worldeditart_1_1MainEventListener.html" target="_self">MainEventListener</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_5_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d4/d07/classpemapmodder_1_1worldeditart_1_1WorldEditArt.html" target="_self">WorldEditArt</a></td><td class="desc"></td></tr>
 </table>
 </div><!-- directory -->
 </div><!-- contents -->

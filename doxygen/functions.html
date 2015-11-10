@@ -61,8 +61,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
                onmouseout="return searchBox.OnSearchSelectHide()"
                alt=""/>
           <input type="text" id="MSearchField" value="Search" accesskey="S"
-               onfocus="searchBox.OnSearchFieldFocus(true)"
-               onblur="searchBox.OnSearchFieldFocus(false)"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
                onkeyup="searchBox.OnSearchFieldChange(event)"/>
           </span><span class="right">
             <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
@@ -90,21 +90,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="#index_$"><span>$</span></a></li>
       <li><a href="#index__"><span>_</span></a></li>
-      <li><a href="#index_a"><span>a</span></a></li>
-      <li><a href="#index_c"><span>c</span></a></li>
-        <li><a href="#index_e"><span>e</span></a></li>
+      <li><a href="#index_e"><span>e</span></a></li>
       <li><a href="#index_f"><span>f</span></a></li>
       <li><a href="#index_g"><span>g</span></a></li>
-        <li><a href="#index_h"><span>h</span></a></li>
       <li><a href="#index_i"><span>i</span></a></li>
-      <li><a href="#index_l"><span>l</span></a></li>
-      <li><a href="#index_m"><span>m</span></a></li>
       <li><a href="#index_o"><span>o</span></a></li>
-      <li><a href="#index_p"><span>p</span></a></li>
-      <li><a href="#index_q"><span>q</span></a></li>
-        <li><a href="#index_r"><span>r</span></a></li>
+      <li><a href="#index_r"><span>r</span></a></li>
       <li><a href="#index_s"><span>s</span></a></li>
-      <li><a href="#index_t"><span>t</span></a></li>
       <li class="current"><a href="#index_u"><span>u</span></a></li>
     </ul>
   </div>
@@ -115,7 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;"
+  <div id="splitbar" style="-moz-user-select:none;" 
        class="ui-resizable-handle">
   </div>
 </div>
@@ -132,7 +124,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0"
+<iframe src="javascript:void(0)" frameborder="0" 
         name="MSearchResults" id="MSearchResults">
 </iframe>
 </div>
@@ -170,86 +162,22 @@ $(document).ready(function(){initNavTree('functions.html','');});
 
 <h3><a class="anchor" id="index__"></a>- _ -</h3><ul>
 <li>__construct()
-    : <a class="el"
-         href="d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html#af40c91ecb166b1b52e0f70b3e058e7fd">WorldEditArtCommand</a>
-    , <a class="el"
-         href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#afdfa07b860386bab66b7fffd7b951a61">AsyncQuery</a>
-, <a class="el" href="d3/d67/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1SqliteUserConfigDataProvider.html#a02d0d556c5cbad4ccd5f6a67189099cf">SqliteUserConfigDataProvider</a>
-, <a class="el" href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#a02d0d556c5cbad4ccd5f6a67189099cf">UserConfig</a>
-, <a class="el" href="dd/df7/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1BaseZoneDataProvider.html#a02d0d556c5cbad4ccd5f6a67189099cf">BaseZoneDataProvider</a>
-, <a class="el" href="dc/d6d/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1Zone.html#a97b6533cde8c2cf330fe61c41ea12813">Zone</a>
-, <a class="el" href="d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html#a91fe40733147a223e2d6fde7e0e5f64d">CommandControlledUser</a>
-, <a class="el" href="d4/d28/classpemapmodder_1_1worldeditart_1_1user_1_1PlayerSession.html#a4985ebe64af640e1700b8542f72219da">PlayerSession</a>
+: <a class="el" href="d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html#af40c91ecb166b1b52e0f70b3e058e7fd">WorldEditArtCommand</a>
+, <a class="el" href="d4/d6d/classpemapmodder_1_1worldeditart_1_1MainEventListener.html#a02d0d556c5cbad4ccd5f6a67189099cf">MainEventListener</a>
 , <a class="el" href="d2/ded/classpemapmodder_1_1worldeditart_1_1utils_1_1OrderedObjectPool.html#a02d0d556c5cbad4ccd5f6a67189099cf">OrderedObjectPool</a>
 , <a class="el" href="d5/d25/classpemapmodder_1_1worldeditart_1_1utils_1_1ReportErrorTask.html#a59e2f375e5eec0eb8b8da6b7cf49ed07">ReportErrorTask</a>
 </li>
 </ul>
 
 
-<h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
-    <li>addAttachment()
-        : <a class="el"
-             href="d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html#a35759332a05d2d423b34847908ffb47f">CommandControlledUser</a>
-    </li>
-<li>addZone()
-: <a class="el" href="dd/df7/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1BaseZoneDataProvider.html#af6d1b5d352abd40e758de1f7f4a25009">BaseZoneDataProvider</a>
-, <a class="el" href="dd/d4f/interfacepemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1ZoneDataProvider.html#af6d1b5d352abd40e758de1f7f4a25009">ZoneDataProvider</a>
-</li>
-<li>addZoneCallback()
-: <a class="el" href="dd/df7/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1BaseZoneDataProvider.html#a49975c1b557e7a51e8df483e3a923433">BaseZoneDataProvider</a>
-</li>
-<li>addZoneImpl()
-: <a class="el" href="dd/df7/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1BaseZoneDataProvider.html#a301e5e6a0454e77824e9fd5126d61281">BaseZoneDataProvider</a>
-, <a class="el" href="d3/d52/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1MysqlZoneDataProvider.html#a301e5e6a0454e77824e9fd5126d61281">MysqlZoneDataProvider</a>
+<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>execute()
+: <a class="el" href="d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html#a5f26288ddc55fd228084f0b347ad3713">WorldEditArtCommand</a>
 </li>
 </ul>
 
 
-<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
-<li>close()
-: <a class="el" href="d3/d67/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1SqliteUserConfigDataProvider.html#aa69c8bf1f1dcf4e72552efff1fe3e87e">SqliteUserConfigDataProvider</a>
-, <a class="el" href="d2/d55/interfacepemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfigDataProvider.html#aa69c8bf1f1dcf4e72552efff1fe3e87e">UserConfigDataProvider</a>
-</li>
-<li>COLUMN_BOOLEAN
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#acaed44cc81966dd17b1a64bdb8ea670d">AsyncQuery</a>
-</li>
-<li>COLUMN_DOUBLE
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#acf411c1eb35216d72a230362d78d46ad">AsyncQuery</a>
-</li>
-<li>COLUMN_FLOAT
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a76ae7455e4a8faae53856fd651d9e9a0">AsyncQuery</a>
-</li>
-<li>COLUMN_INTEGER
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a5baee1bc951c53ba42544c40037bbd24">AsyncQuery</a>
-</li>
-<li>COLUMN_MYSQL_TIMESTAMP
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a35ec82873a51587cb2c732d5e3dcddf0">AsyncQuery</a>
-</li>
-<li>COLUMN_STRING
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#ab47bcaf8bedd364e0609b51e4db2cc02">AsyncQuery</a>
-</li>
-<li>COLUMN_TIMESTAMP
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a1761d2d9c3251c48807060fc39544f63">AsyncQuery</a>
-</li>
-<li>COLUMN_UNIX_TIMESTAMP
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a43f2ae0543c4bd697091c80e8da4e4b4">AsyncQuery</a>
-</li>
-</ul>
-
-
-    <h3><a class="anchor" id="index_e"></a>- e -</h3>
-    <ul>
-        <li>execute()
-            : <a class="el"
-                 href="d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html#a5f26288ddc55fd228084f0b347ad3713">WorldEditArtCommand</a>
-        </li>
-    </ul>
-
-
-    <h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
-<li>finalize()
-: <a class="el" href="d4/d28/classpemapmodder_1_1worldeditart_1_1user_1_1PlayerSession.html#a9caaa1f5ea6177e55f13ebe7dec2bd60">PlayerSession</a>
-</li>
+<h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
 <li>fromArgs()
 : <a class="el" href="d5/d25/classpemapmodder_1_1worldeditart_1_1utils_1_1ReportErrorTask.html#a821b4e554b6ed3945f37f417ffbf60f8">ReportErrorTask</a>
 </li>
@@ -260,88 +188,23 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>get()
 : <a class="el" href="d2/ded/classpemapmodder_1_1worldeditart_1_1utils_1_1OrderedObjectPool.html#a50e3bfb586b2f42932a6a93f3fbb0828">OrderedObjectPool</a>
 </li>
-<li>getAllRows()
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a7699ac6b9962a4879acdda939af0ada2">AsyncQuery</a>
-</li>
-<li>getAssocRow()
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a09aef4ca403799abe6d05f23f2abf3eb">AsyncQuery</a>
-</li>
 <li>getBaseCenter()
 : <a class="el" href="d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a15f62ba12a5e9334edcee722b2d7b90f">CylinderSpace</a>
-</li>
-<li>getBlockTouchMode()
-: <a class="el" href="d4/d28/classpemapmodder_1_1worldeditart_1_1user_1_1PlayerSession.html#aeb6d75d95bf550458e273c6c17c15572">PlayerSession</a>
 </li>
 <li>getCenter()
 : <a class="el" href="dd/d74/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1SphereSpace.html#a58409a2a3802ee2805e0f1552c6ed9cc">SphereSpace</a>
 </li>
-<li>getDb()
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#aceb656ee5135578ab3a9947252caa772">AsyncQuery</a>
-</li>
-<li>getDefaultSudoSession()
-: <a class="el" href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#a52c498d6fe160ecc47f93173f606b522">UserConfig</a>
-</li>
-    <li>getEffectivePermissions()
-        : <a class="el"
-             href="d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html#a10830c9b9480c79c226ee38d293fc31d">CommandControlledUser</a>
-    </li>
-<li>getError()
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a24ada5decce3d1b79cd82f5a90ccf404">AsyncQuery</a>
-</li>
-<li>getExpectedColumns()
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a154af7edc1f653a44495254ffd888bac">AsyncQuery</a>
-</li>
-<li>getFullName()
-: <a class="el" href="d8/d9e/classpemapmodder_1_1worldeditart_1_1user_1_1User.html#a2b284f11184201a8ba8a92de57f93580">User</a>
-</li>
-<li>getId()
-: <a class="el" href="dc/d6d/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1Zone.html#a12251d0c022e9e21c137a105ff683f13">Zone</a>
-</li>
-<li>getInsertId()
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#adda9fb830c1f42c98e409084d5e765b7">AsyncQuery</a>
-</li>
 <li>getInstance()
 : <a class="el" href="d4/d07/classpemapmodder_1_1worldeditart_1_1WorldEditArt.html#a3f5d3e1ab6be812bfaba5969d91b88ff">WorldEditArt</a>
-</li>
-<li>getJumpDamage()
-: <a class="el" href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#a8130fa0cc4458d7497e31d3c48499627">UserConfig</a>
-</li>
-<li>getJumpId()
-: <a class="el" href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#ab2a4f8e038c473c27c6249ba267ec619">UserConfig</a>
 </li>
 <li>getLevel()
 : <a class="el" href="df/da6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1Space.html#a674de8e0d156a3313973874d29dc9002">Space</a>
 </li>
-<li>getLocation()
-: <a class="el" href="d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html#a270a747ff748def87f313beeef64f3b3">CommandControlledUser</a>
-, <a class="el" href="d4/d28/classpemapmodder_1_1worldeditart_1_1user_1_1PlayerSession.html#a270a747ff748def87f313beeef64f3b3">PlayerSession</a>
-, <a class="el" href="d8/d9e/classpemapmodder_1_1worldeditart_1_1user_1_1User.html#a270a747ff748def87f313beeef64f3b3">User</a>
-</li>
 <li>getMain()
 : <a class="el" href="df/da6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1Space.html#a60d42f5372a99853dad902b1f1f62755">Space</a>
-, <a class="el" href="dd/df7/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1BaseZoneDataProvider.html#a60d42f5372a99853dad902b1f1f62755">BaseZoneDataProvider</a>
-, <a class="el" href="dd/d4f/interfacepemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1ZoneDataProvider.html#a60d42f5372a99853dad902b1f1f62755">ZoneDataProvider</a>
-, <a class="el" href="d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html#a60d42f5372a99853dad902b1f1f62755">CommandControlledUser</a>
-, <a class="el" href="d4/d28/classpemapmodder_1_1worldeditart_1_1user_1_1PlayerSession.html#a60d42f5372a99853dad902b1f1f62755">PlayerSession</a>
-, <a class="el" href="d8/d9e/classpemapmodder_1_1worldeditart_1_1user_1_1User.html#a60d42f5372a99853dad902b1f1f62755">User</a>
 </li>
-<li>getMaxUndoQueue()
-: <a class="el" href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#a2262cae8f08b7a75d542a191a8e6c729">UserConfig</a>
-</li>
-<li>getName()
-: <a class="el" href="d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html#a3d0963e68bb313b163a73f2803c64600">CommandControlledUser</a>
-, <a class="el" href="d4/d28/classpemapmodder_1_1worldeditart_1_1user_1_1PlayerSession.html#a3d0963e68bb313b163a73f2803c64600">PlayerSession</a>
-, <a class="el" href="d8/d9e/classpemapmodder_1_1worldeditart_1_1user_1_1User.html#a3d0963e68bb313b163a73f2803c64600">User</a>
-</li>
-<li>getPlayer()
-: <a class="el" href="d4/d28/classpemapmodder_1_1worldeditart_1_1user_1_1PlayerSession.html#af4a017b5086e6f92b4c4811c165006ba">PlayerSession</a>
-</li>
-    <li>getPlugin()
-        : <a class="el"
-             href="d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html#a0ef78abf71f0b4f494774352d02697db">WorldEditArtCommand</a>
-    </li>
-<li>getQuery()
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a7318d39b66a484d59849ed89fd3bb4d7">AsyncQuery</a>
+<li>getPlugin()
+: <a class="el" href="d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html#a0ef78abf71f0b4f494774352d02697db">WorldEditArtCommand</a>
 </li>
 <li>getRadius()
 : <a class="el" href="d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a46ed26029924e916f771089ac7c3291f">CylinderSpace</a>
@@ -350,91 +213,21 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>getResourceContents()
 : <a class="el" href="d4/d07/classpemapmodder_1_1worldeditart_1_1WorldEditArt.html#a9a0c470c612e96d1b8d01eda405b137c">WorldEditArt</a>
 </li>
-<li>getResultType()
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a2c093cf03a0c23696e564795727ee0ae">AsyncQuery</a>
-</li>
-<li>getSafeMode()
-: <a class="el" href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#a3e5c60606bd4dc994c894edecd5bbc7b">UserConfig</a>
-</li>
-<li>getSpace()
-: <a class="el" href="dc/d6d/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1Zone.html#a70b4a06fba476f6a2762ee655fe6e952">Zone</a>
-</li>
-<li>getSudoRequired()
-: <a class="el" href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#ac826aa5c4f9e277df1550437748c218b">UserConfig</a>
-</li>
-<li>getTickEditThreshold()
-: <a class="el" href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#ab5fffaea620713eadfe2b4d3951b7e95">UserConfig</a>
-</li>
 <li>getTopCenter()
 : <a class="el" href="d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#afda7dd81aef914d85b0be4b00642b831">CylinderSpace</a>
-</li>
-<li>getType()
-: <a class="el" href="dc/d6d/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1Zone.html#a830b5c75df72b32396701bc563fbe3c7">Zone</a>
-, <a class="el" href="d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html#a830b5c75df72b32396701bc563fbe3c7">CommandControlledUser</a>
-, <a class="el" href="d4/d28/classpemapmodder_1_1worldeditart_1_1user_1_1PlayerSession.html#a830b5c75df72b32396701bc563fbe3c7">PlayerSession</a>
-, <a class="el" href="d8/d9e/classpemapmodder_1_1worldeditart_1_1user_1_1User.html#a830b5c75df72b32396701bc563fbe3c7">User</a>
-</li>
-<li>getUserConfig()
-: <a class="el" href="d8/d9e/classpemapmodder_1_1worldeditart_1_1user_1_1User.html#a287fc70237cc42fdaf7e6ad0f267b1f2">User</a>
-</li>
-<li>getUserConfigDataProvider()
-: <a class="el" href="d4/d07/classpemapmodder_1_1worldeditart_1_1WorldEditArt.html#ae07176d09c753e28e6376154cedf55d6">WorldEditArt</a>
-</li>
-<li>getWandDamage()
-: <a class="el" href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#acb1f7cf99dbf0602205333d72408a37f">UserConfig</a>
-</li>
-<li>getWandId()
-: <a class="el" href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#a3eb5aca234ae94f5ca73a447bbea02f1">UserConfig</a>
 </li>
 <li>getWithoutClean()
 : <a class="el" href="d2/ded/classpemapmodder_1_1worldeditart_1_1utils_1_1OrderedObjectPool.html#afcf7affb657ee7617d01e9a948cf02c3">OrderedObjectPool</a>
 </li>
-<li>getZone()
-: <a class="el" href="dd/df7/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1BaseZoneDataProvider.html#a6f3a5f68e3119a100e5cd70d1ebbd54c">BaseZoneDataProvider</a>
-, <a class="el" href="dd/d4f/interfacepemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1ZoneDataProvider.html#a6f3a5f68e3119a100e5cd70d1ebbd54c">ZoneDataProvider</a>
-</li>
-<li>getZones()
-: <a class="el" href="dd/df7/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1BaseZoneDataProvider.html#a4affa31ad89f46a2fc9ce887213c8263">BaseZoneDataProvider</a>
-, <a class="el" href="dd/d4f/interfacepemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1ZoneDataProvider.html#a4affa31ad89f46a2fc9ce887213c8263">ZoneDataProvider</a>
-</li>
 </ul>
 
 
-    <h3><a class="anchor" id="index_h"></a>- h -</h3>
-    <ul>
-        <li>hasPermission()
-            : <a class="el"
-                 href="d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html#af106d7ea7a50b1e035489197975cbed3">CommandControlledUser</a>
-        </li>
-    </ul>
-
-
-    <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
-<li>isAssocNoResult()
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a6c34aece0302567382f3736130741696">AsyncQuery</a>
-</li>
-<li>isInitialized()
-: <a class="el" href="d8/d9e/classpemapmodder_1_1worldeditart_1_1user_1_1User.html#a70ca15c7ce7d473f8fb568fc02fb8b0f">User</a>
-</li>
+<h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>isInside()
 : <a class="el" href="db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#acf949cf74dbd51f1b04de8df58d3f0a5">CuboidSpace</a>
 , <a class="el" href="d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#acf949cf74dbd51f1b04de8df58d3f0a5">CylinderSpace</a>
 , <a class="el" href="df/da6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1Space.html#acf949cf74dbd51f1b04de8df58d3f0a5">Space</a>
 , <a class="el" href="dd/d74/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1SphereSpace.html#acf949cf74dbd51f1b04de8df58d3f0a5">SphereSpace</a>
-</li>
-    <li>isOp()
-        : <a class="el"
-             href="d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html#ae7a6aebedfdaaadef723e82c308e1cc7">CommandControlledUser</a>
-    </li>
-    <li>isPermissionSet()
-        : <a class="el"
-             href="d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html#a35a3a7799a390952e889b6f46ba01487">CommandControlledUser</a>
-    </li>
-<li>isSuccess()
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a619873d6cfe310657ba866caebd9b62b">AsyncQuery</a>
-</li>
-<li>isSudo()
-: <a class="el" href="d8/d9e/classpemapmodder_1_1worldeditart_1_1user_1_1User.html#ad79d5d1df6bbd84cb94f8ea4857b85c5">User</a>
 </li>
 <li>isValid()
 : <a class="el" href="db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#a7b37efab7473a1effc29f8be2421f6e3">CuboidSpace</a>
@@ -444,110 +237,30 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </ul>
 
 
-<h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
-<li>load()
-: <a class="el" href="dd/df7/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1BaseZoneDataProvider.html#a88c9a96ed5419388bf1ce79016aaf5cb">BaseZoneDataProvider</a>
-, <a class="el" href="d3/d52/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1MysqlZoneDataProvider.html#a88c9a96ed5419388bf1ce79016aaf5cb">MysqlZoneDataProvider</a>
-</li>
-<li>loadUserConfig()
-: <a class="el" href="d3/d67/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1SqliteUserConfigDataProvider.html#abeeaf1837a6428fcd32375129927112f">SqliteUserConfigDataProvider</a>
-, <a class="el" href="d2/d55/interfacepemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfigDataProvider.html#abeeaf1837a6428fcd32375129927112f">UserConfigDataProvider</a>
-</li>
-<li>loadUserConfigCallback()
-: <a class="el" href="d8/d9e/classpemapmodder_1_1worldeditart_1_1user_1_1User.html#a5af344f051b6ce86b95cab557faa459f">User</a>
-</li>
-</ul>
-
-
-<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
-<li>mainThreadProcess()
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a5ca6129b22278581d9235f0e3201a7b0">AsyncQuery</a>
-</li>
-</ul>
-
-
 <h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
-<li>OBJECT_MYSQLI_IDENTIFIER
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a34bc2311c6e90706d4536e1a955f8e11">AsyncQuery</a>
-</li>
-<li>onCompletion()
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#ab02051b6c2b0a5b0dfecf5cdc5120091">AsyncQuery</a>
-</li>
 <li>onEnable()
 : <a class="el" href="d4/d07/classpemapmodder_1_1worldeditart_1_1WorldEditArt.html#ab5c2f5a2ace2e4af36e9d5f281bcdceb">WorldEditArt</a>
 </li>
 <li>onLoad()
 : <a class="el" href="d4/d07/classpemapmodder_1_1worldeditart_1_1WorldEditArt.html#ae7c95f4b1a110303e6a457ccafc7706b">WorldEditArt</a>
 </li>
-<li>onPostQuery()
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a5f0c5e1eb87aeff9944c43a1a425cc6e">AsyncQuery</a>
-</li>
-<li>onPreQuery()
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#ad0f5ef9cd42d2928594894cb8f895ccd">AsyncQuery</a>
-</li>
-<li>onRowFetched()
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a05123d38ecea781e1c3b503b9c2f18f3">AsyncQuery</a>
-</li>
 <li>onRun()
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#aa2eb34e3894c9da534c026d54443ae86">AsyncQuery</a>
-, <a class="el" href="d5/d25/classpemapmodder_1_1worldeditart_1_1utils_1_1ReportErrorTask.html#aa2eb34e3894c9da534c026d54443ae86">ReportErrorTask</a>
+: <a class="el" href="d5/d25/classpemapmodder_1_1worldeditart_1_1utils_1_1ReportErrorTask.html#aa2eb34e3894c9da534c026d54443ae86">ReportErrorTask</a>
 </li>
 </ul>
 
 
-<h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
-<li>processRow()
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a6e4842c836cbcc8486fe99ad6dfe3902">AsyncQuery</a>
+<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>redo()
+: <a class="el" href="d9/dfd/interfacepemapmodder_1_1worldeditart_1_1libworldedit_1_1action_1_1Action.html#a7e7bdebb2e29ddf03980e5de41a4b880">Action</a>
+</li>
+<li>registerAll()
+: <a class="el" href="d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html#ac9d48ef2578b03cca43c8345a57902f0">WorldEditArtCommand</a>
 </li>
 </ul>
 
 
-<h3><a class="anchor" id="index_q"></a>- q -</h3><ul>
-<li>QUERY_FETCH_ALL
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a9b3d98ed49d143b52ab8f248cea727e2">AsyncQuery</a>
-</li>
-<li>QUERY_FETCH_ASSOC
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#aab5536e2b22653e4ceaf9daa9e96b61d">AsyncQuery</a>
-</li>
-<li>QUERY_INSERT
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#abc0c228152333296126abccae96dfd98">AsyncQuery</a>
-</li>
-<li>QUERY_NEGLECT
-: <a class="el" href="d6/d44/classpemapmodder_1_1worldeditart_1_1provider_1_1AsyncQuery.html#a89ea85215ac3bb013f0ec1db69e53a48">AsyncQuery</a>
-</li>
-<li>quit()
-: <a class="el" href="d4/d29/classpemapmodder_1_1worldeditart_1_1SessionManager.html#ada9e162a3a316cdb9eb8bbd5767d8ab0">SessionManager</a>
-</li>
-</ul>
-
-
-    <h3><a class="anchor" id="index_r"></a>- r -</h3>
-    <ul>
-        <li>recalculatePermissions()
-            : <a class="el"
-                 href="d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html#a849027fdcd5bff7c97fbd56f49ada3a2">CommandControlledUser</a>
-        </li>
-        <li>redo()
-            : <a class="el"
-                 href="d9/dfd/interfacepemapmodder_1_1worldeditart_1_1libworldedit_1_1action_1_1Action.html#a7e7bdebb2e29ddf03980e5de41a4b880">Action</a>
-        </li>
-        <li>registerAll()
-            : <a class="el"
-                 href="d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html#ac9d48ef2578b03cca43c8345a57902f0">WorldEditArtCommand</a>
-        </li>
-        <li>removeAttachment()
-            : <a class="el"
-                 href="d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html#a23007466457933512c7d5845c8405ca4">CommandControlledUser</a>
-        </li>
-    </ul>
-
-
-    <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
-<li>saveUserConfig()
-: <a class="el" href="d3/d67/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1SqliteUserConfigDataProvider.html#a045b0d51d1c90adee18a072c70fdd3ea">SqliteUserConfigDataProvider</a>
-, <a class="el" href="d2/d55/interfacepemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfigDataProvider.html#a045b0d51d1c90adee18a072c70fdd3ea">UserConfigDataProvider</a>
-, <a class="el" href="d8/d9e/classpemapmodder_1_1worldeditart_1_1user_1_1User.html#ac8daeccaa50cbdae6df88ac07bbc8ab1">User</a>
-</li>
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
 <li>serialize()
 : <a class="el" href="db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#a4d9813fea8525b19a1d370eeb8fe41d6">CuboidSpace</a>
 , <a class="el" href="d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a4d9813fea8525b19a1d370eeb8fe41d6">CylinderSpace</a>
@@ -556,61 +269,15 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>setBaseCenter()
 : <a class="el" href="d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a192bd8e9c5fa791809393a05fe42bfff">CylinderSpace</a>
 </li>
-<li>setBlockTouchMode()
-: <a class="el" href="d4/d28/classpemapmodder_1_1worldeditart_1_1user_1_1PlayerSession.html#aa50ec096e14e73fdaaf96938ccb26cf7">PlayerSession</a>
-</li>
-<li>setDatum()
-: <a class="el" href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#adf0cb877b25c7f1c76c1e8ee57525ca1">UserConfig</a>
-</li>
-<li>setDefaultSudoSession()
-: <a class="el" href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#a6e4ac580b0d7e5b5d4c124889b8eeb2c">UserConfig</a>
-</li>
-<li>setId()
-: <a class="el" href="dc/d6d/classpemapmodder_1_1worldeditart_1_1provider_1_1zone_1_1Zone.html#a87313ad678fb2a2a8efb435cf0bdb9a0">Zone</a>
-</li>
-<li>setJumpDamage()
-: <a class="el" href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#a24eae9837e72ac907e14ac2f24146538">UserConfig</a>
-</li>
-<li>setJumpId()
-: <a class="el" href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#a44ecfb4f8ec098b648cf966673b7f001">UserConfig</a>
-</li>
 <li>setMain()
 : <a class="el" href="df/da6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1Space.html#ac1cdebe56bd50e52772858ba30262401">Space</a>
 </li>
-<li>setMaxUndoQueue()
-: <a class="el" href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#a10582328c775c015d536e5858168c06d">UserConfig</a>
-</li>
-    <li>setOp()
-        : <a class="el"
-             href="d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html#aeb311f00222005faca51d0a0fe4f0c64">CommandControlledUser</a>
-    </li>
 <li>setRadius()
 : <a class="el" href="d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a8bc49e5c1c1e748b8255b7c3ed3b7d1f">CylinderSpace</a>
 , <a class="el" href="dd/d74/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1SphereSpace.html#a8bc49e5c1c1e748b8255b7c3ed3b7d1f">SphereSpace</a>
 </li>
-<li>setSafeMode()
-: <a class="el" href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#a9cc7a7a349acf25a6a2d40ad3e6c5404">UserConfig</a>
-</li>
-<li>setSudo()
-: <a class="el" href="d8/d9e/classpemapmodder_1_1worldeditart_1_1user_1_1User.html#a5c2cda60c4a52c86785f8fddc0f08623">User</a>
-</li>
-<li>setSudoRequired()
-: <a class="el" href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#a1859ae8b6a8be045649b2e947bfa1bab">UserConfig</a>
-</li>
-<li>setTickEditThreshold()
-: <a class="el" href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#a0f5f3c27636e154c573edc4bda2fac73">UserConfig</a>
-</li>
 <li>setTopCenter()
 : <a class="el" href="d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a37b7ceb378a3f4c9fa00dc68de938291">CylinderSpace</a>
-</li>
-<li>setUserConfigDataProvider()
-: <a class="el" href="d4/d07/classpemapmodder_1_1worldeditart_1_1WorldEditArt.html#a4ae2a6c44de41e0f64fe10ad4b29c85e">WorldEditArt</a>
-</li>
-<li>setWandDamage()
-: <a class="el" href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#a6fd62e2c1c6aa8dfa5860fe2297c135d">UserConfig</a>
-</li>
-<li>setWandId()
-: <a class="el" href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#a3b236fe874e2c94eb9f5cd237d136a4e">UserConfig</a>
 </li>
 <li>store()
 : <a class="el" href="d2/ded/classpemapmodder_1_1worldeditart_1_1utils_1_1OrderedObjectPool.html#a6221a0139063da1d2b1fa70d1d1fbe9c">OrderedObjectPool</a>
@@ -618,29 +285,14 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </ul>
 
 
-<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
-<li>TOUCH_MODE_NONE
-: <a class="el" href="d4/d28/classpemapmodder_1_1worldeditart_1_1user_1_1PlayerSession.html#aea36335e97e25d686288c6cacb1e7d19">PlayerSession</a>
-</li>
-<li>TYPE
-: <a class="el" href="d1/d62/classpemapmodder_1_1worldeditart_1_1user_1_1CommandControlledUser.html#a8d505777e1d7cfd6237e513f10cb7892">CommandControlledUser</a>
-, <a class="el" href="d4/d28/classpemapmodder_1_1worldeditart_1_1user_1_1PlayerSession.html#a8d505777e1d7cfd6237e513f10cb7892">PlayerSession</a>
-</li>
-</ul>
-
-
 <h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
-    <li>undo()
-        : <a class="el"
-             href="d9/dfd/interfacepemapmodder_1_1worldeditart_1_1libworldedit_1_1action_1_1Action.html#a0347027efc0e46047792065615ac94eb">Action</a>
-    </li>
+<li>undo()
+: <a class="el" href="d9/dfd/interfacepemapmodder_1_1worldeditart_1_1libworldedit_1_1action_1_1Action.html#a0347027efc0e46047792065615ac94eb">Action</a>
+</li>
 <li>unserialize()
 : <a class="el" href="db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#ac2f3a0997c46fd9bb24fe4190f738eb0">CuboidSpace</a>
 , <a class="el" href="d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#ac2f3a0997c46fd9bb24fe4190f738eb0">CylinderSpace</a>
 , <a class="el" href="dd/d74/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1SphereSpace.html#ac2f3a0997c46fd9bb24fe4190f738eb0">SphereSpace</a>
-</li>
-<li>UNSPECIFIED_INT
-: <a class="el" href="de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html#a3a018c85188089f1288a811927a21153">UserConfig</a>
 </li>
 </ul>
 </div><!-- contents -->

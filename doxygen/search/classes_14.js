@@ -10,8 +10,5 @@ var searchData=
   ['updateblockpacket',['UpdateBlockPacket',['docs\html\doxygen/dd/df6/classpocketmine_1_1network_1_1protocol_1_1UpdateBlockPacket.html',1,'pocketmine::network::protocol']]],
   ['upnp',['UPnP',['docs\html\doxygen/d1/d30/classpocketmine_1_1network_1_1upnp_1_1UPnP.html',1,'pocketmine::network::upnp']]],
   ['useitempacket',['UseItemPacket',['docs\html\doxygen/d2/db8/classpocketmine_1_1network_1_1protocol_1_1UseItemPacket.html',1,'pocketmine::network::protocol']]],
-  ['user',['User',['../d8/d9e/classpemapmodder_1_1worldeditart_1_1user_1_1User.html',1,'pemapmodder::worldeditart::user']]],
-  ['userconfig',['UserConfig',['../de/de7/classpemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfig.html',1,'pemapmodder::worldeditart::provider::userconfig']]],
-  ['userconfigdataprovider',['UserConfigDataProvider',['../d2/d55/interfacepemapmodder_1_1worldeditart_1_1provider_1_1userconfig_1_1UserConfigDataProvider.html',1,'pemapmodder::worldeditart::provider::userconfig']]],
   ['utils',['Utils',['docs\html\doxygen/d9/d20/classpocketmine_1_1utils_1_1Utils.html',1,'pocketmine::utils']]]
 ];

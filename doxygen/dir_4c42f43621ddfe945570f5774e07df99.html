@@ -61,8 +61,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
                onmouseout="return searchBox.OnSearchSelectHide()"
                alt=""/>
           <input type="text" id="MSearchField" value="Search" accesskey="S"
-               onfocus="searchBox.OnSearchFieldFocus(true)"
-               onblur="searchBox.OnSearchFieldFocus(false)"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
                onkeyup="searchBox.OnSearchFieldChange(event)"/>
           </span><span class="right">
             <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
@@ -78,7 +78,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;"
+  <div id="splitbar" style="-moz-user-select:none;" 
        class="ui-resizable-handle">
   </div>
 </div>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('dir_4c42f43621ddfe945570f5774e07df99.h
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0"
+<iframe src="javascript:void(0)" frameborder="0" 
         name="MSearchResults" id="MSearchResults">
 </iframe>
 </div>
@@ -108,14 +108,8 @@ $(document).ready(function(){initNavTree('dir_4c42f43621ddfe945570f5774e07df99.h
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="subdirs"></a>
 Directories</h2></td></tr>
-    <tr class="memitem:dir_dee8976584e02e1dac0e05a94a7a3c24">
-        <td class="memItemLeft" align="right" valign="top">directory &#160;</td>
-        <td class="memItemRight" valign="bottom"><a class="el"
-                                                    href="dir_dee8976584e02e1dac0e05a94a7a3c24.html">action</a></td>
-    </tr>
-    <tr class="separator:">
-        <td class="memSeparator" colspan="2">&#160;</td>
-    </tr>
+<tr class="memitem:dir_dee8976584e02e1dac0e05a94a7a3c24"><td class="memItemLeft" align="right" valign="top">directory &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dir_dee8976584e02e1dac0e05a94a7a3c24.html">action</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:dir_c40eae0efc36960bcd00bdbcfecae854"><td class="memItemLeft" align="right" valign="top">directory &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dir_c40eae0efc36960bcd00bdbcfecae854.html">space</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

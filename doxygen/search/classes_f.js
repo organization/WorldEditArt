@@ -51,7 +51,6 @@ var searchData=
   ['playerpreloginevent',['PlayerPreLoginEvent',['docs\html\doxygen/db/de5/classpocketmine_1_1event_1_1player_1_1PlayerPreLoginEvent.html',1,'pocketmine::event::player']]],
   ['playerquitevent',['PlayerQuitEvent',['docs\html\doxygen/dc/d33/classpocketmine_1_1event_1_1player_1_1PlayerQuitEvent.html',1,'pocketmine::event::player']]],
   ['playerrespawnevent',['PlayerRespawnEvent',['docs\html\doxygen/de/dc1/classpocketmine_1_1event_1_1player_1_1PlayerRespawnEvent.html',1,'pocketmine::event::player']]],
-  ['playersession',['PlayerSession',['../d4/d28/classpemapmodder_1_1worldeditart_1_1user_1_1PlayerSession.html',1,'pemapmodder::worldeditart::user']]],
   ['playstatuspacket',['PlayStatusPacket',['docs\html\doxygen/d1/d17/classpocketmine_1_1network_1_1protocol_1_1PlayStatusPacket.html',1,'pocketmine::network::protocol']]],
   ['plugin',['Plugin',['docs\html\doxygen/dc/d75/interfacepocketmine_1_1plugin_1_1Plugin.html',1,'pocketmine::plugin']]],
   ['pluginbase',['PluginBase',['docs\html\doxygen/de/d14/classpocketmine_1_1plugin_1_1PluginBase.html',1,'pocketmine::plugin']]],
