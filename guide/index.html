@@ -89,7 +89,6 @@
 				if(depth > 0){
 					$div.before("<br>");
 				}
-				$div.after("<br>");
 			});
 			$(".heading").each(function(){
 				var $this = $(this);
@@ -97,7 +96,7 @@
 				$this.css("font-size", (32 - Math.floor(depth / maxDepth * 20)) + "px");
 			});
 			switchSpoiler("0");
-			var $contents = $("#contents");
+			var $contents = $("#index");
 			$contents.append("<p style='text-align: center;'><strong>Contents</strong></p>");
 			var $ol = $("<ol></ol>");
 			tree.toOlJQuery().appendTo($ol);
@@ -106,9 +105,12 @@
 	</script>
 	<style>
 		body{
-			font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-			margin:      20px 50px;
-			line-height: 150%;
+			font-family: Helvetica, arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+			width:       60%;
+			margin:      auto;
+		}
+		p, .note{
+			line-height: 160%;
 		}
 		/*noinspection CssUnusedSymbol*/
 		.spoiler{
@@ -123,7 +125,7 @@
 		.note{
 			font-style: italic;
 		}
-		#contents{
+		#index{
 			border:        ridge;
 			border-radius: 5px;
 			width:         500px;
@@ -131,7 +133,7 @@
 	</style>
 </head>
 <body>
-<div id="contents"></div>
+<div id="index"></div>
 <img src='plugin_icon.png'>
 
 <div class="tree" data-name="WorldEditArt Guide">
