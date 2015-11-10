@@ -115,6 +115,10 @@
 			border-radius: 10px;
 			padding:       10px 10px 10px 20px;
 		}
+		/*noinspection CssUnusedSymbol*/
+		.heading{
+			font-weight: bold;
+		}
 		.note{
 			font-style: italic;
 		}
@@ -336,19 +340,19 @@ Library.
 			<p>
 				WorldEditArt introduces a number of new concepts into territory of world editing, as well as introduces
 				a lot of improvements to make world editing easier to understand.</p>
+
 			<div class="tree" data-name="Sudo mode">
 				<p>
 					World editing plugins are known as one of the most dangerous plugins - I can't imagine anything more
 					dangerous than world editing plugins, except plugins that let players evaluate code/shell commands
-					directly (BAD BAD BAD IDEA!!!).<br>
-					It can, even if not intended, have devastating destruction on the terrain. A simple example is that
-					if you accidentally create a
-					cuboid that spans over a large area of the map, you would probably delete everything that had been
-					built on that world, and you may just be unable to undo that (although WorldEditArt
-					<strong>does</strong> try to let you undo, there are still cases that there is irreversible
-					consequence). Therefore, sudo mode is introduced to prevent users from misusing WorldEditArt
-					accidentally, or "my cat clicked on my phone and all blocks to lava" (I'm sure many people have
-					heard that, most of the time excuses).<br>
+					directly (BAD BAD BAD IDEA!!!). It can, even if not intended, have devastating destruction on the
+					terrain. A simple example is that if you accidentally create a cuboid that spans over a large area
+					of the map, you would probably delete everything that had been built on that world, and you may just
+					be unable to undo that (although WorldEditArt <strong>does</strong> try to let you <span
+						class="term">undo</span>, there are
+					still cases that there is irreversible consequence). Therefore, sudo mode is introduced to prevent
+					users from misusing WorldEditArt accidentally, or "my cat clicked on my phone and all blocks to
+					lava" (I'm sure many people have heard that, most of the time excuses).<br>
 					<strong>TL;DR:</strong>
 					Sudo mode lets you use WorldEditArt. When you just joined a server, you cannot use any WorldEditArt
 					commands, except <code>//sudo</code> (of course, only if you got that permission e.g. by getting
@@ -375,7 +379,7 @@ Library.
 					To mark a zone as under-construction:
 				</p>
 				<ol>
-					<li>Make a [selection](#selections).</li>
+					<li>Make a <span class="term">selection</span>.</li>
 					<li>Run the command <code>//uc</code>.</li>
 				</ol>
 				To unmark a zone as under-construction:
