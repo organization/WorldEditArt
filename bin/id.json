@@ -1,8 +1,8 @@
 {
-    "dev": 23,
+    "dev": 25,
     "beta": 0,
     "rc": 0,
-    "global": 23,
+    "global": 25,
     "author": "PEMapModder",
     "version": {
         "stage": "Gamma",
