@@ -15,14 +15,52 @@
 
 namespace pemapmodder\worldeditart;
 
+use pemapmodder\worldeditart\session\PlayerSession;
+use pemapmodder\worldeditart\session\WorldEditSession;
 use pocketmine\event\Listener;
+use pocketmine\event\player\PlayerJoinEvent;
+use pocketmine\event\player\PlayerQuitEvent;
+use pocketmine\Player;
 
 class MainEventListener implements Listener{
 	/** @var WorldEditArt */
 	private $main;
 
+	/** @var WorldEditSession[] */
+	private $sessions = [];
+
 	public function __construct(WorldEditArt $main){
 		$this->main = $main;
 		$main->getServer()->getPluginManager()->registerEvents($this, $main);
+
+		foreach($main->getServer()->getOnlinePlayers() as $player){
+			$this->internal_onJoin($player);
+		}
+	}
+	public function close(){
+		foreach($this->main->getServer()->getOnlinePlayers() as $player){
+			$this->internal_onQuit($player);
+		}
+	}
+
+	public function onJoin(PlayerJoinEvent $event){
+		$player = $event->getPlayer();
+		$this->internal_onJoin($player);
+	}
+	private function internal_onJoin(Player $player){
+		if($player->hasPermission("worldeditart.builder.allow")){
+			$this->sessions[$player->getId()] = new PlayerSession($player);
+			$this->main->getLogger()->info("Started WorldEditArt session for player " . $player->getName());
+		}
+	}
+
+	public function onQuit(PlayerQuitEvent $event){
+		$this->internal_onQuit($event->getPlayer());
+	}
+	private function internal_onQuit(Player $player){
+		if(isset($this->sessions[$player->getId()])){
+			$this->sessions[$player->getId()]->close();
+			unset($this->sessions[$player->getId()]);
+		}
 	}
 }

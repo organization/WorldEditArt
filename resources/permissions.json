@@ -27,7 +27,9 @@
 				"description": "Parent permission for permissions for builders",
 				"default": "op",
 				"children": {
-
+					"allow": {
+						"description": "Allow the use of WorldEditArt commands directly"
+					}
 				}
 			}
 		}
