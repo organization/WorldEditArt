@@ -1,6 +1,7 @@
 <html>
 <head>
 	<title>WorldEditArt Guide</title>
+	<link rel="icon" href="plugin_icon.png">
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script>
 		var runtimeAutoId = 0;
@@ -96,6 +97,7 @@
 				$this.css("font-size", (32 - Math.floor(depth / maxDepth * 20)) + "px");
 			});
 			switchSpoiler("0");
+			switchSpoiler("1");
 			var $contents = $("#index");
 			$contents.append("<p style='text-align: center;'><strong>Contents</strong></p>");
 			var $ol = $("<ol></ol>");
@@ -135,9 +137,8 @@
 	</style>
 </head>
 <body>
-<div id="index"></div>
+<div class="tree" data-name="Contents" id="index"></div>
 <img src='plugin_icon.png'>
-
 <div class="tree" data-name="WorldEditArt Guide">
 	<div class="tree" data-name="License">
 		This software is licensed with GNU Lesser General Public License version 3.
@@ -325,6 +326,58 @@ Library.
 	<div class="tree" data-name="Admin Guide">
 		<div class="note">
 			Installation, permission management, etc.
+		</div>
+		<div class="tree" data-name="Permissions" id="admin-permissions">
+			Here is a list of permissions:
+			<script>
+				/**
+				 *
+				 * @param obj collection from permissions.json
+				 * @param parUl jQuery
+				 * @param parName
+				 */
+				function addPermissionsTo(obj, parUl, parName){
+					for(var name in obj){
+						if(obj.hasOwnProperty(name)){
+							var myLi = $("<li></li>");
+							var perm = obj[name];
+							var permName = parName + name;
+							var desc = perm["description"];
+							var def = perm["default"];
+							if(typeof def === "boolean"){
+								def = def ? "true" : "false";
+							}
+							if(def === "notop"){
+								def = "not op";
+							}
+							myLi.append("<code>" + permName + "</code>: " + desc + " (default <em>" + def + "</em>)");
+							if(typeof perm["children"] === "object" && Object.keys(perm["children"]).length > 0){
+								var children = perm["children"];
+								var ul = $("<ul></ul>");
+								addPermissionsTo(children, ul, permName + ".");
+								myLi.append("<br>Children:");
+								ul.appendTo(myLi);
+							}
+							myLi.appendTo(parUl);
+						}
+					}
+				}
+				var data = $.ajax({
+					type: "GET",
+					url: "https://raw.githubusercontent.com/PEMapModder/WorldEditArt/master/resources/permissions.json",
+					async: false
+				}).responseText;
+				if(typeof data !== "object"){
+					data = JSON.parse(data);
+				}
+				var container = $('<div class="tree" data-name="Full permissions list"></div>');
+				var parent = $("<ul></ul>");
+				addPermissionsTo(data, parent, "");
+				parent.appendTo(container);
+				$(document).ready(function(){
+					container.appendTo($("#admin-permissions"));
+				});
+			</script>
 		</div>
 	</div>
 
