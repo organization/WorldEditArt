@@ -9,6 +9,7 @@ TODO list:
 - [ ] Gamma
     - [X] Doxygen setup
     - [ ] Frameworks
+        - [ ] Language
         - [ ] World editing session control system
             - [ ] Allow any command senders (via the CommandControlledSession class) to execute world editing
             - [X] Selections (support multiple selections at the same time)
