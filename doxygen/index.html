@@ -105,70 +105,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="title">WorldEditArt Gamma Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>License </h1>
-<p>This software is licensed with GNU Lesser General Public License version 3.</p>
-<p>License:</p>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;WorldEditArt</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;Copyright (C) 2015 PEMapModder</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;This program is free software: you can redistribute it and/or modify</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;it under the terms of the GNU Lesser General Public License as published by</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;the Free Software Foundation, either version 3 of the License, or</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;(at your option) any later version.</div>
-</div><!-- fragment --><p>You can obtain a full copy of the license at <a href="LICENSE.txt">LICENSE.txt</a>.</p>
-<h1>Admin guide </h1>
-<blockquote class="doxtable">
-<p>Installation, permission management, etc. </p>
-</blockquote>
-<h1>Player guide </h1>
-<blockquote class="doxtable">
-<p>Concept introduction, commands documentation and user tips </p>
-</blockquote>
-<h2>Introduction</h2>
-<blockquote class="doxtable">
-<p>NOTE: This guide is written assuming that administrators use the default configuration of WorldEditArt. </p>
-</blockquote>
-<p>WorldEditArt is an innovative plugin. This plugin is not written to _"port"_ the MCPC WorldEdit plugin. This plugin is an entirely original work, except that some commands may follow the tradition of WorldEdit to make it easier for understanding. However, a lot of things are different, so don't rely on your knowledge on WorldEdit.</p>
-<h2>Concepts</h2>
-<p>WorldEditArt introduces a number of new concepts into territory of world editing, as well as introduces a lot of improvements to make world editing easier to understand.</p>
-<h4>Sudo mode</h4>
-<p>World editing plugins are known as one of the most dangerous plugins - I can't imagine anything more dangerous than world editing plugins, except plugins that let players evaluate code/shell commands directly (BAD BAD BAD IDEA!!!). It can, even if not intended, have devastating destruction on the terrain. A simple example is that if you accidentally create a cuboid that spans over a large area of the map, you would probably delete everything that had been built on that world, and you may just be unable to undo that (although WorldEditArt <b>does</b> try to let you undo, there are still cases that there is irreversible consequence). Therefore, sudo mode is introduced to prevent users from misusing WorldEditArt accidentally, or "my cat clicked on my phone and all blocks to lava" (I'm sure many people have heard people saying that, most of the time excuses :grin:).</p>
-<p>TL;DR: sudo mode lets you use WorldEditArt. When you just joined a server, you cannot use any WorldEditArt commands, except <code>//sudo</code> (of course, only if you got that permission e.g. by getting op). When you do <code>//sudo</code>, you unlock the WorldEditArt commands for yourself, which will be locked once you leave the server (or if you specify sudo session length - read the commands section for more information).</p>
-<h4>Safe mode and Under-Construction Zones (UCZs)</h4>
-<p>We may occasionally encounter these cases:</p>
-<blockquote class="doxtable">
-<ul>
-<li>This server has a bad builder. He said he was building a stadium, so I went there and watched. Then he suddenly suffocated me with blocks! (The builder tried to set blocks of an area without noticing that a player entered the editing area)</li>
-<li>I just clicked an extra zero. Why did the selection get so big? </li>
-</ul>
-</blockquote>
-<p>If you have safe mode enabled, WorldEditArt will not change anything for you for blocks that are not in UCZs.</p>
-<p>To mark a zone as under-construction:</p><ol type="1">
-<li>Make a <a href="#selections">selection</a>.</li>
-</ol>
-<ol type="1">
-<li>Run the command <code>//uc</code>.</li>
-</ol>
-<p>To unmark a zone as under-construction:</p><ol type="1">
-<li>Walk into a UCZ.</li>
-</ol>
-<ol type="1">
-<li>Run the command <code>//uuc</code>.</li>
-</ol>
-<h1>Developer guide </h1>
-<blockquote class="doxtable">
-<p>API documentation </p>
-</blockquote>
-<h1>Contact </h1>
-<h3>IRC</h3>
-<p>Server: chat.freenode.net:6667 Private message: PEMapModder</p>
-<h3>Gitter</h3>
-<p><a href="https://gitter.im/PEMapModder/WorldEditArt?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge">![Join the chat at https://gitter.im/PEMapModder/WorldEditArt](https://badges.gitter.im/Join%20Chat.svg)</a></p>
-<h3>GitHub issues</h3>
-<p>Note: use GitHub issues <b>only</b> for issue reporting and enhancement suggestions. <a href="https://github.com/PEMapModder/WorldEditArt/issues/new">https://github.com/PEMapModder/WorldEditArt/issues/new</a></p>
-<h3>Source code</h3>
-<p><a href="https://github.com/PEMapModder/WorldEditArt">https://github.com/PEMapModder/WorldEditArt</a> </p>
+<div class="textblock"><p>Please see <a href="//pemapmodder.github.io/WorldEditArt/guide/">the webpage on gh-pages</a>. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
