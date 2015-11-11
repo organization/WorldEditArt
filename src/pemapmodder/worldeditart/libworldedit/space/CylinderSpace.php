@@ -34,7 +34,15 @@ class CylinderSpace extends Space{
 	 * @since 5.1.0
 	 */
 	public function serialize(){
-		// TODO: Implement serialize() method.
+		return serialize([
+			$this->baseCenter->x,
+			$this->baseCenter->y,
+			$this->baseCenter->z,
+			$this->topCenter->x,
+			$this->topCenter->y,
+			$this->topCenter->z,
+			$this->radius
+		]);
 	}
 	/**
 	 * Constructs the object
@@ -46,7 +54,10 @@ class CylinderSpace extends Space{
 	 * @since 5.1.0
 	 */
 	public function unserialize($serialized){
-		// TODO: Implement unserialize() method.
+		list($bx, $by, $bz, $tx, $ty, $tz, $r) = unserialize($serialized);
+		$this->baseCenter = new Vector3((float) $bx, (float) $by, (float) $bz);
+		$this->topCenter = new Vector3((float) $tx, (float) $ty, (float) $tz);
+		$this->setRadius((float) $r);
 	}
 	/**
 	 * Checks whether the passed {@link Vector3} is included in this {@link Space}.<br>
