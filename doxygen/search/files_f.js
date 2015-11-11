@@ -50,6 +50,7 @@ var searchData=
   ['playerpreloginevent_2ephp',['PlayerPreLoginEvent.php',['docs\html\doxygen/dd/d33/PlayerPreLoginEvent_8php.html',1,'']]],
   ['playerquitevent_2ephp',['PlayerQuitEvent.php',['docs\html\doxygen/dd/db9/PlayerQuitEvent_8php.html',1,'']]],
   ['playerrespawnevent_2ephp',['PlayerRespawnEvent.php',['docs\html\doxygen/d8/d75/PlayerRespawnEvent_8php.html',1,'']]],
+  ['playersession_2ephp',['PlayerSession.php',['../d0/d15/PlayerSession_8php.html',1,'']]],
   ['playstatuspacket_2ephp',['PlayStatusPacket.php',['docs\html\doxygen/d1/db5/PlayStatusPacket_8php.html',1,'']]],
   ['plugin_2ephp',['Plugin.php',['docs\html\doxygen/d5/df2/Plugin_8php.html',1,'']]],
   ['pluginbase_2ephp',['PluginBase.php',['docs\html\doxygen/d3/d9d/PluginBase_8php.html',1,'']]],

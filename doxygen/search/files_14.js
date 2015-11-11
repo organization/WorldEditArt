@@ -11,5 +11,6 @@ var searchData=
   ['updateblockpacket_2ephp',['UpdateBlockPacket.php',['docs\html\doxygen/da/d61/UpdateBlockPacket_8php.html',1,'']]],
   ['upnp_2ephp',['UPnP.php',['docs\html\doxygen/dd/d9e/UPnP_8php.html',1,'']]],
   ['useitempacket_2ephp',['UseItemPacket.php',['docs\html\doxygen/d6/d75/UseItemPacket_8php.html',1,'']]],
+  ['userconfiguration_2ephp',['UserConfiguration.php',['../da/d60/UserConfiguration_8php.html',1,'']]],
   ['utils_2ephp',['Utils.php',['docs\html\doxygen/d4/d36/Utils_8php.html',1,'']]]
 ];

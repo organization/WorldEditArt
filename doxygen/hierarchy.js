@@ -25,7 +25,10 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "WorldEditSession", "d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html", null ],
+    [ "UserConfiguration", "df/d60/classpemapmodder_1_1worldeditart_1_1session_1_1UserConfiguration.html", null ],
+    [ "WorldEditSession", "d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html", [
+      [ "PlayerSession", "de/db6/classpemapmodder_1_1worldeditart_1_1session_1_1PlayerSession.html", null ]
+    ] ],
     [ "Serializable", null, [
       [ "Space", "df/da6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1Space.html", [
         [ "CuboidSpace", "db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html", null ],

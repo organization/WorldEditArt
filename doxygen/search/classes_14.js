@@ -10,5 +10,6 @@ var searchData=
   ['updateblockpacket',['UpdateBlockPacket',['docs\html\doxygen/dd/df6/classpocketmine_1_1network_1_1protocol_1_1UpdateBlockPacket.html',1,'pocketmine::network::protocol']]],
   ['upnp',['UPnP',['docs\html\doxygen/d1/d30/classpocketmine_1_1network_1_1upnp_1_1UPnP.html',1,'pocketmine::network::upnp']]],
   ['useitempacket',['UseItemPacket',['docs\html\doxygen/d2/db8/classpocketmine_1_1network_1_1protocol_1_1UseItemPacket.html',1,'pocketmine::network::protocol']]],
+  ['userconfiguration',['UserConfiguration',['../df/d60/classpemapmodder_1_1worldeditart_1_1session_1_1UserConfiguration.html',1,'pemapmodder::worldeditart::session']]],
   ['utils',['Utils',['docs\html\doxygen/d9/d20/classpocketmine_1_1utils_1_1Utils.html',1,'pocketmine::utils']]]
 ];
