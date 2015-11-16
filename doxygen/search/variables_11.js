@@ -21,6 +21,8 @@ var searchData=
   ['respawn',['RESPAWN',['docs\html\doxygen/d0/d7e/classpocketmine_1_1network_1_1protocol_1_1EntityEventPacket.html#ae19b9b6658f143d5b363119974ed1a31',1,'pocketmine::network::protocol::EntityEventPacket']]],
   ['respawn_5fpacket',['RESPAWN_PACKET',['docs\html\doxygen/d2/d92/interfacepocketmine_1_1network_1_1protocol_1_1Info.html#a2d82dead2b64bce2bbe4d7dd3a8315bc',1,'pocketmine::network::protocol::Info']]],
   ['result',['RESULT',['docs\html\doxygen/d3/d42/interfacepocketmine_1_1inventory_1_1SlotType.html#a74ccf0e7f4d76f7ae62aab4be76be421',1,'pocketmine::inventory::SlotType']]],
+  ['ret_5fno_5fperm',['RET_NO_PERM',['../d2/d75/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCommand.html#ad092f6790a464f285244dd57290f2a19',1,'pemapmodder::worldeditart::cmd::BaseCommand']]],
+  ['ret_5fusage',['RET_USAGE',['../d2/d75/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCommand.html#a78b50fb78cbb14c624a8d8d7c8cd1b48',1,'pemapmodder::worldeditart::cmd::BaseCommand']]],
   ['right_5fclick_5fair',['RIGHT_CLICK_AIR',['docs\html\doxygen/d7/d6f/classpocketmine_1_1event_1_1player_1_1PlayerInteractEvent.html#abd25937d62d0f4ebddc9746014978c1b',1,'pocketmine::event::player::PlayerInteractEvent']]],
   ['right_5fclick_5fblock',['RIGHT_CLICK_BLOCK',['docs\html\doxygen/d7/d6f/classpocketmine_1_1event_1_1player_1_1PlayerInteractEvent.html#adb449f0db5be45eca48633750dea293a',1,'pocketmine::event::player::PlayerInteractEvent']]],
   ['river',['RIVER',['docs\html\doxygen/d5/d01/classpocketmine_1_1level_1_1generator_1_1biome_1_1Biome.html#ad8b29b02243add012294039abc0a5f4a',1,'pocketmine::level::generator::biome::Biome']]],

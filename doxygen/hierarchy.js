@@ -1,6 +1,7 @@
 var hierarchy =
 [
     [ "Action", "d9/dfd/interfacepemapmodder_1_1worldeditart_1_1libworldedit_1_1action_1_1Action.html", null ],
+    [ "BaseCommand", "d2/d75/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCommand.html", null ],
     [ "Command", "docs\html\doxygen/d8/d9d/classpocketmine_1_1command_1_1Command.html", [
       [ "WorldEditArtCommand", "d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html", null ]
     ] ],
@@ -11,10 +12,13 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "FormattedArguments", "db/dec/classpemapmodder_1_1worldeditart_1_1utils_1_1FormattedArguments.html", null ],
+    [ "LanguageBrowser", "d1/d20/classpemapmodder_1_1worldeditart_1_1lang_1_1LanguageBrowser.html", null ],
     [ "Listener", "docs\html\doxygen/d0/d89/interfacepocketmine_1_1event_1_1Listener.html", [
-      [ "MainEventListener", "d4/d6d/classpemapmodder_1_1worldeditart_1_1MainEventListener.html", null ]
+      [ "SessionCollection", "d9/dad/classpemapmodder_1_1worldeditart_1_1SessionCollection.html", null ]
     ] ],
     [ "OrderedObjectPool", "d2/ded/classpemapmodder_1_1worldeditart_1_1utils_1_1OrderedObjectPool.html", null ],
+    [ "Phrase", "da/d1a/classpemapmodder_1_1worldeditart_1_1lang_1_1Phrase.html", null ],
     [ "PluginIdentifiableCommand", "docs\html\doxygen/da/dbc/interfacepocketmine_1_1command_1_1PluginIdentifiableCommand.html", [
       [ "WorldEditArtCommand", "d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html", null ]
     ] ],
@@ -25,8 +29,10 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "TranslationManager", "d9/de6/classpemapmodder_1_1worldeditart_1_1lang_1_1TranslationManager.html", null ],
     [ "UserConfiguration", "df/d60/classpemapmodder_1_1worldeditart_1_1session_1_1UserConfiguration.html", null ],
     [ "WorldEditSession", "d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html", [
+      [ "CommandControlledSession", "d2/d7b/classpemapmodder_1_1worldeditart_1_1session_1_1CommandControlledSession.html", null ],
       [ "PlayerSession", "de/db6/classpemapmodder_1_1worldeditart_1_1session_1_1PlayerSession.html", null ]
     ] ],
     [ "Serializable", null, [

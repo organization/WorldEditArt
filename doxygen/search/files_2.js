@@ -40,6 +40,7 @@ var searchData=
   ['cobweb_2ephp',['Cobweb.php',['docs\html\doxygen/d5/dd5/Cobweb_8php.html',1,'']]],
   ['colorable_2ephp',['Colorable.php',['docs\html\doxygen/de/d87/Colorable_8php.html',1,'']]],
   ['command_2ephp',['Command.php',['docs\html\doxygen/d9/df1/Command_8php.html',1,'']]],
+  ['commandcontrolledsession_2ephp',['CommandControlledSession.php',['../da/d36/CommandControlledSession_8php.html',1,'']]],
   ['commandexecutor_2ephp',['CommandExecutor.php',['docs\html\doxygen/d2/d36/CommandExecutor_8php.html',1,'']]],
   ['commandmap_2ephp',['CommandMap.php',['docs\html\doxygen/d3/dcc/CommandMap_8php.html',1,'']]],
   ['commandreader_2ephp',['CommandReader.php',['docs\html\doxygen/d4/d92/CommandReader_8php.html',1,'']]],

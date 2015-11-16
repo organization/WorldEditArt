@@ -1,5 +1,8 @@
 var dir_fb5a9dc6fbd8caf21b2a0be3766b884a =
 [
+    [ "CommandControlledSession.php", "da/d36/CommandControlledSession_8php.html", [
+      [ "CommandControlledSession", "d2/d7b/classpemapmodder_1_1worldeditart_1_1session_1_1CommandControlledSession.html", "d2/d7b/classpemapmodder_1_1worldeditart_1_1session_1_1CommandControlledSession" ]
+    ] ],
     [ "PlayerSession.php", "d0/d15/PlayerSession_8php.html", [
       [ "PlayerSession", "de/db6/classpemapmodder_1_1worldeditart_1_1session_1_1PlayerSession.html", "de/db6/classpemapmodder_1_1worldeditart_1_1session_1_1PlayerSession" ]
     ] ],

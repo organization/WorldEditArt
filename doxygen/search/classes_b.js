@@ -1,6 +1,7 @@
 var searchData=
 [
   ['ladder',['Ladder',['docs\html\doxygen/dd/d6c/classpocketmine_1_1block_1_1Ladder.html',1,'pocketmine::block']]],
+  ['languagebrowser',['LanguageBrowser',['../d1/d20/classpemapmodder_1_1worldeditart_1_1lang_1_1LanguageBrowser.html',1,'pemapmodder::worldeditart::lang']]],
   ['lapis',['Lapis',['docs\html\doxygen/d0/def/classpocketmine_1_1block_1_1Lapis.html',1,'pocketmine::block']]],
   ['lapisore',['LapisOre',['docs\html\doxygen/d0/d7f/classpocketmine_1_1block_1_1LapisOre.html',1,'pocketmine::block']]],
   ['launchsound',['LaunchSound',['docs\html\doxygen/d3/d93/classpocketmine_1_1level_1_1sound_1_1LaunchSound.html',1,'pocketmine::level::sound']]],
@@ -15,8 +16,8 @@ var searchData=
   ['leaves2',['Leaves2',['docs\html\doxygen/db/df2/classpocketmine_1_1block_1_1Leaves2.html',1,'pocketmine::block']]],
   ['leavesdecayevent',['LeavesDecayEvent',['docs\html\doxygen/d9/d33/classpocketmine_1_1event_1_1block_1_1LeavesDecayEvent.html',1,'pocketmine::event::block']]],
   ['level',['Level',['docs\html\doxygen/d9/d1e/classpocketmine_1_1level_1_1Level.html',1,'pocketmine::level']]],
-  ['leveldb',['LevelDB',['docs\html\doxygen/d8/d3e/classLevelDB.html',1,'']]],
   ['leveldb',['LevelDB',['docs\html\doxygen/de/d21/classpocketmine_1_1level_1_1format_1_1leveldb_1_1LevelDB.html',1,'pocketmine::level::format::leveldb']]],
+  ['leveldb',['LevelDB',['docs\html\doxygen/d8/d3e/classLevelDB.html',1,'']]],
   ['leveldbexception',['LevelDBException',['docs\html\doxygen/d1/dd8/classLevelDBException.html',1,'']]],
   ['leveldbiterator',['LevelDBIterator',['docs\html\doxygen/db/df8/classLevelDBIterator.html',1,'']]],
   ['leveldbsnapshot',['LevelDBSnapshot',['docs\html\doxygen/d3/d88/classLevelDBSnapshot.html',1,'']]],

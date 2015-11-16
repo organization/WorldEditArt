@@ -7,6 +7,7 @@ var searchData=
   ['banlistcommand_2ephp',['BanListCommand.php',['docs\html\doxygen/da/da2/BanListCommand_8php.html',1,'']]],
   ['basechunk_2ephp',['BaseChunk.php',['docs\html\doxygen/df/d1e/BaseChunk_8php.html',1,'']]],
   ['baseclassloader_2ephp',['BaseClassLoader.php',['docs\html\doxygen/df/dec/BaseClassLoader_8php.html',1,'']]],
+  ['basecommand_2ephp',['BaseCommand.php',['../df/d75/BaseCommand_8php.html',1,'']]],
   ['basefullchunk_2ephp',['BaseFullChunk.php',['docs\html\doxygen/d1/da4/BaseFullChunk_8php.html',1,'']]],
   ['baseinventory_2ephp',['BaseInventory.php',['docs\html\doxygen/d9/d48/BaseInventory_8php.html',1,'']]],
   ['baselang_2ephp',['BaseLang.php',['docs\html\doxygen/d6/d27/BaseLang_8php.html',1,'']]],

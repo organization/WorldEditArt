@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['maineventlistener',['MainEventListener',['../d4/d6d/classpemapmodder_1_1worldeditart_1_1MainEventListener.html',1,'pemapmodder::worldeditart']]],
   ['mainlogger',['MainLogger',['docs\html\doxygen/df/d90/classpocketmine_1_1utils_1_1MainLogger.html',1,'pocketmine::utils']]],
   ['math',['Math',['docs\html\doxygen/d6/d3e/classpocketmine_1_1math_1_1Math.html',1,'pocketmine::math']]],
   ['matrix',['Matrix',['docs\html\doxygen/d2/dbc/classpocketmine_1_1math_1_1Matrix.html',1,'pocketmine::math']]],

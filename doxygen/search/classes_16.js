@@ -25,8 +25,8 @@ var searchData=
   ['woodstairs',['WoodStairs',['docs\html\doxygen/db/de2/classpocketmine_1_1block_1_1WoodStairs.html',1,'pocketmine::block']]],
   ['wool',['Wool',['docs\html\doxygen/db/dbc/classpocketmine_1_1block_1_1Wool.html',1,'pocketmine::block']]],
   ['workbench',['Workbench',['docs\html\doxygen/dc/d79/classpocketmine_1_1block_1_1Workbench.html',1,'pocketmine::block']]],
-  ['worker',['Worker',['docs\html\doxygen/d4/d3b/classpocketmine_1_1Worker.html',1,'pocketmine']]],
   ['worker',['Worker',['docs\html\doxygen/da/d60/classWorker.html',1,'']]],
+  ['worker',['Worker',['docs\html\doxygen/d4/d3b/classpocketmine_1_1Worker.html',1,'pocketmine']]],
   ['worldeditart',['WorldEditArt',['../d4/d07/classpemapmodder_1_1worldeditart_1_1WorldEditArt.html',1,'pemapmodder::worldeditart']]],
   ['worldeditartcommand',['WorldEditArtCommand',['../d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html',1,'pemapmodder::worldeditart::cmd']]],
   ['worldeditsession',['WorldEditSession',['../d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html',1,'pemapmodder::worldeditart::session']]]

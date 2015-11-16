@@ -23,6 +23,7 @@ var searchData=
   ['serveroperator_2ephp',['ServerOperator.php',['docs\html\doxygen/df/d1f/ServerOperator_8php.html',1,'']]],
   ['serverscheduler_2ephp',['ServerScheduler.php',['docs\html\doxygen/db/d8e/ServerScheduler_8php.html',1,'']]],
   ['session_2ephp',['Session.php',['docs\html\doxygen/d4/db7/Session_8php.html',1,'']]],
+  ['sessioncollection_2ephp',['SessionCollection.php',['../d6/dc2/SessionCollection_8php.html',1,'']]],
   ['sessionmanager_2ephp',['SessionManager.php',['docs\html\doxygen/d1/d88/SessionManager_8php.html',1,'']]],
   ['setdifficultypacket_2ephp',['SetDifficultyPacket.php',['docs\html\doxygen/dc/da4/SetDifficultyPacket_8php.html',1,'']]],
   ['setentitydatapacket_2ephp',['SetEntityDataPacket.php',['docs\html\doxygen/df/d41/SetEntityDataPacket_8php.html',1,'']]],

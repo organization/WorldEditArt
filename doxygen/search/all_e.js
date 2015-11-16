@@ -1,8 +1,6 @@
 var searchData=
 [
   ['magic',['MAGIC',['docs\html\doxygen/d0/dd6/classraklib_1_1RakLib.html#a34a676089f905951beed7a7a13b6a67a',1,'raklib::RakLib']]],
-  ['maineventlistener',['MainEventListener',['../d4/d6d/classpemapmodder_1_1worldeditart_1_1MainEventListener.html',1,'pemapmodder::worldeditart']]],
-  ['maineventlistener_2ephp',['MainEventListener.php',['../d4/df0/MainEventListener_8php.html',1,'']]],
   ['mainlogger',['MainLogger',['docs\html\doxygen/df/d90/classpocketmine_1_1utils_1_1MainLogger.html',1,'pocketmine::utils']]],
   ['mainlogger_2ephp',['MainLogger.php',['docs\html\doxygen/d0/df0/MainLogger_8php.html',1,'']]],
   ['matchfurnacerecipe',['matchFurnaceRecipe',['docs\html\doxygen/d5/d52/classpocketmine_1_1inventory_1_1CraftingManager.html#a6ca88c5b0cf8f26034cd4f780a5aae72',1,'pocketmine::inventory::CraftingManager']]],

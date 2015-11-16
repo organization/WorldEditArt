@@ -33,6 +33,7 @@ var searchData=
   ['transaction_2ephp',['Transaction.php',['docs\html\doxygen/d7/df2/Transaction_8php.html',1,'']]],
   ['transactiongroup_2ephp',['TransactionGroup.php',['docs\html\doxygen/d5/d2a/TransactionGroup_8php.html',1,'']]],
   ['translationcontainer_2ephp',['TranslationContainer.php',['docs\html\doxygen/d2/dc7/TranslationContainer_8php.html',1,'']]],
+  ['translationmanager_2ephp',['TranslationManager.php',['../df/df8/TranslationManager_8php.html',1,'']]],
   ['transparent_2ephp',['Transparent.php',['docs\html\doxygen/d8/dcc/Transparent_8php.html',1,'']]],
   ['trapdoor_2ephp',['Trapdoor.php',['docs\html\doxygen/d9/dcf/Trapdoor_8php.html',1,'']]],
   ['tree_2ephp',['Tree.php',['docs\html\doxygen/d3/d73/object_2Tree_8php.html',1,'(Global Namespace)'],['docs\html\doxygen/d6/d5b/populator_2Tree_8php.html',1,'(Global Namespace)']]]
