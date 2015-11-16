@@ -15,39 +15,35 @@
 
 namespace pemapmodder\worldeditart\lang;
 
-class ArrayWalker{
+class LanguageBrowser{
 	private $keys;
-	private $plainList = [];
+	private $phrases = [];
+
 	public function __construct(array $array){
 		$this->keys = [];
-		$this->walk($array);
+		$this->recurseWalk($array);
 	}
-	private function walk(array $array){
+	private function recurseWalk(array $array){
 		$prefix = implode(".", $this->keys) . ".";
 		foreach($array as $k => $v){
-			if(is_array($v) and !$this->isLinearArray($v)){
+			if($this->isLanguageArray($v)){
+				$this->phrases[$prefix . $k] = new Phrase($v);
+			}else{
 				$cnt = count($this->keys);
 				$this->keys[$cnt] = $k;
-				$this->walk($v);
+				$this->recurseWalk($v);
 				unset($this->keys[$cnt]);
-			}else{
-				$this->plainList[$prefix . $k] = $v;
 			}
 		}
 	}
-	private function isLinearArray(array $array){
-		$i = 0;
-		foreach($array as $k => $v){
-			if($k !== ($i++)){
-				return false;
-			}
-		}
-		return true;
+	private function isLanguageArray(array $array){
+		return count($array) === 2 and isset($array["value"], $array["updated"]);
 	}
+
 	/**
-	 * @return string[]|array[]
+	 * @return Phrase[]
 	 */
-	public function getPlainList(){
-		return $this->plainList;
+	public function getPhrases(){
+		return $this->phrases;
 	}
 }

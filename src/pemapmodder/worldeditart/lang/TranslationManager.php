@@ -21,6 +21,7 @@ class TranslationManager{
 	/** @var WorldEditArt */
 	private $main;
 
+	/** @var Phrase[][] */
 	private $langs = [];
 
 	public function __construct(WorldEditArt $main){
@@ -29,13 +30,19 @@ class TranslationManager{
 		foreach($availableLangs as $lang){
 			$path = "lang/$lang.json";
 			$data = json_decode($main->getResourceContents($path), true);
-			$walker = new ArrayWalker($data);
-			$list = $walker->getPlainList();
+			$browser = new LanguageBrowser($data);
+			$list = $browser->getPhrases();
 			foreach($list as $k => $v){
 				$list[$k][$lang] = $v;
 			}
 		}
 	}
+
+	/**
+	 * @param $key
+	 * @param $lang
+	 * @return Phrase|null
+	 */
 	public function get($key, $lang){
 		if(isset($this->langs[$key])){
 			if(isset($this->langs[$key][$lang])){

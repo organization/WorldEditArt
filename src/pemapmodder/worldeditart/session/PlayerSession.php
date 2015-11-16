@@ -35,6 +35,10 @@ class PlayerSession extends WorldEditSession{
 		return $this->player->hasPermission($permission);
 	}
 
+	protected function sendMessageDirect($text){
+		$this->player->sendMessage($text);
+	}
+
 	public function getType(){
 		return self::TYPE;
 	}

@@ -1,2 +1,32 @@
 {
+	"eng-version": {
+		"value": "1.0",
+		"updated": "1.0"
+	},
+	"meta": {
+		"language": {
+			"value": "en",
+			"updated": "1.0"
+		},
+		"native": {
+			"value": "English",
+			"updated": "1.0"
+		},
+		"authors": {
+			"value": [
+				"PEMapModder"
+			],
+			"updated": "1.0"
+		},
+		"comment": {
+			"value": "The major version will be bumped every time AFTER a new plugin release is created. The minor version should be bumped every commit (including merge commits) the en.json file is updated. All unused translation entries must still have the `update` property",
+			"updated": "1.0"
+		}
+	},
+	"error": {
+		"noperm": {
+			"value": "You don't have permission to use this command",
+			"updated": "1.0"
+		}
+	}
 }

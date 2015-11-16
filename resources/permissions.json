@@ -27,10 +27,16 @@
 				"description": "Parent permission for permissions for builders",
 				"default": "op",
 				"children": {
-					"allow": {
-						"description": "Allow the use of WorldEditArt commands directly"
-					}
+
 				}
+			},
+			"help": {
+				"description": "Permission to run // for help",
+				"default": "op"
+			},
+			"ccs": {
+				"description": "Allow the use of /ccs (command-controlled session) (permission to run commands using CCS are still dependent on the relevant permissions of those commands",
+				"default": "op"
 			}
 		}
 	}

@@ -15,7 +15,18 @@
 
 namespace pemapmodder\worldeditart\cmd;
 
+use pemapmodder\worldeditart\session\WorldEditSession;
+
 interface BaseCommand{
+	/**
+	 * Sends the command's usage message to the player.
+	 */
+	const RET_USAGE = 1;
+	/**
+	 * Tells the player that he has no permission to use this command.
+	 */
+	const RET_NO_PERM = 2;
+
 	/**
 	 * Returns a string or an array of strings. (If only one is returned, it will be casted into an array)<br>
 	 * The first item in the array will be taken as the main command name shown at //help.<br>
@@ -24,7 +35,38 @@ interface BaseCommand{
 	 */
 	public function getNames();
 
+	/**
+	 * Returns the translation string ID of the description, or <code>"%raw%Raw description message"</code>
+	 *
+	 * @return string
+	 */
 	public function getDescription();
 
+	/**
+	 * Returns the translation string ID of the usage, or <code>"%raw%Raw usage message"</code>
+	 *
+	 * @return string
+	 */
 	public function getUsage();
+
+	/**
+	 * Returns whether the passed {@link WorldEditSession} can use this command.
+	 *
+	 * @param WorldEditSession $session
+	 * @return bool
+	 */
+	public function canUse(WorldEditSession $session);
+
+	/**
+	 * Executes the command.<br>
+	 * If a string is returned, it will be triggered upon {@link WorldEditSession::sendMessage}.<br>
+	 * If an int is returned and it is one of the <code>RET_***</code> constants in this interface,
+	 * action described in the constant's documentation will be executed.<br>
+	 * Nothing will be done if any other values of any types are returned.
+	 *
+	 * @param WorldEditSession $session
+	 * @param string[] $args
+	 * @return string|int|null
+	 */
+	public function run(WorldEditSession $session, array $args);
 }

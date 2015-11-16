@@ -1,0 +1,24 @@
+{
+	"meta": {
+		"language": {
+			"value": "zh-tr",
+			"updated": "1.0"
+		},
+		"native": {
+			"value": "中文",
+			"updated": "1.0"
+		},
+		"authors": {
+			"value": [
+				"PEMapModder"
+			],
+			"updated": "1.0"
+		}
+	},
+	"error": {
+		"noperm": {
+			"value": "你沒有權限使用此指令。",
+			"updated": "1.0"
+		}
+	}
+}

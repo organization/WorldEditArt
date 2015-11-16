@@ -22,24 +22,63 @@ use pocketmine\command\PluginIdentifiableCommand;
 use pocketmine\Player;
 
 class WorldEditArtCommand extends Command implements PluginIdentifiableCommand{
-	public static function registerAll(WorldEditArt $main){
-		$main->getServer()->getCommandMap()->registerAll("wea", [
-
-		]);
-	}
-
 	/** @var WorldEditArt */
 	private $main;
+	/** @var BaseCommand[] */
+	private $cmds = [];
 
-	public function __construct(WorldEditArt $main, $name, $desc, $usage, $perm, ...$aliases){
-		parent::__construct($name, $desc, $usage, $aliases);
-		$this->setPermission($perm);
+	public function __construct(WorldEditArt $main){
 		$this->main = $main;
+		$aliases = [];
+		foreach($this->cmds as $cmd){
+			foreach($cmd->getNames() as $name){
+				$aliases[] = "/" . strtolower($name);
+			}
+		}
+		parent::__construct("/", "WorldEditArt main command.", "Use `//` for detailed help.", $aliases);
+		$main->getServer()->getCommandMap()->register("/", $this);
 	}
 
-	public function execute(CommandSender $sender, $commandLabel, array $args){
+	public function execute(CommandSender $sender, $alias, array $args){
 		if(!($sender instanceof Player)){
+			$sender->sendMessage("Please run this command in-game or through a CCS (run \"ccs\" for help).");
+			return true;
 		}
+		$session = $this->main->getSessionCollection()->getSession($sender);
+		if($session === null or !$session->isValid()){
+			$sender->sendMessage("Your account is still being loaded. Please wait...");
+			return true;
+		}
+		if($alias{0} !== "/"){
+			return false; // how come this could even happen!
+		}
+		if($alias === "/"){
+			$this->displayHelp($sender);
+			return true;
+		}else{
+			$cmdName = substr($alias, 1);
+			$cmd = $this->findCommand($cmdName);
+			if($cmd === null){
+				return false;
+			}
+			$ret = $cmd->run($session, $args);
+			if(is_string($ret)){
+				$session->sendMessage($ret);
+			}elseif(is_int($ret)){
+				// TODO
+			}
+			return true;
+		}
+	}
+
+	/**
+	 * Returns a {@link BaseCommand} for the given <code>$name</code>, or <code>null</code> if not found.
+	 *
+	 * @param string $name
+	 * @return BaseCommand|null
+	 */
+	public function findCommand($name){
+		return isset($this->cmds[strtolower($name)]) ? $this->cmds[strtolower($name)] : null;
 	}
 
 	/**
@@ -47,5 +86,8 @@ class WorldEditArtCommand extends Command implements PluginIdentifiableCommand{
 	 */
 	public function getPlugin(){
 		return $this->main;
+	}
+	private function displayHelp(CommandSender $sender){
+		// TODO
 	}
 }

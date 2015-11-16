@@ -30,4 +30,11 @@ class UserConfiguration{
 	 * @var bool $safeModeOn
 	 */
 	public $safeModeOn;
+
+	/**
+	 * This represents the user's preferred language.
+	 *
+	 * @var string $lang
+	 */
+	public $lang;
 }

@@ -25,10 +25,13 @@ use pocketmine\permission\Permission;
 abstract class WorldEditSession{
 	private $valid = false;
 
+	/** @var UserConfiguration */
+	private $config;
+	/** @var bool */
+	private $sudoModeOn;
 	/** @var Space[] */
 	private $selections = []; // not saved over sessions!
 
-	private $sudoModeOn;
 
 	/**
 	 * This method is separated from the constructor.
@@ -43,6 +46,7 @@ abstract class WorldEditSession{
 	 */
 	public function init(UserConfiguration $config){
 		$this->valid = true;
+		$this->config = $config;
 		$this->sudoModeOn = !$config->sudoModeRequired;
 		// if sudo mode is not required, the player should have sudo mode automatically turned on
 		// in such way, he doesn't need to turn on sudo mode with a command.
@@ -88,8 +92,14 @@ abstract class WorldEditSession{
 	 */
 	public abstract function hasPermission($permission);
 
+	protected abstract function sendMessageDirect($text);
+
+	public function getConfig(){
+		return $this->config;
+	}
+
 	/**
-	 * Returns the selection made by the player with the name <code>$name</code>, or <code>null</code> if nonexistent.<br>
+	 * Returns the selection made by the user with the name <code>$name</code>, or <code>null</code> if nonexistent.<br>
 	 * If no parameters are provided, the function will return the selections in the following priority list:
 	 * <ol>
 	 *      <li>The selection named "default"</li>
@@ -144,4 +154,21 @@ abstract class WorldEditSession{
 	public function isValid(){
 		return $this->valid;
 	}
+
+	/**
+	 * Sends a message to the user represented by this session.<br>
+	 * If <code>$text</code> starts with <code>%raw%</code>, a message will be sent literally to the user
+	 * from the 6th (offset 5) character on.<br>
+	 * Otherwise, <code>$text</code> will be regarded as a translation string ID and translation will be attempted.
+	 *
+	 * @param $text
+	 */
+	public final function sendMessage($text){
+		if(substr($text, 0, 5) === "%raw%"){
+			$this->sendMessageDirect(substr($text, 5));
+		}else{
+			// TODO
+		}
+	}
+
 }

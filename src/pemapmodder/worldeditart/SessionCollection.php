@@ -22,7 +22,7 @@ use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\player\PlayerQuitEvent;
 use pocketmine\Player;
 
-class MainEventListener implements Listener{
+class SessionCollection implements Listener{
 	/** @var WorldEditArt */
 	private $main;
 
@@ -48,10 +48,7 @@ class MainEventListener implements Listener{
 		$this->internal_onJoin($player);
 	}
 	private function internal_onJoin(Player $player){
-		if($player->hasPermission("worldeditart.builder.allow")){
-			$this->sessions[$player->getId()] = new PlayerSession($player);
-			$this->main->getLogger()->info("Started WorldEditArt session for player " . $player->getName());
-		}
+		$this->sessions[$player->getId()] = new PlayerSession($player);
 	}
 
 	public function onQuit(PlayerQuitEvent $event){
@@ -62,5 +59,15 @@ class MainEventListener implements Listener{
 			$this->sessions[$player->getId()]->close();
 			unset($this->sessions[$player->getId()]);
 		}
+	}
+
+	/**
+	 * Returns the
+	 *
+	 * @param Player|string $player the partial name (same rules as {@link \pocketmine\Server#getPlayer}) of the player, or the {@link Player} object representing the player.
+	 * @return WorldEditSession|null An instance of {@link WorldEditSession} if found, <code>null</code> otherwise.
+	 */
+	public function getSession($player){
+
 	}
 }
