@@ -66,10 +66,10 @@ class WorldEditArt extends PluginBase{
 	}
 
 	/**
-	 * Converts a string array into a {@code FormattedArguments} instance.
+	 * Converts a string array into a <code>FormattedArguments</code> instance.
 	 * <br>
 	 * Rules:
-	 * <div border="">
+	 * <div style="border: groove">
 	 * A "word" refers to a string delimited by spaces in the command, regardless of any other rules.
 	 * <br>
 	 * A "phrase" refers to a consecutive sequence of words, enclosed in ` "` and `" ` in the whole command input,
