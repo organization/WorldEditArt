@@ -7,7 +7,7 @@ var searchData=
   ['banlistcommand',['BanListCommand',['docs\html\doxygen/d1/df2/classpocketmine_1_1command_1_1defaults_1_1BanListCommand.html',1,'pocketmine::command::defaults']]],
   ['basechunk',['BaseChunk',['docs\html\doxygen/d5/db2/classpocketmine_1_1level_1_1format_1_1generic_1_1BaseChunk.html',1,'pocketmine::level::format::generic']]],
   ['baseclassloader',['BaseClassLoader',['docs\html\doxygen/da/d13/classBaseClassLoader.html',1,'']]],
-  ['basecommand',['BaseCommand',['../d2/d75/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCommand.html',1,'pemapmodder::worldeditart::cmd']]],
+  ['basecmd',['BaseCmd',['../d2/d20/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCmd.html',1,'pemapmodder::worldeditart::cmd']]],
   ['basefullchunk',['BaseFullChunk',['docs\html\doxygen/de/dac/classpocketmine_1_1level_1_1format_1_1generic_1_1BaseFullChunk.html',1,'pocketmine::level::format::generic']]],
   ['baseinventory',['BaseInventory',['docs\html\doxygen/de/d3a/classpocketmine_1_1inventory_1_1BaseInventory.html',1,'pocketmine::inventory']]],
   ['baselang',['BaseLang',['docs\html\doxygen/d3/d39/classpocketmine_1_1lang_1_1BaseLang.html',1,'pocketmine::lang']]],

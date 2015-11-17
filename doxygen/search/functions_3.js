@@ -28,7 +28,7 @@ var searchData=
   ['cansee',['canSee',['docs\html\doxygen/db/db7/classpocketmine_1_1Player.html#a084b15829eed956cb43c2dc0d1adf5b0',1,'pocketmine::Player']]],
   ['cantick',['canTick',['docs\html\doxygen/de/d0d/classpocketmine_1_1entity_1_1Effect.html#a5f1811ce4b4a7acf2f986dcb5d2e8a44',1,'pocketmine::entity::Effect']]],
   ['cantriggerwalking',['canTriggerWalking',['docs\html\doxygen/dc/df8/classpocketmine_1_1entity_1_1Entity.html#ac1b00a9d3836d023d84cb505cedbbe79',1,'pocketmine::entity::Entity']]],
-  ['canuse',['canUse',['../d2/d75/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCommand.html#a367dabc7c22c4d117cfb8a11bec3aeff',1,'pemapmodder::worldeditart::cmd::BaseCommand']]],
+  ['canuse',['canUse',['../d2/d20/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCmd.html#a367dabc7c22c4d117cfb8a11bec3aeff',1,'pemapmodder\worldeditart\cmd\BaseCmd\canUse()'],['../dd/dd6/classpemapmodder_1_1worldeditart_1_1cmd_1_1VersionCmd.html#a367dabc7c22c4d117cfb8a11bec3aeff',1,'pemapmodder\worldeditart\cmd\VersionCmd\canUse()']]],
   ['canusechunkcache',['canUseChunkCache',['docs\html\doxygen/dc/dbc/classpocketmine_1_1MemoryManager.html#a632ea4b28815f26a876a4f4c9eaf7bda',1,'pocketmine::MemoryManager']]],
   ['ceil',['ceil',['docs\html\doxygen/d1/d39/classpocketmine_1_1math_1_1Vector2.html#a18294a6073ad73b698bc70f0615e1593',1,'pocketmine::math::Vector2::ceil()'],['docs\html\doxygen/da/d76/classpocketmine_1_1math_1_1Vector3.html#a18294a6073ad73b698bc70f0615e1593',1,'pocketmine::math::Vector3::ceil()']]],
   ['ceilfloat',['ceilFloat',['docs\html\doxygen/d6/d3e/classpocketmine_1_1math_1_1Math.html#ad0e8a5266d83e4e32b2b505671c3037a',1,'pocketmine::math::Math']]],

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['ladder_2ephp',['Ladder.php',['docs\html\doxygen/d7/d8f/Ladder_8php.html',1,'']]],
+  ['lang_2ephp',['Lang.php',['../d0/ddc/Lang_8php.html',1,'']]],
   ['languagebrowser_2ephp',['LanguageBrowser.php',['../d4/da5/LanguageBrowser_8php.html',1,'']]],
   ['lapis_2ephp',['Lapis.php',['docs\html\doxygen/db/d6f/Lapis_8php.html',1,'']]],
   ['lapisore_2ephp',['LapisOre.php',['docs\html\doxygen/d4/dac/LapisOre_8php.html',1,'']]],

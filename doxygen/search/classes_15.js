@@ -5,6 +5,7 @@ var searchData=
   ['vector3',['Vector3',['docs\html\doxygen/da/d76/classpocketmine_1_1math_1_1Vector3.html',1,'pocketmine::math']]],
   ['vectormath',['VectorMath',['docs\html\doxygen/d0/de1/classpocketmine_1_1math_1_1VectorMath.html',1,'pocketmine::math']]],
   ['vehicle',['Vehicle',['docs\html\doxygen/d1/ddb/classpocketmine_1_1entity_1_1Vehicle.html',1,'pocketmine::entity']]],
+  ['versioncmd',['VersionCmd',['../dd/dd6/classpemapmodder_1_1worldeditart_1_1cmd_1_1VersionCmd.html',1,'pemapmodder::worldeditart::cmd']]],
   ['versioncommand',['VersionCommand',['docs\html\doxygen/d9/d19/classpocketmine_1_1command_1_1defaults_1_1VersionCommand.html',1,'pocketmine::command::defaults']]],
   ['versionstring',['VersionString',['docs\html\doxygen/d2/dd5/classpocketmine_1_1utils_1_1VersionString.html',1,'pocketmine::utils']]],
   ['villager',['Villager',['docs\html\doxygen/da/db5/classpocketmine_1_1entity_1_1Villager.html',1,'pocketmine::entity']]],

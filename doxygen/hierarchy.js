@@ -1,7 +1,6 @@
 var hierarchy =
 [
     [ "Action", "d9/dfd/interfacepemapmodder_1_1worldeditart_1_1libworldedit_1_1action_1_1Action.html", null ],
-    [ "BaseCommand", "d2/d75/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCommand.html", null ],
     [ "Command", "docs\html\doxygen/d8/d9d/classpocketmine_1_1command_1_1Command.html", [
       [ "WorldEditArtCommand", "d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html", null ]
     ] ],
@@ -13,6 +12,11 @@ var hierarchy =
       ] ]
     ] ],
     [ "FormattedArguments", "db/dec/classpemapmodder_1_1worldeditart_1_1utils_1_1FormattedArguments.html", null ],
+    [ "Lang", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html", [
+      [ "BaseCmd", "d2/d20/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCmd.html", [
+        [ "VersionCmd", "dd/dd6/classpemapmodder_1_1worldeditart_1_1cmd_1_1VersionCmd.html", null ]
+      ] ]
+    ] ],
     [ "LanguageBrowser", "d1/d20/classpemapmodder_1_1worldeditart_1_1lang_1_1LanguageBrowser.html", null ],
     [ "Listener", "docs\html\doxygen/d0/d89/interfacepocketmine_1_1event_1_1Listener.html", [
       [ "SessionCollection", "d9/dad/classpemapmodder_1_1worldeditart_1_1SessionCollection.html", null ]

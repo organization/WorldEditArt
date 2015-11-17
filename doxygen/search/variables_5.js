@@ -20,6 +20,7 @@ var searchData=
   ['entry_5fversion',['ENTRY_VERSION',['docs\html\doxygen/de/d21/classpocketmine_1_1level_1_1format_1_1leveldb_1_1LevelDB.html#a41aff76dd75f24eba87546222ace2dc4',1,'pocketmine::level::format::leveldb::LevelDB']]],
   ['enum',['ENUM',['docs\html\doxygen/d1/d80/classpocketmine_1_1utils_1_1Config.html#afc8a1933ab5e57f778452a0f5508efe1',1,'pocketmine::utils::Config']]],
   ['enumeration',['ENUMERATION',['docs\html\doxygen/d1/d80/classpocketmine_1_1utils_1_1Config.html#a987ad0f9066bf39d4e6274b47cb7709d',1,'pocketmine::utils::Config']]],
+  ['err_5fno_5fperm',['ERR_NO_PERM',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a4e9f58f1b21be4cc19c94f0aba854b41',1,'pemapmodder::worldeditart::lang::Lang']]],
   ['error',['ERROR',['docs\html\doxygen/d1/d9a/interfaceLogLevel.html#a7f79d7b73cfb40bb7855d4260393cc0f',1,'LogLevel']]],
   ['es',['es',['docs\html\doxygen/d6/dff/classpocketmine_1_1wizard_1_1InstallerLang.html#a57e1c4530990c95dbfbd6fa2baa6f3fe',1,'pocketmine::wizard::InstallerLang']]],
   ['escape',['ESCAPE',['docs\html\doxygen/d1/da3/classpocketmine_1_1utils_1_1TextFormat.html#ab044bcd438bebffd55aa0b171c234f51',1,'pocketmine::utils::TextFormat']]],

@@ -40,6 +40,6 @@ var searchData=
   ['translationmanager',['TranslationManager',['../d9/de6/classpemapmodder_1_1worldeditart_1_1lang_1_1TranslationManager.html',1,'pemapmodder::worldeditart::lang']]],
   ['transparent',['Transparent',['docs\html\doxygen/db/de9/classpocketmine_1_1block_1_1Transparent.html',1,'pocketmine::block']]],
   ['trapdoor',['Trapdoor',['docs\html\doxygen/d1/da9/classpocketmine_1_1block_1_1Trapdoor.html',1,'pocketmine::block']]],
-  ['tree',['Tree',['docs\html\doxygen/d2/dd5/classpocketmine_1_1level_1_1generator_1_1populator_1_1Tree.html',1,'pocketmine::level::generator::populator']]],
-  ['tree',['Tree',['docs\html\doxygen/dc/df5/classpocketmine_1_1level_1_1generator_1_1object_1_1Tree.html',1,'pocketmine::level::generator::object']]]
+  ['tree',['Tree',['docs\html\doxygen/dc/df5/classpocketmine_1_1level_1_1generator_1_1object_1_1Tree.html',1,'pocketmine::level::generator::object']]],
+  ['tree',['Tree',['docs\html\doxygen/d2/dd5/classpocketmine_1_1level_1_1generator_1_1populator_1_1Tree.html',1,'pocketmine::level::generator::populator']]]
 ];

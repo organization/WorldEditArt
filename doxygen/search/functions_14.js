@@ -14,7 +14,7 @@ var searchData=
   ['tokenize',['tokenize',['docs\html\doxygen/d1/da3/classpocketmine_1_1utils_1_1TextFormat.html#a858bca3caf9fab3719b9c89fecf083ab',1,'pocketmine::utils::TextFormat']]],
   ['tostring',['toString',['docs\html\doxygen/dc/db6/classSplFixedByteArray.html#a5558c5d549f41597377fa1ea8a1cefa3',1,'SplFixedByteArray']]],
   ['touuid',['toUUID',['docs\html\doxygen/d9/d20/classpocketmine_1_1utils_1_1Utils.html#a99a7a330616cbf9de2ca5e6d7a1b2492',1,'pocketmine::utils::Utils']]],
-  ['translate',['translate',['docs\html\doxygen/d3/d39/classpocketmine_1_1lang_1_1BaseLang.html#a874c5cc1c6315856872d45ed871051a9',1,'pocketmine::lang::BaseLang']]],
+  ['translate',['translate',['docs\html\doxygen/d3/d39/classpocketmine_1_1lang_1_1BaseLang.html#a874c5cc1c6315856872d45ed871051a9',1,'pocketmine::lang::BaseLang::translate()'],['../d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html#ae193a0e2aae0bd35990cd4ccb3635c56',1,'pemapmodder\worldeditart\session\WorldEditSession\translate()']]],
   ['translatestring',['translateString',['docs\html\doxygen/d3/d39/classpocketmine_1_1lang_1_1BaseLang.html#a7b0e3668f3109e47cc72eec1d8fbb423',1,'pocketmine::lang::BaseLang']]],
   ['transpose',['transpose',['docs\html\doxygen/d2/dbc/classpocketmine_1_1math_1_1Matrix.html#a66491f281b2dea60b17f584178c62a8b',1,'pocketmine::math::Matrix']]],
   ['trigger',['trigger',['docs\html\doxygen/dc/dbc/classpocketmine_1_1MemoryManager.html#a6538f40ca34ce927490203314b854ea0',1,'pocketmine::MemoryManager']]],
