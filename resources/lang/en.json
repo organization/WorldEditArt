@@ -1,16 +1,12 @@
 {
-	"eng-version": {
-		"value": "1.0",
-		"updated": "1.0"
-	},
 	"meta": {
 		"language": {
 			"value": "en",
-			"updated": "1.0"
+			"updated": "1.1"
 		},
 		"native": {
 			"value": "English",
-			"updated": "1.0"
+			"updated": "1.1"
 		},
 		"authors": {
 			"value": [
@@ -19,7 +15,7 @@
 			"updated": "1.0"
 		},
 		"comment": {
-			"value": "The major version will be bumped every time AFTER a new plugin release is created. The minor version should be bumped every commit (including merge commits) the en.json file is updated. All unused translation entries must still have the `update` property",
+			"value": "The major version will be bumped every time AFTER a new plugin release is created. The minor version should be bumped every commit (including merge commits) the en.json file is updated. All unused translation entries must still have the `update` property. The version is defined at meta.language.updated, and its relevant English version is defined at meta.native.updated",
 			"updated": "1.0"
 		}
 	},
@@ -27,6 +23,29 @@
 		"noperm": {
 			"value": "You don't have permission to use this command",
 			"updated": "1.0"
+		}
+	},
+	"cmds": {
+		"version": {
+			"description": {
+				"value": "Check the version of WorldEditArt",
+				"updated": "1.1"
+			},
+			"usage": {
+				"value": "/v",
+				"updated": "1.1"
+			},
+			"response": {
+				"value": "This server uses WorldEditArt version %PLUGIN_VERSION% by %PLUGIN_AUTHORS%.\nYou are using %LANG_NAME% translation v%LANG_VERSION% by %LANG_AUTHORS%.",
+				"updated": "1.1",
+				"params": [
+					"PLUGIN_VERSION",
+					"PLUGIN_AUTHORS",
+					"LANG_NAME",
+					"LANG_VERSION",
+					"LANG_AUTHORS"
+				]
+			}
 		}
 	}
 }

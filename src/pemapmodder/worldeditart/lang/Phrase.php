@@ -16,14 +16,20 @@
 namespace pemapmodder\worldeditart\lang;
 
 class Phrase{
+	/** @var string */
+	private $name;
 	/** @var string|string[] */
 	private $value;
 	/** @var string */
 	private $updated;
+	/** @var string[] */
+	private $params = [];
 
-	public function __construct($array){
+	public function __construct($name, $array){
+		$this->name = $name;
 		$this->value = $array["value"];
 		$this->updated = $array["updated"];
+		$this->params = isset($array["params"]) ? $array["params"] : [];
 	}
 
 	/**
@@ -38,5 +44,29 @@ class Phrase{
 	 */
 	public function getUpdated(){
 		return $this->updated;
+	}
+
+	/**
+	 * @param string[] $params
+	 * @return string
+	 */
+	public function format($params){
+		if(!is_string($this->value)){
+			throw new \RuntimeException("Could not format non-string phrase");
+		}
+		$keys = array_fill_keys($this->params, true);
+		foreach($params as $k => $v){
+			if(isset($keys[$k])){
+				unset($keys[$k]);
+			}
+		}
+		if(count($keys) > 0){
+			throw new \RuntimeException("Missing translation parameter " . implode(", ", array_keys($keys)) . " for phrase $this->name");
+		}
+		$format = $this->value;
+		foreach($params as $key => $param){
+			$format = str_replace("%$key%", $param, $format);
+		}
+		return $format;
 	}
 }

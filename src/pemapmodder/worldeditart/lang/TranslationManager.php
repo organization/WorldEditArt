@@ -24,23 +24,38 @@ class TranslationManager{
 	/** @var Phrase[][] */
 	private $langs = [];
 
-	public function __construct(WorldEditArt $main){
+	public function __construct(WorldEditArt $main, $files = []){
 		$this->main = $main;
-		$availableLangs = json_decode($main->getResourceContents("lang/index.json"), true);
+		$availableLangs = json_decode(file_get_contents($main->getDataFolder() . "lang/index.json"), true);
 		foreach($availableLangs as $lang){
+			if(isset($files[$lang])){
+				unset($files[$lang]);
+			}
 			$path = "lang/$lang.json";
+			$data = json_decode(file_get_contents($main->getDataFolder() . $path), true);
+			$browser = new LanguageBrowser($data);
+			$list = $browser->getPhrases();
+			foreach($list as $k => $v){
+				$this->langs[$k][$lang] = $v;
+			}
+
 			$data = json_decode($main->getResourceContents($path), true);
 			$browser = new LanguageBrowser($data);
 			$list = $browser->getPhrases();
 			foreach($list as $k => $v){
-				$list[$k][$lang] = $v;
+				if(!isset($this->langs[$k][$lang])){
+					$this->langs[$k][$lang] = $v;
+				}
 			}
+		}
+		if(count($files) > 0){
+			$main->getLogger()->notice("These language(s): [" . implode(", ", array_keys($files)) . "] are not being loaded because they are not specified in index.json. Update {$main->getDataFolder()}index.json and restart the server to get them loaded.");
 		}
 	}
 
 	/**
-	 * @param $key
-	 * @param $lang
+	 * @param string $key
+	 * @param string $lang
 	 * @return Phrase|null
 	 */
 	public function get($key, $lang){
@@ -52,6 +67,7 @@ class TranslationManager{
 				return $this->langs[$key]["en"];
 			}
 		}
+		$this->main->getLogger()->warning("Returning null for unknown translation string ID '$key'");
 		return null;
 	}
 }

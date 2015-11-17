@@ -15,7 +15,10 @@ namespace pemapmodder\worldeditart;
  * @author PEMapModder
  */
 
+use pemapmodder\worldeditart\cmd\WorldEditArtCommand;
+use pemapmodder\worldeditart\lang\TranslationManager;
 use pemapmodder\worldeditart\utils\FormattedArguments;
+use Phar;
 use pocketmine\permission\Permission;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Server;
@@ -23,18 +26,34 @@ use pocketmine\Server;
 class WorldEditArt extends PluginBase{
 	private static $PLUGIN_NAME = "WorldEditArt";
 	private $sessionCollection;
+	private $translationManager;
 
 	public function onLoad(){
 		self::$PLUGIN_NAME = $this->getDescription()->getName();
 	}
 	public function onEnable(){
 		$this->saveDefaultConfig();
+		$langs = [];
+		foreach(scandir($par = rtrim(Phar::running(), "/") . "/resources/lang/") as $file){
+			$path = $this->getDataFolder() . "lang/$file";
+			if(!is_dir($this->getDataFolder() . "lang")){
+				mkdir($this->getDataFolder() . "lang");
+			}
+			if($file !== "index.json" and strtolower(substr($path, -5)) === ".json"){
+				$langs[substr($file, 0, -5)] = true;
+			}
+			if(!file_exists($path)){
+				file_put_contents($path, file_get_contents($par . $file));
+			}
+		}
+		$this->translationManager = new TranslationManager($this, $langs);
 		$json = $this->getResourceContents("permissions.json");
 		$perms = json_decode($json, true);
 		$stack = [];
 		$this->walkPerms($stack, $perms);
 		$this->sessionCollection = new SessionCollection($this);
 		Permission::loadPermissions($perms);
+		new WorldEditArtCommand($this);
 	}
 	private function walkPerms(array $stack, array &$perms){
 		$prefix = implode(".", $stack) . ".";
@@ -63,6 +82,15 @@ class WorldEditArt extends PluginBase{
 	 */
 	public function getSessionCollection(){
 		return $this->sessionCollection;
+	}
+
+	/**
+	 * Returns the {@link TranslationManager} for WorldEditArt.
+	 *
+	 * @return TranslationManager
+	 */
+	public function getTranslationManager(){
+		return $this->translationManager;
 	}
 
 	/**

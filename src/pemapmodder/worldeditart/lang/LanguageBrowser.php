@@ -27,7 +27,7 @@ class LanguageBrowser{
 		$prefix = implode(".", $this->keys) . ".";
 		foreach($array as $k => $v){
 			if($this->isLanguageArray($v)){
-				$this->phrases[$prefix . $k] = new Phrase($v);
+				$this->phrases[$prefix . $k] = new Phrase($prefix . $k, $v);
 			}else{
 				$cnt = count($this->keys);
 				$this->keys[$cnt] = $k;
@@ -37,7 +37,7 @@ class LanguageBrowser{
 		}
 	}
 	private function isLanguageArray(array $array){
-		return count($array) === 2 and isset($array["value"], $array["updated"]);
+		return isset($array["value"], $array["updated"]);
 	}
 
 	/**

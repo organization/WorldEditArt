@@ -15,8 +15,6 @@
 
 namespace pemapmodder\worldeditart\libworldedit\space;
 
-use pemapmodder\worldeditart\WorldEditArt;
-use pocketmine\level\Level;
 use pocketmine\level\Position;
 use pocketmine\math\Vector3;
 
@@ -24,7 +22,6 @@ use pocketmine\math\Vector3;
  * Represents a space enclosed by two diagonal points of a cuboid.
  */
 class CuboidSpace extends Space{
-
 	/** @var int */
 	private $x1, $x2, $y1, $y2, $z1, $z2;
 	/** @var string */

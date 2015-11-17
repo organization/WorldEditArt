@@ -16,6 +16,7 @@
 namespace pemapmodder\worldeditart\session;
 
 use pemapmodder\worldeditart\libworldedit\space\Space;
+use pemapmodder\worldeditart\WorldEditArt;
 use pocketmine\level\Location;
 use pocketmine\permission\Permission;
 
@@ -30,8 +31,17 @@ abstract class WorldEditSession{
 	/** @var bool */
 	private $sudoModeOn;
 	/** @var Space[] */
-	private $selections = []; // not saved over sessions!
+	private $selections = [];
+	// not saved over sessions!
 
+	public function __construct(){
+		// TODO implement data fetching
+		$config = new UserConfiguration;
+		$config->lang = "en";
+		$config->safeModeOn = false;
+		$config->sudoModeRequired = false;
+		$this->init($config);
+	}
 
 	/**
 	 * This method is separated from the constructor.
@@ -93,6 +103,11 @@ abstract class WorldEditSession{
 	public abstract function hasPermission($permission);
 
 	protected abstract function sendMessageDirect($text);
+
+	/**
+	 * @return WorldEditArt
+	 */
+	public abstract function getMain();
 
 	public function getConfig(){
 		return $this->config;
@@ -161,14 +176,27 @@ abstract class WorldEditSession{
 	 * from the 6th (offset 5) character on.<br>
 	 * Otherwise, <code>$text</code> will be regarded as a translation string ID and translation will be attempted.
 	 *
-	 * @param $text
+	 * @param string $text
+	 * @param string[] $params default <code>[]</code> (empty array)
 	 */
-	public final function sendMessage($text){
+	public final function sendMessage($text, $params = []){
 		if(substr($text, 0, 5) === "%raw%"){
 			$this->sendMessageDirect(substr($text, 5));
 		}else{
-			// TODO
+			$this->sendMessageDirect($this->translate($text, $params));
 		}
 	}
 
+	/**
+	 * @param string $text
+	 * @param string[] $params default <code>[]</code> (empty array)
+	 * @return string|string[]
+	 */
+	public final function translate($text, $params = []){
+		$phrase = $this->getMain()->getTranslationManager()->get($text, $this->config->lang);
+		if(is_array($phrase->getValue())){
+			return $phrase->getValue();
+		}
+		return $phrase->format($params);
+	}
 }

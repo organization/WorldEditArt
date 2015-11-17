@@ -15,16 +15,21 @@
 
 namespace pemapmodder\worldeditart\session;
 
+use pemapmodder\worldeditart\WorldEditArt;
 use pocketmine\Player;
 
 class PlayerSession extends WorldEditSession{
 	const TYPE = "worldeditart.player";
 
+	/** @var WorldEditArt */
+	private $main;
 	/** @var Player */
 	private $player;
 
-	public function __construct(Player $player){
+	public function __construct(WorldEditArt $main, Player $player){
+		$this->main = $main;
 		$this->player = $player;
+		parent::__construct();
 	}
 
 	public function getLocation(){
@@ -45,6 +50,10 @@ class PlayerSession extends WorldEditSession{
 
 	public function getName(){
 		return strtolower($this->player->getName());
+	}
+
+	public function getMain(){
+		return $this->main;
 	}
 
 	/**

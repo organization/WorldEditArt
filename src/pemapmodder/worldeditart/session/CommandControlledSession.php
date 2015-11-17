@@ -15,19 +15,24 @@
 
 namespace pemapmodder\worldeditart\session;
 
+use pemapmodder\worldeditart\WorldEditArt;
 use pocketmine\command\CommandSender;
 use pocketmine\level\Location;
 
 class CommandControlledSession extends WorldEditSession{
 	const TYPE = "worldeditart.cmdctrl";
 
+	/** @var WorldEditArt */
+	private $main;
 	/** @var CommandSender */
 	private $owner;
 	/** @var Location */
 	private $location;
 
-	public function __construct(CommandSender $owner){
+	public function __construct(WorldEditArt $main, CommandSender $owner){
+		$this->main = $main;
 		$this->owner = $owner;
+		parent::__construct();
 	}
 
 	public function getType(){
@@ -44,5 +49,13 @@ class CommandControlledSession extends WorldEditSession{
 
 	public function hasPermission($permission){
 		return $this->owner->hasPermission($permission);
+	}
+
+	public function getMain(){
+		return $this->main;
+	}
+
+	public function sendMessageDirect($text){
+		$this->owner->sendMessage($text);
 	}
 }

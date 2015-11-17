@@ -24,11 +24,12 @@ use pocketmine\Player;
 class WorldEditArtCommand extends Command implements PluginIdentifiableCommand{
 	/** @var WorldEditArt */
 	private $main;
-	/** @var BaseCommand[] */
+	/** @var BaseCmd[] */
 	private $cmds = [];
 
 	public function __construct(WorldEditArt $main){
 		$this->main = $main;
+		$this->registerCmds();
 		$aliases = [];
 		foreach($this->cmds as $cmd){
 			foreach($cmd->getNames() as $name){
@@ -37,6 +38,15 @@ class WorldEditArtCommand extends Command implements PluginIdentifiableCommand{
 		}
 		parent::__construct("/", "WorldEditArt main command.", "Use `//` for detailed help.", $aliases);
 		$main->getServer()->getCommandMap()->register("/", $this);
+	}
+	private function registerCmds(){
+		$this->registerCmd(new VersionCmd);
+	}
+
+	public function registerCmd(BaseCmd $cmd){
+		foreach($cmd->getNames() as $name){
+			$this->cmds[strtolower($name)] = $cmd;
+		}
 	}
 
 	public function execute(CommandSender $sender, $alias, array $args){
@@ -57,6 +67,7 @@ class WorldEditArtCommand extends Command implements PluginIdentifiableCommand{
 			return true;
 		}else{
 			$cmdName = substr($alias, 1);
+			var_dump($cmdName);
 			$cmd = $this->findCommand($cmdName);
 			if($cmd === null){
 				return false;
@@ -75,7 +86,7 @@ class WorldEditArtCommand extends Command implements PluginIdentifiableCommand{
 	 * Returns a {@link BaseCommand} for the given <code>$name</code>, or <code>null</code> if not found.
 	 *
 	 * @param string $name
-	 * @return BaseCommand|null
+	 * @return BaseCmd|null
 	 */
 	public function findCommand($name){
 		return isset($this->cmds[strtolower($name)]) ? $this->cmds[strtolower($name)] : null;

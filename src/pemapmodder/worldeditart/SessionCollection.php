@@ -48,7 +48,7 @@ class SessionCollection implements Listener{
 		$this->internal_onJoin($player);
 	}
 	private function internal_onJoin(Player $player){
-		$this->sessions[$player->getId()] = new PlayerSession($player);
+		$this->sessions[$player->getId()] = new PlayerSession($this->main, $player);
 	}
 
 	public function onQuit(PlayerQuitEvent $event){
@@ -68,6 +68,12 @@ class SessionCollection implements Listener{
 	 * @return WorldEditSession|null An instance of {@link WorldEditSession} if found, <code>null</code> otherwise.
 	 */
 	public function getSession($player){
-
+		if(is_string($player)){
+			$player = $this->main->getServer()->getPlayer($player);
+		}
+		if(!($player instanceof Player)){
+			return null;
+		}
+		return isset($this->sessions[$player->getId()]) ? $this->sessions[$player->getId()] : null;
 	}
 }

@@ -15,9 +15,10 @@
 
 namespace pemapmodder\worldeditart\cmd;
 
+use pemapmodder\worldeditart\lang\Lang;
 use pemapmodder\worldeditart\session\WorldEditSession;
 
-interface BaseCommand{
+interface BaseCmd extends Lang{
 	/**
 	 * Sends the command's usage message to the player.
 	 */
@@ -66,7 +67,7 @@ interface BaseCommand{
 	 *
 	 * @param WorldEditSession $session
 	 * @param string[] $args
-	 * @return string|int|null
+	 * @return string|int|null|void
 	 */
 	public function run(WorldEditSession $session, array $args);
 }
