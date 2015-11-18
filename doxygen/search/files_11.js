@@ -23,6 +23,7 @@ var searchData=
   ['reporterrortask_2ephp',['ReportErrorTask.php',['../d3/d94/ReportErrorTask_8php.html',1,'']]],
   ['respawnpacket_2ephp',['RespawnPacket.php',['docs\html\doxygen/d2/d6c/RespawnPacket_8php.html',1,'']]],
   ['reversepriorityqueue_2ephp',['ReversePriorityQueue.php',['docs\html\doxygen/d7/d27/ReversePriorityQueue_8php.html',1,'']]],
+  ['rheostat_2ephp',['Rheostat.php',['../d9/d4f/Rheostat_8php.html',1,'']]],
   ['rideable_2ephp',['Rideable.php',['docs\html\doxygen/d7/da4/Rideable_8php.html',1,'']]],
   ['riverbiome_2ephp',['RiverBiome.php',['docs\html\doxygen/dc/dc0/RiverBiome_8php.html',1,'']]]
 ];

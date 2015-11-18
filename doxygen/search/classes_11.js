@@ -23,6 +23,7 @@ var searchData=
   ['reporterrortask',['ReportErrorTask',['../d5/d25/classpemapmodder_1_1worldeditart_1_1utils_1_1ReportErrorTask.html',1,'pemapmodder::worldeditart::utils']]],
   ['respawnpacket',['RespawnPacket',['docs\html\doxygen/d5/d88/classpocketmine_1_1network_1_1protocol_1_1RespawnPacket.html',1,'pocketmine::network::protocol']]],
   ['reversepriorityqueue',['ReversePriorityQueue',['docs\html\doxygen/d7/dae/classpocketmine_1_1utils_1_1ReversePriorityQueue.html',1,'pocketmine::utils']]],
+  ['rheostat',['Rheostat',['../d3/d11/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Rheostat.html',1,'pemapmodder::worldeditart::session::queue']]],
   ['rideable',['Rideable',['docs\html\doxygen/d1/d07/interfacepocketmine_1_1entity_1_1Rideable.html',1,'pocketmine::entity']]],
   ['riverbiome',['RiverBiome',['docs\html\doxygen/d1/d15/classpocketmine_1_1level_1_1generator_1_1normal_1_1biome_1_1RiverBiome.html',1,'pocketmine::level::generator::normal::biome']]]
 ];

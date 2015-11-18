@@ -60,5 +60,6 @@ var searchData=
   ['type_5fsword',['TYPE_SWORD',['docs\html\doxygen/de/dbe/classpocketmine_1_1item_1_1Tool.html#a7ae310808adab121ebcb417d4ef8c095',1,'pocketmine::item::Tool']]],
   ['type_5ftip',['TYPE_TIP',['docs\html\doxygen/d8/d81/classpocketmine_1_1network_1_1protocol_1_1TextPacket.html#a8c65e75b03234669ea1ec12cb126f6bb',1,'pocketmine::network::protocol::TextPacket']]],
   ['type_5ftranslation',['TYPE_TRANSLATION',['docs\html\doxygen/d8/d81/classpocketmine_1_1network_1_1protocol_1_1TextPacket.html#ae634a0fb1c3eb5c1866bcb23d5bca0a8',1,'pocketmine::network::protocol::TextPacket']]],
+  ['type_5funder_5fconstruction',['TYPE_UNDER_CONSTRUCTION',['../d3/dc8/classpemapmodder_1_1worldeditart_1_1database_1_1Zone.html#a515a004c28f61583253a6a92687f7104',1,'pemapmodder::worldeditart::database::Zone']]],
   ['type_5fwhite_5ftulip',['TYPE_WHITE_TULIP',['docs\html\doxygen/d7/db9/classpocketmine_1_1block_1_1Flower.html#a053dd502cf58c637964ff738501170e5',1,'pocketmine::block::Flower']]]
 ];

@@ -11,6 +11,7 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "Database", "d3/d5f/interfacepemapmodder_1_1worldeditart_1_1database_1_1Database.html", null ],
     [ "FormattedArguments", "db/dec/classpemapmodder_1_1worldeditart_1_1utils_1_1FormattedArguments.html", null ],
     [ "Lang", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html", [
       [ "BaseCmd", "d2/d20/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCmd.html", [
@@ -26,6 +27,8 @@ var hierarchy =
     [ "PluginIdentifiableCommand", "docs\html\doxygen/da/dbc/interfacepocketmine_1_1command_1_1PluginIdentifiableCommand.html", [
       [ "WorldEditArtCommand", "d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html", null ]
     ] ],
+    [ "Queue", "d4/d9a/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Queue.html", null ],
+    [ "Rheostat", "d3/d11/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Rheostat.html", null ],
     [ "Threaded", "docs\html\doxygen/d1/d8c/classThreaded.html", [
       [ "Collectable", "docs\html\doxygen/d8/daa/classCollectable.html", [
         [ "AsyncTask", "docs\html\doxygen/d7/d67/classpocketmine_1_1scheduler_1_1AsyncTask.html", [
@@ -39,6 +42,7 @@ var hierarchy =
       [ "CommandControlledSession", "d2/d7b/classpemapmodder_1_1worldeditart_1_1session_1_1CommandControlledSession.html", null ],
       [ "PlayerSession", "de/db6/classpemapmodder_1_1worldeditart_1_1session_1_1PlayerSession.html", null ]
     ] ],
+    [ "Zone", "d3/dc8/classpemapmodder_1_1worldeditart_1_1database_1_1Zone.html", null ],
     [ "Serializable", null, [
       [ "Space", "df/da6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1Space.html", [
         [ "CuboidSpace", "db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html", null ],
