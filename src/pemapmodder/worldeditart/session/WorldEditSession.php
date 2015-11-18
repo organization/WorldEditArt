@@ -18,6 +18,7 @@ namespace pemapmodder\worldeditart\session;
 use pemapmodder\worldeditart\libworldedit\space\Space;
 use pemapmodder\worldeditart\WorldEditArt;
 use pocketmine\level\Location;
+use pocketmine\level\Position;
 use pocketmine\permission\Permission;
 
 /**
@@ -31,8 +32,9 @@ abstract class WorldEditSession{
 	/** @var bool */
 	private $sudoModeOn;
 	/** @var Space[] */
-	private $selections = [];
-	// not saved over sessions!
+	private $selections = []; // not saved over sessions!
+	/** @var Position[] */
+	private $bookmarks = [];
 
 	public function __construct(){
 		// TODO implement data fetching
@@ -138,7 +140,6 @@ abstract class WorldEditSession{
 		}
 		return isset($this->selections[$name]) ? $this->selections[$name] : null;
 	}
-
 	/**
 	 * Gets an array of the selections the user has made.<br>
 	 *
@@ -147,7 +148,6 @@ abstract class WorldEditSession{
 	public function getSelections(){
 		return $this->selections;
 	}
-
 	/**
 	 * Adds the given <code>$sel</code> into the array of selections.
 	 *
@@ -158,6 +158,52 @@ abstract class WorldEditSession{
 	public function addSelection(Space $sel, $name = "default"){
 		$hadExisted = isset($this->selections[$name]);
 		$this->selections[$name] = $sel;
+		return $hadExisted;
+	}
+
+	/**
+	 * Returns the bookmark made by the user with the name <code>$name</code>, or <code>null</code> if nonexistent.<br>
+	 * If no parameters are provided, the function will return the bookmarks in the following priority list:
+	 * <ol>
+	 *      <li>The bookmark named "default"</li>
+	 *      <li>The only bookmark in the list of bookmarks</li>
+	 *      <li>A random (usually the first) bookmark created</li>
+	 *      <li><code>null</code>, if the array is empty
+	 * </ol>
+	 *
+	 * @param string|null $name
+	 * @return Position|null
+	 */
+	public function getBookmark($name = null){
+		if($name === null){
+			if(isset($this->bookmarks["default"])){
+				return $this->bookmarks["default"];
+			}
+			if(count($this->bookmarks) >= 1){
+				return array_values($this->bookmarks)[0];
+			}
+			return null;
+		}
+		return isset($this->bookmarks[$name]) ? $this->bookmarks[$name] : null;
+	}
+	/**
+	 * Gets an array of the bookmarks the user has made.<br>
+	 *
+	 * @return Position[]
+	 */
+	public function getBookmarks(){
+		return $this->bookmarks;
+	}
+	/**
+	 * Adds the given <code>$pos</code> into the array of bookmarks.
+	 *
+	 * @param Position $pos
+	 * @param string $name default "default"
+	 * @return bool
+	 */
+	public function addBookmark(Position $pos, $name = "default"){
+		$hadExisted = isset($this->bookmarks[$name]);
+		$this->bookmarks[$name] = $pos;
 		return $hadExisted;
 	}
 
