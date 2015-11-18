@@ -1,0 +1,15 @@
+language: bash
+sudo: false
+
+before_install:
+- mkdir ../server && cd ../server
+- wget -O - -q get.pocketmine.net | bash -s - -v development
+- mkdir plugins
+
+install:
+- cd $TRAVIS_BUILD_DIR && php make.php
+- cp bin/WorldEditArt_Dev.phar ../server/plugins/WorldEditArt.phar
+
+script:
+- cd $TRAVIS_BUILD_DIR/../server
+- ./start.sh --disable-ansi --no-wizard
