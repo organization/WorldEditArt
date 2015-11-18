@@ -30,7 +30,7 @@ var searchData=
   ['saveoncommand',['SaveOnCommand',['docs\html\doxygen/dc/db3/classpocketmine_1_1command_1_1defaults_1_1SaveOnCommand.html',1,'pocketmine::command::defaults']]],
   ['saveoncommand_2ephp',['SaveOnCommand.php',['docs\html\doxygen/d9/dad/SaveOnCommand_8php.html',1,'']]],
   ['saveresource',['saveResource',['docs\html\doxygen/dc/d75/interfacepocketmine_1_1plugin_1_1Plugin.html#a9104baaa0d31b0687785efc77afca6a2',1,'pocketmine::plugin::Plugin::saveResource()'],['docs\html\doxygen/de/d14/classpocketmine_1_1plugin_1_1PluginBase.html#a9104baaa0d31b0687785efc77afca6a2',1,'pocketmine::plugin::PluginBase::saveResource()']]],
-  ['savesession',['saveSession',['../d3/d5f/interfacepemapmodder_1_1worldeditart_1_1database_1_1Database.html#a897d131c8ee35fe2e1e35ac079e4af8c',1,'pemapmodder::worldeditart::database::Database']]],
+  ['savesession',['saveSession',['../d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider.html#a897d131c8ee35fe2e1e35ac079e4af8c',1,'pemapmodder::worldeditart::database::DataProvider']]],
   ['savetothreadstore',['saveToThreadStore',['docs\html\doxygen/d7/d67/classpocketmine_1_1scheduler_1_1AsyncTask.html#a2430d600b6fc165acb9e7ad02014ea9c',1,'pocketmine::scheduler::AsyncTask']]],
   ['saycommand',['SayCommand',['docs\html\doxygen/d8/d34/classpocketmine_1_1command_1_1defaults_1_1SayCommand.html',1,'pocketmine::command::defaults']]],
   ['saycommand_2ephp',['SayCommand.php',['docs\html\doxygen/d9/d18/SayCommand_8php.html',1,'']]],

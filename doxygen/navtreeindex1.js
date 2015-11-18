@@ -1,5 +1,18 @@
 var NAVTREEINDEX1 =
 {
+"de/db6/classpemapmodder_1_1worldeditart_1_1session_1_1PlayerSession.html#af4a017b5086e6f92b4c4811c165006ba":[1,0,0,0,4,2,4],
+"df/d60/classpemapmodder_1_1worldeditart_1_1session_1_1UserConfiguration.html":[1,0,0,0,4,3],
+"df/d60/classpemapmodder_1_1worldeditart_1_1session_1_1UserConfiguration.html#a0670c0ff288f7f619c2bbbdc3a942f46":[1,0,0,0,4,3,1],
+"df/d60/classpemapmodder_1_1worldeditart_1_1session_1_1UserConfiguration.html#af5b90c72abbb5c128394380fd25ff8d8":[1,0,0,0,4,3,2],
+"df/d60/classpemapmodder_1_1worldeditart_1_1session_1_1UserConfiguration.html#af8a34e9fd9f9f65effac0f731cefc4ff":[1,0,0,0,4,3,0],
+"df/da6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1Space.html":[1,0,0,0,3,1,2],
+"df/da6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1Space.html#a60d42f5372a99853dad902b1f1f62755":[1,0,0,0,3,1,2,1],
+"df/da6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1Space.html#a674de8e0d156a3313973874d29dc9002":[1,0,0,0,3,1,2,0],
+"df/da6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1Space.html#a7b37efab7473a1effc29f8be2421f6e3":[1,0,0,0,3,1,2,3],
+"df/da6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1Space.html#ac1cdebe56bd50e52772858ba30262401":[1,0,0,0,3,1,2,4],
+"df/da6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1Space.html#acf949cf74dbd51f1b04de8df58d3f0a5":[1,0,0,0,3,1,2,2],
+"df/da6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1Space.html#ad0d40ffc93e4480345b91c367b1dd8e5":[1,0,0,0,3,1,2,5],
+"df/dbf/CuboidSpace_8php.html":[2,0,0,0,0,3,1,0],
 "df/dbf/CuboidSpace_8php_source.html":[2,0,0,0,0,3,1,0],
 "df/df8/CylinderSpace_8php.html":[2,0,0,0,0,3,1,1],
 "df/df8/CylinderSpace_8php_source.html":[2,0,0,0,0,3,1,1],

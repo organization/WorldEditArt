@@ -8,6 +8,7 @@ var searchData=
   ['basechunk_2ephp',['BaseChunk.php',['docs\html\doxygen/df/d1e/BaseChunk_8php.html',1,'']]],
   ['baseclassloader_2ephp',['BaseClassLoader.php',['docs\html\doxygen/df/dec/BaseClassLoader_8php.html',1,'']]],
   ['basecmd_2ephp',['BaseCmd.php',['../d4/d81/BaseCmd_8php.html',1,'']]],
+  ['basedataprovider_2ephp',['BaseDataProvider.php',['../d6/dcb/BaseDataProvider_8php.html',1,'']]],
   ['basefullchunk_2ephp',['BaseFullChunk.php',['docs\html\doxygen/d1/da4/BaseFullChunk_8php.html',1,'']]],
   ['baseinventory_2ephp',['BaseInventory.php',['docs\html\doxygen/d9/d48/BaseInventory_8php.html',1,'']]],
   ['baselang_2ephp',['BaseLang.php',['docs\html\doxygen/d6/d27/BaseLang_8php.html',1,'']]],

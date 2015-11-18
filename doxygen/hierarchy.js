@@ -11,7 +11,9 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "Database", "d3/d5f/interfacepemapmodder_1_1worldeditart_1_1database_1_1Database.html", null ],
+    [ "DataProvider", "d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider.html", [
+      [ "BaseDataProvider", "d2/d70/classpemapmodder_1_1worldeditart_1_1database_1_1BaseDataProvider.html", null ]
+    ] ],
     [ "FormattedArguments", "db/dec/classpemapmodder_1_1worldeditart_1_1utils_1_1FormattedArguments.html", null ],
     [ "Lang", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html", [
       [ "BaseCmd", "d2/d20/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCmd.html", [
