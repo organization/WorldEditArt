@@ -2,6 +2,7 @@ var searchData=
 [
   ['nack',['NACK',['docs\html\doxygen/d4/d99/classraklib_1_1protocol_1_1NACK.html',1,'raklib::protocol']]],
   ['nack_2ephp',['NACK.php',['docs\html\doxygen/d2/d8f/NACK_8php.html',1,'']]],
+  ['name',['name',['../d3/d11/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Rheostat.html#a4b516aaa5fa38da4fed24ab6001627e2',1,'pemapmodder::worldeditart::session::queue::Rheostat']]],
   ['namedtag',['NamedTag',['docs\html\doxygen/da/d0a/classpocketmine_1_1nbt_1_1tag_1_1NamedTag.html',1,'pocketmine::nbt::tag']]],
   ['namedtag_2ephp',['NamedTag.php',['docs\html\doxygen/d2/db8/NamedTag_8php.html',1,'']]],
   ['nausea',['NAUSEA',['docs\html\doxygen/de/d0d/classpocketmine_1_1entity_1_1Effect.html#a10bb78759fb9a7cd41b94c348a5287be',1,'pocketmine::entity::Effect']]],

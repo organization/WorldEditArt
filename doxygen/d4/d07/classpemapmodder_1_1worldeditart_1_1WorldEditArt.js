@@ -6,5 +6,6 @@ var classpemapmodder_1_1worldeditart_1_1WorldEditArt =
     [ "getTranslationManager", "d4/d07/classpemapmodder_1_1worldeditart_1_1WorldEditArt.html#a1146fa10190edce7701ccaf073910f03", null ],
     [ "onEnable", "d4/d07/classpemapmodder_1_1worldeditart_1_1WorldEditArt.html#ab5c2f5a2ace2e4af36e9d5f281bcdceb", null ],
     [ "onLoad", "d4/d07/classpemapmodder_1_1worldeditart_1_1WorldEditArt.html#ae7c95f4b1a110303e6a457ccafc7706b", null ],
-    [ "processArgs", "d4/d07/classpemapmodder_1_1worldeditart_1_1WorldEditArt.html#a183677bcf9f4ada5852cbc33ae71b289", null ]
+    [ "processArgs", "d4/d07/classpemapmodder_1_1worldeditart_1_1WorldEditArt.html#a183677bcf9f4ada5852cbc33ae71b289", null ],
+    [ "randomName", "d4/d07/classpemapmodder_1_1worldeditart_1_1WorldEditArt.html#ad9265166055e55f68c4cb19a627b5c55", null ]
 ];

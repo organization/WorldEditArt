@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['name',['name',['../d3/d11/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Rheostat.html#a4b516aaa5fa38da4fed24ab6001627e2',1,'pemapmodder::worldeditart::session::queue::Rheostat']]],
   ['next',['next',['docs\html\doxygen/d9/d53/classpocketmine_1_1utils_1_1BlockIterator.html#acea62048bfee7b3cd80ed446c86fb78a',1,'pocketmine::utils::BlockIterator::next()'],['docs\html\doxygen/db/df8/classLevelDBIterator.html#acea62048bfee7b3cd80ed446c86fb78a',1,'LevelDBIterator::next()'],['docs\html\doxygen/da/db6/classWeakMap.html#acea62048bfee7b3cd80ed446c86fb78a',1,'WeakMap::next()']]],
   ['nextboolean',['nextBoolean',['docs\html\doxygen/d4/d9f/classpocketmine_1_1utils_1_1Random.html#a0afe908544d93adfeba1bec4759a868c',1,'pocketmine::utils::Random']]],
   ['nextboundedint',['nextBoundedInt',['docs\html\doxygen/d4/d9f/classpocketmine_1_1utils_1_1Random.html#a43545d730addcb0c4997c1f463ad98d0',1,'pocketmine::utils::Random']]],

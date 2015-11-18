@@ -13,5 +13,7 @@ var searchData=
   ['queryregenerateevent_2ephp',['QueryRegenerateEvent.php',['docs\html\doxygen/de/d88/QueryRegenerateEvent_8php.html',1,'']]],
   ['queue',['Queue',['../d4/d9a/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Queue.html',1,'pemapmodder::worldeditart::session::queue']]],
   ['queue_2ephp',['Queue.php',['../dd/d69/Queue_8php.html',1,'']]],
+  ['queue_5ftip_5fentry',['QUEUE_TIP_ENTRY',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a20a223f11a0af5afb535e98a17883ccf',1,'pemapmodder::worldeditart::lang::Lang']]],
+  ['queue_5ftip_5ftitle',['QUEUE_TIP_TITLE',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a5501cdd912a96e80848d1b96df147889',1,'pemapmodder::worldeditart::lang::Lang']]],
   ['quit',['quit',['docs\html\doxygen/d8/da3/classpocketmine_1_1Thread.html#a24c9a28cada7b725be33705a57dff8e7',1,'pocketmine::Thread::quit()'],['docs\html\doxygen/d4/d3b/classpocketmine_1_1Worker.html#a24c9a28cada7b725be33705a57dff8e7',1,'pocketmine::Worker::quit()']]]
 ];
