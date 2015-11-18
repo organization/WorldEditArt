@@ -9,14 +9,18 @@ TODO list:
 - [ ] Gamma
     - [X] Doxygen setup
     - [ ] Frameworks
-        - [ ] Language
+        - [X] Language
         - [ ] World editing session control system
             - [ ] Allow any command senders (via the CommandControlledSession class) to execute world editing
             - [X] Selections (support multiple selections at the same time)
         - [X] Spaces library
-        - [ ] Action (Redo/Undo) system and action pool
+        - [X] Action (Redo/Undo) system and action pool (rheostats)
         - [ ] Providers framework
-        - [ ] Base command class
+            - [X] Framework
+            - [ ] Implementations
+                - [ ] Filesystem
+                - [ ] MySQL
+        - [X] Base command class
     - [ ] Utils
         - [ ] Async database querying system
         - [X] [Non-threaded integer-object pool](src/pemapmodder/worldeditart/utils/OrderedObjectPool.php)
@@ -51,4 +55,4 @@ TODO list:
 
 Compiling
 ===
-To compile this plugin, simply run [`php make.php`](make.php), and a new phar build will be created in the [`bin`](bin/) directory.
+To compile this plugin, simply run [`php make.php`](make.php), and a new phar build will be created in the [`bin`](bin/) directory. **Note that bin/id.json and bin/WorldEditArt_Dev.phar, which are under the Git tree, will be modified.**
