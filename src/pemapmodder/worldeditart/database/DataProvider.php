@@ -16,9 +16,10 @@
 namespace pemapmodder\worldeditart\database;
 
 use pemapmodder\worldeditart\session\WorldEditSession;
+use pemapmodder\worldeditart\WorldEditArt;
 use pocketmine\level\Position;
 
-interface Database{
+interface DataProvider{
 	const ZONE_NONE = 0;
 	const ZONE_TYPE_UNDER_CONSTRUCTION = 1;
 
@@ -43,7 +44,7 @@ interface Database{
 	 * Returns the {@link Zone}s <code>$pos</code> is in.
 	 *
 	 * @param Position $pos
-	 * @return Zone[]
+	 * @return Zone[]|\Iterator<Zone>
 	 */
 	public function getZones(Position $pos);
 
@@ -60,4 +61,11 @@ interface Database{
 	 * @param Zone $zone
 	 */
 	public function removeZone(Zone $zone);
+
+	/**
+	 * Returns a reference to the main plugin object.
+	 *
+	 * @return WorldEditArt
+	 */
+	public function getMain();
 }
