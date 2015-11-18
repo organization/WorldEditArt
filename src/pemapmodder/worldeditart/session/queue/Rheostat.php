@@ -43,20 +43,21 @@ class Rheostat{
 
 	private $slideDirection = self::DIRECTION_FORWARDS;
 
+	/** @var string */
+	private $name;
+
 	/**
 	 * Rheostat constructor.
 	 * @param Block[] $forwardRecords
+	 * @param $name
 	 */
-	public function __construct($forwardRecords){
+	public function __construct($forwardRecords, $name){
 		$this->forwardRecords = $forwardRecords;
+		$this->name = $name;
 	}
 
 	public function slide(){
-		if($this->slideDirection === self::DIRECTION_FORWARDS){
-			$this->slideForwards();
-		}else{
-			$this->slideBackwards();
-		}
+		$this->slideDirection === self::DIRECTION_FORWARDS ? $this->slideForwards() : $this->slideBackwards();
 	}
 	private function slideForwards(){
 		/** @var Block $next */
@@ -71,5 +72,19 @@ class Rheostat{
 		$next = $original->getLevel()->getBlock($original);
 		$original->getLevel()->setBlock($original, $original, false, false);
 		array_unshift($this->forwardRecords, $next);
+	}
+
+	public function name(){
+		return $this->name;
+	}
+
+	public function total(){
+		return count($this->forwardRecords) + count($this->behindRecords);
+	}
+	public function done(){
+		return count($this->behindRecords);
+	}
+	public function left(){
+		return count($this->forwardRecords);
 	}
 }

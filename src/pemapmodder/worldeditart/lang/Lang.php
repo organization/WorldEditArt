@@ -26,4 +26,6 @@ interface Lang{
 	const CMDS_VERSION_DESCRIPTION = "cmds.version.description";
 	const CMDS_VERSION_USAGE = "cmds.version.usage";
 	const CMDS_VERSION_RESPONSE = "cmds.version.response";
+	const QUEUE_TIP_TITLE = "queue.tip.title";
+	const QUEUE_TIP_ENTRY = "queue.tip.entry";
 }

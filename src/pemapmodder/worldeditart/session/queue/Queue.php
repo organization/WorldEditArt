@@ -15,6 +15,7 @@
 
 namespace pemapmodder\worldeditart\session\queue;
 
+use pemapmodder\worldeditart\lang\Lang;
 use pemapmodder\worldeditart\session\WorldEditSession;
 
 class Queue{
@@ -22,4 +23,19 @@ class Queue{
 	private $owner;
 	/** @var Rheostat[] */
 	private $rheostats = [];
+
+	public function __construct(WorldEditSession $owner){
+		$this->owner = $owner;
+	}
+
+	public function tip(){
+		$tip = $this->owner->translate(Lang::QUEUE_TIP_TITLE) . "\n";
+		foreach($this->rheostats as $rheostat){
+			$tip .= $this->owner->translate(Lang::QUEUE_TIP_ENTRY, [
+					"TASK_NAME" => $rheostat->name(),
+					"PROGRESS_PERC" => round($rheostat->done() / $rheostat->total() * 100, 1)
+			]);
+		}
+		return trim($tip);
+	}
 }

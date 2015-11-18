@@ -48,3 +48,7 @@ TODO list:
         - [ ] Macros
             - [ ] Storage
             - [ ] Database
+
+Compiling
+===
+To compile this plugin, simply run [`php make.php`](make.php), and a new phar build will be created in the [`bin`](bin/) directory.

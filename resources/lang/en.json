@@ -2,11 +2,11 @@
 	"meta": {
 		"language": {
 			"value": "en",
-			"updated": "1.1"
+			"updated": "1.2"
 		},
 		"native": {
 			"value": "English",
-			"updated": "1.1"
+			"updated": "1.2"
 		},
 		"authors": {
 			"value": [
@@ -44,6 +44,22 @@
 					"LANG_NAME",
 					"LANG_VERSION",
 					"LANG_AUTHORS"
+				]
+			}
+		}
+	},
+	"queue": {
+		"tip": {
+			"title": {
+				"value": "Tasks running:",
+				"updated": "1.2"
+			},
+			"entry": {
+				"value": "%TASK_NAME%: %PROGRESS_PERC%% done",
+				"updated": "1.2",
+				"params": [
+					"TASK_NAME",
+					"PROGRESS_PERC"
 				]
 			}
 		}

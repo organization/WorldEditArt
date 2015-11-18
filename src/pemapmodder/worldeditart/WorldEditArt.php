@@ -165,6 +165,23 @@ class WorldEditArt extends PluginBase{
 	}
 
 	/**
+	 * Generates a pseudo-random 6-character string composed of <code>0-9</code>, <code>A-Z</code> and <code>a-z</code>.
+	 *
+	 * @return string
+	 */
+	public static function randomName(){
+		return str_replace(["+", "/", "="], ["Q", "Z", ""], base64_encode(self::numToBytes(mt_rand(mt_getrandmax() >> 1, mt_getrandmax()))));
+	}
+	private static function numToBytes($num){
+		$output = "";
+		while($num > 0){
+			$output = chr($num & 0xFF) . $output;
+			$num >>= 8;
+		}
+		return $output;
+	}
+
+	/**
 	 * @param Server $server
 	 * @return WorldEditArt|null
 	 */
