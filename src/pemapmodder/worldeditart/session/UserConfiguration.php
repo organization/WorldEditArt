@@ -17,6 +17,8 @@ namespace pemapmodder\worldeditart\session;
 
 // WHY NO LOMBOK IN PHP!!!
 class UserConfiguration{
+	private $configModified = false;
+
 	/**
 	 * This represents whether the user is default to have sudo mode turned off
 	 *
@@ -37,4 +39,22 @@ class UserConfiguration{
 	 * @var string $lang
 	 */
 	public $lang;
+
+	public function __set($name, $value){
+		$this->{$name} = $value;
+		$this->configModified = true;
+	}
+
+	/**
+	 * Returns whether this config has been modified since construction or last {@link UserConfiguration#resetModifiedTracker} call.
+	 *
+	 * @return bool
+	 */
+	public function isConfigModified(){
+		return $this->configModified;
+	}
+
+	public function resetModifiedTracker(){
+		$this->configModified = false;
+	}
 }

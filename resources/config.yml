@@ -1,6 +1,9 @@
 ---
+### WORLDEDITART GAMMA CONFIG FILE ###
+# please do NOT delete the line above, or WorldEditArt will overwrite this file!
 # DEFAULT settings for each user. A user CAN change these through commands restricted by permission nodes.
 # For unspecified damage values and infinite maximum integers, put -1
+
 defaultConfig:
   # the item to be used as a wand
   wand:
@@ -38,32 +41,6 @@ safety:
     # max number of sudoers at the same time
     maxSudoers: -1
 
-# this lets you customize the names, descriptions, usages and aliases of commands.
-commands:
-  # note: do not modify the keys like "SudoCommand" and "UnderConstructionCommand"!
-  SudoCommand:
-    # the "name" attribute is the main name to use, shown in /help and //help.
-    # You can add more names at the "aliases" attribute.
-    # note: players have to type `//sudo` to run this command; put "sudo" if you want players to type `/sudo`
-    name: "/sudo"
-    description: Enable sudo mode
-    # note: changing this usage message doesn't modify the syntax of the command. It only changes the usage message when a user uses sudo mode incorrectly.
-    usageMessage: "//sudo [number of minutes until sudo mode ends, default forever]"
-    # note: sudoRequired is true by default. If sudo is required, you can delete this line.
-    sudoRequired: false
-    # note: if there are no aliases, you can delete this line.
-    aliases: ["/s"]
-  MarkUnderConstructionCommand:
-    name: "/muc"
-    description: Marks your current selection as under construction.
-    usageMessage: "//uc"
-    aliases: ["/uc"]
-  UnmarkUnderConstructionCommand:
-    name: "/nuc"
-    description: Remove the under-construction mark for the zone you are standing at
-    usageMessage: "//uuc [.anchor]"
-    aliases: ["/uuc"]
-
 dataProvider:
   # data provider (database) used for user configs
   userConfig:
@@ -88,11 +65,9 @@ dataProvider:
           # You can run the MySQL query "CREATE SCHEMA schema_name" to create a schema called schema_name
           schema: wea
           port: 3306
-        # I am aware that some hosting companies only allocate you one schema, so all tables created by WorldEditArt will start with this prefix to avoid having the same table name as other plugins
-        tablePrefix: wea_
 
 advanced:
   objectPool:
-    # create a warning when the size of OrderedObjectPool reached this value
+    # create a warning when the size of OrderedObjectPool reached this value, usually caused by a memory leak
     warningSize: 10
 ...

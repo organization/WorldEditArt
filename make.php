@@ -52,7 +52,7 @@ $pluginYml = yaml_emit($manifest = [
 	"main" => WorldEditArt::class,
 	"description" => $description,
 	"website" => $website,
-	"build" => [
+		"build" => $buildData = [
 		"author" => $author,
 		"buildTime" => [
 			"ISO8601" => date(DATE_ISO8601),
@@ -93,6 +93,7 @@ $phar->setSignatureAlgorithm(Phar::SHA1);
 $phar->setMetadata($manifest);
 $phar->startBuffering();
 $phar->addFromString("plugin.yml", $pluginYml);
+$phar->addFromString("resources/meta.build.json", json_encode($buildData, JSON_UNESCAPED_SLASHES | JSON_BIGINT_AS_STRING));
 addDir($phar, realpath("src"), "src");
 addDir($phar, realpath("resources"), "resources");
 $phar->stopBuffering();
