@@ -2,6 +2,7 @@ var hierarchy =
 [
     [ "Action", "d9/dfd/interfacepemapmodder_1_1worldeditart_1_1libworldedit_1_1action_1_1Action.html", null ],
     [ "Command", "docs\html\doxygen/d8/d9d/classpocketmine_1_1command_1_1Command.html", [
+      [ "StartConfigurationCommand", "dc/de3/classpemapmodder_1_1worldeditart_1_1cmd_1_1StartConfigurationCommand.html", null ],
       [ "WorldEditArtCommand", "d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html", null ]
     ] ],
     [ "CommandExecutor", "docs\html\doxygen/d5/dd0/interfacepocketmine_1_1command_1_1CommandExecutor.html", [
@@ -27,6 +28,7 @@ var hierarchy =
     [ "OrderedObjectPool", "d2/ded/classpemapmodder_1_1worldeditart_1_1utils_1_1OrderedObjectPool.html", null ],
     [ "Phrase", "da/d1a/classpemapmodder_1_1worldeditart_1_1lang_1_1Phrase.html", null ],
     [ "PluginIdentifiableCommand", "docs\html\doxygen/da/dbc/interfacepocketmine_1_1command_1_1PluginIdentifiableCommand.html", [
+      [ "StartConfigurationCommand", "dc/de3/classpemapmodder_1_1worldeditart_1_1cmd_1_1StartConfigurationCommand.html", null ],
       [ "WorldEditArtCommand", "d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html", null ]
     ] ],
     [ "Queue", "d4/d9a/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Queue.html", null ],

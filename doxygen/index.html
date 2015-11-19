@@ -111,16 +111,24 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li>[ ] Gamma<ul>
 <li>[X] Doxygen setup</li>
 <li>[ ] Frameworks<ul>
-<li>[ ] Language</li>
+<li>[X] Language</li>
 <li>[ ] World editing session control system<ul>
 <li>[ ] Allow any command senders (via the CommandControlledSession class) to execute world editing</li>
 <li>[X] Selections (support multiple selections at the same time)</li>
 </ul>
 </li>
 <li>[X] Spaces library</li>
-<li>[ ] Action (Redo/Undo) system and action pool</li>
-<li>[ ] Providers framework</li>
-<li>[ ] Base command class</li>
+<li>[X] Action (Redo/Undo) system and action pool (rheostats)</li>
+<li>[ ] Providers framework<ul>
+<li>[X] Framework</li>
+<li>[ ] Implementations<ul>
+<li>[ ] Filesystem</li>
+<li>[ ] MySQL</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[X] Base command class</li>
 </ul>
 </li>
 <li>[ ] Utils<ul>
@@ -176,7 +184,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 </li>
 </ul>
 <h1>Compiling </h1>
-<p>To compile this plugin, simply run <a href="make.php">`php make.php`</a>, and a new phar build will be created in the <a href="bin/">`bin`</a> directory. </p>
+<p>To compile this plugin, simply run <a href="make.php">`php make.php`</a>, and a new phar build will be created in the <a href="bin/">`bin`</a> directory. <b>Note that bin/id.json and bin/WorldEditArt_Dev.phar, which are under the Git tree, will be modified.</b> </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
