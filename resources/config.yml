@@ -70,4 +70,6 @@ advanced:
   objectPool:
     # create a warning when the size of OrderedObjectPool reached this value, usually caused by a memory leak
     warningSize: 10
+
+configVersion: 1
 ...

@@ -60,8 +60,8 @@ $pluginYml = yaml_emit($manifest = [
 		],
 		"type" => $class,
 		"globalBuildNumber" => $globalBuildId,
-		"typeVersion" => $nextBuildId
-	]
+				"typeVersion" => $nextBuildId,
+		],
 ], YAML_UTF8_ENCODING, YAML_LN_BREAK);
 
 $i = 0;
@@ -88,12 +88,13 @@ function addDir(\Phar $phar, $realPath, $localPath){
 }
 
 $phar = new Phar($filename);
-$phar->setStub('<?php require_once "entry/entry.php"; __HALT_COMPILER();');
+$phar->setStub('<?php require_once "phar://" . __FILE__ . "/entry/entry.php"; __HALT_COMPILER();');
 $phar->setSignatureAlgorithm(Phar::SHA1);
 $phar->setMetadata($manifest);
 $phar->startBuffering();
 $phar->addFromString("plugin.yml", $pluginYml);
 $phar->addFromString("resources/meta.build.json", json_encode($buildData, JSON_UNESCAPED_SLASHES | JSON_BIGINT_AS_STRING));
+addDir($phar, realpath("entry"), "entry");
 addDir($phar, realpath("src"), "src");
 addDir($phar, realpath("resources"), "resources");
 $phar->stopBuffering();

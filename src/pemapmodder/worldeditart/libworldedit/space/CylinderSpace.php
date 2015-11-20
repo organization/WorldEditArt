@@ -42,7 +42,7 @@ class CylinderSpace extends Space{
 			$this->topCenter->x,
 			$this->topCenter->y,
 			$this->topCenter->z,
-			$this->radius
+				$this->radius,
 		]);
 	}
 	/**
