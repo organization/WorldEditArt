@@ -104,7 +104,7 @@ class WorldEditArt extends PluginBase{
 		$green = TextFormat::DARK_GREEN;
 		$iso = $buildInfo->buildTime->ISO8601;
 		$this->getLogger()->info("$green Enabled$em1 WorldEditArt $buildInfo->type " .
-				"#{$buildInfo->typeVersion}$green compiled on $em2" . str_replace("T", " ", $iso));
+			"#{$buildInfo->typeVersion}$green compiled on $em2" . str_replace("T", " ", $iso));
 	}
 	private function walkPerms(array $stack, array &$perms){
 		$prefix = implode(".", $stack) . ".";

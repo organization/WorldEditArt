@@ -32,8 +32,8 @@ class Queue{
 		$tip = $this->owner->translate(Lang::QUEUE_TIP_TITLE) . "\n";
 		foreach($this->rheostats as $rheostat){
 			$tip .= $this->owner->translate(Lang::QUEUE_TIP_ENTRY, [
-					"TASK_NAME" => $rheostat->name(),
-					"PROGRESS_PERC" => round($rheostat->done() / $rheostat->total() * 100, 1),
+				"TASK_NAME" => $rheostat->name(),
+				"PROGRESS_PERC" => round($rheostat->done() / $rheostat->total() * 100, 1),
 			]);
 		}
 		return trim($tip);
