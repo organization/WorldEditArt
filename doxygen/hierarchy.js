@@ -42,6 +42,9 @@ var hierarchy =
     ] ],
     [ "TranslationManager", "d9/de6/classpemapmodder_1_1worldeditart_1_1lang_1_1TranslationManager.html", null ],
     [ "UserConfiguration", "df/d60/classpemapmodder_1_1worldeditart_1_1session_1_1UserConfiguration.html", null ],
+    [ "Vector3", "docs\html\doxygen/da/d76/classpocketmine_1_1math_1_1Vector3.html", [
+      [ "Bookmark", "dd/d4e/classpemapmodder_1_1worldeditart_1_1session_1_1Bookmark.html", null ]
+    ] ],
     [ "WorldEditSession", "d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html", [
       [ "CommandControlledSession", "d2/d7b/classpemapmodder_1_1worldeditart_1_1session_1_1CommandControlledSession.html", null ],
       [ "PlayerSession", "de/db6/classpemapmodder_1_1worldeditart_1_1session_1_1PlayerSession.html", null ]

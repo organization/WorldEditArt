@@ -24,7 +24,7 @@ var searchData=
   ['addattackermodifiers',['addAttackerModifiers',['docs\html\doxygen/d3/d0d/classpocketmine_1_1event_1_1entity_1_1EntityDamageByEntityEvent.html#a8150ab89b3db23aec4cf2e722807c62d',1,'pocketmine::event::entity::EntityDamageByEntityEvent']]],
   ['addban',['addBan',['docs\html\doxygen/dc/d83/classpocketmine_1_1permission_1_1BanList.html#a1d95c81a906d37b417ff163750d76f67',1,'pocketmine::permission::BanList']]],
   ['addbiome',['addBiome',['docs\html\doxygen/da/d6d/classpocketmine_1_1level_1_1generator_1_1biome_1_1BiomeSelector.html#aaec6a47ad3c10098295ff4c752527a6d',1,'pocketmine::level::generator::biome::BiomeSelector']]],
-  ['addbookmark',['addBookmark',['../d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html#acfd5f1a0385e3e00ed2cb477d4166e23',1,'pemapmodder::worldeditart::session::WorldEditSession']]],
+  ['addbookmark',['addBookmark',['../d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html#a867b7a6137b94ced98858d1b52f4be4b',1,'pemapmodder::worldeditart::session::WorldEditSession']]],
   ['addchunkpacket',['addChunkPacket',['docs\html\doxygen/d9/d1e/classpocketmine_1_1level_1_1Level.html#aa01a2f60f4b1fb58f0f2dc7fb9eb7289',1,'pocketmine::level::Level']]],
   ['addcoord',['addCoord',['docs\html\doxygen/df/d15/classpocketmine_1_1math_1_1AxisAlignedBB.html#aab390b8f5a73fa8ad15cac8920becb3f',1,'pocketmine::math::AxisAlignedBB']]],
   ['addcreativeitem',['addCreativeItem',['docs\html\doxygen/df/df8/classpocketmine_1_1item_1_1Item.html#a3b31f293b90bc332f7d42513a8d26b4e',1,'pocketmine::item::Item']]],

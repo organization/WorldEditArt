@@ -98,7 +98,7 @@ var searchData=
   ['stopcommand',['StopCommand',['docs\html\doxygen/d5/d06/classpocketmine_1_1command_1_1defaults_1_1StopCommand.html',1,'pocketmine::command::defaults']]],
   ['string',['String',['docs\html\doxygen/d4/d6a/classpocketmine_1_1nbt_1_1tag_1_1String.html',1,'pocketmine::nbt::tag']]],
   ['stringoutofboundsexception',['StringOutOfBoundsException',['docs\html\doxygen/d9/dfc/classStringOutOfBoundsException.html',1,'']]],
-  ['sugarcane',['Sugarcane',['docs\html\doxygen/dd/d68/classpocketmine_1_1block_1_1Sugarcane.html',1,'pocketmine::block']]],
   ['sugarcane',['Sugarcane',['docs\html\doxygen/d7/d54/classpocketmine_1_1item_1_1Sugarcane.html',1,'pocketmine::item']]],
+  ['sugarcane',['Sugarcane',['docs\html\doxygen/dd/d68/classpocketmine_1_1block_1_1Sugarcane.html',1,'pocketmine::block']]],
   ['swampbiome',['SwampBiome',['docs\html\doxygen/dd/de6/classpocketmine_1_1level_1_1generator_1_1normal_1_1biome_1_1SwampBiome.html',1,'pocketmine::level::generator::normal::biome']]]
 ];
