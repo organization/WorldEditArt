@@ -1,5 +1,6 @@
+-- Naming conventions
 -- `a_b` means that the column is `b` of `a` (like $a->b in PHP)
--- `aB` means that the column is about `a b`.
+-- `aB` means that the column is about `a b` (camel humps).
 
 CREATE TABLE IF NOT EXISTS wea_users (
 	user_type VARCHAR(127),
@@ -30,3 +31,14 @@ CREATE TABLE IF NOT EXISTS wea_sels (
 	space VARCHAR(16383),
 	PRIMARY KEY (user_type, user_name, sel_name)
 );
+
+CREATE TABLE IF NOT EXISTS wea_bms ( -- bookmarks
+	user_type VARCHAR(127),
+	user_name VARCHAR(127),
+	bm_name VARCHAR(127),
+	x BIGINT,
+	y SMALLINT,
+	z BIGINT,
+	lv_name VARCHAR(127),
+	PRIMARY KEY (user_type, user_name, bm_name)
+)

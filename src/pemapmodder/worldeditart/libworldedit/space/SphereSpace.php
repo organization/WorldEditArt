@@ -20,7 +20,8 @@ use pocketmine\math\Vector3;
 
 /**
  * Represents a {@link Space} in the shape of a regular sphere.<br>
- * A regular sphere is identified by a {@link Vector3} representing its central point and a number representing its radius.
+ * A regular sphere is identified by a {@link Vector3} representing its central point and a number representing its
+ * radius.
  */
 class SphereSpace extends Space{
 	/** @var Vector3 */
@@ -56,6 +57,7 @@ class SphereSpace extends Space{
 
 	/**
 	 * Returns the center of the sphere.
+	 *
 	 * @return Vector3
 	 */
 	public function getCenter(){

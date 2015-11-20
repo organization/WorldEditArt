@@ -56,6 +56,7 @@ class TranslationManager{
 	/**
 	 * @param string $key
 	 * @param string $lang
+	 *
 	 * @return Phrase|null
 	 */
 	public function get($key, $lang){

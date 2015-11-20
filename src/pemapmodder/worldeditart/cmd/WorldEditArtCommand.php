@@ -86,6 +86,7 @@ class WorldEditArtCommand extends Command implements PluginIdentifiableCommand{
 	 * Returns a {@link BaseCommand} for the given <code>$name</code>, or <code>null</code> if not found.
 	 *
 	 * @param string $name
+	 *
 	 * @return BaseCmd|null
 	 */
 	public function findCommand($name){

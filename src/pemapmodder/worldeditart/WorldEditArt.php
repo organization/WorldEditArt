@@ -18,7 +18,7 @@ namespace pemapmodder\worldeditart;
 use pemapmodder\worldeditart\cmd\StartConfigurationCommand;
 use pemapmodder\worldeditart\cmd\WorldEditArtCommand;
 use pemapmodder\worldeditart\lang\TranslationManager;
-use pemapmodder\worldeditart\utils\FormattedArguments;
+use pemapmodder\worldeditart\utils\OrderedObjectPool;
 use Phar;
 use pocketmine\permission\Permission;
 use pocketmine\plugin\PluginBase;
@@ -28,8 +28,13 @@ use pocketmine\utils\Utils;
 
 class WorldEditArt extends PluginBase{
 	private static $PLUGIN_NAME = "WorldEditArt";
+
+	/** @var SessionCollection */
 	private $sessionCollection;
+	/** @var TranslationManager */
 	private $translationManager;
+	/** @var OrderedObjectPool */
+	private $objectPool;
 
 	public function onLoad(){
 		self::$PLUGIN_NAME = $this->getDescription()->getName();
@@ -41,7 +46,8 @@ class WorldEditArt extends PluginBase{
 		$os = Utils::getOS();
 		if($os === "win"){
 			$this->getServer()->getCommandMap()->register("wea", new StartConfigurationCommand($this));
-		}
+		} // register //wea-config
+
 		if(is_file($configFile)){
 			$lines = file($configFile);
 			if(trim($lines[0]) !== "---" or trim($lines[1]) !== "### WORLDEDITART GAMMA CONFIG FILE ###"){
@@ -50,7 +56,7 @@ class WorldEditArt extends PluginBase{
 			}else{
 				$ok = true;
 			}
-		}
+		} // warn old config
 		if(!isset($ok)){
 			$this->getLogger()->notice("Thank you for using WorldEditArt Gamma!");
 			$this->getLogger()->notice("You are strongly encouraged to configure WorldEditArt using our installer.");
@@ -60,29 +66,39 @@ class WorldEditArt extends PluginBase{
 				$this->getLogger()->notice("Please stop the server and run the SHELL COMMAND `" . PHP_BINARY . " " . Phar::running(false) . "` to start the installer.");
 			}
 			$this->getLogger()->notice("WorldEditArt will continue to run with the default configuration.");
-		}
+		} // save default config
 
-		$langs = [];
-		foreach(scandir($par = rtrim(Phar::running(), "/") . "/resources/lang/") as $file){
-			$path = $this->getDataFolder() . "lang/$file";
-			if(!is_dir($this->getDataFolder() . "lang")){
-				mkdir($this->getDataFolder() . "lang");
+		$this->objectPool = new OrderedObjectPool($this);
+
+		if(true){
+			$langs = [];
+			foreach(scandir($par = rtrim(Phar::running(), "/") . "/resources/lang/") as $file){
+				$path = $this->getDataFolder() . "lang/$file";
+				if(!is_dir($this->getDataFolder() . "lang")){
+					mkdir($this->getDataFolder() . "lang");
+				}
+				if($file !== "index.json" and strtolower(substr($path, -5)) === ".json"){
+					$langs[substr($file, 0, -5)] = true;
+				}
+				if(!file_exists($path)){
+					file_put_contents($path, file_get_contents($par . $file));
+				}
 			}
-			if($file !== "index.json" and strtolower(substr($path, -5)) === ".json"){
-				$langs[substr($file, 0, -5)] = true;
-			}
-			if(!file_exists($path)){
-				file_put_contents($path, file_get_contents($par . $file));
-			}
-		}
-		$this->translationManager = new TranslationManager($this, $langs);
-		$json = $this->getResourceContents("permissions.json");
-		$perms = json_decode($json, true);
-		$stack = [];
-		$this->walkPerms($stack, $perms);
+			$this->translationManager = new TranslationManager($this, $langs);
+		} // initialize translations
+
+		if(true){
+			$json = $this->getResourceContents("permissions.json");
+			$perms = json_decode($json, true);
+			$stack = [];
+			$this->walkPerms($stack, $perms);
+			Permission::loadPermissions($perms);
+		} // register permission nodes
+
 		$this->sessionCollection = new SessionCollection($this);
-		Permission::loadPermissions($perms);
+
 		new WorldEditArtCommand($this);
+
 		$em1 = TextFormat::GOLD;
 		$em2 = TextFormat::LIGHT_PURPLE;
 		$green = TextFormat::DARK_GREEN;
@@ -129,78 +145,17 @@ class WorldEditArt extends PluginBase{
 	}
 
 	/**
-	 * Converts a string array into a <code>FormattedArguments</code> instance.
-	 * <br>
-	 * Rules:
-	 * <div style="border: groove">
-	 * A "word" refers to a string delimited by spaces in the command, regardless of any other rules.
-	 * <br>
-	 * A "phrase" refers to a consecutive sequence of words, enclosed in ` "` and `" ` in the whole command input,
-	 * or ONE word not enclosed by them.
-	 * <br>
-	 * A "switch" refers to a boolean option in the command, which is represented by a word starting with a `.` and
-	 * named by the rest of the word.
-	 * <br>
-	 * An "opt" refers to a string option in the command. It is represented by a word starting with a `,`, and named
-	 * by the rest of the word. The phrase following this word is the value of the option.
-	 * <br>
-	 * All phrases that aren't part of a switch or an opt (including both the name part and the value part) are, in
-	 * ascending order of occurrences, "plain arguments".
-	 * <br>
-	 * If an opt name or a switch follows an opt name word, it will be considered as the value phrase
-	 * of the opt specified by the previous word.
-	 * </div>
+	 * Returns the {@link OrderedObjectPool} for WorldEditArt.
 	 *
-	 * The output returns an instance of {@link FormattedArguments}, which contains the <code>plain</code>,
-	 * <code>switches</code> and <code>opts</code> properties, representing plain arguments,
-	 * switches and opts respectively.
-	 *
-	 * @param string[] $args
-	 * @return FormattedArguments
+	 * @return OrderedObjectPool
 	 */
-	public static function processArgs(array $args){
-		$output = new FormattedArguments;
-		$output->plain = [];
-		$output->switches = [];
-		$output->opts = [];
-		$currentOpt = null;
-		$quotesOn = false;
-		$currentLongString = "";
-		foreach($args as $arg){
-			if($quotesOn){ // continue/break quote on
-				$currentLongString .= $arg;
-				if(substr($arg, -1) === '"'){
-					$currentLongString = substr($currentLongString, -1);
-					$quotesOn = false;
-					if($currentOpt === null){
-						$output->plain[] = $currentLongString;
-					}else{
-						$output->opts[$currentOpt] = $currentLongString;
-					}
-					$currentLongString = "";
-				}
-			}elseif($arg{0} === '"'){ // start quote on
-				$quotesOn = true;
-				$currentLongString = substr($arg, 1);
-			}elseif($currentOpt !== null){
-				$output->opts[$currentOpt] = $arg;
-				$currentOpt = null;
-			}elseif($arg{0} === "."){
-				$output->switches[$arg] = true;
-			}elseif($arg{0} === ","){
-				$currentOpt = $arg;
-			}else{
-				$output->plain[] = $arg;
-			}
-		}
-		if($currentOpt !== null or $currentLongString !== "" or $quotesOn){
-			$output->unterminated = true;
-		}
-		return $output;
+	public function getObjectPool(){
+		return $this->objectPool;
 	}
 
 	/**
-	 * Generates a pseudo-random 6-character string composed of <code>0-9</code>, <code>A-Z</code> and <code>a-z</code>.
+	 * Generates a pseudo-random 6-character string composed of
+	 * <code>0-9</code>, <code>A-Z</code> and <code>a-z</code>.
 	 *
 	 * @return string
 	 */
@@ -218,6 +173,7 @@ class WorldEditArt extends PluginBase{
 
 	/**
 	 * @param Server $server
+	 *
 	 * @return WorldEditArt|null
 	 */
 	public static function getInstance(Server $server){

@@ -29,8 +29,9 @@ class Zone{
 
 	/**
 	 * Zone constructor.
+	 *
 	 * @param Space $space
-	 * @param int $type
+	 * @param int   $type
 	 */
 	public function __construct(Space $space, $type){
 		$this->space = $space;

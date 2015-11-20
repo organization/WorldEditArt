@@ -15,10 +15,17 @@
 
 namespace pemapmodder\worldeditart\database;
 
+use pemapmodder\worldeditart\libworldedit\space\Space;
+use pemapmodder\worldeditart\session\Bookmark;
+use pemapmodder\worldeditart\session\UserConfiguration;
+use pemapmodder\worldeditart\session\WorldEditSession;
 use pemapmodder\worldeditart\WorldEditArt;
 use pocketmine\level\Position;
 
 abstract class BaseDataProvider implements DataProvider{
+	/** @var UserConfiguration */
+	private $userConfigs = [];
+
 	/** @var Zone[] */
 	private $zones = [];
 	/** @var WorldEditArt */
@@ -30,12 +37,18 @@ abstract class BaseDataProvider implements DataProvider{
 	}
 	protected abstract function loadZones();
 
+	/**
+	 * Returns all zones loaded into zone cache.
+	 *
+	 * @return Zone[]
+	 */
 	public function getAllZones(){
 		return $this->zones;
 	}
 
 	/**
 	 * @param Position $pos
+	 *
 	 * @return \Generator
 	 */
 	public function getZones(Position $pos){
@@ -62,5 +75,29 @@ abstract class BaseDataProvider implements DataProvider{
 
 	public function getMain(){
 		return $this->main;
+	}
+
+	public function loadSession(WorldEditSession $session){
+		if(isset($this->userConfigs[$session->getUniqueName()])){
+			$session->init($this->userConfigs[$session->getUniqueName()]);
+		}
+		$id = $this->main->getObjectPool()->store($session);
+		$this->loadSessionImpl($id);
+	}
+	protected abstract function loadSessionImpl($callbackId);
+
+	/**
+	 * @param UserConfiguration $config
+	 * @param Space[]           $selections
+	 * @param Bookmark[]        $bookmarks
+	 * @param int               $callbackId
+	 */
+	protected function onLoadedSession(UserConfiguration $config, $selections, $bookmarks, $callbackId){
+		$session = $this->main->getObjectPool()->get($callbackId);
+		if($session instanceof WorldEditSession and !$session->isClosed()){
+			$session->init($config);
+			$session->setSelections($selections);
+			$session->setBookmarks($bookmarks);
+		}
 	}
 }

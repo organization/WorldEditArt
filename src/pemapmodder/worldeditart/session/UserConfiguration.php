@@ -22,7 +22,8 @@ class UserConfiguration{
 	/**
 	 * This represents whether the user is default to have sudo mode turned off
 	 *
-	 * @var bool $sudoModeRequired <code>true</code> if user will be created with sudo mode off (so he has to turn it on explicitly), <code>false</code> otherwise.
+	 * @var bool $sudoModeRequired <code>true</code> if user will be created with sudo mode off (so he has to turn it
+	 *      on explicitly), <code>false</code> otherwise.
 	 */
 	public $sudoModeRequired;
 
@@ -46,7 +47,8 @@ class UserConfiguration{
 	}
 
 	/**
-	 * Returns whether this config has been modified since construction or last {@link UserConfiguration#resetModifiedTracker} call.
+	 * Returns whether this config has been modified since construction or last {@link
+	 * UserConfiguration#resetModifiedTracker} call.
 	 *
 	 * @return bool
 	 */

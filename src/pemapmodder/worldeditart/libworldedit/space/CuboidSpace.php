@@ -55,7 +55,8 @@ class CuboidSpace extends Space{
 	}
 
 	/**
-	 * Returns <code>true</code> if all constraints of this {@link CuboidSpace} are initialized, <code>false</code> otherwise.
+	 * Returns <code>true</code> if all constraints of this {@link CuboidSpace} are initialized, <code>false</code>
+	 * otherwise.
 	 *
 	 * @return bool whether the {@link CuboidSpace} is valid.
 	 */

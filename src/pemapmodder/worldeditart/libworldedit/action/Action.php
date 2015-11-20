@@ -23,14 +23,16 @@ interface Action{
 	/**
 	 * Execute the redo action for the next tick.
 	 *
-	 * @return bool Returns <code>true</code> if there is still something more to redo, <code>false</code> if the action has completed.
+	 * @return bool Returns <code>true</code> if there is still something more to redo, <code>false</code> if the
+	 *              action has completed.
 	 */
 	public function redo();
 
 	/**
 	 * Undo the action for the next tick.
 	 *
-	 * @return bool Returns <code>true</code> if there is still something more to undo, <code>false</code> if the action has been completely redone.
+	 * @return bool Returns <code>true</code> if there is still something more to undo, <code>false</code> if the
+	 *              action has been completely redone.
 	 */
 	public function undo();
 }

@@ -16,6 +16,7 @@
 namespace pemapmodder\worldeditart\utils;
 
 use pemapmodder\worldeditart\WorldEditArt;
+use pocketmine\utils\TextFormat;
 
 class OrderedObjectPool{
 	/** @var WorldEditArt */
@@ -31,6 +32,7 @@ class OrderedObjectPool{
 
 	/**
 	 * @param object $object
+	 *
 	 * @return int
 	 */
 	public function store($object){
@@ -49,12 +51,14 @@ class OrderedObjectPool{
 			foreach($summary as $class => $cnt){
 				$this->main->getLogger()->warning($class . ": $cnt entries");
 			}
+			$this->main->getLogger()->warning("The above is most likely caused by a mistake in code that results in a memory leak. Please report the above to the issue tracker on GitHub at " . TextFormat::LIGHT_PURPLE . "http://lgpe.co/weai/");
 		}
 		return $id;
 	}
 
 	/**
 	 * @param int $id
+	 *
 	 * @return object|null
 	 */
 	public function get($id){
@@ -67,7 +71,9 @@ class OrderedObjectPool{
 	}
 	/**
 	 * Warning: avoid using this method to prevent memory leak
+	 *
 	 * @param int $id
+	 *
 	 * @return object|null
 	 */
 	public function getWithoutClean($id){

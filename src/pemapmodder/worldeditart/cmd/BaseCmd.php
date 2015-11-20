@@ -54,6 +54,7 @@ interface BaseCmd extends Lang{
 	 * Returns whether the passed {@link WorldEditSession} can use this command.
 	 *
 	 * @param WorldEditSession $session
+	 *
 	 * @return bool
 	 */
 	public function canUse(WorldEditSession $session);
@@ -66,7 +67,8 @@ interface BaseCmd extends Lang{
 	 * Nothing will be done if any other values of any types are returned.
 	 *
 	 * @param WorldEditSession $session
-	 * @param string[] $args
+	 * @param string[]         $args
+	 *
 	 * @return string|int|null|void
 	 */
 	public function run(WorldEditSession $session, array $args);

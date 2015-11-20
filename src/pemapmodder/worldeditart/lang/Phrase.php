@@ -48,6 +48,7 @@ class Phrase{
 
 	/**
 	 * @param string[] $params
+	 *
 	 * @return string
 	 */
 	public function format($params){

@@ -44,6 +44,7 @@ interface DataProvider{
 	 * Returns the {@link Zone}s <code>$pos</code> is in.
 	 *
 	 * @param Position $pos
+	 *
 	 * @return Zone[]|\Iterator<Zone>
 	 */
 	public function getZones(Position $pos);

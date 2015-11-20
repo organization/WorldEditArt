@@ -18,22 +18,22 @@ namespace pemapmodder\worldeditart\session;
 use pemapmodder\worldeditart\libworldedit\space\Space;
 use pemapmodder\worldeditart\WorldEditArt;
 use pocketmine\level\Location;
-use pocketmine\level\Position;
 use pocketmine\permission\Permission;
 
 /**
  * Represents a user of WorldEditArt
  */
 abstract class WorldEditSession{
-	private $valid = false;
+	/** @var bool */
+	private $valid = false, $closed = false;
 
 	/** @var UserConfiguration */
 	private $config;
 	/** @var bool */
 	private $sudoModeOn;
 	/** @var Space[] */
-	private $selections = []; // not saved over sessions!
-	/** @var Position[] */
+	private $selections = [];
+	/** @var Bookmark[] */
 	private $bookmarks = [];
 
 	public function __construct(){
@@ -73,6 +73,7 @@ abstract class WorldEditSession{
 	public function close(){
 		$this->valid = false;
 		// TODO save session data
+		$this->closed = true;
 	}
 
 	/**
@@ -92,14 +93,20 @@ abstract class WorldEditSession{
 	 */
 	public abstract function getName();
 
+	public function getUniqueName(){
+		return $this->getType() . "/" . $this->getName();
+	}
+
 	/**
 	 * Returns the position, world and the rotation of the user
+	 *
 	 * @return Location
 	 */
 	public abstract function getLocation();
 
 	/**
 	 * @param Permission|string $permission
+	 *
 	 * @return bool
 	 */
 	public abstract function hasPermission($permission);
@@ -126,6 +133,7 @@ abstract class WorldEditSession{
 	 * </ol>
 	 *
 	 * @param string|null $name
+	 *
 	 * @return Space|null
 	 */
 	public function getSelection($name = null){
@@ -149,10 +157,18 @@ abstract class WorldEditSession{
 		return $this->selections;
 	}
 	/**
+	 * @param Space[] $selections
+	 */
+	public function setSelections($selections){
+		$this->selections = $selections;
+	}
+
+	/**
 	 * Adds the given <code>$sel</code> into the array of selections.
 	 *
-	 * @param Space $sel
+	 * @param Space  $sel
 	 * @param string $name default "default"
+	 *
 	 * @return bool
 	 */
 	public function addSelection(Space $sel, $name = "default"){
@@ -172,7 +188,8 @@ abstract class WorldEditSession{
 	 * </ol>
 	 *
 	 * @param string|null $name
-	 * @return Position|null
+	 *
+	 * @return Bookmark|null
 	 */
 	public function getBookmark($name = null){
 		if($name === null){
@@ -189,19 +206,26 @@ abstract class WorldEditSession{
 	/**
 	 * Gets an array of the bookmarks the user has made.<br>
 	 *
-	 * @return Position[]
+	 * @return Bookmark[]
 	 */
 	public function getBookmarks(){
 		return $this->bookmarks;
 	}
 	/**
+	 * @param Bookmark[] $bookmarks
+	 */
+	public function setBookmarks($bookmarks){
+		$this->bookmarks = $bookmarks;
+	}
+	/**
 	 * Adds the given <code>$pos</code> into the array of bookmarks.
 	 *
-	 * @param Position $pos
-	 * @param string $name default "default"
+	 * @param Bookmark $pos
+	 * @param string   $name default "default"
+	 *
 	 * @return bool
 	 */
-	public function addBookmark(Position $pos, $name = "default"){
+	public function addBookmark(Bookmark $pos, $name = "default"){
 		$hadExisted = isset($this->bookmarks[$name]);
 		$this->bookmarks[$name] = $pos;
 		return $hadExisted;
@@ -210,10 +234,20 @@ abstract class WorldEditSession{
 	/**
 	 * Returns whether the user is valid.<br>
 	 * A valid user has all properties defined
+	 *
 	 * @return boolean
 	 */
 	public function isValid(){
 		return $this->valid;
+	}
+
+	/**
+	 * Returns whether this session has been closed.
+	 *
+	 * @return bool
+	 */
+	public function isClosed(){
+		return $this->closed;
 	}
 
 	/**
@@ -222,7 +256,7 @@ abstract class WorldEditSession{
 	 * from the 6th (offset 5) character on.<br>
 	 * Otherwise, <code>$text</code> will be regarded as a translation string ID and translation will be attempted.
 	 *
-	 * @param string $text
+	 * @param string   $text
 	 * @param string[] $params default <code>[]</code> (empty array)
 	 */
 	public final function sendMessage($text, $params = []){
@@ -234,8 +268,9 @@ abstract class WorldEditSession{
 	}
 
 	/**
-	 * @param string $text
+	 * @param string   $text
 	 * @param string[] $params default <code>[]</code> (empty array)
+	 *
 	 * @return string|string[]
 	 */
 	public final function translate($text, $params = []){

@@ -22,7 +22,8 @@ use Serializable;
 
 /**
  * Parent class of any classes that represent a space in a {@link Level}.<br>
- * To save spaces in databases (such as for purposes like saving UCZs), implementations of {@link Space} must be {@link Serializable serializable}.
+ * To save spaces in databases (such as for purposes like saving UCZs), implementations of {@link Space} must be {@link
+ * Serializable serializable}.
  */
 abstract class Space implements Serializable{
 	/** @var string */
@@ -36,6 +37,7 @@ abstract class Space implements Serializable{
 	 * Floating point vectors should be accepted.
 	 *
 	 * @param Vector3 $v the coordinates to check.
+	 *
 	 * @return bool whether <code> $v</code> is inside the space.
 	 */
 	public abstract function isInside(Vector3 $v);
@@ -44,6 +46,7 @@ abstract class Space implements Serializable{
 	 * Returns the {@link Level} of the space.
 	 *
 	 * @param bool $load whether to attempt to load the level if unable to find.
+	 *
 	 * @return Level|null returns the {@link Level} object of the space, or <code>null</code> if not available.
 	 */
 	public function getLevel($load = false){

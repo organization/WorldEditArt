@@ -48,8 +48,9 @@ class Rheostat{
 
 	/**
 	 * Rheostat constructor.
+	 *
 	 * @param Block[] $forwardRecords
-	 * @param $name
+	 * @param         $name
 	 */
 	public function __construct($forwardRecords, $name){
 		$this->forwardRecords = $forwardRecords;
