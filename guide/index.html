@@ -124,7 +124,7 @@
 					}
 				});
 				$("html, body").animate({
-					scrollTop: target.offset().top
+					scrollTop: target.prev().offset().top
 				}, 200);
 			});
 			$("html").css("padding-bottom", $(window).height());
