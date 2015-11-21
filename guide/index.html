@@ -126,7 +126,8 @@
 				$("html, body").animate({
 					scrollTop: target.offset().top
 				}, 200);
-			})
+			});
+			$("html").css("padding-bottom", $(window).height());
 		});
 	</script>
 	<style>
