@@ -14,7 +14,7 @@
 		function registerSpoiler(el){
 			el.addClass("spoiler");
 			var id = runtimeAutoId++;
-			var onclick = 'switchSpoiler("' + id + '");';
+			var onclick = 'switchSpoiler("' + id + '"); return false;';
 			var button = $("<button class='button spoiler-opener'>Show</button>");
 			var before = $("<div></div>");
 			button.appendTo(before);
