@@ -15,40 +15,33 @@
 
 namespace pemapmodder\worldeditart\utils;
 
-abstract class BufferedIterator implements \Iterator{
-	private $backLog = [];
-	private $pointer = 0;
+abstract class BufferedIterator{
+	private $backArray = [];
 	private $valid = true;
 
 	protected abstract function loadNext();
-	public function preBuffer($el){
-		array_unshift($this->backLog, $el);
-		$this->pointer++;
+
+	public function __construct(){
+		$this->backArray[] = $this->loadNext();
+	}
+
+	public function key(){
+		return count($this->backArray) - 1;
+	}
+
+	public function next(){
+		$next = $this->loadNext();
+		if($next === null){
+			$this->valid = false;
+		}
+		$this->backArray[] = $next;
+	}
+
+	public function valid(){
+		return $this->valid;
 	}
 
 	public function current(){
-		if(!$this->valid()){
-			return null;
-		}
-		return $this->backLog[$this->pointer];
-	}
-	public function next(){
-		if($this->pointer === 0){
-			$next = $this->loadNext();
-			if($next === null){
-				$this->valid = false;
-			}
-			array_unshift($this->backLog, $next);
-		}
-		--$this->pointer;
-	}
-	public function key(){
-		return count($this->backLog) - $this->pointer - 1;
-	}
-	public function valid(){
-		return $this->valid and count($this->backLog) > 0;
-	}
-	public function rewind(){
-		$this->pointer = count($this->backLog) - 1;
+		return end($this->backArray);
 	}
 }
