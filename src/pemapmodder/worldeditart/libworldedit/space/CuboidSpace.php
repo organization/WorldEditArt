@@ -15,6 +15,8 @@
 
 namespace pemapmodder\worldeditart\libworldedit\space;
 
+use pemapmodder\worldeditart\libworldedit\BlockCollection;
+use pemapmodder\worldeditart\libworldedit\space\iterator\cuboid\CuboidAllBlocksIterator;
 use pocketmine\level\Position;
 use pocketmine\math\Vector3;
 
@@ -62,5 +64,38 @@ class CuboidSpace extends Space{
 	 */
 	public function isValid(){
 		return parent::isValid() and isset($this->x1, $this->x2, $this->y1, $this->y2, $this->z1, $this->z2, $this->levelName);
+	}
+
+	public function getMinX(){
+		return min($this->x1, $this->x2);
+	}
+	public function getMinY(){
+		return min($this->y1, $this->y2);
+	}
+	public function getMinZ(){
+		return min($this->z1, $this->z2);
+	}
+	public function getMaxX(){
+		return max($this->x1, $this->x2);
+	}
+	public function getMaxY(){
+		return max($this->y1, $this->y2);
+	}
+	public function getMaxZ(){
+		return max($this->z1, $this->z2);
+	}
+
+	public function getLengthX(){
+		return abs($this->x1 - $this->x2) + 1;
+	}
+	public function getLengthY(){
+		return abs($this->y1 - $this->y2) + 1;
+	}
+	public function getLengthZ(){
+		return abs($this->z1 - $this->z2) + 1;
+	}
+
+	public function iteratorAllBlocks(BlockCollection $coll){
+		return new CuboidAllBlocksIterator($this, $coll);
 	}
 }

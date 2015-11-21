@@ -15,6 +15,7 @@
 
 namespace pemapmodder\worldeditart\session\queue;
 
+use pemapmodder\worldeditart\libworldedit\space\iterator\BufferedBlockIterator;
 use pocketmine\block\Block;
 
 /**
@@ -40,6 +41,8 @@ class Rheostat{
 	 * @var Block[]
 	 */
 	private $forwardRecords = [];
+	/** @var BufferedBlockIterator */
+	private $bufferedBlocks;
 
 	private $slideDirection = self::DIRECTION_FORWARDS;
 
@@ -49,30 +52,45 @@ class Rheostat{
 	/**
 	 * Rheostat constructor.
 	 *
-	 * @param Block[] $forwardRecords
-	 * @param         $name
+	 * @param BufferedBlockIterator $blocks
+	 * @param                       $name
+	 *
+	 * @internal param \pocketmine\block\Block[] $forwardRecords
 	 */
-	public function __construct($forwardRecords, $name){
-		$this->forwardRecords = $forwardRecords;
+	public function __construct(BufferedBlockIterator $blocks, $name){
+		$this->bufferedBlocks = $blocks;
 		$this->name = $name;
 	}
 
 	public function slide(){
-		$this->slideDirection === self::DIRECTION_FORWARDS ? $this->slideForwards() : $this->slideBackwards();
+		return $this->slideDirection === self::DIRECTION_FORWARDS ? $this->slideForwards() : $this->slideBackwards();
 	}
 	private function slideForwards(){
 		/** @var Block $next */
-		$next = array_shift($this->forwardRecords);
+		if(count($this->forwardRecords) === 0){
+			$this->bufferedBlocks->next();
+			if(!$this->bufferedBlocks->valid()){
+				return false;
+			}
+			$next = $this->bufferedBlocks->current();
+		}else{
+			$next = array_shift($this->forwardRecords);
+		}
 		$original = $next->getLevel()->getBlock($next);
 		$next->getLevel()->setBlock($next, $next, false, false);
 		array_unshift($this->behindRecords, $original);
+		return true;
 	}
 	private function slideBackwards(){
+		if(count($this->behindRecords) === 0){
+			return false;
+		}
 		/** @var Block $original */
 		$original = array_shift($this->behindRecords);
 		$next = $original->getLevel()->getBlock($original);
 		$original->getLevel()->setBlock($original, $original, false, false);
 		array_unshift($this->forwardRecords, $next);
+		return true;
 	}
 
 	public function name(){

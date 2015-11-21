@@ -15,6 +15,8 @@
 
 namespace pemapmodder\worldeditart\libworldedit\space;
 
+use pemapmodder\worldeditart\libworldedit\BlockCollection;
+use pemapmodder\worldeditart\libworldedit\space\iterator\BufferedBlockIterator;
 use pemapmodder\worldeditart\WorldEditArt;
 use pocketmine\level\Level;
 use pocketmine\math\Vector3;
@@ -75,4 +77,11 @@ abstract class Space implements Serializable{
 	public function isValid(){
 		return isset($this->main);
 	}
+
+	/**
+	 * @param BlockCollection $coll
+	 *
+	 * @return BufferedBlockIterator
+	 */
+	public abstract function iteratorAllBlocks(BlockCollection $coll);
 }

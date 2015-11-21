@@ -15,6 +15,7 @@
 
 namespace pemapmodder\worldeditart\libworldedit\space;
 
+use pemapmodder\worldeditart\libworldedit\BlockCollection;
 use pocketmine\level\Position;
 use pocketmine\math\Vector3;
 
@@ -127,5 +128,9 @@ class CylinderSpace extends Space{
 	public function setRadius($radius){
 		$this->radius = $radius;
 		$this->radiusSquared = $radius ** 2;
+	}
+
+	public function iteratorAllBlocks(BlockCollection $coll){
+		// TODO: Implement iteratorAllBlocks() method.
 	}
 }
