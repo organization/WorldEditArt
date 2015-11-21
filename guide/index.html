@@ -14,7 +14,12 @@
 		function registerSpoiler(el){
 			el.addClass("spoiler");
 			var id = runtimeAutoId++;
-			var before = $("<div><button class='button spoiler-opener' data-spoiler-name='" + id + "' onclick='switchSpoiler(" + id + ")'>Show</button></div>");
+			var onclick = 'switchSpoiler("' + id + '");';
+			var button = $("<button class='button spoiler-opener'>Show</button>");
+			var before = $("<div></div>");
+			button.appendTo(before);
+			button.attr("data-spoiler-name", id);
+			button.attr("onclick", onclick);
 			before.insertBefore(el);
 			el.attr("data-spoiler-name", id);
 			el.css("display", "none");
@@ -84,7 +89,12 @@
 				var depth = parents.length;
 				maxDepth = Math.max(maxDepth, depth);
 				var $div = registerSpoiler($this);
-				$div.prepend(name + "&nbsp;");
+				var bef = $("<span></span>");
+				bef.html(name + "&nbsp;");
+				var id = $div.children("button").attr("data-spoiler-name");
+				var onclick = 'switchSpoiler("' + id + '");';
+				bef.attr("onclick", onclick);
+				bef.prependTo($div);
 				$div.attr("data-depth", depth);
 				$div.addClass("heading");
 				if(depth > 0){
