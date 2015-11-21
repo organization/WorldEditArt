@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['formattedarguments',['FormattedArguments',['../db/dec/classpemapmodder_1_1worldeditart_1_1utils_1_1FormattedArguments.html',1,'pemapmodder::worldeditart::utils']]]
+  ['lang',['Lang',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html',1,'pemapmodder::worldeditart::lang']]],
+  ['languagebrowser',['LanguageBrowser',['../d1/d20/classpemapmodder_1_1worldeditart_1_1lang_1_1LanguageBrowser.html',1,'pemapmodder::worldeditart::lang']]]
 ];

@@ -1,10 +1,20 @@
 var hierarchy =
 [
-    [ "Action", "d9/dfd/interfacepemapmodder_1_1worldeditart_1_1libworldedit_1_1action_1_1Action.html", null ],
+    [ "BlockCollection", "d4/dd4/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1BlockCollection.html", null ],
+    [ "BlockEntry", "d5/d3b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1BlockEntry.html", null ],
     [ "DataProvider", "d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider.html", [
       [ "BaseDataProvider", "d2/d70/classpemapmodder_1_1worldeditart_1_1database_1_1BaseDataProvider.html", null ]
     ] ],
     [ "FormattedArguments", "db/dec/classpemapmodder_1_1worldeditart_1_1utils_1_1FormattedArguments.html", null ],
+    [ "Iterator", null, [
+      [ "BufferedIterator", "d3/d80/classpemapmodder_1_1worldeditart_1_1utils_1_1BufferedIterator.html", [
+        [ "BufferedBlockIterator", "d4/dbb/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1BufferedBlockIterator.html", [
+          [ "CuboidBlockIterator", "d4/db4/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cuboid_1_1CuboidBlockIterator.html", [
+            [ "CuboidAllBlocksIterator", "d7/d32/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cuboid_1_1CuboidAllBlocksIterator.html", null ]
+          ] ]
+        ] ]
+      ] ]
+    ] ],
     [ "Lang", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html", [
       [ "BaseCmd", "d2/d20/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCmd.html", [
         [ "VersionCmd", "dd/dd6/classpemapmodder_1_1worldeditart_1_1cmd_1_1VersionCmd.html", null ]

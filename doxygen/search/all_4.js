@@ -7,8 +7,13 @@ var searchData=
   ['cmds_5fversion_5fusage',['CMDS_VERSION_USAGE',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a11632bb4f76ff29a410801803f15b4f4',1,'pemapmodder::worldeditart::lang::Lang']]],
   ['commandcontrolledsession',['CommandControlledSession',['../d2/d7b/classpemapmodder_1_1worldeditart_1_1session_1_1CommandControlledSession.html',1,'pemapmodder::worldeditart::session']]],
   ['commandcontrolledsession_2ephp',['CommandControlledSession.php',['../da/d36/CommandControlledSession_8php.html',1,'']]],
+  ['cuboidallblocksiterator',['CuboidAllBlocksIterator',['../d7/d32/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cuboid_1_1CuboidAllBlocksIterator.html',1,'pemapmodder::worldeditart::libworldedit::space::iterator::cuboid']]],
+  ['cuboidallblocksiterator_2ephp',['CuboidAllBlocksIterator.php',['../d1/de8/CuboidAllBlocksIterator_8php.html',1,'']]],
+  ['cuboidblockiterator',['CuboidBlockIterator',['../d4/db4/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cuboid_1_1CuboidBlockIterator.html',1,'pemapmodder::worldeditart::libworldedit::space::iterator::cuboid']]],
+  ['cuboidblockiterator_2ephp',['CuboidBlockIterator.php',['../d3/ddf/CuboidBlockIterator_8php.html',1,'']]],
   ['cuboidspace',['CuboidSpace',['../db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html',1,'pemapmodder::worldeditart::libworldedit::space']]],
   ['cuboidspace_2ephp',['CuboidSpace.php',['../df/dbf/CuboidSpace_8php.html',1,'']]],
+  ['current',['current',['../d3/d80/classpemapmodder_1_1worldeditart_1_1utils_1_1BufferedIterator.html#af343507d1926e6ecf964625d41db528c',1,'pemapmodder::worldeditart::utils::BufferedIterator']]],
   ['cylinderspace',['CylinderSpace',['../d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html',1,'pemapmodder::worldeditart::libworldedit::space']]],
   ['cylinderspace_2ephp',['CylinderSpace.php',['../df/df8/CylinderSpace_8php.html',1,'']]]
 ];

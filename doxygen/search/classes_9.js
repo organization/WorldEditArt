@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['reporterrortask',['ReportErrorTask',['../d5/d25/classpemapmodder_1_1worldeditart_1_1utils_1_1ReportErrorTask.html',1,'pemapmodder::worldeditart::utils']]],
-  ['rheostat',['Rheostat',['../d3/d11/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Rheostat.html',1,'pemapmodder::worldeditart::session::queue']]]
+  ['sessioncollection',['SessionCollection',['../d9/dad/classpemapmodder_1_1worldeditart_1_1SessionCollection.html',1,'pemapmodder::worldeditart']]],
+  ['space',['Space',['../df/da6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1Space.html',1,'pemapmodder::worldeditart::libworldedit::space']]],
+  ['spherespace',['SphereSpace',['../dd/d74/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1SphereSpace.html',1,'pemapmodder::worldeditart::libworldedit::space']]],
+  ['startconfigurationcommand',['StartConfigurationCommand',['../dc/de3/classpemapmodder_1_1worldeditart_1_1cmd_1_1StartConfigurationCommand.html',1,'pemapmodder::worldeditart::cmd']]]
 ];

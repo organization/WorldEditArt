@@ -9,7 +9,7 @@ var NAVTREE =
       [ "Data Structure Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Data Fields", "functions.html", [
-        [ "All", "functions.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ]
       ] ]
@@ -23,7 +23,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"dd/d74/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1SphereSpace.html#a7b37efab7473a1effc29f8be2421f6e3"
+"db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#aa221eb8e75642a380892e3f711e7274d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
