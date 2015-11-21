@@ -139,6 +139,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac1cdebe56bd50e52772858ba30262401"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b37efab7473a1effc29f8be2421f6e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1Space.html#a7b37efab7473a1effc29f8be2421f6e3">isValid</a> ()</td></tr>
 <tr class="separator:a7b37efab7473a1effc29f8be2421f6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68332c79e76916b07258cfaece3f14f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1Space.html#a68332c79e76916b07258cfaece3f14f6">iteratorAllBlocks</a> (<a class="el" href="../../d4/dd4/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1BlockCollection.html">BlockCollection</a> $coll)</td></tr>
+<tr class="separator:a68332c79e76916b07258cfaece3f14f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -149,7 +151,7 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>Parent class of any classes that represent a space in a <a class="el" href="../../">Level</a>.<br />
  To save spaces in databases (such as for purposes like saving UCZs), implementations of <a class="el" href="../../df/da6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1Space.html">Space</a> must be <a class="el" href="../../">serializable</a>. </p>
 
-<p>Definition at line <a class="el" href="../../d2/dce/Space_8php_source.html#l00028">28</a> of file <a class="el" href="../../d2/dce/Space_8php_source.html">Space.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dce/Space_8php_source.html#l00030">30</a> of file <a class="el" href="../../d2/dce/Space_8php_source.html">Space.php</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a674de8e0d156a3313973874d29dc9002"></a>
 <div class="memitem">
@@ -173,7 +175,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Level|null returns the <a class="el" href="../../">Level</a> object of the space, or <code>null</code> if not available. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d2/dce/Space_8php_source.html#l00052">52</a> of file <a class="el" href="../../d2/dce/Space_8php_source.html">Space.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dce/Space_8php_source.html#l00054">54</a> of file <a class="el" href="../../d2/dce/Space_8php_source.html">Space.php</a>.</p>
 
 </div>
 </div>
@@ -190,7 +192,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dce/Space_8php_source.html#l00063">63</a> of file <a class="el" href="../../d2/dce/Space_8php_source.html">Space.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dce/Space_8php_source.html#l00065">65</a> of file <a class="el" href="../../d2/dce/Space_8php_source.html">Space.php</a>.</p>
 
 </div>
 </div>
@@ -240,7 +242,38 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dce/Space_8php_source.html#l00075">75</a> of file <a class="el" href="../../d2/dce/Space_8php_source.html">Space.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dce/Space_8php_source.html#l00077">77</a> of file <a class="el" href="../../d2/dce/Space_8php_source.html">Space.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a68332c79e76916b07258cfaece3f14f6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">iteratorAllBlocks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/dd4/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1BlockCollection.html">BlockCollection</a>&#160;</td>
+          <td class="paramname"><em>$coll</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d4/dd4/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1BlockCollection.html">BlockCollection</a></td><td class="paramname">$coll</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>BufferedBlockIterator </dd></dl>
 
 </div>
 </div>
@@ -265,7 +298,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d2/dce/Space_8php_source.html#l00071">71</a> of file <a class="el" href="../../d2/dce/Space_8php_source.html">Space.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dce/Space_8php_source.html#l00073">73</a> of file <a class="el" href="../../d2/dce/Space_8php_source.html">Space.php</a>.</p>
 
 </div>
 </div>
@@ -288,7 +321,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dce/Space_8php_source.html#l00030">30</a> of file <a class="el" href="../../d2/dce/Space_8php_source.html">Space.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dce/Space_8php_source.html#l00032">32</a> of file <a class="el" href="../../d2/dce/Space_8php_source.html">Space.php</a>.</p>
 
 </div>
 </div>
