@@ -129,9 +129,8 @@ $(document).ready(function(){initNavTree('index.html','');});
 setTimeout(function(){
 	var doc = document.getElementById("doc-content");
 	doc.innerHTML = "";
-	alert("a");
 	$.get("https://raw.githubusercontent.com/PEMapModder/WorldEditArt/master/README.md", {}, function(data){
-		alert("b");
+		//noinspection JSUnusedGlobalSymbols
 		$.ajax({
 			type: "POST",
 			url: "https://api.github.com/markdown",
@@ -141,14 +140,12 @@ setTimeout(function(){
 				context: "PEMapModder/WorldEditArt"
 			}),
 			success: function(result){
-				alert("c");
 				doc.innerHTML = result;
 			},
 			error: function(result){
 				alert(JSON.stringify(result));
 			}
 		});
-		;
 	});
 }, 10);
 
