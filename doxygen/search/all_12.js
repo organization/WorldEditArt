@@ -10,7 +10,6 @@ var searchData=
   ['resetmodifiedtracker',['resetModifiedTracker',['../df/d60/classpemapmodder_1_1worldeditart_1_1session_1_1UserConfiguration.html#ae15074d50f2ee80fb4bce5d6b675052d',1,'pemapmodder::worldeditart::session::UserConfiguration']]],
   ['ret_5fno_5fperm',['RET_NO_PERM',['../d2/d20/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCmd.html#ad092f6790a464f285244dd57290f2a19',1,'pemapmodder::worldeditart::cmd::BaseCmd']]],
   ['ret_5fusage',['RET_USAGE',['../d2/d20/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCmd.html#a78b50fb78cbb14c624a8d8d7c8cd1b48',1,'pemapmodder::worldeditart::cmd::BaseCmd']]],
-  ['rewind',['rewind',['../d3/d80/classpemapmodder_1_1worldeditart_1_1utils_1_1BufferedIterator.html#ae619dcf2218c21549cb65d875bbc6c9c',1,'pemapmodder::worldeditart::utils::BufferedIterator']]],
   ['rheostat',['Rheostat',['../d3/d11/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Rheostat.html',1,'pemapmodder::worldeditart::session::queue']]],
   ['rheostat_2ephp',['Rheostat.php',['../d9/d4f/Rheostat_8php.html',1,'']]],
   ['run',['run',['../d2/d20/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCmd.html#ae47552f04df0f93e177477ce0c28fed7',1,'pemapmodder\worldeditart\cmd\BaseCmd\run()'],['../dd/dd6/classpemapmodder_1_1worldeditart_1_1cmd_1_1VersionCmd.html#ae47552f04df0f93e177477ce0c28fed7',1,'pemapmodder\worldeditart\cmd\VersionCmd\run()']]]

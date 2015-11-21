@@ -11,7 +11,6 @@ var searchData=
   ['phrase_2ephp',['Phrase.php',['../d0/d38/Phrase_8php.html',1,'']]],
   ['playersession',['PlayerSession',['../de/db6/classpemapmodder_1_1worldeditart_1_1session_1_1PlayerSession.html',1,'pemapmodder::worldeditart::session']]],
   ['playersession_2ephp',['PlayerSession.php',['../d0/d15/PlayerSession_8php.html',1,'']]],
-  ['prebuffer',['preBuffer',['../d3/d80/classpemapmodder_1_1worldeditart_1_1utils_1_1BufferedIterator.html#a72c9cf471d4c1e020a26dc838c784cf5',1,'pemapmodder::worldeditart::utils::BufferedIterator']]],
   ['queue',['queue',['../d8/d64/namespacepemapmodder_1_1worldeditart_1_1session_1_1queue.html',1,'pemapmodder::worldeditart::session']]],
   ['session',['session',['../d6/d79/namespacepemapmodder_1_1worldeditart_1_1session.html',1,'pemapmodder::worldeditart']]],
   ['space',['space',['../d2/d60/namespacepemapmodder_1_1worldeditart_1_1libworldedit_1_1space.html',1,'pemapmodder::worldeditart::libworldedit']]],

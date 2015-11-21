@@ -94,13 +94,12 @@ var NAVTREEINDEX0 =
 "d3/d71/DataProvider_8php.html":[2,0,0,0,0,1,1],
 "d3/d71/DataProvider_8php_source.html":[2,0,0,0,0,1,1],
 "d3/d80/classpemapmodder_1_1worldeditart_1_1utils_1_1BufferedIterator.html":[1,0,0,0,5,0],
-"d3/d80/classpemapmodder_1_1worldeditart_1_1utils_1_1BufferedIterator.html#a729e946b4ef600e71740113c6d4332c0":[1,0,0,0,5,0,1],
-"d3/d80/classpemapmodder_1_1worldeditart_1_1utils_1_1BufferedIterator.html#a72c9cf471d4c1e020a26dc838c784cf5":[1,0,0,0,5,0,4],
-"d3/d80/classpemapmodder_1_1worldeditart_1_1utils_1_1BufferedIterator.html#a86b1b0d9d8b7f62cae13bbb4b3730c04":[1,0,0,0,5,0,2],
-"d3/d80/classpemapmodder_1_1worldeditart_1_1utils_1_1BufferedIterator.html#abb9f0d6adf1eb9b3b55712056861a247":[1,0,0,0,5,0,6],
-"d3/d80/classpemapmodder_1_1worldeditart_1_1utils_1_1BufferedIterator.html#acea62048bfee7b3cd80ed446c86fb78a":[1,0,0,0,5,0,3],
-"d3/d80/classpemapmodder_1_1worldeditart_1_1utils_1_1BufferedIterator.html#ae619dcf2218c21549cb65d875bbc6c9c":[1,0,0,0,5,0,5],
-"d3/d80/classpemapmodder_1_1worldeditart_1_1utils_1_1BufferedIterator.html#af343507d1926e6ecf964625d41db528c":[1,0,0,0,5,0,0],
+"d3/d80/classpemapmodder_1_1worldeditart_1_1utils_1_1BufferedIterator.html#a095c5d389db211932136b53f25f39685":[1,0,0,0,5,0,0],
+"d3/d80/classpemapmodder_1_1worldeditart_1_1utils_1_1BufferedIterator.html#a729e946b4ef600e71740113c6d4332c0":[1,0,0,0,5,0,2],
+"d3/d80/classpemapmodder_1_1worldeditart_1_1utils_1_1BufferedIterator.html#a86b1b0d9d8b7f62cae13bbb4b3730c04":[1,0,0,0,5,0,3],
+"d3/d80/classpemapmodder_1_1worldeditart_1_1utils_1_1BufferedIterator.html#abb9f0d6adf1eb9b3b55712056861a247":[1,0,0,0,5,0,5],
+"d3/d80/classpemapmodder_1_1worldeditart_1_1utils_1_1BufferedIterator.html#acea62048bfee7b3cd80ed446c86fb78a":[1,0,0,0,5,0,4],
+"d3/d80/classpemapmodder_1_1worldeditart_1_1utils_1_1BufferedIterator.html#af343507d1926e6ecf964625d41db528c":[1,0,0,0,5,0,1],
 "d3/d94/ReportErrorTask_8php.html":[2,0,0,0,0,5,3],
 "d3/d94/ReportErrorTask_8php_source.html":[2,0,0,0,0,5,3],
 "d3/d9d/namespacepemapmodder.html":[0,0,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#a6a6fe3deac824fac47e5de5321cf8184":[1,0,0,0,3,0,1,8],
 "db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#a6f8266549f0bcca0bc32c90610cd7e02":[1,0,0,0,3,0,1,5],
 "db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#a7b37efab7473a1effc29f8be2421f6e3":[1,0,0,0,3,0,1,10],
-"db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#a943edb31cd7891bea423dedd390765d8":[1,0,0,0,3,0,1,4]
+"db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#a943edb31cd7891bea423dedd390765d8":[1,0,0,0,3,0,1,4],
+"db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#aa221eb8e75642a380892e3f711e7274d":[1,0,0,0,3,0,1,16]
 };
