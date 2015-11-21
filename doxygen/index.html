@@ -104,87 +104,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="title">WorldEditArt Gamma Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Please see <a href="//pemapmodder.github.io/WorldEditArt/guide/">the webpage on gh-pages</a> for user guides.</p>
-<p>Check out the <a href="//pemapmodder.github.io/WorldEditArt/doxygen">Doxygen-generated API docs</a>.</p>
-<p>TODO list:</p><ul>
-<li>[ ] Gamma<ul>
-<li>[X] Doxygen setup</li>
-<li>[ ] Frameworks<ul>
-<li>[X] Language</li>
-<li>[ ] World editing session control system<ul>
-<li>[ ] Allow any command senders (via the CommandControlledSession class) to execute world editing</li>
-<li>[X] Selections (support multiple selections at the same time)</li>
-</ul>
-</li>
-<li>[X] Spaces library</li>
-<li>[X] Action (Redo/Undo) system and action pool (rheostats)</li>
-<li>[ ] Providers framework<ul>
-<li>[X] Framework</li>
-<li>[ ] Implementations<ul>
-<li>[ ] Filesystem</li>
-<li>[ ] MySQL</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>[X] Base command class</li>
-</ul>
-</li>
-<li>[ ] Utils<ul>
-<li>[ ] Async database querying system</li>
-<li>[X] <a href="src/pemapmodder/worldeditart/utils/OrderedObjectPool.php">Non-threaded integer-object pool</a></li>
-</ul>
-</li>
-<li>[ ] Features<ul>
-<li>[ ]</li>
-<li>[ ] Safety<ul>
-<li>[ ] Sudo mode</li>
-<li>[ ] Safe mode<ul>
-<li>[ ] Marking and storing of UCZs</li>
-<li>[ ] Safe mode</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>[ ] Commands<ul>
-<li>[ ] Selection creation<ul>
-<li>[ ] //shoot</li>
-<li>[ ] //grow</li>
-<li>[ ] //cyl</li>
-<li>[ ] //sph</li>
-<li>[ ] //desel</li>
-<li>[ ] //1, //2</li>
-</ul>
-</li>
-<li>[ ] Selection processing<ul>
-<li>[ ] //set</li>
-<li>[ ] //replace</li>
-<li>[ ] //test</li>
-</ul>
-</li>
-<li>[ ] Copying<ul>
-<li>[ ] //copy</li>
-<li>[ ] //cut</li>
-<li>[ ] //paste</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>[ ] Jump</li>
-<li>[ ] Wand</li>
-<li>[ ] Macros<ul>
-<li>[ ] Storage</li>
-<li>[ ] Database</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h1>Compiling </h1>
-<p>To compile this plugin, simply run <a href="make.php">`php make.php`</a>, and a new phar build will be created in the <a href="bin/">`bin`</a> directory. <b>Note that bin/id.json and bin/WorldEditArt_Dev.phar, which are under the Git tree, will be modified.</b> </p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
@@ -193,6 +113,43 @@ $(document).ready(function(){initNavTree('index.html','');});
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>
-</div>
-</body>
-</html>
+</div><script>/*
+ * WorldEditArt
+ *
+ * Copyright (C) 2015 PEMapModder
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * @author PEMapModder
+ */
+
+setTimeout(function(){
+	var doc = document.getElementById("doc-content");
+	doc.innerHTML = "";
+	alert("a");
+	$.get("https://raw.githubusercontent.com/PEMapModder/WorldEditArt/master/README.md", {}, function(data){
+		alert("b");
+		$.ajax({
+			type: "POST",
+			url: "https://api.github.com/markdown",
+			data: JSON.stringify({
+				text: data,
+				mode: "gfm",
+				context: "PEMapModder/WorldEditArt"
+			}),
+			success: function(result){
+				alert("c");
+				doc.innerHTML = result;
+			},
+			error: function(result){
+				alert(JSON.stringify(result));
+			}
+		});
+		;
+	});
+}, 10);
+
+</script></body></html>

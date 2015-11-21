@@ -1,7 +1,6 @@
 var searchData=
 [
   ['randomname',['randomName',['../d4/d07/classpemapmodder_1_1worldeditart_1_1WorldEditArt.html#ad9265166055e55f68c4cb19a627b5c55',1,'pemapmodder::worldeditart::WorldEditArt']]],
-  ['readme_2emd',['README.md',['../da/ddd/README_8md.html',1,'']]],
   ['registercmd',['registerCmd',['../d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html#a69b7e6b7452915d55f9149698c8423ba',1,'pemapmodder::worldeditart::cmd::WorldEditArtCommand']]],
   ['removezone',['removeZone',['../d2/d70/classpemapmodder_1_1worldeditart_1_1database_1_1BaseDataProvider.html#a67755406c09db93b8f92b057b101d148',1,'pemapmodder\worldeditart\database\BaseDataProvider\removeZone()'],['../d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider.html#a67755406c09db93b8f92b057b101d148',1,'pemapmodder\worldeditart\database\DataProvider\removeZone()']]],
   ['removezoneimpl',['removeZoneImpl',['../d2/d70/classpemapmodder_1_1worldeditart_1_1database_1_1BaseDataProvider.html#ac603f942710fbeb3f60feb2e4ae6c6d5',1,'pemapmodder::worldeditart::database::BaseDataProvider']]],
