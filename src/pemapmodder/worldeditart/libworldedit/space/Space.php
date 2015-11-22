@@ -79,6 +79,8 @@ abstract class Space implements Serializable{
 	}
 
 	/**
+	 * Returns a new {@link BufferedBlockIterator} for all blocks in this space.
+	 *
 	 * @param BlockCollection $coll
 	 *
 	 * @return BufferedBlockIterator

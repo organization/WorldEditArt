@@ -101,6 +101,13 @@ class CuboidMarginBlocksIterator extends CuboidBlockIterator{
 			return $block;
 		}
 
+		$this->end();
 		return null;
+	}
+
+	public function estimatedSize(){
+		return (2 * $this->space->getLengthX() * $this->space->getLengthY()             // sections 0, 1
+				+ 2 * $this->space->getLengthY() * ($this->space->getLengthZ() - 2)         // sections 2, 3
+				+ 2 * ($this->space->getLengthX() - 2) * ($this->space->getLengthZ() - 2)); // sections 4, 5
 	}
 }

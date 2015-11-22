@@ -86,10 +86,10 @@ class CylinderSpace extends Space{
 		$distSquared =
 			$v->subtract($this->baseCenter)->                               // (X0 - X1)
 			cross                                                           // x
-			($v->subtract($this->topCenter))// (X0 - X2)
-			->lengthSquared() /                                         // |---| /
-			$this->topCenter->subtract($this->baseCenter)// (X2 - X1)
-			->lengthSquared();                                          // |---|
+			($v->subtract($this->topCenter))->                              // (X0 - X2)
+			lengthSquared() /                                               // |---| /
+			$this->topCenter->subtract($this->baseCenter)->                 // (X2 - X1)
+			lengthSquared();                                                // |---|
 		return $distSquared <= $this->radiusSquared; // |(X0 - X1) x (X0 - X2)| / |X2 - X1|
 	}
 	/**
@@ -123,11 +123,72 @@ class CylinderSpace extends Space{
 		return $this->radius;
 	}
 	/**
+	 * @return number
+	 */
+	public function getRadiusSquared(){
+		return $this->radiusSquared;
+	}
+	/**
 	 * @param number $radius
 	 */
 	public function setRadius($radius){
 		$this->radius = $radius;
 		$this->radiusSquared = $radius ** 2;
+	}
+
+	/**
+	 * @return number
+	 */
+	public function getMinX(){
+		// TODO
+	}
+	/**
+	 * @return number
+	 */
+	public function getMinY(){
+		// TODO
+	}
+	/**
+	 * @return number
+	 */
+	public function getMinZ(){
+		// TODO
+	}
+	/**
+	 * @return number
+	 */
+	public function getMaxX(){
+		// TODO
+	}
+	/**
+	 * @return number
+	 */
+	public function getMaxY(){
+		// TODO
+	}
+	/**
+	 * @return number
+	 */
+	public function getMaxZ(){
+		// TODO
+	}
+	/**
+	 * @return number
+	 */
+	public function getLengthX(){
+		// TODO
+	}
+	/**
+	 * @return number
+	 */
+	public function getLengthY(){
+		// TODO
+	}
+	/**
+	 * @return number
+	 */
+	public function getLengthZ(){
+		// TODO
 	}
 
 	public function iteratorAllBlocks(BlockCollection $coll){

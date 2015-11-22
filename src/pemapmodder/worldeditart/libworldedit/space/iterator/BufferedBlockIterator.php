@@ -29,6 +29,7 @@ abstract class BufferedBlockIterator extends BufferedIterator{
 		}
 		return null;
 	}
+	public abstract function estimatedSize();
 	protected function end(){
 		$this->ended = true;
 	}

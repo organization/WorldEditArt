@@ -28,4 +28,7 @@ class CuboidAllBlocksIterator extends CuboidBlockIterator{
 		$block->level = $this->level;
 		return $block;
 	}
+	public function estimatedSize(){
+		return $this->space->getLengthX() * $this->space->getLengthY() * $this->space->getLengthZ();
+	}
 }

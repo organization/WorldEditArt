@@ -42,7 +42,9 @@ class Rheostat{
 	 */
 	private $forwardRecords = [];
 	/** @var BufferedBlockIterator */
-	private $bufferedBlocks;
+	private $blockStream;
+	/** @var int */
+	private $estimatedSize;
 
 	private $slideDirection = self::DIRECTION_FORWARDS;
 
@@ -58,7 +60,7 @@ class Rheostat{
 	 * @internal param \pocketmine\block\Block[] $forwardRecords
 	 */
 	public function __construct(BufferedBlockIterator $blocks, $name){
-		$this->bufferedBlocks = $blocks;
+		$this->blockStream = $blocks;
 		$this->name = $name;
 	}
 
@@ -68,11 +70,11 @@ class Rheostat{
 	private function slideForwards(){
 		/** @var Block $next */
 		if(count($this->forwardRecords) === 0){
-			$this->bufferedBlocks->next();
-			if(!$this->bufferedBlocks->valid()){
+			$this->blockStream->next();
+			if(!$this->blockStream->valid()){
 				return false;
 			}
-			$next = $this->bufferedBlocks->current();
+			$next = $this->blockStream->current();
 		}else{
 			$next = array_shift($this->forwardRecords);
 		}
@@ -98,12 +100,15 @@ class Rheostat{
 	}
 
 	public function total(){
-		return count($this->forwardRecords) + count($this->behindRecords);
+		if(isset($this->estimatedSize)){
+			return $this->estimatedSize;
+		}
+		return $this->estimatedSize = $this->blockStream->estimatedSize();
 	}
 	public function done(){
 		return count($this->behindRecords);
 	}
 	public function left(){
-		return count($this->forwardRecords);
+		return $this->total() - $this->done();
 	}
 }
