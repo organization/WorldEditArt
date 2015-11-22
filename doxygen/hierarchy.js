@@ -10,6 +10,9 @@ var hierarchy =
         ] ],
         [ "CylinderBlockIterator", "d7/d4c/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cylinder_1_1CylinderBlockIterator.html", [
           [ "CylinderAllBlocksIterator", "d7/d5c/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cylinder_1_1CylinderAllBlocksIterator.html", null ]
+        ] ],
+        [ "SphereBlockIterator", "de/d21/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1sphere_1_1SphereBlockIterator.html", [
+          [ "SphereAllBlocksIterator", "d9/dd6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1sphere_1_1SphereAllBlocksIterator.html", null ]
         ] ]
       ] ]
     ] ],

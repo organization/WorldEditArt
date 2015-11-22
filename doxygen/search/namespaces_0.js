@@ -11,6 +11,7 @@ var searchData=
   ['queue',['queue',['../d8/d64/namespacepemapmodder_1_1worldeditart_1_1session_1_1queue.html',1,'pemapmodder::worldeditart::session']]],
   ['session',['session',['../d6/d79/namespacepemapmodder_1_1worldeditart_1_1session.html',1,'pemapmodder::worldeditart']]],
   ['space',['space',['../d2/d60/namespacepemapmodder_1_1worldeditart_1_1libworldedit_1_1space.html',1,'pemapmodder::worldeditart::libworldedit']]],
+  ['sphere',['sphere',['../d3/db0/namespacepemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1sphere.html',1,'pemapmodder::worldeditart::libworldedit::space::iterator']]],
   ['utils',['utils',['../d6/d01/namespacepemapmodder_1_1worldeditart_1_1utils.html',1,'pemapmodder::worldeditart']]],
   ['worldeditart',['worldeditart',['../d0/d6c/namespacepemapmodder_1_1worldeditart.html',1,'pemapmodder']]]
 ];

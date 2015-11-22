@@ -23,7 +23,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d8/d64/namespacepemapmodder_1_1worldeditart_1_1session_1_1queue.html"
+"d7/d72/StartConfigurationCommand_8php.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
