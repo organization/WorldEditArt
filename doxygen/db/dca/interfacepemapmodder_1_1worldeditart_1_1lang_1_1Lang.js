@@ -8,5 +8,6 @@ var interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang =
     [ "META_LANGUAGE", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#aa997762a1d89bac446080880fd19c849", null ],
     [ "META_NATIVE", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a8a1214d758cf9772bd4fa9998128f51f", null ],
     [ "QUEUE_TIP_ENTRY", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a20a223f11a0af5afb535e98a17883ccf", null ],
-    [ "QUEUE_TIP_TITLE", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a5501cdd912a96e80848d1b96df147889", null ]
+    [ "QUEUE_TIP_TITLE", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a5501cdd912a96e80848d1b96df147889", null ],
+    [ "QUEUE_TIP_WARNED_ENTRY", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#abc248376bdad0d9744ad3f64683a4223", null ]
 ];

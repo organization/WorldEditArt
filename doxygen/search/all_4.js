@@ -7,6 +7,7 @@ var searchData=
   ['cmds_5fversion_5fusage',['CMDS_VERSION_USAGE',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a11632bb4f76ff29a410801803f15b4f4',1,'pemapmodder::worldeditart::lang::Lang']]],
   ['commandcontrolledsession',['CommandControlledSession',['../d2/d7b/classpemapmodder_1_1worldeditart_1_1session_1_1CommandControlledSession.html',1,'pemapmodder::worldeditart::session']]],
   ['commandcontrolledsession_2ephp',['CommandControlledSession.php',['../da/d36/CommandControlledSession_8php.html',1,'']]],
+  ['completed',['completed',['../d3/d11/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Rheostat.html#a0f6a4fc9562f339a3097c61897383cae',1,'pemapmodder::worldeditart::session::queue::Rheostat']]],
   ['cuboidallblocksiterator',['CuboidAllBlocksIterator',['../d7/d32/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cuboid_1_1CuboidAllBlocksIterator.html',1,'pemapmodder::worldeditart::libworldedit::space::iterator::cuboid']]],
   ['cuboidallblocksiterator_2ephp',['CuboidAllBlocksIterator.php',['../d1/de8/CuboidAllBlocksIterator_8php.html',1,'']]],
   ['cuboidblockiterator',['CuboidBlockIterator',['../d4/db4/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cuboid_1_1CuboidBlockIterator.html',1,'pemapmodder::worldeditart::libworldedit::space::iterator::cuboid']]],

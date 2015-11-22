@@ -1,5 +1,6 @@
 var classpemapmodder_1_1worldeditart_1_1WorldEditArt =
 [
+    [ "getDataProvider", "d4/d07/classpemapmodder_1_1worldeditart_1_1WorldEditArt.html#aa96104b2937877a6cdeaf75c3bb05fb0", null ],
     [ "getInstance", "d4/d07/classpemapmodder_1_1worldeditart_1_1WorldEditArt.html#a3f5d3e1ab6be812bfaba5969d91b88ff", null ],
     [ "getObjectPool", "d4/d07/classpemapmodder_1_1worldeditart_1_1WorldEditArt.html#a097a6bcc6aabe642803507bd6ccf9969", null ],
     [ "getResourceContents", "d4/d07/classpemapmodder_1_1worldeditart_1_1WorldEditArt.html#a9a0c470c612e96d1b8d01eda405b137c", null ],
