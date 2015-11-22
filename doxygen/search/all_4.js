@@ -11,6 +11,8 @@ var searchData=
   ['cuboidallblocksiterator_2ephp',['CuboidAllBlocksIterator.php',['../d1/de8/CuboidAllBlocksIterator_8php.html',1,'']]],
   ['cuboidblockiterator',['CuboidBlockIterator',['../d4/db4/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cuboid_1_1CuboidBlockIterator.html',1,'pemapmodder::worldeditart::libworldedit::space::iterator::cuboid']]],
   ['cuboidblockiterator_2ephp',['CuboidBlockIterator.php',['../d3/ddf/CuboidBlockIterator_8php.html',1,'']]],
+  ['cuboidmarginblocksiterator',['CuboidMarginBlocksIterator',['../d5/d15/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cuboid_1_1CuboidMarginBlocksIterator.html',1,'pemapmodder::worldeditart::libworldedit::space::iterator::cuboid']]],
+  ['cuboidmarginblocksiterator_2ephp',['CuboidMarginBlocksIterator.php',['../d6/d94/CuboidMarginBlocksIterator_8php.html',1,'']]],
   ['cuboidspace',['CuboidSpace',['../db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html',1,'pemapmodder::worldeditart::libworldedit::space']]],
   ['cuboidspace_2ephp',['CuboidSpace.php',['../df/dbf/CuboidSpace_8php.html',1,'']]],
   ['current',['current',['../d3/d80/classpemapmodder_1_1worldeditart_1_1utils_1_1BufferedIterator.html#af343507d1926e6ecf964625d41db528c',1,'pemapmodder::worldeditart::utils::BufferedIterator']]],

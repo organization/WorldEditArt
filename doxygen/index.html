@@ -127,8 +127,34 @@ $(document).ready(function(){initNavTree('index.html','');});
  */
 
 setTimeout(function(){
-	var doc = document.getElementById("doc-content");
-	doc.innerHTML = "";
+	var doc = $("#doc-content");
+	doc.html("");
+	var st = $("<div id='stats'><h1>Statistics</h1></div>");
+	var table = $("<table></table>");
+	table.attr("border", 1);
+	table.appendTo(st);
+	var rm = $("<div id='readme'></div>");
+	st.appendTo(doc);
+	rm.appendTo(doc);
+	$.get("stats.json", {}, function(data){
+		if(typeof data !== "object"){
+			data = JSON.parse(data);
+		}
+		var row = $("<tr></tr>");
+		row.append("<th style='text-align: right; padding: 5px;'>PHP Files</th>");
+		row.append("<td style='text-align: left; padding: 5px;'>" + data.files + "</td>");
+		row.appendTo(table);
+		row = $("<tr></tr>");
+		row.append("<th style='text-align: right; padding: 5px;'>Lines of PHP code</th>");
+		//noinspection JSUnresolvedVariable
+		row.append("<td style='text-align: left; padding: 5px;'>" + data.lines + "</td>");
+		row.appendTo(table);
+		row = $("<tr></tr>");
+		row.append("<th style='text-align: right; padding: 5px;'>Kilobytes of PHP code</th>");
+		row.append("<td style='text-align: left; padding: 5px;'>" + Math.round(data.size / 102.4) / 10 + "</td>");
+		row.appendTo(table);
+
+	});
 	$.get("https://raw.githubusercontent.com/PEMapModder/WorldEditArt/master/README.md", {}, function(data){
 		//noinspection JSUnusedGlobalSymbols
 		$.ajax({
@@ -140,10 +166,10 @@ setTimeout(function(){
 				context: "PEMapModder/WorldEditArt"
 			}),
 			success: function(result){
-				doc.innerHTML = result;
+				rm.html(result);
 			},
 			error: function(result){
-				alert(JSON.stringify(result));
+				alert("GitHub Markdown error: " + result.message);
 			}
 		});
 	});

@@ -5,7 +5,8 @@ var hierarchy =
     [ "BufferedIterator", "d3/d80/classpemapmodder_1_1worldeditart_1_1utils_1_1BufferedIterator.html", [
       [ "BufferedBlockIterator", "d4/dbb/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1BufferedBlockIterator.html", [
         [ "CuboidBlockIterator", "d4/db4/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cuboid_1_1CuboidBlockIterator.html", [
-          [ "CuboidAllBlocksIterator", "d7/d32/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cuboid_1_1CuboidAllBlocksIterator.html", null ]
+          [ "CuboidAllBlocksIterator", "d7/d32/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cuboid_1_1CuboidAllBlocksIterator.html", null ],
+          [ "CuboidMarginBlocksIterator", "d5/d15/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cuboid_1_1CuboidMarginBlocksIterator.html", null ]
         ] ]
       ] ]
     ] ],

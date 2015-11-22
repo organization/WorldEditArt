@@ -23,7 +23,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#aa45f807aa0c47159969e7f29c1a5afc5"
+"db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#a6f8266549f0bcca0bc32c90610cd7e02"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

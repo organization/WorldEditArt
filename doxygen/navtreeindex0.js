@@ -173,6 +173,8 @@ var NAVTREEINDEX0 =
 "d4/dd4/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1BlockCollection.html#a14e746abf913beb2363836303549228d":[1,0,0,0,3,1,2],
 "d4/dd4/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1BlockCollection.html#a4552b4afee9939b8da54be95dcdc95cb":[1,0,0,0,3,1,1],
 "d4/dd4/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1BlockCollection.html#ac6ca8d5a20ab0167d4e2ab5c7811c38a":[1,0,0,0,3,1,3],
+"d5/d15/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cuboid_1_1CuboidMarginBlocksIterator.html":[1,0,0,0,3,0,0,0,2],
+"d5/d15/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cuboid_1_1CuboidMarginBlocksIterator.html#a37795baba4ccb93d53b4867ccd98e27e":[1,0,0,0,3,0,0,0,2,0],
 "d5/d25/classpemapmodder_1_1worldeditart_1_1utils_1_1ReportErrorTask.html":[1,0,0,0,5,3],
 "d5/d25/classpemapmodder_1_1worldeditart_1_1utils_1_1ReportErrorTask.html#a59e2f375e5eec0eb8b8da6b7cf49ed07":[1,0,0,0,5,3,0],
 "d5/d25/classpemapmodder_1_1worldeditart_1_1utils_1_1ReportErrorTask.html#a821b4e554b6ed3945f37f417ffbf60f8":[1,0,0,0,5,3,1],
@@ -191,6 +193,8 @@ var NAVTREEINDEX0 =
 "d6/d37/WorldEditArt_8php_source.html":[2,0,0,0,0,7],
 "d6/d79/namespacepemapmodder_1_1worldeditart_1_1session.html":[1,0,0,0,4],
 "d6/d79/namespacepemapmodder_1_1worldeditart_1_1session.html":[0,0,0,0,4],
+"d6/d94/CuboidMarginBlocksIterator_8php.html":[2,0,0,0,0,3,0,0,0,2],
+"d6/d94/CuboidMarginBlocksIterator_8php_source.html":[2,0,0,0,0,3,0,0,0,2],
 "d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html":[1,0,0,0,0,3],
 "d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html#a02d0d556c5cbad4ccd5f6a67189099cf":[1,0,0,0,0,3,0],
 "d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html#a0ef78abf71f0b4f494774352d02697db":[1,0,0,0,0,3,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX0 =
 "db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#a4d9813fea8525b19a1d370eeb8fe41d6":[1,0,0,0,3,0,1,12],
 "db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#a6785341a3714065130a45c9316578cdb":[1,0,0,0,3,0,1,7],
 "db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#a68332c79e76916b07258cfaece3f14f6":[1,0,0,0,3,0,1,11],
-"db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#a6a6fe3deac824fac47e5de5321cf8184":[1,0,0,0,3,0,1,8],
-"db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#a6f8266549f0bcca0bc32c90610cd7e02":[1,0,0,0,3,0,1,5],
-"db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#a7b37efab7473a1effc29f8be2421f6e3":[1,0,0,0,3,0,1,10],
-"db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#a943edb31cd7891bea423dedd390765d8":[1,0,0,0,3,0,1,4],
-"db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#aa221eb8e75642a380892e3f711e7274d":[1,0,0,0,3,0,1,16]
+"db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#a6a6fe3deac824fac47e5de5321cf8184":[1,0,0,0,3,0,1,8]
 };
