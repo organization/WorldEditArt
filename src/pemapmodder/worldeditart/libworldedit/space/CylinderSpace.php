@@ -16,6 +16,7 @@
 namespace pemapmodder\worldeditart\libworldedit\space;
 
 use pemapmodder\worldeditart\libworldedit\BlockCollection;
+use pemapmodder\worldeditart\libworldedit\space\iterator\cylinder\CylinderAllBlocksIterator;
 use pocketmine\level\Position;
 use pocketmine\math\Vector3;
 
@@ -192,6 +193,6 @@ class CylinderSpace extends Space{
 	}
 
 	public function iteratorAllBlocks(BlockCollection $coll){
-		// TODO: Implement iteratorAllBlocks() method.
+		return new CylinderAllBlocksIterator($this, $coll);
 	}
 }

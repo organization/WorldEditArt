@@ -16,6 +16,7 @@
 namespace pemapmodder\worldeditart\libworldedit\space;
 
 use pemapmodder\worldeditart\libworldedit\BlockCollection;
+use pemapmodder\worldeditart\libworldedit\space\iterator\sphere\SphereAllBlocksIterator;
 use pocketmine\level\Position;
 use pocketmine\math\Vector3;
 
@@ -74,6 +75,10 @@ class SphereSpace extends Space{
 		return $this->radius;
 	}
 
+	public function getRadiusSquared(){
+		return $this->radiusSquared;
+	}
+
 	/**
 	 * Sets the sphere's radius.
 	 *
@@ -85,6 +90,6 @@ class SphereSpace extends Space{
 	}
 
 	public function iteratorAllBlocks(BlockCollection $coll){
-		// TODO: Implement iteratorAllBlocks() method.
+		return new SphereAllBlocksIterator($this, $coll);
 	}
 }
