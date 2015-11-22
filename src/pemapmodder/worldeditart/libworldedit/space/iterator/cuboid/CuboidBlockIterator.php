@@ -28,6 +28,7 @@ abstract class CuboidBlockIterator extends BufferedBlockIterator{
 	protected $coll;
 
 	public function __construct(CuboidSpace $space, BlockCollection $coll){
+		parent::__construct();
 		$this->space = $space;
 		$this->level = $space->getLevel(true);
 		if(!($this->level instanceof Level)){
@@ -47,9 +48,9 @@ abstract class CuboidBlockIterator extends BufferedBlockIterator{
 			$offset = (int) ($offset / $lengthY);
 			$x = $offset;
 
-			$x = $this->space->getMinX() + $x;
-			$y = $this->space->getMinY() + $y;
-			$z = $this->space->getMinZ() + $z;
+			$x += $this->space->getMinX();
+			$y += $this->space->getMinY();
+			$z += $this->space->getMinZ();
 			return true;
 		}
 		return false;

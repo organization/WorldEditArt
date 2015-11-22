@@ -102,3 +102,5 @@ $phar->stopBuffering();
 if(is_file("priv\\postCompile.php")){
 	require_once("priv\\postCompile.php");
 }
+
+echo "Emitted build $class-#$nextBuildId (##$globalBuildId)";
