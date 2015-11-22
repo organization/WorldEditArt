@@ -38,7 +38,6 @@ setTimeout(function(){
 		row.append("<th style='text-align: right; padding: 5px;'>Kilobytes of PHP code</th>");
 		row.append("<td style='text-align: left; padding: 5px;'>" + Math.round(data.size / 102.4) / 10 + "</td>");
 		row.appendTo(table);
-
 	});
 	$.get("https://raw.githubusercontent.com/PEMapModder/WorldEditArt/master/README.md", {}, function(data){
 		//noinspection JSUnusedGlobalSymbols

@@ -16,6 +16,10 @@ var searchData=
   ['cuboidspace',['CuboidSpace',['../db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html',1,'pemapmodder::worldeditart::libworldedit::space']]],
   ['cuboidspace_2ephp',['CuboidSpace.php',['../df/dbf/CuboidSpace_8php.html',1,'']]],
   ['current',['current',['../d3/d80/classpemapmodder_1_1worldeditart_1_1utils_1_1BufferedIterator.html#af343507d1926e6ecf964625d41db528c',1,'pemapmodder::worldeditart::utils::BufferedIterator']]],
+  ['cylinderallblocksiterator',['CylinderAllBlocksIterator',['../d7/d5c/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cylinder_1_1CylinderAllBlocksIterator.html',1,'pemapmodder::worldeditart::libworldedit::space::iterator::cylinder']]],
+  ['cylinderallblocksiterator_2ephp',['CylinderAllBlocksIterator.php',['../d3/d1a/CylinderAllBlocksIterator_8php.html',1,'']]],
+  ['cylinderblockiterator',['CylinderBlockIterator',['../d7/d4c/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cylinder_1_1CylinderBlockIterator.html',1,'pemapmodder::worldeditart::libworldedit::space::iterator::cylinder']]],
+  ['cylinderblockiterator_2ephp',['CylinderBlockIterator.php',['../d3/d39/CylinderBlockIterator_8php.html',1,'']]],
   ['cylinderspace',['CylinderSpace',['../d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html',1,'pemapmodder::worldeditart::libworldedit::space']]],
   ['cylinderspace_2ephp',['CylinderSpace.php',['../df/df8/CylinderSpace_8php.html',1,'']]]
 ];

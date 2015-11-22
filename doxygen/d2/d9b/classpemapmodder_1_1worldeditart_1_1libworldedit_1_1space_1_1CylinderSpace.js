@@ -1,7 +1,17 @@
 var classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace =
 [
     [ "getBaseCenter", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a15f62ba12a5e9334edcee722b2d7b90f", null ],
+    [ "getLengthX", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#af909d9e2031c06dfdd624e2305e201e8", null ],
+    [ "getLengthY", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#aa653f01f1edd45f48cdb040cb90aa7a5", null ],
+    [ "getLengthZ", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#acb2221b0806be7a605f767913ee98826", null ],
+    [ "getMaxX", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a1b141c907e504e7acacb12081fe657ec", null ],
+    [ "getMaxY", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a943edb31cd7891bea423dedd390765d8", null ],
+    [ "getMaxZ", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a6f8266549f0bcca0bc32c90610cd7e02", null ],
+    [ "getMinX", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a1e0343a707383fd9fd8a18cd07e9b2a8", null ],
+    [ "getMinY", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a6785341a3714065130a45c9316578cdb", null ],
+    [ "getMinZ", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a6a6fe3deac824fac47e5de5321cf8184", null ],
     [ "getRadius", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a46ed26029924e916f771089ac7c3291f", null ],
+    [ "getRadiusSquared", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a76a7568e105a1b59756cfa5881e53f32", null ],
     [ "getTopCenter", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#afda7dd81aef914d85b0be4b00642b831", null ],
     [ "isInside", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#acf949cf74dbd51f1b04de8df58d3f0a5", null ],
     [ "iteratorAllBlocks", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a68332c79e76916b07258cfaece3f14f6", null ],

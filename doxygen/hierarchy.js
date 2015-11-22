@@ -7,6 +7,9 @@ var hierarchy =
         [ "CuboidBlockIterator", "d4/db4/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cuboid_1_1CuboidBlockIterator.html", [
           [ "CuboidAllBlocksIterator", "d7/d32/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cuboid_1_1CuboidAllBlocksIterator.html", null ],
           [ "CuboidMarginBlocksIterator", "d5/d15/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cuboid_1_1CuboidMarginBlocksIterator.html", null ]
+        ] ],
+        [ "CylinderBlockIterator", "d7/d4c/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cylinder_1_1CylinderBlockIterator.html", [
+          [ "CylinderAllBlocksIterator", "d7/d5c/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cylinder_1_1CylinderAllBlocksIterator.html", null ]
         ] ]
       ] ]
     ] ],

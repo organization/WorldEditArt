@@ -19,6 +19,7 @@ var searchData=
   ['spherespace',['SphereSpace',['../dd/d74/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1SphereSpace.html',1,'pemapmodder::worldeditart::libworldedit::space']]],
   ['spherespace_2ephp',['SphereSpace.php',['../dc/d86/SphereSpace_8php.html',1,'']]],
   ['standardcuboidoffset',['standardCuboidOffset',['../d4/db4/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cuboid_1_1CuboidBlockIterator.html#ae4510c599799e56cde0779e73ec537da',1,'pemapmodder::worldeditart::libworldedit::space::iterator::cuboid::CuboidBlockIterator']]],
+  ['standardcylinderoffset',['standardCylinderOffset',['../d7/d4c/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cylinder_1_1CylinderBlockIterator.html#a250e562514d747adb371434dffdf020c',1,'pemapmodder::worldeditart::libworldedit::space::iterator::cylinder::CylinderBlockIterator']]],
   ['startconfigurationcommand',['StartConfigurationCommand',['../dc/de3/classpemapmodder_1_1worldeditart_1_1cmd_1_1StartConfigurationCommand.html',1,'pemapmodder::worldeditart::cmd']]],
   ['startconfigurationcommand_2ephp',['StartConfigurationCommand.php',['../d7/d72/StartConfigurationCommand_8php.html',1,'']]],
   ['store',['store',['../d2/ded/classpemapmodder_1_1worldeditart_1_1utils_1_1OrderedObjectPool.html#a6221a0139063da1d2b1fa70d1d1fbe9c',1,'pemapmodder::worldeditart::utils::OrderedObjectPool']]]

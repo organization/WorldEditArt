@@ -13,5 +13,6 @@ var searchData=
   ['settopcenter',['setTopCenter',['../d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a37b7ceb378a3f4c9fa00dc68de938291',1,'pemapmodder::worldeditart::libworldedit::space::CylinderSpace']]],
   ['slide',['slide',['../d3/d11/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Rheostat.html#a79ffb06049f5d555b96dc4b4ef75f0d4',1,'pemapmodder::worldeditart::session::queue::Rheostat']]],
   ['standardcuboidoffset',['standardCuboidOffset',['../d4/db4/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cuboid_1_1CuboidBlockIterator.html#ae4510c599799e56cde0779e73ec537da',1,'pemapmodder::worldeditart::libworldedit::space::iterator::cuboid::CuboidBlockIterator']]],
+  ['standardcylinderoffset',['standardCylinderOffset',['../d7/d4c/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cylinder_1_1CylinderBlockIterator.html#a250e562514d747adb371434dffdf020c',1,'pemapmodder::worldeditart::libworldedit::space::iterator::cylinder::CylinderBlockIterator']]],
   ['store',['store',['../d2/ded/classpemapmodder_1_1worldeditart_1_1utils_1_1OrderedObjectPool.html#a6221a0139063da1d2b1fa70d1d1fbe9c',1,'pemapmodder::worldeditart::utils::OrderedObjectPool']]]
 ];
