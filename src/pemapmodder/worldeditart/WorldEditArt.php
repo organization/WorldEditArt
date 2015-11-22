@@ -17,6 +17,7 @@ namespace pemapmodder\worldeditart;
 
 use pemapmodder\worldeditart\cmd\StartConfigurationCommand;
 use pemapmodder\worldeditart\cmd\WorldEditArtCommand;
+use pemapmodder\worldeditart\database\DataProvider;
 use pemapmodder\worldeditart\lang\TranslationManager;
 use pemapmodder\worldeditart\utils\OrderedObjectPool;
 use Phar;
@@ -35,6 +36,8 @@ class WorldEditArt extends PluginBase{
 	private $translationManager;
 	/** @var OrderedObjectPool */
 	private $objectPool;
+	/** @var DataProvider */
+	private $dataProvider;
 
 	public function onLoad(){
 		self::$PLUGIN_NAME = $this->getDescription()->getName();
@@ -99,6 +102,8 @@ class WorldEditArt extends PluginBase{
 
 		new WorldEditArtCommand($this);
 
+		// TODO initialize data provider
+
 		$em1 = TextFormat::GOLD;
 		$em2 = TextFormat::LIGHT_PURPLE;
 		$green = TextFormat::DARK_GREEN;
@@ -151,6 +156,15 @@ class WorldEditArt extends PluginBase{
 	 */
 	public function getObjectPool(){
 		return $this->objectPool;
+	}
+
+	/**
+	 * Returns the {@link DataProvider} for WorldEditArt.
+	 *
+	 * @return DataProvider
+	 */
+	public function getDataProvider(){
+		return $this->dataProvider;
 	}
 
 	/**

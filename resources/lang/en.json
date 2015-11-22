@@ -2,11 +2,11 @@
 	"meta": {
 		"language": {
 			"value": "en",
-			"updated": "1.2"
+			"updated": "1.3"
 		},
 		"native": {
 			"value": "English",
-			"updated": "1.2"
+			"updated": "1.3"
 		},
 		"authors": {
 			"value": [
@@ -60,6 +60,15 @@
 				"params": [
 					"TASK_NAME",
 					"PROGRESS_PERC"
+				]
+			},
+			"warnedEntry": {
+				"value": "%TASK_NAME%: %PROGRESS_PERC%% done (%WARNINGS_CNT% blocks blocked by safe mode)",
+				"updated": "1.3",
+				"params": [
+					"TASK_NAME",
+					"PROGRESS_PERC",
+					"WARNINGS_CNT"
 				]
 			}
 		}

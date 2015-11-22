@@ -28,4 +28,5 @@ interface Lang{
 	const CMDS_VERSION_RESPONSE = "cmds.version.response";
 	const QUEUE_TIP_TITLE = "queue.tip.title";
 	const QUEUE_TIP_ENTRY = "queue.tip.entry";
+	const QUEUE_TIP_WARNED_ENTRY = "queue.tip.warnedEntry";
 }

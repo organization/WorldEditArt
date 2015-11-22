@@ -15,6 +15,7 @@
 
 namespace pemapmodder\worldeditart\session\queue;
 
+use pemapmodder\worldeditart\database\Zone;
 use pemapmodder\worldeditart\libworldedit\space\iterator\BufferedBlockIterator;
 use pocketmine\block\Block;
 
@@ -27,6 +28,8 @@ class Rheostat{
 	const DIRECTION_FORWARDS = true;
 	const DIRECTION_BACKWARDS = false;
 
+	/** @var Queue */
+	private $queue;
 	/**
 	 * In descending order, where the 0th record was the last action done,
 	 * and the last record was the first action done and is the last action to be undone.
@@ -46,6 +49,10 @@ class Rheostat{
 	/** @var int */
 	private $estimatedSize;
 
+	/** @var int */
+	private $blocksOutOfBounds = 0;
+
+	/** @var bool */
 	private $slideDirection = self::DIRECTION_FORWARDS;
 
 	/** @var string */
@@ -54,12 +61,14 @@ class Rheostat{
 	/**
 	 * Rheostat constructor.
 	 *
+	 * @param Queue                 $queue
 	 * @param BufferedBlockIterator $blocks
 	 * @param                       $name
 	 *
 	 * @internal param \pocketmine\block\Block[] $forwardRecords
 	 */
-	public function __construct(BufferedBlockIterator $blocks, $name){
+	public function __construct(Queue $queue, BufferedBlockIterator $blocks, $name){
+		$this->queue = $queue;
 		$this->blockStream = $blocks;
 		$this->name = $name;
 	}
@@ -75,6 +84,19 @@ class Rheostat{
 				return false;
 			}
 			$next = $this->blockStream->current();
+			if($this->queue->getOwner()->getConfig()->safeModeOn){
+				$zones = $this->queue->getOwner()->getMain()->getDataProvider()->getZones($next);
+				foreach($zones as $zone){
+					if($zone->getType() === Zone::TYPE_UNDER_CONSTRUCTION){
+						$ok = true;
+						break;
+					}
+				}
+				if(!isset($ok)){
+					$this->blocksOutOfBounds++;
+					return true;
+				}
+			}
 		}else{
 			$next = array_shift($this->forwardRecords);
 		}
@@ -110,5 +132,27 @@ class Rheostat{
 	}
 	public function left(){
 		return $this->total() - $this->done();
+	}
+	/**
+	 * @return int
+	 */
+	public function getBlocksOutOfBounds(){
+		return $this->blocksOutOfBounds;
+	}
+
+	public function completed(){
+		return $this->slideDirection === self::DIRECTION_FORWARDS and !$this->blockStream->valid();
+	}
+
+	public function undone(){
+		return $this->slideDirection === self::DIRECTION_BACKWARDS and count($this->behindRecords) === 0;
+	}
+
+	public function getSlideDirection(){
+		return $this->slideDirection;
+	}
+
+	public function setSlideDirection($slideDirection){
+		$this->slideDirection = $slideDirection;
 	}
 }
