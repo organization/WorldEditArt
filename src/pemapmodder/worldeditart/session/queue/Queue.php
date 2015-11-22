@@ -80,7 +80,6 @@ class Queue{
 		}
 		$this->future = [$rheostat];
 	}
-
 	public function tick(){
 		if($this->current === null){
 			return;
