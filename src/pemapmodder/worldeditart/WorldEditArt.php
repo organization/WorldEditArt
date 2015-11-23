@@ -19,7 +19,7 @@ use pemapmodder\worldeditart\cmd\StartConfigurationCommand;
 use pemapmodder\worldeditart\cmd\WorldEditArtCommand;
 use pemapmodder\worldeditart\database\DataProvider;
 use pemapmodder\worldeditart\lang\TranslationManager;
-use pemapmodder\worldeditart\utils\OrderedObjectPool;
+use pemapmodder\worldeditart\utils\Fridge;
 use Phar;
 use pocketmine\permission\Permission;
 use pocketmine\plugin\PluginBase;
@@ -34,7 +34,7 @@ class WorldEditArt extends PluginBase{
 	private $sessionCollection;
 	/** @var TranslationManager */
 	private $translationManager;
-	/** @var OrderedObjectPool */
+	/** @var Fridge */
 	private $objectPool;
 	/** @var DataProvider */
 	private $dataProvider;
@@ -71,7 +71,7 @@ class WorldEditArt extends PluginBase{
 			$this->getLogger()->notice("WorldEditArt will continue to run with the default configuration.");
 		} // save default config
 
-		$this->objectPool = new OrderedObjectPool($this);
+		$this->objectPool = new Fridge($this);
 
 		if(true){
 			$langs = [];
@@ -152,7 +152,7 @@ class WorldEditArt extends PluginBase{
 	/**
 	 * Returns the {@link OrderedObjectPool} for WorldEditArt.
 	 *
-	 * @return OrderedObjectPool
+	 * @return Fridge
 	 */
 	public function getObjectPool(){
 		return $this->objectPool;

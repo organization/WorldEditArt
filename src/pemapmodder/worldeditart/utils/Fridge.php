@@ -18,7 +18,7 @@ namespace pemapmodder\worldeditart\utils;
 use pemapmodder\worldeditart\WorldEditArt;
 use pocketmine\utils\TextFormat;
 
-class OrderedObjectPool{
+class Fridge{
 	/** @var WorldEditArt */
 	private $main;
 	/** @var object[] */

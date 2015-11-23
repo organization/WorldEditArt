@@ -23,14 +23,14 @@ TODO list:
         - [X] Base command class
     - [ ] Utils
         - [ ] Async database querying system
-        - [X] [Non-threaded integer-object pool](src/pemapmodder/worldeditart/utils/OrderedObjectPool.php)
+        - [X] [Non-threaded integer-object pool](src/pemapmodder/worldeditart/utils/Fridge.php)
     - [ ] Features
         - [ ] 
         - [ ] Safety
             - [ ] Sudo mode
             - [ ] Safe mode
                 - [ ] Marking and storing of UCZs
-                - [ ] Safe mode
+                - [X] Safe mode
         - [ ] Commands
             - [ ] Selection creation
                 - [ ] //shoot
@@ -38,7 +38,7 @@ TODO list:
                 - [ ] //cyl
                 - [ ] //sph
                 - [ ] //desel
-                - [ ] //1, //2
+                - [X] //1, //2
             - [ ] Selection processing
                 - [ ] //set
                 - [ ] //replace
