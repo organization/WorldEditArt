@@ -133,8 +133,30 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adf7c472f5ffc30ad0aa95c63cd2b8f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="../../dd/d69/Queue_8php_source.html#l00021">21</a> of file <a class="el" href="../../dd/d69/Queue_8php_source.html">Queue.php</a>.</p>
+<div class="textblock"><p>This class represents a session's todo/undo/redo queue of rheostats (grouped world editing tasks).</p>
+<p><a class="el" href="../../d4/d9a/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Queue.html#a3b0da19d9de6afef613e90d4845c62fc">tick()</a>:<br />
+ When current is null, this means that there is nothing to be done. <a class="el" href="../../d4/d9a/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Queue.html#a3b0da19d9de6afef613e90d4845c62fc">tick()</a> can return right away. When current is not null and the rheostat is set to backwards direction and it is not undone(), it should continue to be undone.<br />
+ When current is not null and the rheostat is set to backwards direction and it is undone() and the first rheostat in future is set to backwards direction, the queue should be stopped.<br />
+ When current is not null and the rheostat is set to backwards direction and it is undone() and the first rheostat in future is set to forwards direction, current should be replaced by the rheostat shifted from future.<br />
+ When current is not null and the rheostat is set to forwards direction and it is not completed(), it should continue to be completed.<br />
+ When current is not null and the rheostat is set to forwards direction and it is completed(), it should be immediately shifted to history and an attempt should be made to shift a rheostat from future.<br />
+ </p><hr/>
+<p> <a class="el" href="../../d4/d9a/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Queue.html#a0347027efc0e46047792065615ac94eb">undo()</a>:<br />
+ When current is not null and the rheostat is set to backwards direction and it is not undone(), return right away.<br />
+ When current is not null and the rheostat is set to backwards direction and it is undone() and history is not empty, shift to future and shift a rheostat from history.<br />
+ When current is not null and the rheostat is set to backwards direction and it is undone() and history is empty, return right away.<br />
+ When current is not null and the rheostat is set to forwards direction, change the direction to backwards.<br />
+ When current is null, attempt to shift a rheostat from history and change its direction to backwards. </p><hr/>
+<p> <a class="el" href="../../d4/d9a/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Queue.html#a7e7bdebb2e29ddf03980e5de41a4b880">redo()</a>:<br />
+ When current is not null and the rheostat is set to backwards direction, change its direction to forwards.<br />
+ Otherwise, return right away. </p><hr/>
+<p> <a class="el" href="../../d4/d9a/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Queue.html#a75d776e22de182a55c3d920242673cd5">addTask()</a>:<br />
+ When current is null, set current as new rheostat.<br />
+ When current is not null and the rheostat is set to forwards direction, push to future.<br />
+ When current is not null and the rheostat is set to backwards direction and it is not undone(), clear future and push to future.<br />
+ When current is not null and the rheostat is set to backwards direction and it is undone(), set current as new rheostat. </p>
+
+<p>Definition at line <a class="el" href="../../dd/d69/Queue_8php_source.html#l00056">56</a> of file <a class="el" href="../../dd/d69/Queue_8php_source.html">Queue.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4cc7c4629fdef2b0c9a18370be6f1318"></a>
 <div class="memitem">
@@ -150,7 +172,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d69/Queue_8php_source.html#l00064">64</a> of file <a class="el" href="../../dd/d69/Queue_8php_source.html">Queue.php</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d69/Queue_8php_source.html#l00067">67</a> of file <a class="el" href="../../dd/d69/Queue_8php_source.html">Queue.php</a>.</p>
 
 </div>
 </div>
@@ -169,7 +191,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d69/Queue_8php_source.html#l00068">68</a> of file <a class="el" href="../../dd/d69/Queue_8php_source.html">Queue.php</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d69/Queue_8php_source.html#l00071">71</a> of file <a class="el" href="../../dd/d69/Queue_8php_source.html">Queue.php</a>.</p>
 
 </div>
 </div>
@@ -187,7 +209,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html">WorldEditSession</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d69/Queue_8php_source.html#l00167">167</a> of file <a class="el" href="../../dd/d69/Queue_8php_source.html">Queue.php</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d69/Queue_8php_source.html#l00170">170</a> of file <a class="el" href="../../dd/d69/Queue_8php_source.html">Queue.php</a>.</p>
 
 </div>
 </div>
@@ -204,7 +226,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d69/Queue_8php_source.html#l00126">126</a> of file <a class="el" href="../../dd/d69/Queue_8php_source.html">Queue.php</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d69/Queue_8php_source.html#l00129">129</a> of file <a class="el" href="../../dd/d69/Queue_8php_source.html">Queue.php</a>.</p>
 
 </div>
 </div>
@@ -221,7 +243,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d69/Queue_8php_source.html#l00083">83</a> of file <a class="el" href="../../dd/d69/Queue_8php_source.html">Queue.php</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d69/Queue_8php_source.html#l00086">86</a> of file <a class="el" href="../../dd/d69/Queue_8php_source.html">Queue.php</a>.</p>
 
 </div>
 </div>
@@ -238,7 +260,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d69/Queue_8php_source.html#l00147">147</a> of file <a class="el" href="../../dd/d69/Queue_8php_source.html">Queue.php</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d69/Queue_8php_source.html#l00150">150</a> of file <a class="el" href="../../dd/d69/Queue_8php_source.html">Queue.php</a>.</p>
 
 </div>
 </div>
@@ -255,7 +277,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d69/Queue_8php_source.html#l00107">107</a> of file <a class="el" href="../../dd/d69/Queue_8php_source.html">Queue.php</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d69/Queue_8php_source.html#l00110">110</a> of file <a class="el" href="../../dd/d69/Queue_8php_source.html">Queue.php</a>.</p>
 
 </div>
 </div>
