@@ -15,8 +15,10 @@
 
 namespace pemapmodder\worldeditart\libworldedit\space;
 
+use pemapmodder\worldeditart\lang\Lang;
 use pemapmodder\worldeditart\libworldedit\BlockCollection;
 use pemapmodder\worldeditart\libworldedit\space\iterator\cuboid\CuboidAllBlocksIterator;
+use pemapmodder\worldeditart\session\WorldEditSession;
 use pocketmine\level\Position;
 use pocketmine\math\Vector3;
 
@@ -25,9 +27,8 @@ use pocketmine\math\Vector3;
  */
 class CuboidSpace extends Space{
 	/** @var int */
-	private $x1, $x2, $y1, $y2, $z1, $z2;
-	/** @var string */
-	private $levelName;
+	public $x1, $x2, $y1, $y2, $z1, $z2;
+
 	public function serialize(){
 		return "$this->x1:$this->x2:$this->y1:$this->y2:$this->z1:$this->z2:$this->levelName";
 	}
@@ -64,6 +65,24 @@ class CuboidSpace extends Space{
 	 */
 	public function isValid(){
 		return parent::isValid() and isset($this->x1, $this->x2, $this->y1, $this->y2, $this->z1, $this->z2, $this->levelName);
+	}
+
+	public function name(WorldEditSession $session){
+		if(!$this->isValid()){
+			return null;
+		}
+		return $session->translate(Lang::SPACE_CUBOID_TO_STRING, [
+				"LENGTH_X" => $this->getLengthX(),
+				"LENGTH_Y" => $this->getLengthY(),
+				"LENGTH_Z" => $this->getLengthZ(),
+				"TOTAL_SIZE" => $this->getLengthX() * $this->getLengthY() * $this->getLengthZ(),
+				"X_1" => $this->x1,
+				"Y_1" => $this->y1,
+				"Z_1" => $this->z1,
+				"X_2" => $this->x2,
+				"Y_2" => $this->y2,
+				"Z_2" => $this->z2,
+		]);
 	}
 
 	public function getMinX(){

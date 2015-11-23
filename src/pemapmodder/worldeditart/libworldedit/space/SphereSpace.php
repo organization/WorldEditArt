@@ -15,8 +15,10 @@
 
 namespace pemapmodder\worldeditart\libworldedit\space;
 
+use pemapmodder\worldeditart\lang\Lang;
 use pemapmodder\worldeditart\libworldedit\BlockCollection;
 use pemapmodder\worldeditart\libworldedit\space\iterator\sphere\SphereAllBlocksIterator;
+use pemapmodder\worldeditart\session\WorldEditSession;
 use pocketmine\level\Position;
 use pocketmine\math\Vector3;
 
@@ -87,6 +89,15 @@ class SphereSpace extends Space{
 	public function setRadius($radius){
 		$this->radius = $radius;
 		$this->radiusSquared = $radius ** 2;
+	}
+
+	public function name(WorldEditSession $session){
+		return $session->translate(Lang::SPACE_SPHERE_TO_STRING, [
+				"RADIUS" => $this->radius,
+				"X" => $this->center->x,
+				"Y" => $this->center->y,
+				"Z" => $this->center->z,
+		]);
 	}
 
 	public function iteratorAllBlocks(BlockCollection $coll){

@@ -2,11 +2,11 @@
 	"meta": {
 		"language": {
 			"value": "en",
-			"updated": "1.3"
+			"updated": "1.4"
 		},
 		"native": {
 			"value": "English",
-			"updated": "1.3"
+			"updated": "1.4"
 		},
 		"authors": {
 			"value": [
@@ -23,27 +23,108 @@
 		"noperm": {
 			"value": "You don't have permission to use this command",
 			"updated": "1.0"
+		},
+		"offline": {
+			"value": "That player isn't online!",
+			"updated": "1.4"
 		}
 	},
-	"cmds": {
-		"version": {
+	"version": {
+		"description": {
+			"value": "Check the version of WorldEditArt",
+			"updated": "1.1"
+		},
+		"usage": {
+			"value": "/v",
+			"updated": "1.1"
+		},
+		"response": {
+			"value": "This server uses WorldEditArt version %PLUGIN_VERSION% by %PLUGIN_AUTHORS%.\nYou are using %LANG_NAME% translation v%LANG_VERSION% by %LANG_AUTHORS%.",
+			"updated": "1.1",
+			"params": [
+				"PLUGIN_VERSION",
+				"PLUGIN_AUTHORS",
+				"LANG_NAME",
+				"LANG_VERSION",
+				"LANG_AUTHORS"
+			]
+		}
+	},
+	"selection": {
+		"pos": {
 			"description": {
-				"value": "Check the version of WorldEditArt",
-				"updated": "1.1"
+				"value": "Define one of the vertex positions of your cuboid selection",
+				"updated": "1.4"
 			},
 			"usage": {
-				"value": "/v",
-				"updated": "1.1"
+				"1": {
+					"value": "//1 [.b] [,b <bookmark name>] [,p <player name>] [,n <selection name>]\n.b - use your default bookmark instead of your current position\n,b <name> - use the bookmark called <name> instead of your current position\n,p <player> - use the position of the online player <player> instead of your position\n,n <selection name> - specifies the name of the selection, default to \"default\"",
+					"updated": "1.4"
+				},
+				"2": {
+					"value": "//2 [.b] [,b <bookmark name>] [,p <player name>]\n.b - use your default bookmark instead of your current position\n,b <name> - use the bookmark called <name> instead of your current position\n,p <player> - use the position of the online player <player> instead of your position",
+					"updated": "1.4"
+				}
 			},
-			"response": {
-				"value": "This server uses WorldEditArt version %PLUGIN_VERSION% by %PLUGIN_AUTHORS%.\nYou are using %LANG_NAME% translation v%LANG_VERSION% by %LANG_AUTHORS%.",
-				"updated": "1.1",
+			"success": {
+				"value": "Selected (%COORD_X%, %COORD_Y%, %COORD_Z%) as point %POINT_ID% of the cuboid.",
+				"updated": "1.4",
 				"params": [
-					"PLUGIN_VERSION",
-					"PLUGIN_AUTHORS",
-					"LANG_NAME",
-					"LANG_VERSION",
-					"LANG_AUTHORS"
+					"COORD_X",
+					"COORD_Y",
+					"COORD_Z",
+					"POINT_ID"
+				]
+			},
+			"info": {
+				"value": "Your current selection:",
+				"updated": "1.4"
+			}
+		}
+	},
+	"space": {
+		"cuboid": {
+			"toString": {
+				"value": "%LENGTH_X%*%LENGTH_Y%*%LENGTH_Z% cuboid (%TOTAL_SIZE% blocks) from (%X_1%, %Y_1%, %Z_1%) to (%X_2%, %Y_2%, %Z_2%)",
+				"updated": "1.4",
+				"params": [
+					"LENGTH_X",
+					"LENGTH_Y",
+					"LENGTH_Z",
+					"TOTAL_SIZE",
+					"X_1",
+					"Y_1",
+					"Z_1",
+					"X_2",
+					"Y_2",
+					"Z_2"
+				]
+			}
+		},
+		"cylinder": {
+			"toString": {
+				"value": "cylinder of %RADIUS% blocks radius from (%X_BOTTOM%, %Y_BOTTOM%, %Z_BOTTOM%) to (%X_TOP%, %Y_TOP%, %Z_TOP%)",
+				"updated": "1.4",
+				"params": [
+					"X_BASE",
+					"Y_BASE",
+					"Z_BASE",
+					"X_TOP",
+					"Y_TOP",
+					"Z_TOP",
+					"RADIUS"
+				]
+			}
+		},
+		"sphere": {
+			"toString": {
+				"value": "sphere of %RADIUS% blocks radius centered at (%X%, %Y%, %Z%)",
+				"updated": "1.4",
+				"params": [
+					"RADIUS",
+					"X",
+					"Y",
+					"Z"
 				]
 			}
 		}

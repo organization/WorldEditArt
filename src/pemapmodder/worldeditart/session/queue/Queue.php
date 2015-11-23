@@ -158,20 +158,6 @@ class Queue{
 					"PROGRESS_PERC" => round($this->current->done() / $this->current->total() * 100, 1),
 			]);
 		}
-		foreach($this->future as $rheostat){
-			if($rheostat->getBlocksOutOfBounds() > 0){
-				$tip .= $this->owner->translate(Lang::QUEUE_TIP_WARNED_ENTRY, [
-						"TASK_NAME" => $rheostat->name(),
-						"PROGRESS_PERC" => round($rheostat->done() / $rheostat->total() * 100, 1),
-						"WARNINGS_CNT" => $rheostat->getBlocksOutOfBounds(),
-				]);
-			}else{
-				$tip .= $this->owner->translate(Lang::QUEUE_TIP_ENTRY, [
-						"TASK_NAME" => $rheostat->name(),
-						"PROGRESS_PERC" => round($rheostat->done() / $rheostat->total() * 100, 1),
-				]);
-			}
-		}
 		return trim($tip);
 	}
 

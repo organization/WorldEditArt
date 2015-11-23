@@ -23,17 +23,17 @@ class VersionCmd implements BaseCmd{
 		return ["version", "v"];
 	}
 	public function getDescription(){
-		return self::CMDS_VERSION_DESCRIPTION;
+		return self::VERSION_DESCRIPTION;
 	}
 	public function getUsage(){
-		return self::CMDS_VERSION_USAGE;
+		return self::VERSION_USAGE;
 	}
 	public function canUse(WorldEditSession $session){
 		return true;
 	}
 	public function run(WorldEditSession $session, array $args){
 		$phrase = $session->getMain()->getTranslationManager()->get(Lang::META_LANGUAGE, $session->getConfig()->lang);
-		$session->sendMessage(Lang::CMDS_VERSION_RESPONSE, [
+		$session->sendMessage(Lang::VERSION_RESPONSE, [
 			"PLUGIN_VERSION" => $session->getMain()->getDescription()->getVersion(),
 			"PLUGIN_AUTHORS" => implode(", ", $session->getMain()->getDescription()->getAuthors()),
 			"LANG_NAME" => $session->translate(Lang::META_NATIVE),

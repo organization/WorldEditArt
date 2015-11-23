@@ -27,7 +27,16 @@
 				"description": "Parent permission for permissions for builders",
 				"default": "op",
 				"children": {
-
+					"selection": {
+						"description": "Parent permission for permissions related to selections",
+						"default": "op",
+						"children": {
+							"pos": {
+								"description": "Permission to use //1 and //2",
+								"default": "op"
+							}
+						}
+					}
 				}
 			},
 			"help": {

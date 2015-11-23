@@ -90,4 +90,16 @@ class FormattedArguments{
 			$this->unterminated = true;
 		}
 	}
+
+	public function enabled($name){
+		return isset($this->switches[$name]);
+	}
+
+	public function opt($name, $default = null){
+		return isset($this->opts[$name]) ? $this->opts[$name] : $default;
+	}
+
+	public function plain($offset, $default = null){
+		return isset($this->plain[$offset]) ? $this->plain[$offset] : $default;
+	}
 }

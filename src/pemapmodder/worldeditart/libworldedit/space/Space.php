@@ -17,6 +17,7 @@ namespace pemapmodder\worldeditart\libworldedit\space;
 
 use pemapmodder\worldeditart\libworldedit\BlockCollection;
 use pemapmodder\worldeditart\libworldedit\space\iterator\BufferedBlockIterator;
+use pemapmodder\worldeditart\session\WorldEditSession;
 use pemapmodder\worldeditart\WorldEditArt;
 use pocketmine\level\Level;
 use pocketmine\math\Vector3;
@@ -62,6 +63,13 @@ abstract class Space implements Serializable{
 		return $server->getLevelByName($this->levelName);
 	}
 
+	public function setLevelName($levelName){
+		$this->levelName = $levelName;
+	}
+	public function getLevelName(){
+		return $this->levelName;
+	}
+
 	public function getMain(){
 		return $this->main;
 	}
@@ -77,6 +85,15 @@ abstract class Space implements Serializable{
 	public function isValid(){
 		return isset($this->main);
 	}
+
+	/**
+	 * Returns a description of the {@link Space}, translated in the locale of the given {@link WorldEditSession}.
+	 *
+	 * @param WorldEditSession $session
+	 *
+	 * @return string
+	 */
+	public abstract function name(WorldEditSession $session);
 
 	/**
 	 * Returns a new {@link BufferedBlockIterator} for all blocks in this space.

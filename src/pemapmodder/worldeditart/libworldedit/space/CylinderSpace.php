@@ -15,8 +15,10 @@
 
 namespace pemapmodder\worldeditart\libworldedit\space;
 
+use pemapmodder\worldeditart\lang\Lang;
 use pemapmodder\worldeditart\libworldedit\BlockCollection;
 use pemapmodder\worldeditart\libworldedit\space\iterator\cylinder\CylinderAllBlocksIterator;
+use pemapmodder\worldeditart\session\WorldEditSession;
 use pocketmine\level\Position;
 use pocketmine\math\Vector3;
 
@@ -190,6 +192,21 @@ class CylinderSpace extends Space{
 	 */
 	public function getLengthZ(){
 		// TODO
+	}
+
+	public function name(WorldEditSession $session){
+		if(!$this->isValid()){
+			return null;
+		}
+		return $session->translate(Lang::SPACE_CYLINDER_TO_STRING, [
+				"X_BASE" => $this->baseCenter->x,
+				"Y_BASE" => $this->baseCenter->y,
+				"Z_BASE" => $this->baseCenter->z,
+				"X_TOP" => $this->topCenter->x,
+				"Y_TOP" => $this->topCenter->y,
+				"Z_TOP" => $this->topCenter->z,
+				"RADIUS" => $this->radius,
+		]);
 	}
 
 	public function iteratorAllBlocks(BlockCollection $coll){

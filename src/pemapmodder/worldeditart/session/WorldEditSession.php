@@ -111,7 +111,7 @@ abstract class WorldEditSession{
 	 */
 	public abstract function hasPermission($permission);
 
-	protected abstract function sendMessageDirect($text);
+	public abstract function sendMessageDirect($text);
 
 	/**
 	 * @return WorldEditArt
@@ -161,6 +161,9 @@ abstract class WorldEditSession{
 	 */
 	public function setSelections($selections){
 		$this->selections = $selections;
+	}
+	public function setSelection(Space $sel, $name = "default"){
+		$this->selections[$name] = $sel;
 	}
 
 	/**
