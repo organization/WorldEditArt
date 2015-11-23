@@ -6,6 +6,7 @@ var searchData=
   ['onloadedsession',['onLoadedSession',['../d2/d70/classpemapmodder_1_1worldeditart_1_1database_1_1BaseDataProvider.html#a73701c1b184d5b58f4e4ba03de3923d6',1,'pemapmodder::worldeditart::database::BaseDataProvider']]],
   ['onquit',['onQuit',['../d9/dad/classpemapmodder_1_1worldeditart_1_1SessionCollection.html#a759a63032fc5b670ed797bbbf0beb1bf',1,'pemapmodder::worldeditart::SessionCollection']]],
   ['onrun',['onRun',['../d5/d25/classpemapmodder_1_1worldeditart_1_1utils_1_1ReportErrorTask.html#aa2eb34e3894c9da534c026d54443ae86',1,'pemapmodder::worldeditart::utils::ReportErrorTask']]],
+  ['opt',['opt',['../db/dec/classpemapmodder_1_1worldeditart_1_1utils_1_1FormattedArguments.html#a079a05cd08aed27382dabed1a5fb6b1f',1,'pemapmodder::worldeditart::utils::FormattedArguments']]],
   ['orderedobjectpool',['OrderedObjectPool',['../d2/ded/classpemapmodder_1_1worldeditart_1_1utils_1_1OrderedObjectPool.html',1,'pemapmodder::worldeditart::utils']]],
   ['orderedobjectpool_2ephp',['OrderedObjectPool.php',['../db/dbb/OrderedObjectPool_8php.html',1,'']]]
 ];

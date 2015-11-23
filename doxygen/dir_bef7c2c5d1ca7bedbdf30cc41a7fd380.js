@@ -1,5 +1,6 @@
 var dir_bef7c2c5d1ca7bedbdf30cc41a7fd380 =
 [
+    [ "selection", "dir_760259928bdd445e323cade175430dfc.html", "dir_760259928bdd445e323cade175430dfc" ],
     [ "BaseCmd.php", "d4/d81/BaseCmd_8php.html", [
       [ "BaseCmd", "d2/d20/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCmd.html", "d2/d20/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCmd" ]
     ] ],

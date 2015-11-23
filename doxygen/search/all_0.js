@@ -16,6 +16,7 @@ var searchData=
   ['_24topcenter',['$topCenter',['../d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a298ae36f97102e7407248b7312d17977',1,'pemapmodder::worldeditart::libworldedit::space::CylinderSpace']]],
   ['_24unterminated',['$unterminated',['../db/dec/classpemapmodder_1_1worldeditart_1_1utils_1_1FormattedArguments.html#abaa45de5c1b55eec3603c36fbeff361c',1,'pemapmodder::worldeditart::utils::FormattedArguments']]],
   ['_24weight',['$weight',['../d5/d3b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1BlockEntry.html#aee5b436bc1b075512126d3577e6db7d3',1,'pemapmodder::worldeditart::libworldedit::BlockEntry']]],
+  ['_24x1',['$x1',['../db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#a6c27294ced482bf58ece48ee3c3f3786',1,'pemapmodder::worldeditart::libworldedit::space::CuboidSpace']]],
   ['_24x2',['$x2',['../db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#ae0ff1820c58f2e6f90f89a8c71a3b727',1,'pemapmodder::worldeditart::libworldedit::space::CuboidSpace']]],
   ['_24y1',['$y1',['../db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#a0e4d1cf03d41c2c02097a1eb362d7ad5',1,'pemapmodder::worldeditart::libworldedit::space::CuboidSpace']]],
   ['_24y2',['$y2',['../db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html#aa221eb8e75642a380892e3f711e7274d',1,'pemapmodder::worldeditart::libworldedit::space::CuboidSpace']]],

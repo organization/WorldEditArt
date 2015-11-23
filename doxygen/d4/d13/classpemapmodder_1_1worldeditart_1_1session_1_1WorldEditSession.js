@@ -21,6 +21,7 @@ var classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession =
     [ "sendMessage", "d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html#a3eda793f03f3bd19f4ae1c7b2086ac6a", null ],
     [ "sendMessageDirect", "d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html#a4c86380b4715d392507a2455393a5b82", null ],
     [ "setBookmarks", "d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html#a05a26085a30a3e49afb9d1b4b5260dc4", null ],
+    [ "setSelection", "d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html#a1874f5bb7e7f8ae7112a4d62a8feb8a0", null ],
     [ "setSelections", "d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html#ad9d6859775369821832bffed618d1506", null ],
     [ "translate", "d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html#ae193a0e2aae0bd35990cd4ccb3635c56", null ],
     [ "$closed", "d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html#a520c672fe420e710c7f3b3a3abf76347", null ]

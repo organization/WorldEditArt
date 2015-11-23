@@ -22,6 +22,7 @@ var hierarchy =
     [ "FormattedArguments", "db/dec/classpemapmodder_1_1worldeditart_1_1utils_1_1FormattedArguments.html", null ],
     [ "Lang", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html", [
       [ "BaseCmd", "d2/d20/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCmd.html", [
+        [ "PosCmd", "d9/d84/classpemapmodder_1_1worldeditart_1_1cmd_1_1selection_1_1PosCmd.html", null ],
         [ "VersionCmd", "dd/dd6/classpemapmodder_1_1worldeditart_1_1cmd_1_1VersionCmd.html", null ]
       ] ]
     ] ],

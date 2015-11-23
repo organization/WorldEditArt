@@ -4,8 +4,8 @@ var indexSectionsWithContent =
   1: "bcdflopqrstuvwz",
   2: "p",
   3: "bcdflopqrstuvwz",
-  4: "_acdefghiklnorstuv",
-  5: "$cdemqrtz"
+  4: "_acdefghiklnoprstuv",
+  5: "$demqrstvz"
 };
 
 var indexSectionNames =
