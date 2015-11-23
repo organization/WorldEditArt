@@ -18,45 +18,48 @@ namespace pemapmodder\worldeditart\session\queue;
 use pemapmodder\worldeditart\lang\Lang;
 use pemapmodder\worldeditart\session\WorldEditSession;
 
+/**
+ * <p>This class represents a session's todo/undo/redo queue of rheostats (grouped world editing tasks).</p>
+ *
+ * tick():<br>
+ * When current is null, this means that there is nothing to be done. tick() can return right away.
+ * When current is not null and the rheostat is set to backwards direction and it is not undone(), it should
+ * continue to be undone.<br> When current is not null and the rheostat is set to backwards direction and it is
+ * undone() and the first rheostat in future is set to backwards direction, the queue should be stopped.<br> When
+ * current is not null and the rheostat is set to backwards direction and it is undone() and the first rheostat in
+ * future is set to forwards direction, current should be replaced by the rheostat shifted from future.<br> When
+ * current is not null and the rheostat is set to forwards direction and it is not completed(), it should continue
+ * to be completed.<br> When current is not null and the rheostat is set to forwards direction and it is
+ * completed(), it should be immediately shifted to history and an attempt should be made to shift a rheostat from
+ * future.<br>
+ * <hr>
+ * undo():<br>
+ * When current is not null and the rheostat is set to backwards direction and it is not undone(), return right
+ * away.<br> When current is not null and the rheostat is set to backwards direction and it is undone() and history
+ * is not empty, shift to future and shift a rheostat from history.<br> When current is not null and the rheostat
+ * is set to backwards direction and it is undone() and history is empty, return right away.<br> When current is
+ * not null and the rheostat is set to forwards direction, change the direction to backwards.<br> When current is
+ * null, attempt to shift a rheostat from history and change its direction to backwards.
+ * <hr>
+ * redo():<br>
+ * When current is not null and the rheostat is set to backwards direction, change its direction to forwards.<br>
+ * Otherwise, return right away.
+ * <hr>
+ * addTask():<br>
+ * When current is null, set current as new rheostat.<br>
+ * When current is not null and the rheostat is set to forwards direction, push to future.<br>
+ * When current is not null and the rheostat is set to backwards direction and it is not undone(), clear future and
+ * push to future.<br> When current is not null and the rheostat is set to backwards direction and it is undone(),
+ * set current as new rheostat.
+ *
+ */
 class Queue{
 	/** @var WorldEditSession */
 	private $owner;
 	/** @var Rheostat[] */
 	private $future = [];
-	/**
-	 * tick():<br>
-	 * When current is null, this means that there is nothing to be done. tick() can return right away.
-	 * When current is not null and the rheostat is set to backwards direction and it is not undone(), it should
-	 * continue to be undone.<br> When current is not null and the rheostat is set to backwards direction and it is
-	 * undone() and the first rheostat in future is set to backwards direction, the queue should be stopped.<br> When
-	 * current is not null and the rheostat is set to backwards direction and it is undone() and the first rheostat in
-	 * future is set to forwards direction, current should be replaced by the rheostat shifted from future.<br> When
-	 * current is not null and the rheostat is set to forwards direction and it is not completed(), it should continue
-	 * to be completed.<br> When current is not null and the rheostat is set to forwards direction and it is
-	 * completed(), it should be immediately shifted to history and an attempt should be made to shift a rheostat from
-	 * future.<br>
-	 * <hr>
-	 * undo():<br>
-	 * When current is not null and the rheostat is set to backwards direction and it is not undone(), return right
-	 * away.<br> When current is not null and the rheostat is set to backwards direction and it is undone() and history
-	 * is not empty, shift to future and shift a rheostat from history.<br> When current is not null and the rheostat
-	 * is set to backwards direction and it is undone() and history is empty, return right away.<br> When current is
-	 * not null and the rheostat is set to forwards direction, change the direction to backwards.<br> When current is
-	 * null, attempt to shift a rheostat from history and change its direction to backwards.
-	 * <hr>
-	 * redo():<br>
-	 * When current is not null and the rheostat is set to backwards direction, change its direction to forwards.<br>
-	 * Otherwise, return right away.
-	 * <hr>
-	 * addTask():<br>
-	 * When current is null, set current as new rheostat.<br>
-	 * When current is not null and the rheostat is set to forwards direction, push to future.<br>
-	 * When current is not null and the rheostat is set to backwards direction and it is not undone(), clear future and
-	 * push to future.<br> When current is not null and the rheostat is set to backwards direction and it is undone(),
-	 * set current as new rheostat.
-	 *
-	 * @var Rheostat|null $current
-	 */
+
+	/** @var Rheostat|null $current */
 	private $current = null;
 	/** @var Rheostat[] */
 	private $history = [];
