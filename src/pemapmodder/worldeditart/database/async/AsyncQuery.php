@@ -75,7 +75,9 @@ abstract class AsyncQuery extends AsyncTask{
 //			assert($result instanceof \mysqli_result);
 			if($type === self::RESULT_ASSOC){
 				$row = $result->fetch_assoc();
-				$this->preprocessRow($row);
+				if(is_array($row)){
+					$this->preprocessRow($row);
+				}
 				$result->close();
 				$this->setResult(AsyncQueryResult::assoc($row));
 				return;
