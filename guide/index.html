@@ -143,20 +143,24 @@
 			font-family: Helvetica, arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 			width:       1000px;
 			margin:      auto;
+			background-color: #FFFFFF;
 		}
-		#body:after{
-			content:         "";
-			display:         block;
-			position:        absolute;
-			top:             0;
-			left:            0;
-			width:           100%;
-			height:          100%;
-			opacity:         0.2;
-			z-index:         -1;
-			background:      #FFFFFF url("plugin_icon.png") center no-repeat fixed;
-			background-size: 25%;
+		html{
+			background: #FFFFFF url("plugin_icon_fadeout.jpg") center fixed;
 		}
+		/*html::after{*/
+		/*content:         "";*/
+		/*display:         block;*/
+		/*position:        absolute;*/
+		/*top:             0;*/
+		/*left:            0;*/
+		/*width:           100%;*/
+		/*height:          100%;*/
+		/*opacity:         0.2;*/
+		/*z-index:         -1;*/
+		/*background:      #FFFFFF url("plugin_icon_fadeout.png") center;*/
+		/*background-size: 25%;*/
+		/*}*/
 		p, .note{
 			line-height: 160%;
 		}
@@ -546,6 +550,9 @@ B +--------+ R
 								<li>Walk to point <em>B</em></li>
 								<li>Execute <code>//2</code> (alias of <code>//pos2</code>)</li>
 							</ol>
+							Note that you have to choose two absolutely opposite vertexes. For example, AP, AS, AQ and
+							AR won't work. Only AB would select the whole cuboid. Actually, you can think as if you are
+							dragging open a cuboid when you walk from A to B.
 						</div>
 					</div>
 				</div>
@@ -572,7 +579,8 @@ B +--------+ R
 				</div>
 				<a href="https://github.com/PEMapModder/WorldEditArt/issues/new">WorldEditArt Issues</a>
 			</div>
-			<div class="tree" data-name="Source code"><a href="https://github.com/PEMapModder/WorldEditArt">GitHub</a>
+			<div class="tree" data-name="Source code">
+				<a href="https://github.com/PEMapModder/WorldEditArt">GitHub</a>
 			</div>
 		</div>
 	</div>
