@@ -43,6 +43,10 @@ class WorldEditArt extends PluginBase{
 		self::$PLUGIN_NAME = $this->getDescription()->getName();
 	}
 	public function onEnable(){
+		if(!is_dir($this->getDataFolder())){
+			mkdir($this->getDataFolder(), 0777, true);
+		}
+
 		$buildInfo = json_decode($this->getResourceContents("meta.build.json"));
 
 		$configFile = $this->getDataFolder() . "config.yml";
