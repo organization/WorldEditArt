@@ -31,6 +31,14 @@ class CylinderSpace extends Space{
 	/** @var number */
 	private $radius, $radiusSquared;
 
+	private $cachedHeight;
+	private $cachedPaddingX;
+	private $cachedPaddingY;
+	private $cachedPaddingZ;
+	private $cachedAngleYZ;
+	private $cachedAngleZX;
+	private $cachedAngleXY;
+
 	/**
 	 * String representation of object
 	 *
@@ -106,6 +114,15 @@ class CylinderSpace extends Space{
 	 */
 	public function setBaseCenter($baseCenter){
 		$this->baseCenter = $baseCenter;
+		unset(
+				$this->cachedPaddingX,
+				$this->cachedPaddingY,
+				$this->cachedPaddingZ,
+				$this->cachedHeight,
+				$this->cachedAngleYZ,
+				$this->cachedAngleZX,
+				$this->cachedAngleXY
+		);
 	}
 	/**
 	 * @return Vector3
@@ -118,6 +135,15 @@ class CylinderSpace extends Space{
 	 */
 	public function setTopCenter($topCenter){
 		$this->topCenter = $topCenter;
+		unset(
+				$this->cachedPaddingX,
+				$this->cachedPaddingY,
+				$this->cachedPaddingZ,
+				$this->cachedHeight,
+				$this->cachedAngleYZ,
+				$this->cachedAngleZX,
+				$this->cachedAngleXY
+		);
 	}
 	/**
 	 * @return number
@@ -137,61 +163,94 @@ class CylinderSpace extends Space{
 	public function setRadius($radius){
 		$this->radius = $radius;
 		$this->radiusSquared = $radius ** 2;
+		unset(
+				$this->cachedPaddingX,
+				$this->cachedPaddingY,
+				$this->cachedPaddingZ
+		);
 	}
 
-	/**
-	 * @return number
-	 */
+	// calculated cached values
+	public function getHeight(){
+		if(isset($this->cachedHeight)){
+			return $this->cachedHeight;
+		}
+		return $this->cachedHeight = $this->baseCenter->distance($this->topCenter);
+	}
+	public function getAngleAgainstYZ(){
+		if(isset($this->cachedAngleYZ)){
+			return $this->cachedAngleYZ;
+		}
+		$y1 = min($this->baseCenter->y, $this->topCenter->y);
+		$y2 = max($this->baseCenter->y, $this->topCenter->y);
+		$z1 = min($this->baseCenter->z, $this->topCenter->z);
+		$z2 = max($this->baseCenter->z, $this->topCenter->z);
+		return $this->cachedAngleYZ = acos(sqrt(($y2 - $y1) ** 2 + ($z2 - $z1) ** 2) / $this->getHeight());
+	}
+	public function getAngleAgainstZX(){
+		if(isset($this->cachedAngleZX)){
+			return $this->cachedAngleZX;
+		}
+		$z1 = min($this->baseCenter->z, $this->topCenter->z);
+		$z2 = max($this->baseCenter->z, $this->topCenter->z);
+		$x1 = min($this->baseCenter->x, $this->topCenter->x);
+		$x2 = max($this->baseCenter->x, $this->topCenter->x);
+		return $this->cachedAngleZX = acos(sqrt(($z2 - $z1) ** 2 + ($x2 - $x1) ** 2) / $this->getHeight());
+	}
+	public function getAngleAgainstXY(){
+		if(isset($this->cachedAngleXY)){
+			return $this->cachedAngleXY;
+		}
+		$x1 = min($this->baseCenter->x, $this->topCenter->x);
+		$x2 = max($this->baseCenter->x, $this->topCenter->x);
+		$y1 = min($this->baseCenter->y, $this->topCenter->y);
+		$y2 = max($this->baseCenter->y, $this->topCenter->y);
+		return $this->cachedAngleZX = acos(sqrt(($x2 - $x1) ** 2 + ($y2 - $y1) ** 2) / $this->getHeight());
+	}
+	public function getPaddingX(){
+		if(isset($this->cachedPaddingX)){
+			return $this->cachedPaddingX;
+		}
+		return $this->cachedPaddingX = $this->radius * cos($this->getAngleAgainstYZ());
+	}
+	public function getPaddingY(){
+		if(isset($this->cachedPaddingY)){
+			return $this->cachedPaddingY;
+		}
+		return $this->cachedPaddingY = $this->radius * cos($this->getAngleAgainstZX());
+	}
+	public function getPaddingZ(){
+		if(isset($this->cachedPaddingZ)){
+			return $this->cachedPaddingZ;
+		}
+		return $this->cachedPaddingZ = $this->radius * cos($this->getAngleAgainstXY());
+	}
 	public function getMinX(){
-		// TODO
+		return min($this->baseCenter->x, $this->topCenter->x) - $this->getPaddingX();
 	}
-	/**
-	 * @return number
-	 */
 	public function getMinY(){
-		// TODO
+		return min($this->baseCenter->y, $this->topCenter->y) - $this->getPaddingY();
 	}
-	/**
-	 * @return number
-	 */
 	public function getMinZ(){
-		// TODO
+		return min($this->baseCenter->z, $this->topCenter->z) - $this->getPaddingZ();
 	}
-	/**
-	 * @return number
-	 */
 	public function getMaxX(){
-		// TODO
+		return max($this->baseCenter->x, $this->topCenter->x) - $this->getPaddingX();
 	}
-	/**
-	 * @return number
-	 */
 	public function getMaxY(){
-		// TODO
+		return max($this->baseCenter->y, $this->topCenter->y) - $this->getPaddingY();
 	}
-	/**
-	 * @return number
-	 */
 	public function getMaxZ(){
-		// TODO
+		return max($this->baseCenter->z, $this->topCenter->z) - $this->getPaddingZ();
 	}
-	/**
-	 * @return number
-	 */
 	public function getLengthX(){
-		// TODO
+		return abs($this->baseCenter->x - $this->topCenter->x) + $this->getPaddingX() * 2;
 	}
-	/**
-	 * @return number
-	 */
 	public function getLengthY(){
-		// TODO
+		return abs($this->baseCenter->y - $this->topCenter->y) + $this->getPaddingY() * 2;
 	}
-	/**
-	 * @return number
-	 */
 	public function getLengthZ(){
-		// TODO
+		return abs($this->baseCenter->z - $this->topCenter->z) + $this->getPaddingZ() * 2;
 	}
 
 	public function name(WorldEditSession $session){
