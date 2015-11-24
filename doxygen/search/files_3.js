@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['formattedarguments_2ephp',['FormattedArguments.php',['../d1/d23/FormattedArguments_8php.html',1,'']]]
+  ['dataprovider_2ephp',['DataProvider.php',['../d3/d71/DataProvider_8php.html',1,'']]]
 ];

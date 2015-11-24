@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['ret_5fno_5fperm',['RET_NO_PERM',['../d2/d20/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCmd.html#ad092f6790a464f285244dd57290f2a19',1,'pemapmodder::worldeditart::cmd::BaseCmd']]],
-  ['ret_5fusage',['RET_USAGE',['../d2/d20/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCmd.html#a78b50fb78cbb14c624a8d8d7c8cd1b48',1,'pemapmodder::worldeditart::cmd::BaseCmd']]]
+  ['queue_5ftip_5fentry',['QUEUE_TIP_ENTRY',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a20a223f11a0af5afb535e98a17883ccf',1,'pemapmodder::worldeditart::lang::Lang']]],
+  ['queue_5ftip_5ftitle',['QUEUE_TIP_TITLE',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a5501cdd912a96e80848d1b96df147889',1,'pemapmodder::worldeditart::lang::Lang']]],
+  ['queue_5ftip_5fwarned_5fentry',['QUEUE_TIP_WARNED_ENTRY',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#abc248376bdad0d9744ad3f64683a4223',1,'pemapmodder::worldeditart::lang::Lang']]]
 ];

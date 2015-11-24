@@ -4,5 +4,7 @@ var searchData=
   ['format',['format',['../da/d1a/classpemapmodder_1_1worldeditart_1_1lang_1_1Phrase.html#aab756b0eb86a03cf7a02632822e0a9a0',1,'pemapmodder::worldeditart::lang::Phrase']]],
   ['formattedarguments',['FormattedArguments',['../db/dec/classpemapmodder_1_1worldeditart_1_1utils_1_1FormattedArguments.html',1,'pemapmodder::worldeditart::utils']]],
   ['formattedarguments_2ephp',['FormattedArguments.php',['../d1/d23/FormattedArguments_8php.html',1,'']]],
+  ['fridge',['Fridge',['../d0/d63/classpemapmodder_1_1worldeditart_1_1utils_1_1Fridge.html',1,'pemapmodder::worldeditart::utils']]],
+  ['fridge_2ephp',['Fridge.php',['../d2/d74/Fridge_8php.html',1,'']]],
   ['fromargs',['fromArgs',['../d5/d25/classpemapmodder_1_1worldeditart_1_1utils_1_1ReportErrorTask.html#a821b4e554b6ed3945f37f417ffbf60f8',1,'pemapmodder::worldeditart::utils::ReportErrorTask']]]
 ];

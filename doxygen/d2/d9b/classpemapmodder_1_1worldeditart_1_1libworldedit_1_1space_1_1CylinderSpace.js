@@ -1,6 +1,10 @@
 var classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace =
 [
+    [ "getAngleAgainstXY", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#af638d0b607729504afec83034a5aabc7", null ],
+    [ "getAngleAgainstYZ", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a4ca97a6f7edb11fd34ad61e914377497", null ],
+    [ "getAngleAgainstZX", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#ac5074890e8121bb19ae5662ff3b05219", null ],
     [ "getBaseCenter", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a15f62ba12a5e9334edcee722b2d7b90f", null ],
+    [ "getHeight", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#aa725283ffc599b3f6563cada4cbeb2c7", null ],
     [ "getLengthX", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#af909d9e2031c06dfdd624e2305e201e8", null ],
     [ "getLengthY", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#aa653f01f1edd45f48cdb040cb90aa7a5", null ],
     [ "getLengthZ", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#acb2221b0806be7a605f767913ee98826", null ],
@@ -10,6 +14,9 @@ var classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace =
     [ "getMinX", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a1e0343a707383fd9fd8a18cd07e9b2a8", null ],
     [ "getMinY", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a6785341a3714065130a45c9316578cdb", null ],
     [ "getMinZ", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a6a6fe3deac824fac47e5de5321cf8184", null ],
+    [ "getPaddingX", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a8b53bf4f6c22d4c5147840c77192e34b", null ],
+    [ "getPaddingY", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a938fbd73ca7b8ca123bbd673764e1175", null ],
+    [ "getPaddingZ", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a70496ce4a94780adbb4d457f819a417f", null ],
     [ "getRadius", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a46ed26029924e916f771089ac7c3291f", null ],
     [ "getRadiusSquared", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a76a7568e105a1b59756cfa5881e53f32", null ],
     [ "getTopCenter", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#afda7dd81aef914d85b0be4b00642b831", null ],

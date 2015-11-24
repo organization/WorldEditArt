@@ -223,14 +223,14 @@ $(document).ready(function(){initNavTree('dd/d69/Queue_8php_source.html','../../
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        $tip = $this-&gt;owner-&gt;translate(<a class="code" href="../../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a5501cdd912a96e80848d1b96df147889">Lang::QUEUE_TIP_TITLE</a>) . <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keywordflow">if</span>($this-&gt;current-&gt;getBlocksOutOfBounds() &gt; 0){</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            $tip .= $this-&gt;owner-&gt;translate(<a class="code" href="../../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#abc248376bdad0d9744ad3f64683a4223">Lang::QUEUE_TIP_WARNED_ENTRY</a>, [</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                <span class="stringliteral">&quot;TASK_NAME&quot;</span> =&gt; $this-&gt;current-&gt;name(),</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                <span class="stringliteral">&quot;PROGRESS_PERC&quot;</span> =&gt; round($this-&gt;current-&gt;done() / $this-&gt;current-&gt;total() * 100, 1),</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                <span class="stringliteral">&quot;WARNINGS_CNT&quot;</span> =&gt; $this-&gt;current-&gt;getBlocksOutOfBounds(),</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                    <span class="stringliteral">&quot;TASK_NAME&quot;</span> =&gt; $this-&gt;current-&gt;name(),</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                    <span class="stringliteral">&quot;PROGRESS_PERC&quot;</span> =&gt; round($this-&gt;current-&gt;done() / $this-&gt;current-&gt;total() * 100, 1),</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                    <span class="stringliteral">&quot;WARNINGS_CNT&quot;</span> =&gt; $this-&gt;current-&gt;getBlocksOutOfBounds(),</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            ]);</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        }<span class="keywordflow">else</span>{</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            $tip .= $this-&gt;owner-&gt;translate(<a class="code" href="../../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a20a223f11a0af5afb535e98a17883ccf">Lang::QUEUE_TIP_ENTRY</a>, [</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                <span class="stringliteral">&quot;TASK_NAME&quot;</span> =&gt; $this-&gt;current-&gt;name(),</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                <span class="stringliteral">&quot;PROGRESS_PERC&quot;</span> =&gt; round($this-&gt;current-&gt;done() / $this-&gt;current-&gt;total() * 100, 1),</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                    <span class="stringliteral">&quot;TASK_NAME&quot;</span> =&gt; $this-&gt;current-&gt;name(),</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                    <span class="stringliteral">&quot;PROGRESS_PERC&quot;</span> =&gt; round($this-&gt;current-&gt;done() / $this-&gt;current-&gt;total() * 100, 1),</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            ]);</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        }</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordflow">return</span> trim($tip);</div>

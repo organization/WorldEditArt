@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['meta_5fauthors',['META_AUTHORS',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a4e55d4da8fba6ed64021a8b6db057c3d',1,'pemapmodder::worldeditart::lang::Lang']]],
-  ['meta_5flanguage',['META_LANGUAGE',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#aa997762a1d89bac446080880fd19c849',1,'pemapmodder::worldeditart::lang::Lang']]],
-  ['meta_5fnative',['META_NATIVE',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a8a1214d758cf9772bd4fa9998128f51f',1,'pemapmodder::worldeditart::lang::Lang']]]
+  ['err_5fno_5fperm',['ERR_NO_PERM',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a4e9f58f1b21be4cc19c94f0aba854b41',1,'pemapmodder::worldeditart::lang::Lang']]],
+  ['err_5foffline',['ERR_OFFLINE',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a9d379db826affdaee3a332e48bff2fbb',1,'pemapmodder::worldeditart::lang::Lang']]]
 ];

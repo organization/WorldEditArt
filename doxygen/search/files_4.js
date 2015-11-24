@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['lang_2ephp',['Lang.php',['../d0/ddc/Lang_8php.html',1,'']]],
-  ['languagebrowser_2ephp',['LanguageBrowser.php',['../d4/da5/LanguageBrowser_8php.html',1,'']]]
+  ['formattedarguments_2ephp',['FormattedArguments.php',['../d1/d23/FormattedArguments_8php.html',1,'']]],
+  ['fridge_2ephp',['Fridge.php',['../d2/d74/Fridge_8php.html',1,'']]]
 ];

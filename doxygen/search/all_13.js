@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['savesession',['saveSession',['../d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider.html#a897d131c8ee35fe2e1e35ac079e4af8c',1,'pemapmodder::worldeditart::database::DataProvider']]],
+  ['savesession',['saveSession',['../d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider.html#a897d131c8ee35fe2e1e35ac079e4af8c',1,'pemapmodder\worldeditart\database\DataProvider\saveSession()'],['../db/dc5/classpemapmodder_1_1worldeditart_1_1database_1_1MysqlDataProvider.html#a897d131c8ee35fe2e1e35ac079e4af8c',1,'pemapmodder\worldeditart\database\MysqlDataProvider\saveSession()']]],
   ['selection_5fpos_5fdescription',['SELECTION_POS_DESCRIPTION',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a584fcd73f15d2a0aa866fcde35432af3',1,'pemapmodder::worldeditart::lang::Lang']]],
   ['selection_5fpos_5finfo',['SELECTION_POS_INFO',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a2aaf84551adab1151c8d2c857f36fda2',1,'pemapmodder::worldeditart::lang::Lang']]],
   ['selection_5fpos_5fsuccess',['SELECTION_POS_SUCCESS',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a16f69c418ffc592327691be446320b95',1,'pemapmodder::worldeditart::lang::Lang']]],
@@ -38,5 +38,5 @@ var searchData=
   ['standardsphereoffset',['standardSphereOffset',['../de/d21/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1sphere_1_1SphereBlockIterator.html#a1b83a6ea3f900b7d984e97223cc04a9d',1,'pemapmodder::worldeditart::libworldedit::space::iterator::sphere::SphereBlockIterator']]],
   ['startconfigurationcommand',['StartConfigurationCommand',['../dc/de3/classpemapmodder_1_1worldeditart_1_1cmd_1_1StartConfigurationCommand.html',1,'pemapmodder::worldeditart::cmd']]],
   ['startconfigurationcommand_2ephp',['StartConfigurationCommand.php',['../d7/d72/StartConfigurationCommand_8php.html',1,'']]],
-  ['store',['store',['../d2/ded/classpemapmodder_1_1worldeditart_1_1utils_1_1OrderedObjectPool.html#a6221a0139063da1d2b1fa70d1d1fbe9c',1,'pemapmodder::worldeditart::utils::OrderedObjectPool']]]
+  ['store',['store',['../d0/d63/classpemapmodder_1_1worldeditart_1_1utils_1_1Fridge.html#a6221a0139063da1d2b1fa70d1d1fbe9c',1,'pemapmodder::worldeditart::utils::Fridge']]]
 ];
