@@ -67,6 +67,19 @@
 		var tree;
 		var trees = {};
 
+		function gotoAnchor(anchor){
+			var target = $("a[name='" + anchor + "']");
+			target.parents(".tree").each(function(){
+				var $this = $(this);
+				if($this.css("display") == "none"){
+					switchSpoiler($this.attr("data-spoiler-name"));
+				}
+			});
+			$("html, body").animate({
+				scrollTop: target.parent().prev().offset().top
+			}, 200);
+		}
+
 		$(document).ready(function(){
 			var maxDepth = 12;
 			var nextAnchorId = 0;
@@ -116,18 +129,13 @@
 			$(".branch").click(function(){
 				var $this = $(this);
 				var targetName = $this.attr("data-target");
-				var target = $("a[name='" + targetName + "']");
-				target.parents(".tree").each(function(){
-					var $this = $(this);
-					if($this.css("display") == "none"){
-						switchSpoiler($this.attr("data-spoiler-name"));
-					}
-				});
-				$("html, body").animate({
-					scrollTop: target.parent().prev().offset().top
-				}, 200);
+				gotoAnchor(targetName);
 			});
-			$("html").css("padding-bottom", $(window).height());
+			$("#body").css("padding-bottom", $(window).height());
+			var hash = window.location.hash;
+			if(hash.charAt(0) === "#"){
+				gotoAnchor(hash.substring(1));
+			}
 		});
 	</script>
 	<style>
@@ -159,6 +167,7 @@
 		.spoiler{
 			border:        groove;
 			border-radius: 10px;
+			padding:       5px;
 		}
 		/*noinspection CssUnusedSymbol*/
 		.heading{
@@ -172,12 +181,19 @@
 			border-radius: 5px;
 			width:         500px;
 		}
+		code, pre{
+			background-color: #000000;
+			color:            #FFFFFF;
+			font-family:      Consolas, "Liberation Mono", Menlo, Courier, monospace;
+			border-radius:    5px;
+			padding:          3px;
+			/* This font family set is what GitHub uses, and I like it :D */
+		}
 	</style>
 </head>
 <body>
 <div id="body">
 	<div class="tree" data-name="Contents" id="index"></div>
-
 	<div class="tree" data-name="WorldEditArt Guide">
 		<div class="tree" data-name="License">
 			This software is licensed with GNU Lesser General Public License version 3.
@@ -361,16 +377,14 @@ Library.
 			</pre>
 			</div>
 		</div>
-
 		<div class="tree" data-name="Admin Guide">
 			<div class="note">
 				Installation, permission management, etc.
 			</div>
-			<div class="tree" data-name="Permissions" id="admin-permissions">
+			<div class="tree" data-name="Permissions" id="admin-permissions" style="line-height: 25px;">
 				Here is a list of permissions:
 				<script>
 					/**
-					 *
 					 * @param obj collection from permissions.json
 					 * @param parUl jQuery
 					 * @param parName
@@ -378,7 +392,7 @@ Library.
 					function addPermissionsTo(obj, parUl, parName){
 						for(var name in obj){
 							if(obj.hasOwnProperty(name)){
-								var myLi = $("<li></li>");
+								var myLi = $("<li style='padding: 4px 0'></li>");
 								var perm = obj[name];
 								var permName = parName + name;
 								var desc = perm["description"];
@@ -394,7 +408,7 @@ Library.
 									var children = perm["children"];
 									var ul = $("<ul></ul>");
 									addPermissionsTo(children, ul, permName + ".");
-									myLi.append("<br>Children:");
+									myLi.append("<br><strong>Children:</strong>");
 									ul.appendTo(myLi);
 								}
 								myLi.appendTo(parUl);
@@ -419,7 +433,6 @@ Library.
 				</script>
 			</div>
 		</div>
-
 		<div class="tree" data-name="Player Guide">
 			<div class="note">Concept introduction, commands documentation and user tips</div>
 			<div class="tree" data-name="Introduction">
@@ -501,13 +514,46 @@ Library.
 						<li>Run the command <code>//uuc</code>.</li>
 					</ol>
 				</div>
+				<div class="tree" data-name="Selections">
+					In traditional world edit plugins, a &quot;selection&quot; refers to a cuboid which you defined by
+					doing <code>//pos1</code> and <code>//pos2</code>. This usage is supported in WorldEditArt, but it
+					also supports more choices.<br>
+					Selections in WorldEditArt can theoretically be in any shapes. However, currently, only the most
+					popular three shapes, namely cuboids, spheres and cylinders, can be selected through commands.
+					(Another plugin can use the WorldEditArt API to define new shapes)<br>
+
+					<div class="tree" data-name="Cuboids">
+						A cuboid is a polygon with 6 faces, each parallel to one of the X, Y and Z planes. In simple
+						words, a cuboid can be of any size, but it must stand upright on the ground.<br>
+						There are two ways to define a cuboid:
+
+						<div class="tree" data-name="//pos1, //pos2">
+							The old-fashioned way and most precise way is to use these two traditional commands. Let's
+							see an example.
+							<pre>
+P   +--------+ A
+   /        /|
+S +--------+ |
+  |        | |
+  |        | + Q
+  |        |/
+B +--------+ R
+							</pre>
+							In this diagram, we are going to select the cuboid AB. To do so:
+							<ol>
+								<li>Walk to point <em>A</em></li>
+								<li>Execute <code>//1</code> (alias of <code>//pos1</code>)</li>
+								<li>Walk to point <em>B</em></li>
+								<li>Execute <code>//2</code> (alias of <code>//pos2</code>)</li>
+							</ol>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-
 		<div class="tree" data-name="Developer Guide">
 			<div class="note">API documentation</div>
 		</div>
-
 		<div class="tree" data-name="Contact">
 			<div class="tree" data-name="IRC"><p>
 				Server: chat.freenode.net:6667<br>
