@@ -41,7 +41,7 @@ class WorldEditArtCommand extends Command implements PluginIdentifiableCommand{
 	}
 	private function registerCmds(){
 		$this->registerCmd(new VersionCmd);
-		asort($this->cmds, SORT_FLAG_CASE | SORT_NATURAL);
+		ksort($this->cmds, SORT_FLAG_CASE | SORT_NATURAL);
 	}
 
 	public function registerCmd(BaseCmd $cmd){
