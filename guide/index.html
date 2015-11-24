@@ -3,201 +3,14 @@
 	<title>WorldEditArt Guide</title>
 	<link rel="icon" href="plugin_icon.png">
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script>
-		var runtimeAutoId = 0;
-
-		/**
-		 * Registers a new spoiler.
-		 * @param el
-		 * @returns jQuery $(div of spoiler button)
-		 */
-		function registerSpoiler(el){
-			el.addClass("spoiler");
-			var id = runtimeAutoId++;
-			var onclick = 'switchSpoiler("' + id + '"); return false;';
-			var button = $("<button class='button spoiler-opener'>Show</button>");
-			var before = $("<div></div>");
-			button.appendTo(before);
-			button.attr("data-spoiler-name", id);
-			button.attr("onclick", onclick);
-			before.insertBefore(el);
-			el.attr("data-spoiler-name", id);
-			el.css("display", "none");
-			return before;
-		}
-
-		/**
-		 * Toggles a spoiler.
-		 * @param id
-		 * @returns {boolean} true if spoiler is opened, false if spoiler is closed
-		 */
-		var switchSpoiler = function(id){
-			var el = $(".spoiler[data-spoiler-name='" + id + "']");
-			var opener = $(".spoiler-opener[data-spoiler-name='" + id + "']");
-			if(el.css("display") === "none"){
-				el.css("display", "block");
-				opener.text("Hide");
-				return true;
-			}
-			el.css("display", "none");
-			opener.text("Show");
-			return false;
-		};
-
-		function Tree(name, id){
-			this.name = name;
-			this.id = id;
-			this.children = {};
-		}
-		Tree.prototype.addChild = function(child){
-			this.children[child.name] = child;
-		};
-		Tree.prototype.toOlJQuery = function(){
-			var out = $('<li><a class="branch" data-target="' + this.id + '" href="#' + this.id + '">' + this.name + '</a></li>');
-			var $ol = $("<ol></ol>");
-			for(var name in this.children){
-				if(this.children.hasOwnProperty(name)){
-					this.children[name].toOlJQuery().appendTo($ol);
-				}
-			}
-			$ol.appendTo(out);
-			return out;
-		};
-
-		var tree;
-		var trees = {};
-
-		function gotoAnchor(anchor){
-			var target = $("a[name='" + anchor + "']");
-			target.parents(".tree").each(function(){
-				var $this = $(this);
-				if($this.css("display") == "none"){
-					switchSpoiler($this.attr("data-spoiler-name"));
-				}
-			});
-			$("html, body").animate({
-				scrollTop: target.parent().prev().offset().top
-			}, 200);
-		}
-
-		$(document).ready(function(){
-			var maxDepth = 12;
-			var nextAnchorId = 0;
-			$(".tree").each(function(){
-				var $this = $(this);
-				var name = $this.attr("data-name");
-				var parents = $this.parents(".tree");
-				var anchorId = "anchor-auto-" + (nextAnchorId++);
-				$this.prepend('<a name="' + anchorId + '"></a>');
-				if(parents.length == 0){
-					tree = new Tree(name, anchorId);
-					trees[name] = tree;
-				}else{
-					var $parent = $(parents[0]);
-					var parentTree = trees[$parent.attr("data-name")];
-					var t;
-					parentTree.addChild(t = new Tree(name, anchorId));
-					trees[name] = t;
-				}
-				var depth = parents.length;
-				maxDepth = Math.max(maxDepth, depth);
-				var $div = registerSpoiler($this);
-				var bef = $("<span></span>");
-				bef.html(name + "&nbsp;");
-				var id = $div.children("button").attr("data-spoiler-name");
-				var onclick = 'switchSpoiler("' + id + '");';
-				bef.attr("onclick", onclick);
-				bef.prependTo($div);
-				$div.attr("data-depth", depth);
-				$div.addClass("heading");
-				if(depth > 0){
-					$div.before("<br>");
-				}
-			});
-			$(".heading").each(function(){
-				var $this = $(this);
-				var depth = $this.attr("data-depth");
-				$this.css("font-size", (32 - Math.floor(depth / maxDepth * 20)) + "px");
-			});
-			switchSpoiler("0");
-			switchSpoiler("1");
-			var $contents = $("#index");
-//			$contents.append("<p style='text-align: center;'><strong>Contents</strong></p>");
-			var $ol = $("<ol></ol>");
-			tree.toOlJQuery().appendTo($ol);
-			$contents.append($ol);
-			$(".branch").click(function(){
-				var $this = $(this);
-				var targetName = $this.attr("data-target");
-				gotoAnchor(targetName);
-			});
-			$("#body").css("padding-bottom", $(window).height());
-			var hash = window.location.hash;
-			if(hash.charAt(0) === "#"){
-				gotoAnchor(hash.substring(1));
-			}
-		});
-	</script>
-	<style>
-		#body{
-			font-family: Helvetica, arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-			width:       1000px;
-			margin:      auto;
-			background-color: #FFFFFF;
-		}
-		html{
-			background: #FFFFFF url("plugin_icon_fadeout.jpg") center fixed;
-		}
-		/*html::after{*/
-		/*content:         "";*/
-		/*display:         block;*/
-		/*position:        absolute;*/
-		/*top:             0;*/
-		/*left:            0;*/
-		/*width:           100%;*/
-		/*height:          100%;*/
-		/*opacity:         0.2;*/
-		/*z-index:         -1;*/
-		/*background:      #FFFFFF url("plugin_icon_fadeout.png") center;*/
-		/*background-size: 25%;*/
-		/*}*/
-		p, .note{
-			line-height: 160%;
-		}
-		p br{
-			margin: 30px;
-		}
-		/*noinspection CssUnusedSymbol*/
-		.spoiler{
-			border:        groove;
-			border-radius: 10px;
-			padding:       5px;
-		}
-		/*noinspection CssUnusedSymbol*/
-		.heading{
-			font-weight: bold;
-		}
-		.note{
-			font-style: italic;
-		}
-		#index{
-			border:        ridge;
-			border-radius: 5px;
-			width:         500px;
-		}
-		code, pre{
-			background-color: #000000;
-			color:            #FFFFFF;
-			font-family:      Consolas, "Liberation Mono", Menlo, Courier, monospace;
-			border-radius:    5px;
-			padding:          3px;
-			/* This font family set is what GitHub uses, and I like it :D */
-		}
-	</style>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<script src="doctree.js"></script>
+	<link rel="stylesheet" href="guide.css" type="text/css">
 </head>
 <body>
 <div id="body">
-	<div class="tree" data-name="Contents" id="index"></div>
+	<div class="tree" data-name="Contents" id="index" style="line-height: 130%;"></div>
+	<hr>
 	<div class="tree" data-name="WorldEditArt Guide">
 		<div class="tree" data-name="License">
 			This software is licensed with GNU Lesser General Public License version 3.
@@ -535,7 +348,7 @@ Library.
 							The old-fashioned way and most precise way is to use these two traditional commands. Let's
 							see an example.
 							<pre>
-P   +--------+ A
+  P +--------+ A
    /        /|
 S +--------+ |
   |        | |
@@ -550,10 +363,84 @@ B +--------+ R
 								<li>Walk to point <em>B</em></li>
 								<li>Execute <code>//2</code> (alias of <code>//pos2</code>)</li>
 							</ol>
-							Note that you have to choose two absolutely opposite vertexes. For example, AP, AS, AQ and
-							AR won't work. Only AB would select the whole cuboid. Actually, you can think as if you are
-							dragging open a cuboid when you walk from A to B.
+							Note that you have to choose two opposite vertexes in all dimensions. For example,
+							<strong>AP</strong>, <strong>AS</strong>, <strong>AQ</strong> and <strong>AR</strong> won't
+							work. Only <strong>AB</strong> would select the whole cuboid. Actually, you can think as if
+							you are dragging open a cuboid when you walk from A to B.<br>
+							On the other hand, you can also use <strong>PR</strong> or <strong>QS</strong>, since they
+							are also opposite vertexes.<br>
+							<a name="bp-switches"></a>
+							If you don't want to keep walking around the world, you can tell another player (for
+							example, <i>Steve</i>) to stand at <strong>A</strong>, then you stand at <strong>B</strong>,
+							then you can do <code>//1 ,p steve</code> <code>//2</code> to quickly finish the selection
+							without walking.<br>
+							Another mechanism is to use bookmarks. If you didn't name your bookmark (your bookmark name
+							is <code>default</code>), you just need to type <code>//1 .b</code> (or <code>//2 .b</code>).
+							If you gave your bookmark a special name, instead of typing <code>.b</code>, type <code>,b
+							<em><span class="u">name of bookmark</span></em></code>. Note that the period <code>.</code>
+							has been changed to a comma <code>,</code>.<br>
+							As it is like in all other commands, if the bookmark name contains space(s), put quotes
+							<code>&quot;</code> around the name. For example: <code>//1 ,b "team resources base"</code>.<br>
 						</div>
+						<div class="tree" data-name="//grow">
+							Another method of creating cuboids is the <code>//grow</code> command. It was already
+							present as <code>//cub grow</code> in an older version of WorldEditArt, but the mechanism is
+							a bit different &dash; the X, Y and Z parameters are now reflected. This command is useful
+							for creating cuboids of fixed sizes. It is simple to use. Just run
+							<code>//grow <em style="text-decoration: underline;">x</em>
+								<em style="text-decoration: underline;">y</em>
+								<em style="text-decoration: underline;">z</em></code>, and you will be in the center of
+							a
+							selected cuboid of
+							2<span class="u">x</span>&times;2<span class="u">y</span>&times;2<span class="u">z</span>,
+							like this:
+							<pre>
+<b>43211234</b>
++------+  <b>3</b>
+|      |  <b>2</b>
+|  ()  |  <b>1</b>
+|  ()  |  <b>1</b>
+|      |  <b>2</b>
++------+  <b>3</b>
+<b>43211234</b>
+							</pre>
+							This is the front view of the player (noted as <code>()</code> in the diagram) running
+							<code>//grow 4 3 5</code>. Note that the 5 blocks across the Z axis are not visible because
+							this is a front view.
+						</div>
+						<div class="tree" data-name="//shoot">
+							If you had experience in selecting a range of files on a computer, you would understand the
+							concept of this - a cuboid starts at your position, and to the direction you look at, a
+							diagonal shoots.<br>
+							OK, I know that I am making it even more confusing. A picture is worth a thousand words,
+							so...
+							<pre>
+<strong>A</strong> &#8600;--------+
+  |\       |
+  | \      |
+  |  \     |
+  |   \    |
+  |    \   |
+  |     \  |
+  |      \ |
+  |       \|
+  |--------+ <strong>B</strong>
+							</pre>
+							The tiny arrow on the left top corner indicates that a player is looking at that direction,
+							and then a cuboid of this shape formed along the diagonal in <code>\</code>. This cuboid is
+							formed by typing the command <code>//shoot 11</code> (the length between <strong>A</strong>
+							and <strong>B</strong> is 11).
+						</div>
+					</div>
+					<div class="tree" data-name="Spheres">
+						WorldEditArt currently only supports regular spheres. A sphere selection of 5 blocks radius can
+						be made by simply typing the command: <code>//sphere 5</code> (or <code>//sph 5</code> for
+						short).<br>
+						The sphere will take your current position as the center. To make the sphere take another
+						player's position as the center, like the cuboid <code>,p</code> switch, type <code>//sph 5 ,p
+						steve</code> to use <em>Steve</em>'s position as center of sphere, or <code>,b <em><span
+							class="u">name of bookmark</span></em></code> or <code>.b</code> to use bookmarks. For more
+						details, see the <a href="#bp-switches">description about cuboids</a>.
 					</div>
 				</div>
 			</div>
