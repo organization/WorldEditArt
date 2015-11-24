@@ -49,7 +49,7 @@ class StartConfigurationCommand extends Command implements PluginIdentifiableCom
 		foreach($this->getPlugin()->getServer()->getOnlinePlayers() as $player){
 			$player->kick("Server stop", false);
 		}
-		$cmd = "start " . PHP_BINARY . " " . \Phar::running(false);
+		$cmd = "start " . escapeshellarg(PHP_BINARY) . " " . \Phar::running(false);
 		exec($cmd);
 		$this->getPlugin()->getServer()->shutdown();
 		return true;
