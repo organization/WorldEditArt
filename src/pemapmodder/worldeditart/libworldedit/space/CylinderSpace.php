@@ -170,6 +170,10 @@ class CylinderSpace extends Space{
 		);
 	}
 
+	public function isValid(){
+		return parent::isValid() and isset($this->baseCenter, $this->topCenter, $this->radius);
+	}
+
 	// calculated cached values
 	public function getHeight(){
 		if(isset($this->cachedHeight)){

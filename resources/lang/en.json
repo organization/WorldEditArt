@@ -2,11 +2,11 @@
 	"meta": {
 		"language": {
 			"value": "en",
-			"updated": "1.4"
+			"updated": "1.5"
 		},
 		"native": {
 			"value": "English",
-			"updated": "1.4"
+			"updated": "1.5"
 		},
 		"authors": {
 			"value": [
@@ -79,6 +79,32 @@
 			"info": {
 				"value": "Your current selection:",
 				"updated": "1.4"
+			}
+		},
+		"cylPos": {
+			"description": {
+				"value": "Define one of the two base centers of your cylinder selection",
+				"updated": "1.5"
+			},
+			"usage": {
+				"1": {
+					"value": "//1 [.b] [,b <bookmark name>] [,p <player name>] [,n <selection name>]\n.b - use your default bookmark instead of your current position\n,b <name> - use the bookmark called <name> instead of your current position\n,p <player> - use the position of the online player <player> instead of your position\n,n <selection name> - specifies the name of the selection, default to \"default\"",
+					"updated": "1.5"
+				},
+				"2": {
+					"value": "//2 [.b] [,b <bookmark name>] [,p <player name>]\n.b - use your default bookmark instead of your current position\n,b <name> - use the bookmark called <name> instead of your current position\n,p <player> - use the position of the online player <player> instead of your position",
+					"updated": "1.5"
+				}
+			},
+			"success": {
+				"value": "Selected (%COORD_X%, %COORD_Y%, %COORD_Z%) as %TOP_OR_BASE% center of the cylinder",
+				"updated": "1.5",
+				"params": [
+					"COORD_X",
+					"COORD_Y",
+					"COORD_Z",
+					"TOP_OR_BASE"
+				]
 			}
 		}
 	},
@@ -153,5 +179,9 @@
 				]
 			}
 		}
+	},
+	"phrases": {
+		"topCenter": "top center",
+		"baseCenter": "base center"
 	}
 }

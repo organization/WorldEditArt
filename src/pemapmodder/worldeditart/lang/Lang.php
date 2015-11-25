@@ -32,10 +32,17 @@ interface Lang{
 	const SELECTION_POS_USAGE_2 = "selection.pos.usage.2";
 	const SELECTION_POS_SUCCESS = "selection.pos.success";
 	const SELECTION_POS_INFO = "selection.pos.info";
+	const SELECTION_CYLINDER_POS_DESCRIPTION = "selection.cylPos.description";
+	const SELECTION_CYLINDER_POS_USAGE_1 = "selection.cylPos.usage.1";
+	const SELECTION_CYLINDER_POS_USAGE_2 = "selection.cylPos.usage.2";
+	const SELECTION_CYLINDER_POS_SUCCESS = "selection.cylPos.success";
 	const SPACE_CUBOID_TO_STRING = "space.cuboid.toString";
 	const SPACE_CYLINDER_TO_STRING = "space.cylinder.toString";
 	const SPACE_SPHERE_TO_STRING = "space.sphere.toString";
 	const QUEUE_TIP_TITLE = "queue.tip.title";
 	const QUEUE_TIP_ENTRY = "queue.tip.entry";
 	const QUEUE_TIP_WARNED_ENTRY = "queue.tip.warnedEntry";
+
+	const PHRASE_TOP_CENTER = "phrase.topCenter";
+	const PHRASE_BASE_CENTER = "phrase.baseCenter";
 }

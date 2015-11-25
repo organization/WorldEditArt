@@ -34,6 +34,10 @@
 							"pos": {
 								"description": "Permission to use //1 and //2",
 								"default": "op"
+							},
+							"cylpos": {
+								"description": "Permission to use //c1 and //c2",
+								"default": "op"
 							}
 						}
 					}

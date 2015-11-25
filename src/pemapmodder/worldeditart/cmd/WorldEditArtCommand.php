@@ -15,6 +15,8 @@
 
 namespace pemapmodder\worldeditart\cmd;
 
+use pemapmodder\worldeditart\cmd\selection\CylinderPosCmd;
+use pemapmodder\worldeditart\cmd\selection\PosCmd;
 use pemapmodder\worldeditart\WorldEditArt;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
@@ -41,6 +43,10 @@ class WorldEditArtCommand extends Command implements PluginIdentifiableCommand{
 	}
 	private function registerCmds(){
 		$this->registerCmd(new VersionCmd);
+		$this->registerCmd(new PosCmd(true));
+		$this->registerCmd(new PosCmd(false));
+		$this->registerCmd(new CylinderPosCmd(true));
+		$this->registerCmd(new CylinderPosCmd(false));
 		ksort($this->cmds, SORT_FLAG_CASE | SORT_NATURAL);
 	}
 
