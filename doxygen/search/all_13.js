@@ -1,6 +1,10 @@
 var searchData=
 [
   ['savesession',['saveSession',['../d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider.html#a897d131c8ee35fe2e1e35ac079e4af8c',1,'pemapmodder\worldeditart\database\DataProvider\saveSession()'],['../db/dc5/classpemapmodder_1_1worldeditart_1_1database_1_1MysqlDataProvider.html#a897d131c8ee35fe2e1e35ac079e4af8c',1,'pemapmodder\worldeditart\database\MysqlDataProvider\saveSession()']]],
+  ['selection_5fcylinder_5fpos_5fdescription',['SELECTION_CYLINDER_POS_DESCRIPTION',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#ab3f136fe6ab1e528f29c7916a2832dfb',1,'pemapmodder::worldeditart::lang::Lang']]],
+  ['selection_5fcylinder_5fpos_5fsuccess',['SELECTION_CYLINDER_POS_SUCCESS',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#aa28b2a2e24400378fd440ffbdcb33755',1,'pemapmodder::worldeditart::lang::Lang']]],
+  ['selection_5fcylinder_5fpos_5fusage_5f1',['SELECTION_CYLINDER_POS_USAGE_1',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a27fd690221b7dca52f613bcac8e1674a',1,'pemapmodder::worldeditart::lang::Lang']]],
+  ['selection_5fcylinder_5fpos_5fusage_5f2',['SELECTION_CYLINDER_POS_USAGE_2',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#ad9cf7316eb2802772c44d5d78692924e',1,'pemapmodder::worldeditart::lang::Lang']]],
   ['selection_5fpos_5fdescription',['SELECTION_POS_DESCRIPTION',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a584fcd73f15d2a0aa866fcde35432af3',1,'pemapmodder::worldeditart::lang::Lang']]],
   ['selection_5fpos_5finfo',['SELECTION_POS_INFO',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a2aaf84551adab1151c8d2c857f36fda2',1,'pemapmodder::worldeditart::lang::Lang']]],
   ['selection_5fpos_5fsuccess',['SELECTION_POS_SUCCESS',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a16f69c418ffc592327691be446320b95',1,'pemapmodder::worldeditart::lang::Lang']]],

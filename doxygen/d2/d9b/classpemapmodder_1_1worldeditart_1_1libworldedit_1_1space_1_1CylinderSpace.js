@@ -21,6 +21,7 @@ var classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace =
     [ "getRadiusSquared", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a76a7568e105a1b59756cfa5881e53f32", null ],
     [ "getTopCenter", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#afda7dd81aef914d85b0be4b00642b831", null ],
     [ "isInside", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#acf949cf74dbd51f1b04de8df58d3f0a5", null ],
+    [ "isValid", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a7b37efab7473a1effc29f8be2421f6e3", null ],
     [ "iteratorAllBlocks", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a68332c79e76916b07258cfaece3f14f6", null ],
     [ "name", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#ac07916c6ee72b79a7a7446c73bd1ae72", null ],
     [ "serialize", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html#a4d9813fea8525b19a1d370eeb8fe41d6", null ],

@@ -26,6 +26,7 @@ var hierarchy =
     [ "Fridge", "d0/d63/classpemapmodder_1_1worldeditart_1_1utils_1_1Fridge.html", null ],
     [ "Lang", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html", [
       [ "BaseCmd", "d2/d20/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCmd.html", [
+        [ "CylinderPosCmd", "d0/d54/classpemapmodder_1_1worldeditart_1_1cmd_1_1selection_1_1CylinderPosCmd.html", null ],
         [ "PosCmd", "d9/d84/classpemapmodder_1_1worldeditart_1_1cmd_1_1selection_1_1PosCmd.html", null ],
         [ "VersionCmd", "dd/dd6/classpemapmodder_1_1worldeditart_1_1cmd_1_1VersionCmd.html", null ]
       ] ]

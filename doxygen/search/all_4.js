@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['canuse',['canUse',['../d2/d20/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCmd.html#a367dabc7c22c4d117cfb8a11bec3aeff',1,'pemapmodder\worldeditart\cmd\BaseCmd\canUse()'],['../d9/d84/classpemapmodder_1_1worldeditart_1_1cmd_1_1selection_1_1PosCmd.html#a367dabc7c22c4d117cfb8a11bec3aeff',1,'pemapmodder\worldeditart\cmd\selection\PosCmd\canUse()'],['../dd/dd6/classpemapmodder_1_1worldeditart_1_1cmd_1_1VersionCmd.html#a367dabc7c22c4d117cfb8a11bec3aeff',1,'pemapmodder\worldeditart\cmd\VersionCmd\canUse()']]],
+  ['canuse',['canUse',['../d2/d20/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCmd.html#a367dabc7c22c4d117cfb8a11bec3aeff',1,'pemapmodder\worldeditart\cmd\BaseCmd\canUse()'],['../d0/d54/classpemapmodder_1_1worldeditart_1_1cmd_1_1selection_1_1CylinderPosCmd.html#a367dabc7c22c4d117cfb8a11bec3aeff',1,'pemapmodder\worldeditart\cmd\selection\CylinderPosCmd\canUse()'],['../d9/d84/classpemapmodder_1_1worldeditart_1_1cmd_1_1selection_1_1PosCmd.html#a367dabc7c22c4d117cfb8a11bec3aeff',1,'pemapmodder\worldeditart\cmd\selection\PosCmd\canUse()'],['../dd/dd6/classpemapmodder_1_1worldeditart_1_1cmd_1_1VersionCmd.html#a367dabc7c22c4d117cfb8a11bec3aeff',1,'pemapmodder\worldeditart\cmd\VersionCmd\canUse()']]],
   ['close',['close',['../d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html#aa69c8bf1f1dcf4e72552efff1fe3e87e',1,'pemapmodder\worldeditart\session\WorldEditSession\close()'],['../d9/dad/classpemapmodder_1_1worldeditart_1_1SessionCollection.html#aa69c8bf1f1dcf4e72552efff1fe3e87e',1,'pemapmodder\worldeditart\SessionCollection\close()']]],
   ['column_5fboolean',['COLUMN_BOOLEAN',['../d8/d47/classpemapmodder_1_1worldeditart_1_1database_1_1async_1_1AsyncQuery.html#acaed44cc81966dd17b1a64bdb8ea670d',1,'pemapmodder::worldeditart::database::async::AsyncQuery']]],
   ['column_5ffloat',['COLUMN_FLOAT',['../d8/d47/classpemapmodder_1_1worldeditart_1_1database_1_1async_1_1AsyncQuery.html#a76ae7455e4a8faae53856fd651d9e9a0',1,'pemapmodder::worldeditart::database::async::AsyncQuery']]],
@@ -22,6 +22,8 @@ var searchData=
   ['cylinderallblocksiterator_2ephp',['CylinderAllBlocksIterator.php',['../d3/d1a/CylinderAllBlocksIterator_8php.html',1,'']]],
   ['cylinderblockiterator',['CylinderBlockIterator',['../d7/d4c/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cylinder_1_1CylinderBlockIterator.html',1,'pemapmodder::worldeditart::libworldedit::space::iterator::cylinder']]],
   ['cylinderblockiterator_2ephp',['CylinderBlockIterator.php',['../d3/d39/CylinderBlockIterator_8php.html',1,'']]],
+  ['cylinderposcmd',['CylinderPosCmd',['../d0/d54/classpemapmodder_1_1worldeditart_1_1cmd_1_1selection_1_1CylinderPosCmd.html',1,'pemapmodder::worldeditart::cmd::selection']]],
+  ['cylinderposcmd_2ephp',['CylinderPosCmd.php',['../d2/daf/CylinderPosCmd_8php.html',1,'']]],
   ['cylinderspace',['CylinderSpace',['../d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html',1,'pemapmodder::worldeditart::libworldedit::space']]],
   ['cylinderspace_2ephp',['CylinderSpace.php',['../df/df8/CylinderSpace_8php.html',1,'']]]
 ];

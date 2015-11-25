@@ -7,5 +7,6 @@ var searchData=
   ['cuboidspace',['CuboidSpace',['../db/db8/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CuboidSpace.html',1,'pemapmodder::worldeditart::libworldedit::space']]],
   ['cylinderallblocksiterator',['CylinderAllBlocksIterator',['../d7/d5c/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cylinder_1_1CylinderAllBlocksIterator.html',1,'pemapmodder::worldeditart::libworldedit::space::iterator::cylinder']]],
   ['cylinderblockiterator',['CylinderBlockIterator',['../d7/d4c/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cylinder_1_1CylinderBlockIterator.html',1,'pemapmodder::worldeditart::libworldedit::space::iterator::cylinder']]],
+  ['cylinderposcmd',['CylinderPosCmd',['../d0/d54/classpemapmodder_1_1worldeditart_1_1cmd_1_1selection_1_1CylinderPosCmd.html',1,'pemapmodder::worldeditart::cmd::selection']]],
   ['cylinderspace',['CylinderSpace',['../d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html',1,'pemapmodder::worldeditart::libworldedit::space']]]
 ];
