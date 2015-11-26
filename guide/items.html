@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Item names</title>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<script>
+		var onRawFetched = function(page){
+			var regex = /const ([A-Za-z0-9_]+) = ([0-9]+);/g;
+			var result;
+			var items = {};
+			while((result = regex.exec(page)) !== null){
+				var name = result[1];
+				var id = result[2];
+				if(typeof items[id] === typeof undefined){
+					items[id] = [];
+				}
+				items[id].push(name);
+			}
+			var table = $("#table");
+			for(var itemId in items){
+				if(items.hasOwnProperty(itemId)){
+					var row = $("<tr></tr>");
+					if(itemId >= 256){
+						row.addClass("item");
+					}
+					var spanIdCell = $("<th></th>");
+					spanIdCell.addClass("item-id");
+					var idCell = $("<td></td>");
+					idCell.addClass("item-name");
+					idCell.css("text-align", "center");
+					spanIdCell.text(itemId);
+					idCell.text(itemId);
+					spanIdCell.appendTo(row);
+					idCell.appendTo(row);
+					row.appendTo(table);
+					var names = items[itemId];
+					var i = 1;
+					for(var k in names){
+						if(names.hasOwnProperty(k)){
+							i++;
+						}
+					}
+					spanIdCell.attr("rowspan", i);
+					for(k in names){
+						if(names.hasOwnProperty(k)){
+							var r = $("<tr></tr>");
+							if(itemId >= 256){
+								r.addClass("item");
+							}
+							var nameCell = $("<td></td>");
+							nameCell.css("text-align", "center");
+							nameCell.text(names[k].toLowerCase());
+							nameCell.addClass("item-name");
+							nameCell.appendTo(r);
+							r.appendTo(table);
+						}
+					}
+				}
+			}
+			$("#main").css("display", "block");
+			$("#loading").css("display", "none");
+			if(!showItems){
+				$(".item").css("display", "none");
+			}
+		};
+		var showItems = window.location.hash !== "#no-items";
+		$("#switch").prop("checked", showItems);
+		var switchItems = function(){
+			$(".item").css("display", showItems ? "none" : "block");
+			showItems = !showItems;
+			$("#switch").prop("checked", showItems);
+		};
+		$(document).ready(function(){
+			$.get("https://raw.githubusercontent.com/PocketMine/PocketMine-MP/master/src/pocketmine/item/Item.php", {}, onRawFetched);
+		});
+	</script>
+	<link rel="stylesheet" href="guide.css" type="text/css">
+	<style>
+		/*noinspection CssUnusedSymbol*/
+		.item-id{
+			width: 60px;
+		}
+		/*noinspection CssUnusedSymbol*/
+		.item-name{
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+<div id="body" style="width: 300px;">
+	<div id="loading">Loading, please wait...</div>
+	<div id="main" style="display: none;">
+		<input id="switch" type="checkbox" onchange="switchItems()"> <span onclick="switchItems()">Display non-block items</span>
+		<table border="1">
+			<tbody id="table">
+			<tr>
+				<th>Item ID</th>
+				<th>Possible names</th>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+</body>
+</html>

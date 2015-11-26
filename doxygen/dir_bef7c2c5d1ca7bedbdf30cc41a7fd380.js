@@ -1,8 +1,9 @@
 var dir_bef7c2c5d1ca7bedbdf30cc41a7fd380 =
 [
+    [ "edit", "dir_ef5879b026728fd38153bc671b34bbb1.html", "dir_ef5879b026728fd38153bc671b34bbb1" ],
     [ "selection", "dir_760259928bdd445e323cade175430dfc.html", "dir_760259928bdd445e323cade175430dfc" ],
-    [ "BaseCmd.php", "d4/d81/BaseCmd_8php.html", [
-      [ "BaseCmd", "d2/d20/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCmd.html", "d2/d20/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCmd" ]
+    [ "Cmd.php", "dd/dc2/Cmd_8php.html", [
+      [ "Cmd", "da/da0/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1Cmd.html", "da/da0/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1Cmd" ]
     ] ],
     [ "StartConfigurationCommand.php", "d7/d72/StartConfigurationCommand_8php.html", [
       [ "StartConfigurationCommand", "dc/de3/classpemapmodder_1_1worldeditart_1_1cmd_1_1StartConfigurationCommand.html", "dc/de3/classpemapmodder_1_1worldeditart_1_1cmd_1_1StartConfigurationCommand" ]

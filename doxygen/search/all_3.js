@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['basecmd',['BaseCmd',['../d2/d20/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCmd.html',1,'pemapmodder::worldeditart::cmd']]],
-  ['basecmd_2ephp',['BaseCmd.php',['../d4/d81/BaseCmd_8php.html',1,'']]],
   ['basedataprovider',['BaseDataProvider',['../d2/d70/classpemapmodder_1_1worldeditart_1_1database_1_1BaseDataProvider.html',1,'pemapmodder::worldeditart::database']]],
   ['basedataprovider_2ephp',['BaseDataProvider.php',['../d6/dcb/BaseDataProvider_8php.html',1,'']]],
   ['blockcollection',['BlockCollection',['../d4/dd4/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1BlockCollection.html',1,'pemapmodder::worldeditart::libworldedit']]],

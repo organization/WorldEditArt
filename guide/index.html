@@ -1,5 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
 	<title>WorldEditArt Guide</title>
 	<link rel="icon" href="plugin_icon.png">
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -273,6 +275,34 @@ Library.
 					introduces
 					a lot of improvements to make world editing easier to understand.</p>
 
+				<div class="true" data-name="General command pattern">
+					WorldEditArt uses a special pattern about command arguments. It is the best if you understand these,
+					but it doesn't really matter if you don't understand, as long as you can use them.
+					<ol>
+						<li><strong>Switches:</strong>
+							If you want to specify that something has to be enabled, you have to specify
+							<code>.property</code> in the command. For example, if you want to indicate that you want a
+							hollow cuboid instead of a filled cuboid to be set, you can type
+							<code>//set <em>.h</em> glass</code>, where <em>h</em> stands for hollow. Properties of
+							different commands will be explained later.
+						</li>
+						<li><strong>Properties:</strong>
+							If you want to specify a specific property and indicate the value, you have to specify
+							<code>,property <span class="u"><em>value</em></span></code> in the command. For example, if
+							you want to indicate that you want to set your anchor as the position of player
+							<em>Steve</em> instead of your position, you can type <code>//anchor ,p </code>, where
+							<em>p</em> stands for player. Again, properties of different commands will be explained
+							later.
+						</li>
+						<li>
+							If the command asks for an argument but you want to give multiple words, you can put
+							it in quotes <code>""</code>. For example, if you want to copy the selection with the name
+							<em>roller coaster</em>, which contains a space, you have to type
+							<code>//copy "roller coaster"</code> instead of <code>//copy roller coaster</code> - the
+							latter will only be understood as <em>roller</em> instead of <em>roller coaster</em>.
+						</li>
+					</ol>
+				</div>
 				<div class="tree" data-name="Sudo mode">
 					<p>
 						World editing plugins are known as one of the most dangerous plugins - I can't imagine anything
@@ -441,6 +471,41 @@ B +--------+ R
 						steve</code> to use <em>Steve</em>'s position as center of sphere, or <code>,b <em><span
 							class="u">name of bookmark</span></em></code> or <code>.b</code> to use bookmarks. For more
 						details, see the <a href="#bp-switches">description about cuboids</a>.
+					</div>
+				</div>
+				<div class="tree" data-name="Editing">
+					WorldEditArt supports setting blocks randomly from a weighted list, but the syntax is a bit
+					different from that in WorldEdit for Bukkit. <br>
+
+					<div class="tree" data-name="Weighted block lists">
+						A weighted block list means that instead of only replacing blocks with one block type,
+						WorldEditArt will choose random blocks from a list of block types, and you can decide which
+						block type will appear the most, which one the least, etc.<br>
+						Block types are separated by spaces. Each block type should be in one of these formats:
+						<pre>
+1. block
+2. block:damage
+3. weight/block
+4. weight/block:damage
+						</pre>
+						where <code>weight</code> should be replaced by the weight of the block (relative chance
+						to get spawned), and <code>damage</code> should be replaced by the damage value of the
+						block. The default values of them are <code>1</code> and <code>0</code> respectively.
+						<code>block</code> should be replaced by the block ID or name of the block. A list of block
+						names can be found <!--suppress HtmlUnknownAnchorTarget -->
+						<a href="items.html#no-items">here</a>.<br>
+						Examples:
+						<ul>
+							<li>
+								If you <code>//set 0.05/glowstone grass</code> on a piece of ground, you are making a
+								grass ground pierced with glowstone blocks (5 out of 105 blocks are glowstone)
+							</li>
+							<li>
+								If you <code>10/stone 10/wood coal_ore still_water cobweb 0.01/diamond_ore
+								200/air</code>, it will end up like a skygrid map that isn't in grids but random
+								positions.
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>

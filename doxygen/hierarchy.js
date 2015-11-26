@@ -25,7 +25,8 @@ var hierarchy =
     [ "FormattedArguments", "db/dec/classpemapmodder_1_1worldeditart_1_1utils_1_1FormattedArguments.html", null ],
     [ "Fridge", "d0/d63/classpemapmodder_1_1worldeditart_1_1utils_1_1Fridge.html", null ],
     [ "Lang", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html", [
-      [ "BaseCmd", "d2/d20/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1BaseCmd.html", [
+      [ "Cmd", "da/da0/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1Cmd.html", [
+        [ "SetCmd", "d1/d4c/classpemapmodder_1_1worldeditart_1_1cmd_1_1edit_1_1SetCmd.html", null ],
         [ "CylinderPosCmd", "d0/d54/classpemapmodder_1_1worldeditart_1_1cmd_1_1selection_1_1CylinderPosCmd.html", null ],
         [ "PosCmd", "d9/d84/classpemapmodder_1_1worldeditart_1_1cmd_1_1selection_1_1PosCmd.html", null ],
         [ "VersionCmd", "dd/dd6/classpemapmodder_1_1worldeditart_1_1cmd_1_1VersionCmd.html", null ]
@@ -51,7 +52,8 @@ var hierarchy =
       [ "WorldEditArtCommand", "d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html", null ]
     ] ],
     [ "Exception", null, [
-      [ "AsyncQueryTerminator", "df/db6/classpemapmodder_1_1worldeditart_1_1database_1_1async_1_1AsyncQueryTerminator.html", null ]
+      [ "AsyncQueryTerminator", "df/db6/classpemapmodder_1_1worldeditart_1_1database_1_1async_1_1AsyncQueryTerminator.html", null ],
+      [ "NonExistentBlockException", "d6/dae/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1NonExistentBlockException.html", null ]
     ] ],
     [ "Listener", null, [
       [ "SessionCollection", "d9/dad/classpemapmodder_1_1worldeditart_1_1SessionCollection.html", null ]

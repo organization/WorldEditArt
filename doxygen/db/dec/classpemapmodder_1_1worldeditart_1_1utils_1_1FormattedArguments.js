@@ -1,7 +1,9 @@
 var classpemapmodder_1_1worldeditart_1_1utils_1_1FormattedArguments =
 [
     [ "__construct", "db/dec/classpemapmodder_1_1worldeditart_1_1utils_1_1FormattedArguments.html#a57b60b4976a2c5d1e40f2d11aa72aa7d", null ],
+    [ "currentPlain", "db/dec/classpemapmodder_1_1worldeditart_1_1utils_1_1FormattedArguments.html#aa37c6d7545d51073e61f658d364db9e2", null ],
     [ "enabled", "db/dec/classpemapmodder_1_1worldeditart_1_1utils_1_1FormattedArguments.html#aec51f11248c16158a534115afdae1777", null ],
+    [ "nextPlain", "db/dec/classpemapmodder_1_1worldeditart_1_1utils_1_1FormattedArguments.html#afb0cc8598e0fb6b199aabb649b247733", null ],
     [ "opt", "db/dec/classpemapmodder_1_1worldeditart_1_1utils_1_1FormattedArguments.html#a079a05cd08aed27382dabed1a5fb6b1f", null ],
     [ "plain", "db/dec/classpemapmodder_1_1worldeditart_1_1utils_1_1FormattedArguments.html#af8dcdd1bf94424c528ea0d73e78bf72f", null ],
     [ "$opts", "db/dec/classpemapmodder_1_1worldeditart_1_1utils_1_1FormattedArguments.html#a2fce6a9b8be45967a21c53a89d006eaf", null ],

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['basecmd_2ephp',['BaseCmd.php',['../d4/d81/BaseCmd_8php.html',1,'']]],
   ['basedataprovider_2ephp',['BaseDataProvider.php',['../d6/dcb/BaseDataProvider_8php.html',1,'']]],
   ['blockcollection_2ephp',['BlockCollection.php',['../d9/dd0/BlockCollection_8php.html',1,'']]],
   ['blockentry_2ephp',['BlockEntry.php',['../dd/dff/BlockEntry_8php.html',1,'']]],

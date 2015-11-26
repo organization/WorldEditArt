@@ -10,6 +10,7 @@ var classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession =
     [ "getLocation", "d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html#a270a747ff748def87f313beeef64f3b3", null ],
     [ "getMain", "d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html#a60d42f5372a99853dad902b1f1f62755", null ],
     [ "getName", "d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html#a3d0963e68bb313b163a73f2803c64600", null ],
+    [ "getQueue", "d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html#aa7a8055e5ee1eb792f29443ddb79c4d3", null ],
     [ "getSelection", "d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html#a07fd7dde33158c3494d5f69e42bd669c", null ],
     [ "getSelections", "d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html#a512da955f1d6e3769ffe10830b2a4b99", null ],
     [ "getType", "d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html#a830b5c75df72b32396701bc563fbe3c7", null ],

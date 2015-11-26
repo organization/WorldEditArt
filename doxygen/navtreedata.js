@@ -24,7 +24,7 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "d6/d0c/namespacepemapmodder_1_1worldeditart_1_1cmd_1_1selection.html",
-"df/da6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1Space.html"
+"de/d69/PosCmd_8php_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

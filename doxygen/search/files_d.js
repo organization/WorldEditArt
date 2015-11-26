@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['versioncmd_2ephp',['VersionCmd.php',['../da/d4f/VersionCmd_8php.html',1,'']]]
+  ['userconfiguration_2ephp',['UserConfiguration.php',['../da/d60/UserConfiguration_8php.html',1,'']]]
 ];
