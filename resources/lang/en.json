@@ -27,6 +27,10 @@
 		"offline": {
 			"value": "That player isn't online!",
 			"updated": "1.4"
+		},
+		"nosel": {
+			"value": "You don't have a selection!",
+			"updated": "1.5"
 		}
 	},
 	"version": {
@@ -108,6 +112,22 @@
 			}
 		}
 	},
+	"edit": {
+		"set": {
+			"description": {
+				"value": "Change all blocks in your selection into certain block type(s)",
+				"updated": "1.5"
+			},
+			"usage": {
+				"value": "//s <blocks separated by commas>",
+				"updated": "1.5"
+			},
+			"inProgress": {
+				"value": "Block setting is taking place now...",
+				"updated": "1.5"
+			}
+		}
+	},
 	"space": {
 		"cuboid": {
 			"toString": {
@@ -153,6 +173,13 @@
 					"Z"
 				]
 			}
+		},
+		"set": {
+			"value": "Block setting in %SPACE%",
+			"updated": "1.5",
+			"params": [
+				"SPACE"
+			]
 		}
 	},
 	"queue": {

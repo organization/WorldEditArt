@@ -15,14 +15,14 @@
 
 namespace pemapmodder\worldeditart\cmd\selection;
 
-use pemapmodder\worldeditart\cmd\BaseCmd;
+use pemapmodder\worldeditart\cmd\Cmd;
 use pemapmodder\worldeditart\lang\Lang;
 use pemapmodder\worldeditart\libworldedit\space\CuboidSpace;
 use pemapmodder\worldeditart\session\WorldEditSession;
 use pemapmodder\worldeditart\utils\FormattedArguments;
 use pocketmine\Player;
 
-class PosCmd implements BaseCmd{
+class PosCmd implements Cmd{
 	/** @var bool */
 	private $isTwo;
 

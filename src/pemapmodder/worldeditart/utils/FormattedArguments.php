@@ -89,6 +89,7 @@ class FormattedArguments{
 		if($currentOpt !== null or $currentLongString !== "" or $quotesOn){
 			$this->unterminated = true;
 		}
+		reset($this->plain);
 	}
 
 	public function enabled($name){
@@ -101,5 +102,17 @@ class FormattedArguments{
 
 	public function plain($offset, $default = null){
 		return isset($this->plain[$offset]) ? $this->plain[$offset] : $default;
+	}
+
+	/**
+	 * @return string|null
+	 */
+	public function nextPlain(){
+		next($this->plain);
+		$c = current($this->plain);
+		return $c === false ? null : $c;
+	}
+	public function currentPlain(){
+		return current($this->plain);
 	}
 }

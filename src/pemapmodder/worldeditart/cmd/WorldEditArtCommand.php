@@ -26,7 +26,7 @@ use pocketmine\Player;
 class WorldEditArtCommand extends Command implements PluginIdentifiableCommand{
 	/** @var WorldEditArt */
 	private $main;
-	/** @var BaseCmd[] */
+	/** @var Cmd[] */
 	private $cmds = [];
 
 	public function __construct(WorldEditArt $main){
@@ -50,7 +50,7 @@ class WorldEditArtCommand extends Command implements PluginIdentifiableCommand{
 		ksort($this->cmds, SORT_FLAG_CASE | SORT_NATURAL);
 	}
 
-	public function registerCmd(BaseCmd $cmd){
+	public function registerCmd(Cmd $cmd){
 		foreach($cmd->getNames() as $name){
 			$this->cmds[strtolower($name)] = $cmd;
 		}
@@ -94,7 +94,7 @@ class WorldEditArtCommand extends Command implements PluginIdentifiableCommand{
 	 *
 	 * @param string $name
 	 *
-	 * @return BaseCmd|null
+	 * @return Cmd|null
 	 */
 	public function findCommand($name){
 		return isset($this->cmds[strtolower($name)]) ? $this->cmds[strtolower($name)] : null;

@@ -16,6 +16,8 @@
 namespace pemapmodder\worldeditart\libworldedit;
 
 use pocketmine\block\Block;
+use pocketmine\item\Item;
+use pocketmine\item\ItemBlock;
 
 class BlockEntry{
 	/** @var Block */
@@ -26,5 +28,29 @@ class BlockEntry{
 	public function __construct(Block $block, $weight){
 		$this->block = $block;
 		$this->weight = $weight;
+	}
+
+	public static function fromString($string){
+		$pos = strpos($string, "/");
+		$weight = 1.0;
+		if($pos !== false){
+			$weight = (float) substr($string, 0, $pos);
+			$string = substr($string, $pos + 1);
+		}
+		$pos = strpos($string, ":");
+		$damage = 0;
+		if($pos !== false){
+			$damage = (int) substr($string, $pos + 1);
+			$id = substr($string, 0, $pos);
+		}else{
+			$id = $string;
+		}
+		$block = Item::fromString($id);
+		if(!($block instanceof ItemBlock)){
+			throw new NonExistentBlockException($id);
+		}
+		$block = $block->getBlock();
+		$block->setDamage($damage);
+		return new BlockEntry($block, $weight);
 	}
 }

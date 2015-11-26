@@ -18,7 +18,7 @@ namespace pemapmodder\worldeditart\cmd;
 use pemapmodder\worldeditart\lang\Lang;
 use pemapmodder\worldeditart\session\WorldEditSession;
 
-class VersionCmd implements BaseCmd{
+class VersionCmd implements Cmd{
 	public function getNames(){
 		return ["version", "v"];
 	}

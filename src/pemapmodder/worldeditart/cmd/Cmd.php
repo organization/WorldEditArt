@@ -18,7 +18,7 @@ namespace pemapmodder\worldeditart\cmd;
 use pemapmodder\worldeditart\lang\Lang;
 use pemapmodder\worldeditart\session\WorldEditSession;
 
-interface BaseCmd extends Lang{
+interface Cmd extends Lang{
 	/**
 	 * Sends the command's usage message to the player.
 	 */

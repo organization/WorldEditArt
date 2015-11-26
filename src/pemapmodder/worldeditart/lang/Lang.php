@@ -24,6 +24,7 @@ interface Lang{
 	const META_AUTHORS = "meta.authors";
 	const ERR_NO_PERM = "error.noperm";
 	const ERR_OFFLINE = "error.offline";
+	const ERR_NO_SEL = "error.nosel";
 	const VERSION_DESCRIPTION = "version.description";
 	const VERSION_USAGE = "version.usage";
 	const VERSION_RESPONSE = "version.response";
@@ -36,9 +37,13 @@ interface Lang{
 	const SELECTION_CYLINDER_POS_USAGE_1 = "selection.cylPos.usage.1";
 	const SELECTION_CYLINDER_POS_USAGE_2 = "selection.cylPos.usage.2";
 	const SELECTION_CYLINDER_POS_SUCCESS = "selection.cylPos.success";
+	const EDIT_SET_DESCRIPTION = "edit.set.description";
+	const EDIT_SET_USAGE = "edit.set.usage";
+	const EDIT_SET_IN_PROGRESS = "edit.set.inProgress";
 	const SPACE_CUBOID_TO_STRING = "space.cuboid.toString";
 	const SPACE_CYLINDER_TO_STRING = "space.cylinder.toString";
 	const SPACE_SPHERE_TO_STRING = "space.sphere.toString";
+	const SPACE_SET_BLOCKS = "space.set";
 	const QUEUE_TIP_TITLE = "queue.tip.title";
 	const QUEUE_TIP_ENTRY = "queue.tip.entry";
 	const QUEUE_TIP_WARNED_ENTRY = "queue.tip.warnedEntry";

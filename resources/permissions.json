@@ -40,6 +40,16 @@
 								"default": "op"
 							}
 						}
+					},
+					"edit": {
+						"description": "Parent permission for permissions related to editing",
+						"default": "op",
+						"children": {
+							"set": {
+								"description": "Permission to use //set",
+								"default": "op"
+							}
+						}
 					}
 				}
 			},

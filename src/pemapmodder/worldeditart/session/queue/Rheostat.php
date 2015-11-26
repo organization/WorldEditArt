@@ -63,9 +63,7 @@ class Rheostat{
 	 *
 	 * @param Queue                 $queue
 	 * @param BufferedBlockIterator $blocks
-	 * @param                       $name
-	 *
-	 * @internal param \pocketmine\block\Block[] $forwardRecords
+	 * @param string                $name
 	 */
 	public function __construct(Queue $queue, BufferedBlockIterator $blocks, $name){
 		$this->queue = $queue;

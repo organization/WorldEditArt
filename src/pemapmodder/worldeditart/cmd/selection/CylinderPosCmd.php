@@ -15,14 +15,14 @@
 
 namespace pemapmodder\worldeditart\cmd\selection;
 
-use pemapmodder\worldeditart\cmd\BaseCmd;
+use pemapmodder\worldeditart\cmd\Cmd;
 use pemapmodder\worldeditart\lang\Lang;
 use pemapmodder\worldeditart\libworldedit\space\CylinderSpace;
 use pemapmodder\worldeditart\session\WorldEditSession;
 use pemapmodder\worldeditart\utils\FormattedArguments;
 use pocketmine\Player;
 
-class CylinderPosCmd implements BaseCmd{
+class CylinderPosCmd implements Cmd{
 	/** @var bool */
 	private $isTop;
 

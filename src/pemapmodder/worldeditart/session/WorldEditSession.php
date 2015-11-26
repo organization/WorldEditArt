@@ -16,6 +16,7 @@
 namespace pemapmodder\worldeditart\session;
 
 use pemapmodder\worldeditart\libworldedit\space\Space;
+use pemapmodder\worldeditart\session\queue\Queue;
 use pemapmodder\worldeditart\WorldEditArt;
 use pocketmine\level\Location;
 use pocketmine\permission\Permission;
@@ -35,6 +36,8 @@ abstract class WorldEditSession{
 	private $selections = [];
 	/** @var Bookmark[] */
 	private $bookmarks = [];
+	/** @var Queue */
+	private $queue;
 
 	public function __construct(){
 		// TODO implement data fetching
@@ -232,6 +235,15 @@ abstract class WorldEditSession{
 		$hadExisted = isset($this->bookmarks[$name]);
 		$this->bookmarks[$name] = $pos;
 		return $hadExisted;
+	}
+
+	/**
+	 * Returns the {@link Queue} for this session
+	 *
+	 * @return Queue
+	 */
+	public function getQueue(){
+		return $this->queue;
 	}
 
 	/**
