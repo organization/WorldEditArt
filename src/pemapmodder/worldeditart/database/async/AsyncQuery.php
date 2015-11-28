@@ -93,6 +93,9 @@ abstract class AsyncQuery extends AsyncTask{
 			$this->onError($e);
 		}
 	}
+	/**
+	 * @return mysqli
+	 */
 	public function getDb(){
 		$db = $this->getFromThreadStore(self::MYSQL_NAME);
 		if(!($db instanceof mysqli)){
