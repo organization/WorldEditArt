@@ -18,5 +18,6 @@ var searchData=
   ['standardcuboidoffset',['standardCuboidOffset',['../d4/db4/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cuboid_1_1CuboidBlockIterator.html#ae4510c599799e56cde0779e73ec537da',1,'pemapmodder::worldeditart::libworldedit::space::iterator::cuboid::CuboidBlockIterator']]],
   ['standardcylinderoffset',['standardCylinderOffset',['../d7/d4c/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cylinder_1_1CylinderBlockIterator.html#a250e562514d747adb371434dffdf020c',1,'pemapmodder::worldeditart::libworldedit::space::iterator::cylinder::CylinderBlockIterator']]],
   ['standardsphereoffset',['standardSphereOffset',['../de/d21/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1sphere_1_1SphereBlockIterator.html#a1b83a6ea3f900b7d984e97223cc04a9d',1,'pemapmodder::worldeditart::libworldedit::space::iterator::sphere::SphereBlockIterator']]],
+  ['stop',['stop',['../d7/d18/classpemapmodder_1_1worldeditart_1_1database_1_1stream_1_1MysqlStream.html#a8b6fc76a620d7557d06e9a11a9ffb509',1,'pemapmodder::worldeditart::database::stream::MysqlStream']]],
   ['store',['store',['../d0/d63/classpemapmodder_1_1worldeditart_1_1utils_1_1Fridge.html#a6221a0139063da1d2b1fa70d1d1fbe9c',1,'pemapmodder::worldeditart::utils::Fridge']]]
 ];

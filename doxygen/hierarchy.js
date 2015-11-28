@@ -34,6 +34,9 @@ var hierarchy =
     ] ],
     [ "LanguageBrowser", "d1/d20/classpemapmodder_1_1worldeditart_1_1lang_1_1LanguageBrowser.html", null ],
     [ "Phrase", "da/d1a/classpemapmodder_1_1worldeditart_1_1lang_1_1Phrase.html", null ],
+    [ "QueryListener", "de/d64/interfacepemapmodder_1_1worldeditart_1_1database_1_1stream_1_1QueryListener.html", null ],
+    [ "QueryRequest", "dd/d18/classpemapmodder_1_1worldeditart_1_1database_1_1stream_1_1QueryRequest.html", null ],
+    [ "QueryResult", "d0/d73/classpemapmodder_1_1worldeditart_1_1database_1_1stream_1_1QueryResult.html", null ],
     [ "Queue", "d4/d9a/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Queue.html", null ],
     [ "Rheostat", "d3/d11/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Rheostat.html", null ],
     [ "TranslationManager", "d9/de6/classpemapmodder_1_1worldeditart_1_1lang_1_1TranslationManager.html", null ],
@@ -65,6 +68,9 @@ var hierarchy =
       [ "StartConfigurationCommand", "dc/de3/classpemapmodder_1_1worldeditart_1_1cmd_1_1StartConfigurationCommand.html", null ],
       [ "WorldEditArtCommand", "d6/db2/classpemapmodder_1_1worldeditart_1_1cmd_1_1WorldEditArtCommand.html", null ]
     ] ],
+    [ "PluginTask", null, [
+      [ "MysqlStreamTickTask", "dc/d00/classpemapmodder_1_1worldeditart_1_1database_1_1stream_1_1MysqlStreamTickTask.html", null ]
+    ] ],
     [ "RuntimeException", null, [
       [ "AsyncQueryMysqlError", "dd/d54/classpemapmodder_1_1worldeditart_1_1database_1_1async_1_1AsyncQueryMysqlError.html", null ]
     ] ],
@@ -74,6 +80,9 @@ var hierarchy =
         [ "CylinderSpace", "d2/d9b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1CylinderSpace.html", null ],
         [ "SphereSpace", "dd/d74/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1SphereSpace.html", null ]
       ] ]
+    ] ],
+    [ "Thread", null, [
+      [ "MysqlStream", "d7/d18/classpemapmodder_1_1worldeditart_1_1database_1_1stream_1_1MysqlStream.html", null ]
     ] ],
     [ "Vector3", null, [
       [ "Bookmark", "dd/d4e/classpemapmodder_1_1worldeditart_1_1session_1_1Bookmark.html", null ]

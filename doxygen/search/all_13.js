@@ -45,5 +45,6 @@ var searchData=
   ['standardsphereoffset',['standardSphereOffset',['../de/d21/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1sphere_1_1SphereBlockIterator.html#a1b83a6ea3f900b7d984e97223cc04a9d',1,'pemapmodder::worldeditart::libworldedit::space::iterator::sphere::SphereBlockIterator']]],
   ['startconfigurationcommand',['StartConfigurationCommand',['../dc/de3/classpemapmodder_1_1worldeditart_1_1cmd_1_1StartConfigurationCommand.html',1,'pemapmodder::worldeditart::cmd']]],
   ['startconfigurationcommand_2ephp',['StartConfigurationCommand.php',['../d7/d72/StartConfigurationCommand_8php.html',1,'']]],
+  ['stop',['stop',['../d7/d18/classpemapmodder_1_1worldeditart_1_1database_1_1stream_1_1MysqlStream.html#a8b6fc76a620d7557d06e9a11a9ffb509',1,'pemapmodder::worldeditart::database::stream::MysqlStream']]],
   ['store',['store',['../d0/d63/classpemapmodder_1_1worldeditart_1_1utils_1_1Fridge.html#a6221a0139063da1d2b1fa70d1d1fbe9c',1,'pemapmodder::worldeditart::utils::Fridge']]]
 ];

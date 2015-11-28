@@ -1,0 +1,5 @@
+var namespacepemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1sphere =
+[
+    [ "SphereAllBlocksIterator", "d9/dd6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1sphere_1_1SphereAllBlocksIterator.html", "d9/dd6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1sphere_1_1SphereAllBlocksIterator" ],
+    [ "SphereBlockIterator", "de/d21/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1sphere_1_1SphereBlockIterator.html", "de/d21/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1sphere_1_1SphereBlockIterator" ]
+];
