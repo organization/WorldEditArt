@@ -26,7 +26,7 @@ abstract class BaseDataProvider implements DataProvider{
 	/** @var UserConfiguration */
 	private $userConfigs = [];
 
-	/** @var Zone[] */
+	/** @var Zone[][] */
 	private $zones = [];
 	/** @var WorldEditArt */
 	private $main;
@@ -35,7 +35,11 @@ abstract class BaseDataProvider implements DataProvider{
 		$this->main = $main;
 		$this->loadZones();
 	}
+
 	protected abstract function loadZones();
+	public function onZonesLoadedCallback($zones){
+		$this->zones = $zones;
+	}
 
 	/**
 	 * Returns all zones loaded into zone cache.
@@ -43,7 +47,7 @@ abstract class BaseDataProvider implements DataProvider{
 	 * @return Zone[]
 	 */
 	public function getAllZones(){
-		return $this->zones;
+		return array_merge(...$this->zones);
 	}
 
 	/**
@@ -52,22 +56,28 @@ abstract class BaseDataProvider implements DataProvider{
 	 * @return \Generator
 	 */
 	public function getZones(Position $pos){
-		foreach($this->zones as $zone){
-			if($zone->getSpace()->isInside($pos)){
-				yield $zone->getId() => $zone;
+		foreach($this->zones as $zones){
+			foreach($zones as $zone){
+				if($zone->getSpace()->isInside($pos)){
+					yield $zone->getId() => $zone;
+				}
 			}
 		}
 	}
 
+	public function getZonesForType($type){
+		return isset($this->zones[$type]) ? $this->zones[$type] : [];
+	}
+
 	public function addZone(Zone $zone){
-		$this->zones[$zone->getId()] = $zone;
+		$this->zones[$zone->getType()][$zone->getId()] = $zone;
 		$this->addZoneImpl($zone);
 	}
 	protected abstract function addZoneImpl(Zone $zone);
 
 	public function removeZone(Zone $zone){
-		if(isset($this->zones[$zone->getId()])){
-			unset($this->zones[$zone->getId()]);
+		if(isset($this->zones[$zone->getType()][$zone->getId()])){
+			unset($this->zones[$zone->getType()][$zone->getId()]);
 			$this->removeZoneImpl($zone);
 		}
 	}

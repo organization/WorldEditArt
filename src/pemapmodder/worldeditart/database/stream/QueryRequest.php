@@ -34,9 +34,9 @@ class QueryRequest{
 	/**
 	 * QueryEntry constructor.
 	 *
-	 * @param WorldEditArt  $main
-	 * @param               $query
-	 * @param QueryListener $listener
+	 * @param WorldEditArt       $main
+	 * @param string             $query
+	 * @param QueryListener|null $listener
 	 */
 	public function __construct(WorldEditArt $main, $query, $listener = null){
 		$this->main = $main;

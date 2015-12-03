@@ -208,7 +208,13 @@
 		}
 	},
 	"phrases": {
-		"topCenter": "top center",
-		"baseCenter": "base center"
+		"topCenter": {
+			"value": "top center",
+			"updated": "1.5"
+		},
+		"baseCenter": {
+			"value": "base center",
+			"updated": "1.5"
+		}
 	}
 }

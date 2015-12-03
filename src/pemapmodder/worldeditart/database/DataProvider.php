@@ -50,6 +50,15 @@ interface DataProvider{
 	public function getZones(Position $pos);
 
 	/**
+	 * Returns the {@link Zone}s of type <code>$type</code>.
+	 *
+	 * @param int $type
+	 *
+	 * @return Zone[]
+	 */
+	public function getZonesForType($type);
+
+	/**
 	 * Adds <code>$zone</code> into the database (and the cache).
 	 *
 	 * @param Zone $zone

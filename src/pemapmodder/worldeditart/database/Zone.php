@@ -55,5 +55,6 @@ class Zone{
 			throw new \RuntimeException("ID is already set");
 		}
 		$this->id = $id;
+		return $this;
 	}
 }

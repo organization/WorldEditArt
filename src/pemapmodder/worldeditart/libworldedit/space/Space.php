@@ -45,6 +45,10 @@ abstract class Space implements Serializable{
 	 */
 	public abstract function isInside(Vector3 $v);
 
+	public function getSerialized(){
+		return serialize($this);
+	}
+
 	/**
 	 * Returns the {@link Level} of the space.
 	 *
@@ -63,11 +67,11 @@ abstract class Space implements Serializable{
 		return $server->getLevelByName($this->levelName);
 	}
 
-	public function setLevelName($levelName){
-		$this->levelName = $levelName;
-	}
 	public function getLevelName(){
 		return $this->levelName;
+	}
+	public function setLevelName($levelName){
+		$this->levelName = $levelName;
 	}
 
 	public function getMain(){
@@ -85,7 +89,6 @@ abstract class Space implements Serializable{
 	public function isValid(){
 		return isset($this->main);
 	}
-
 	/**
 	 * Returns a description of the {@link Space}, translated in the locale of the given {@link WorldEditSession}.
 	 *
