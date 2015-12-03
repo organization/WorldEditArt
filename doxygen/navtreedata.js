@@ -23,8 +23,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d5/d3b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1BlockEntry.html#a7f8f86b37cd48a37bf0df573d8512d11",
-"dd/d74/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1SphereSpace.html#acf949cf74dbd51f1b04de8df58d3f0a5"
+"d5/d25/classpemapmodder_1_1worldeditart_1_1utils_1_1ReportErrorTask.html#aa2eb34e3894c9da534c026d54443ae86",
+"dd/d54/classpemapmodder_1_1worldeditart_1_1database_1_1async_1_1AsyncQueryMysqlError.html#afc441a50c992220aa745f666c462120e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

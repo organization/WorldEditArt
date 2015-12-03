@@ -34,7 +34,10 @@ var hierarchy =
     ] ],
     [ "LanguageBrowser", "d1/d20/classpemapmodder_1_1worldeditart_1_1lang_1_1LanguageBrowser.html", null ],
     [ "Phrase", "da/d1a/classpemapmodder_1_1worldeditart_1_1lang_1_1Phrase.html", null ],
-    [ "QueryListener", "de/d64/interfacepemapmodder_1_1worldeditart_1_1database_1_1stream_1_1QueryListener.html", null ],
+    [ "QueryListener", "de/d64/interfacepemapmodder_1_1worldeditart_1_1database_1_1stream_1_1QueryListener.html", [
+      [ "InsertZoneListener", "d6/d36/classpemapmodder_1_1worldeditart_1_1database_1_1InsertZoneListener.html", null ],
+      [ "FetchZonesListener", "d8/d38/classpemapmodder_1_1worldeditart_1_1database_1_1listener_1_1FetchZonesListener.html", null ]
+    ] ],
     [ "QueryRequest", "dd/d18/classpemapmodder_1_1worldeditart_1_1database_1_1stream_1_1QueryRequest.html", null ],
     [ "QueryResult", "d0/d73/classpemapmodder_1_1worldeditart_1_1database_1_1stream_1_1QueryResult.html", null ],
     [ "Queue", "d4/d9a/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Queue.html", null ],

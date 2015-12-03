@@ -1,29 +1,4 @@
-var searchData =
-	[
-		['raklib_2ephp', ['RakLib.php', ['docs\html\doxygen/d5/d1e/RakLib_8php.html', 1, '']]],
-		['raklibinterface_2ephp', ['RakLibInterface.php', ['docs\html\doxygen/d5/d09/RakLibInterface_8php.html', 1, '']]],
-		['raklibserver_2ephp', ['RakLibServer.php', ['docs\html\doxygen/d1/db5/RakLibServer_8php.html', 1, '']]],
-		['random_2ephp', ['Random.php', ['docs\html\doxygen/dc/d2f/Random_8php.html', 1, '']]],
-		['rcon_2ephp', ['RCON.php', ['docs\html\doxygen/d8/d8a/RCON_8php.html', 1, '']]],
-		['rconinstance_2ephp', ['RCONInstance.php', ['docs\html\doxygen/df/d01/RCONInstance_8php.html', 1, '']]],
-		['readme_2emd', ['README.md', ['../da/ddd/README_8md.html', 1, '(Global Namespace)'], ['docs\html\doxygen/d7/d98/pocketmine_2gui_2README_8md.html', 1, '(Global Namespace)'], ['docs\html\doxygen/d3/def/pocketmine_2lang_2locale_2README_8md.html', 1, '(Global Namespace)'], ['docs\html\doxygen/d7/d21/raklib_2README_8md.html', 1, '(Global Namespace)'], ['docs\html\doxygen/db/d55/spl_2README_8md.html', 1, '(Global Namespace)']]],
-		['recipe_2ephp', ['Recipe.php', ['docs\html\doxygen/d2/d8f/Recipe_8php.html', 1, '']]],
-		['redmushroom_2ephp', ['RedMushroom.php', ['docs\html\doxygen/d0/d77/RedMushroom_8php.html', 1, '']]],
-		['redstone_2ephp', ['Redstone.php', ['docs\html\doxygen/d9/d8a/Redstone_8php.html', 1, '']]],
-		['redstoneore_2ephp', ['RedstoneOre.php', ['docs\html\doxygen/d0/dc5/RedstoneOre_8php.html', 1, '']]],
-		['redstoneparticle_2ephp', ['RedstoneParticle.php', ['docs\html\doxygen/dc/dbb/RedstoneParticle_8php.html', 1, '']]],
-		['regionloader_2ephp', ['RegionLoader.php', ['docs\html\doxygen/d4/de1/anvil_2RegionLoader_8php.html', 1, '(Global Namespace)'], ['docs\html\doxygen/dc/dfb/mcregion_2RegionLoader_8php.html', 1, '(Global Namespace)']]],
-		['registeredlistener_2ephp', ['RegisteredListener.php', ['docs\html\doxygen/d8/d2b/RegisteredListener_8php.html', 1, '']]],
-		['reloadcommand_2ephp', ['ReloadCommand.php', ['docs\html\doxygen/d8/d11/ReloadCommand_8php.html', 1, '']]],
-		['remoteconsolecommandsender_2ephp', ['RemoteConsoleCommandSender.php', ['docs\html\doxygen/d7/d20/RemoteConsoleCommandSender_8php.html', 1, '']]],
-		['remoteservercommandevent_2ephp', ['RemoteServerCommandEvent.php', ['docs\html\doxygen/da/d0c/RemoteServerCommandEvent_8php.html', 1, '']]],
-		['removeblockpacket_2ephp', ['RemoveBlockPacket.php', ['docs\html\doxygen/dc/d9a/RemoveBlockPacket_8php.html', 1, '']]],
-		['removeentitypacket_2ephp', ['RemoveEntityPacket.php', ['docs\html\doxygen/de/d43/RemoveEntityPacket_8php.html', 1, '']]],
-		['removeplayerpacket_2ephp', ['RemovePlayerPacket.php', ['docs\html\doxygen/d2/d7f/RemovePlayerPacket_8php.html', 1, '']]],
-		['reporterrortask_2ephp', ['ReportErrorTask.php', ['../d3/d94/ReportErrorTask_8php.html', 1, '']]],
-		['respawnpacket_2ephp', ['RespawnPacket.php', ['docs\html\doxygen/d2/d6c/RespawnPacket_8php.html', 1, '']]],
-		['reversepriorityqueue_2ephp', ['ReversePriorityQueue.php', ['docs\html\doxygen/d7/d27/ReversePriorityQueue_8php.html', 1, '']]],
-		['rheostat_2ephp', ['Rheostat.php', ['../d9/d4f/Rheostat_8php.html', 1, '']]],
-		['rideable_2ephp', ['Rideable.php', ['docs\html\doxygen/d7/da4/Rideable_8php.html', 1, '']]],
-		['riverbiome_2ephp', ['RiverBiome.php', ['docs\html\doxygen/dc/dc0/RiverBiome_8php.html', 1, '']]]
-	];
+var searchData=
+[
+  ['zone_2ephp',['Zone.php',['../d5/d67/Zone_8php.html',1,'']]]
+];
