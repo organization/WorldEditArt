@@ -262,13 +262,13 @@ class CylinderSpace extends Space{
 			return null;
 		}
 		return $session->translate(Lang::SPACE_CYLINDER_TO_STRING, [
-				"X_BASE" => $this->baseCenter->x,
-				"Y_BASE" => $this->baseCenter->y,
-				"Z_BASE" => $this->baseCenter->z,
-				"X_TOP" => $this->topCenter->x,
-				"Y_TOP" => $this->topCenter->y,
-				"Z_TOP" => $this->topCenter->z,
-				"RADIUS" => $this->radius,
+				"X_BASE" => round($this->baseCenter->x, 1),
+				"Y_BASE" => round($this->baseCenter->y, 1),
+				"Z_BASE" => round($this->baseCenter->z, 1),
+				"X_TOP" => round($this->topCenter->x, 1),
+				"Y_TOP" => round($this->topCenter->y, 1),
+				"Z_TOP" => round($this->topCenter->z, 1),
+				"RADIUS" => round($this->radius, 2),
 		]);
 	}
 

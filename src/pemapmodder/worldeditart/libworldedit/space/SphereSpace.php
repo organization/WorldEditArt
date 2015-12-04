@@ -38,7 +38,6 @@ class SphereSpace extends Space{
 	public function serialize(){
 		return serialize([$this->center->x, $this->center->y, $this->center->z, $this->radius, $this->levelName]);
 	}
-
 	public function unserialize($serialized){
 		list($x, $y, $z, $radius, $this->levelName) = unserialize($serialized);
 		$this->center = new Vector3($x, $y, $z);
@@ -54,7 +53,6 @@ class SphereSpace extends Space{
 		}
 		return $v->distanceSquared($this->center) <= $this->radiusSquared;
 	}
-
 	public function isValid(){
 		return parent::isValid() and isset($this->center, $this->radius);
 	}
@@ -67,7 +65,6 @@ class SphereSpace extends Space{
 	public function getCenter(){
 		return $this->center;
 	}
-
 	/**
 	 * Returns the sphere's radius.
 	 *
@@ -76,11 +73,9 @@ class SphereSpace extends Space{
 	public function getRadius(){
 		return $this->radius;
 	}
-
 	public function getRadiusSquared(){
 		return $this->radiusSquared;
 	}
-
 	/**
 	 * Sets the sphere's radius.
 	 *
@@ -93,10 +88,10 @@ class SphereSpace extends Space{
 
 	public function name(WorldEditSession $session){
 		return $session->translate(Lang::SPACE_SPHERE_TO_STRING, [
-				"RADIUS" => $this->radius,
-				"X" => $this->center->x,
-				"Y" => $this->center->y,
-				"Z" => $this->center->z,
+				"RADIUS" => round($this->radius, 1),
+				"X" => round($this->center->x, 1),
+				"Y" => round($this->center->y, 1),
+				"Z" => round($this->center->z, 1),
 		]);
 	}
 

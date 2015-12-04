@@ -72,16 +72,16 @@ class CuboidSpace extends Space{
 			return null;
 		}
 		return $session->translate(Lang::SPACE_CUBOID_TO_STRING, [
-				"LENGTH_X" => $this->getLengthX(),
-				"LENGTH_Y" => $this->getLengthY(),
-				"LENGTH_Z" => $this->getLengthZ(),
-				"TOTAL_SIZE" => $this->getLengthX() * $this->getLengthY() * $this->getLengthZ(),
-				"X_1" => $this->x1,
-				"Y_1" => $this->y1,
-				"Z_1" => $this->z1,
-				"X_2" => $this->x2,
-				"Y_2" => $this->y2,
-				"Z_2" => $this->z2,
+				"LENGTH_X" => round($this->getLengthX(), 1),
+				"LENGTH_Y" => round($this->getLengthY(), 1),
+				"LENGTH_Z" => round($this->getLengthZ(), 1),
+				"TOTAL_SIZE" => ceil($this->getLengthX() * $this->getLengthY() * $this->getLengthZ()),
+				"X_1" => round($this->x1, 1),
+				"Y_1" => round($this->y1, 1),
+				"Z_1" => round($this->z1, 1),
+				"X_2" => round($this->x2, 1),
+				"Y_2" => round($this->y2, 1),
+				"Z_2" => round($this->z2, 1),
 		]);
 	}
 
