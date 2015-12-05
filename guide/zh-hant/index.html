@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WorldEditArt Guide</title>
+	<link rel="icon" href="../plugin_icon.png">
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<script src="../doctree.js"></script>
+	<link rel="stylesheet" href="../guide.css" type="text/css">
+</head>
+<body>
+<div id="body">
+	<div class="tree" data-name="Contents" id="index" style="line-height: 130%;"></div>
+	<hr>
+	<div class="tree" data-name="WorldEditArt Guide">
+		<div class="tree" data-name="License">
+			This software is licensed with GNU Lesser General Public License version 3.
+		<pre>
+WorldEditArt
+
+Copyright (C) 2015 PEMapModder
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+		</pre>
+			<div class="tree" data-name="Full license">
+			<pre>
+                   GNU LESSER GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. &lt;http://fsf.org/&gt;
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+
+  This version of the GNU Lesser General Public License incorporates
+the terms and conditions of version 3 of the GNU General Public
+License, supplemented by the additional permissions listed below.
+
+  0. Additional Definitions.
+
+  As used herein, "this License" refers to version 3 of the GNU Lesser
+General Public License, and the "GNU GPL" refers to version 3 of the GNU
+General Public License.
+
+  "The Library" refers to a covered work governed by this License,
+other than an Application or a Combined Work as defined below.
+
+  An "Application" is any work that makes use of an interface provided
+by the Library, but which is not otherwise based on the Library.
+Defining a subclass of a class defined by the Library is deemed a mode
+of using an interface provided by the Library.
+
+  A "Combined Work" is a work produced by combining or linking an
+Application with the Library.  The particular version of the Library
+with which the Combined Work was made is also called the "Linked
+Version".
+
+  The "Minimal Corresponding Source" for a Combined Work means the
+Corresponding Source for the Combined Work, excluding any source code
+for portions of the Combined Work that, considered in isolation, are
+based on the Application, and not on the Linked Version.
+
+  The "Corresponding Application Code" for a Combined Work means the
+object code and/or source code for the Application, including any data
+and utility programs needed for reproducing the Combined Work from the
+Application, but excluding the System Libraries of the Combined Work.
+
+  1. Exception to Section 3 of the GNU GPL.
+
+  You may convey a covered work under sections 3 and 4 of this License
+without being bound by section 3 of the GNU GPL.
+
+  2. Conveying Modified Versions.
+
+  If you modify a copy of the Library, and, in your modifications, a
+facility refers to a function or data to be supplied by an Application
+that uses the facility (other than as an argument passed when the
+facility is invoked), then you may convey a copy of the modified
+version:
+
+   a) under this License, provided that you make a good faith effort to
+   ensure that, in the event an Application does not supply the
+   function or data, the facility still operates, and performs
+   whatever part of its purpose remains meaningful, or
+
+   b) under the GNU GPL, with none of the additional permissions of
+   this License applicable to that copy.
+
+  3. Object Code Incorporating Material from Library Header Files.
+
+  The object code form of an Application may incorporate material from
+a header file that is part of the Library.  You may convey such object
+code under terms of your choice, provided that, if the incorporated
+material is not limited to numerical parameters, data structure
+layouts and accessors, or small macros, inline functions and templates
+(ten or fewer lines in length), you do both of the following:
+
+   a) Give prominent notice with each copy of the object code that the
+   Library is used in it and that the Library and its use are
+   covered by this License.
+
+   b) Accompany the object code with a copy of the GNU GPL and this license
+   document.
+
+  4. Combined Works.
+
+  You may convey a Combined Work under terms of your choice that,
+taken together, effectively do not restrict modification of the
+portions of the Library contained in the Combined Work and reverse
+engineering for debugging such modifications, if you also do each of
+the following:
+
+   a) Give prominent notice with each copy of the Combined Work that
+   the Library is used in it and that the Library and its use are
+   covered by this License.
+
+   b) Accompany the Combined Work with a copy of the GNU GPL and this license
+   document.
+
+   c) For a Combined Work that displays copyright notices during
+   execution, include the copyright notice for the Library among
+   these notices, as well as a reference directing the user to the
+   copies of the GNU GPL and this license document.
+
+   d) Do one of the following:
+
+       0) Convey the Minimal Corresponding Source under the terms of this
+       License, and the Corresponding Application Code in a form
+       suitable for, and under terms that permit, the user to
+       recombine or relink the Application with a modified version of
+       the Linked Version to produce a modified Combined Work, in the
+       manner specified by section 6 of the GNU GPL for conveying
+       Corresponding Source.
+
+       1) Use a suitable shared library mechanism for linking with the
+       Library.  A suitable mechanism is one that (a) uses at run time
+       a copy of the Library already present on the user's computer
+       system, and (b) will operate properly with a modified version
+       of the Library that is interface-compatible with the Linked
+       Version.
+
+   e) Provide Installation Information, but only if you would otherwise
+   be required to provide such information under section 6 of the
+   GNU GPL, and only to the extent that such information is
+   necessary to install and execute a modified version of the
+   Combined Work produced by recombining or relinking the
+   Application with a modified version of the Linked Version. (If
+   you use option 4d0, the Installation Information must accompany
+   the Minimal Corresponding Source and Corresponding Application
+   Code. If you use option 4d1, you must provide the Installation
+   Information in the manner specified by section 6 of the GNU GPL
+   for conveying Corresponding Source.)
+
+  5. Combined Libraries.
+
+  You may place library facilities that are a work based on the
+Library side by side in a single library together with other library
+facilities that are not Applications and are not covered by this
+License, and convey such a combined library under terms of your
+choice, if you do both of the following:
+
+   a) Accompany the combined library with a copy of the same work based
+   on the Library, uncombined with any other library facilities,
+   conveyed under the terms of this License.
+
+   b) Give prominent notice with the combined library that part of it
+   is a work based on the Library, and explaining where to find the
+   accompanying uncombined form of the same work.
+
+  6. Revised Versions of the GNU Lesser General Public License.
+
+  The Free Software Foundation may publish revised and/or new versions
+of the GNU Lesser General Public License from time to time. Such new
+versions will be similar in spirit to the present version, but may
+differ in detail to address new problems or concerns.
+
+  Each version is given a distinguishing version number. If the
+Library as you received it specifies that a certain numbered version
+of the GNU Lesser General Public License "or any later version"
+applies to it, you have the option of following the terms and
+conditions either of that published version or of any later version
+published by the Free Software Foundation. If the Library as you
+received it does not specify a version number of the GNU Lesser
+General Public License, you may choose any version of the GNU Lesser
+General Public License ever published by the Free Software Foundation.
+
+  If the Library as you received it specifies that a proxy can decide
+whether future versions of the GNU Lesser General Public License shall
+apply, that proxy's public statement of acceptance of any version is
+permanent authorization for you to choose that version for the
+Library.
+			</pre>
+			</div>
+		</div>
+		<div class="tree" data-name="Admin Guide">
+			<div class="note">
+				Installation, permission management, etc.
+			</div>
+			<div class="tree" data-name="Permissions" id="admin-permissions" style="line-height: 25px;">
+				Here is a list of permissions:
+				<script>
+					/**
+					 * @param obj collection from permissions.json
+					 * @param parUl jQuery
+					 * @param parName
+					 */
+					function addPermissionsTo(obj, parUl, parName){
+						for(var name in obj){
+							if(obj.hasOwnProperty(name)){
+								var myLi = $("<li style='padding: 4px 0'></li>");
+								var perm = obj[name];
+								var permName = parName + name;
+								var desc = perm["description"];
+								var def = perm["default"];
+								if(typeof def === "boolean"){
+									def = def ? "true" : "false";
+								}
+								if(def === "notop"){
+									def = "not op";
+								}
+								myLi.append("<code>" + permName + "</code>: " + desc + " (default <em>" + def + "</em>)");
+								if(typeof perm["children"] === "object" && Object.keys(perm["children"]).length > 0){
+									var children = perm["children"];
+									var ul = $("<ul></ul>");
+									addPermissionsTo(children, ul, permName + ".");
+									myLi.append("<br><strong>Children:</strong>");
+									ul.appendTo(myLi);
+								}
+								myLi.appendTo(parUl);
+							}
+						}
+					}
+					var data = $.ajax({
+						type: "GET",
+						url: "https://raw.githubusercontent.com/PEMapModder/WorldEditArt/master/resources/permissions.json",
+						async: false
+					}).responseText;
+					if(typeof data !== "object"){
+						data = JSON.parse(data);
+					}
+					var container = $('<div class="tree" data-name="Full permissions list"></div>');
+					var parent = $("<ul></ul>");
+					addPermissionsTo(data, parent, "");
+					parent.appendTo(container);
+					$(document).ready(function(){
+						container.appendTo($("#admin-permissions"));
+					});
+				</script>
+			</div>
+		</div>
+		<div class="tree" data-name="Player Guide">
+			<div class="note">Concept introduction, commands documentation and user tips</div>
+			<div class="tree" data-name="Introduction">
+				<div class="note">
+					NOTE: This guide is written assuming that administrators use the default configuration of
+					WorldEditArt.
+				</div>
+				<p>
+					WorldEditArt is an innovative plugin. This plugin is not written to <em>"port"</em> the MCPC
+					WorldEdit
+					plugin. This plugin is an entirely original work, except that some commands may follow the tradition
+					of
+					WorldEdit to make it easier for understanding. However, a lot of things are different, so don't rely
+					on
+					your knowledge on WorldEdit.
+				</p>
+			</div>
+			<div class="tree" data-name="Concepts">
+				<p>
+					WorldEditArt introduces a number of new concepts into territory of world editing, as well as
+					introduces
+					a lot of improvements to make world editing easier to understand.</p>
+
+				<div class="true" data-name="General command pattern">
+					WorldEditArt uses a special pattern about command arguments. It is the best if you understand these,
+					but it doesn't really matter if you don't understand, as long as you can use them.
+					<ol>
+						<li><strong>Switches:</strong>
+							If you want to specify that something has to be enabled, you have to specify
+							<code>.property</code> in the command. For example, if you want to indicate that you want a
+							hollow cuboid instead of a filled cuboid to be set, you can type
+							<code>//set <em>.h</em> glass</code>, where <em>h</em> stands for hollow. Properties of
+							different commands will be explained later.
+						</li>
+						<li><strong>Properties:</strong>
+							If you want to specify a specific property and indicate the value, you have to specify
+							<code>,property <span class="u"><em>value</em></span></code> in the command. For example, if
+							you want to indicate that you want to set your anchor as the position of player
+							<em>Steve</em> instead of your position, you can type <code>//anchor ,p </code>, where
+							<em>p</em> stands for player. Again, properties of different commands will be explained
+							later.
+						</li>
+						<li>
+							If the command asks for an argument but you want to give multiple words, you can put
+							it in quotes <code>""</code>. For example, if you want to copy the selection with the name
+							<em>roller coaster</em>, which contains a space, you have to type
+							<code>//copy "roller coaster"</code> instead of <code>//copy roller coaster</code> - the
+							latter will only be understood as <em>roller</em> instead of <em>roller coaster</em>.
+						</li>
+					</ol>
+				</div>
+				<div class="tree" data-name="Sudo mode">
+					<p>
+						World editing plugins are known as one of the most dangerous plugins - I can't imagine anything
+						more
+						dangerous than world editing plugins, except plugins that let players evaluate code/shell
+						commands
+						directly (BAD BAD BAD IDEA!!!). It can, even if not intended, have devastating destruction on
+						the
+						terrain. A simple example is that if you accidentally create a cuboid that spans over a large
+						area
+						of the map, you would probably delete everything that had been built on that world, and you may
+						just
+						be unable to undo that (although WorldEditArt <strong>does</strong> try to let you <span
+							class="term">undo</span>, there are
+						still cases that there is irreversible consequence). Therefore, sudo mode is introduced to
+						prevent
+						users from misusing WorldEditArt accidentally, or "my cat clicked on my phone and all blocks to
+						lava" (I'm sure many people have heard that, most of the time excuses).<br>
+						<strong>TL;DR:</strong>
+						Sudo mode lets you use WorldEditArt. When you just joined a server, you cannot use any
+						WorldEditArt
+						commands, except <code>//sudo</code> (of course, only if you got that permission e.g. by getting
+						op). When you do <code>//sudo</code>, you unlock the WorldEditArt commands for yourself, which
+						will
+						be locked once you leave the server (or if you specify sudo session length - read the commands
+						section for more information).
+					</p>
+				</div>
+				<div class="tree" data-name="Safe mode and Under-Construction Zones (UCZs)">
+					<p>
+						We may occasionally encounter these cases:
+					</p>
+					<ul>
+						<li>This server has a bad builder. He said he was building a stadium, so I went there and
+							watched.
+							Then he suddenly suffocated me with blocks!<br>
+							(The builder tried to set blocks of an area without noticing that a player entered the
+							editing
+							area)
+						</li>
+						<li>I just clicked an extra zero. Why did the selection get so big?</li>
+					</ul>
+					<p>
+						If you have safe mode enabled, WorldEditArt will not change anything for you for blocks that are
+						not
+						in UCZs.<br>
+						To mark a zone as under-construction:
+					</p>
+					<ol>
+						<li>Make a <span class="term">selection</span>.</li>
+						<li>Run the command <code>//uc</code>.</li>
+					</ol>
+					To unmark a zone as under-construction:
+					<ol>
+						<li>Walk into a UCZ.</li>
+						<li>Run the command <code>//uuc</code>.</li>
+					</ol>
+				</div>
+				<div class="tree" data-name="Selections">
+					In traditional world edit plugins, a &quot;selection&quot; refers to a cuboid which you defined by
+					doing <code>//pos1</code> and <code>//pos2</code>. This usage is supported in WorldEditArt, but it
+					also supports more choices.<br>
+					Selections in WorldEditArt can theoretically be in any shapes. However, currently, only the most
+					popular three shapes, namely cuboids, spheres and cylinders, can be selected through commands.
+					(Another plugin can use the WorldEditArt API to define new shapes)<br>
+
+					<div class="tree" data-name="Cuboids">
+						A cuboid is a polygon with 6 faces, each parallel to one of the X, Y and Z planes. In simple
+						words, a cuboid can be of any size, but it must stand upright on the ground.<br>
+						There are two ways to define a cuboid:
+
+						<div class="tree" data-name="//pos1, //pos2">
+							The old-fashioned way and most precise way is to use these two traditional commands. Let's
+							see an example.
+							<pre>
+  P +--------+ A
+   /        /|
+S +--------+ |
+  |        | |
+  |        | + Q
+  |        |/
+B +--------+ R
+							</pre>
+							In this diagram, we are going to select the cuboid AB. To do so:
+							<ol>
+								<li>Walk to point <em>A</em></li>
+								<li>Execute <code>//1</code> (alias of <code>//pos1</code>)</li>
+								<li>Walk to point <em>B</em></li>
+								<li>Execute <code>//2</code> (alias of <code>//pos2</code>)</li>
+							</ol>
+							Note that you have to choose two opposite vertexes in all dimensions. For example,
+							<strong>AP</strong>, <strong>AS</strong>, <strong>AQ</strong> and <strong>AR</strong> won't
+							work. Only <strong>AB</strong> would select the whole cuboid. Actually, you can think as if
+							you are dragging open a cuboid when you walk from A to B.<br>
+							On the other hand, you can also use <strong>PR</strong> or <strong>QS</strong>, since they
+							are also opposite vertexes.<br>
+							<a name="bp-switches"></a>
+							If you don't want to keep walking around the world, you can tell another player (for
+							example, <i>Steve</i>) to stand at <strong>A</strong>, then you stand at <strong>B</strong>,
+							then you can do <code>//1 ,p steve</code> <code>//2</code> to quickly finish the selection
+							without walking.<br>
+							Another mechanism is to use bookmarks. If you didn't name your bookmark (your bookmark name
+							is <code>default</code>), you just need to type <code>//1 .b</code> (or <code>//2 .b</code>).
+							If you gave your bookmark a special name, instead of typing <code>.b</code>, type <code>,b
+							<em><span class="u">name of bookmark</span></em></code>. Note that the period <code>.</code>
+							has been changed to a comma <code>,</code>.<br>
+							As it is like in all other commands, if the bookmark name contains space(s), put quotes
+							<code>&quot;</code> around the name. For example: <code>//1 ,b "team resources base"</code>.<br>
+						</div>
+						<div class="tree" data-name="//grow">
+							Another method of creating cuboids is the <code>//grow</code> command. It was already
+							present as <code>//cub grow</code> in an older version of WorldEditArt, but the mechanism is
+							a bit different &dash; the X, Y and Z parameters are now reflected. This command is useful
+							for creating cuboids of fixed sizes. It is simple to use. Just run
+							<code>//grow <em style="text-decoration: underline;">x</em>
+								<em style="text-decoration: underline;">y</em>
+								<em style="text-decoration: underline;">z</em></code>, and you will be in the center of
+							a
+							selected cuboid of
+							2<span class="u">x</span>&times;2<span class="u">y</span>&times;2<span class="u">z</span>,
+							like this:
+							<pre>
+<b>43211234</b>
++------+  <b>3</b>
+|      |  <b>2</b>
+|  ()  |  <b>1</b>
+|  ()  |  <b>1</b>
+|      |  <b>2</b>
++------+  <b>3</b>
+<b>43211234</b>
+							</pre>
+							This is the front view of the player (noted as <code>()</code> in the diagram) running
+							<code>//grow 4 3 5</code>. Note that the 5 blocks across the Z axis are not visible because
+							this is a front view.
+						</div>
+						<div class="tree" data-name="//shoot">
+							If you had experience in selecting a range of files on a computer, you would understand the
+							concept of this - a cuboid starts at your position, and to the direction you look at, a
+							diagonal shoots.<br>
+							OK, I know that I am making it even more confusing. A picture is worth a thousand words,
+							so...
+							<pre>
+<strong>A</strong> &#8600;--------+
+  |\       |
+  | \      |
+  |  \     |
+  |   \    |
+  |    \   |
+  |     \  |
+  |      \ |
+  |       \|
+  |--------+ <strong>B</strong>
+							</pre>
+							The tiny arrow on the left top corner indicates that a player is looking at that direction,
+							and then a cuboid of this shape formed along the diagonal in <code>\</code>. This cuboid is
+							formed by typing the command <code>//shoot 11</code> (the length between <strong>A</strong>
+							and <strong>B</strong> is 11).
+						</div>
+					</div>
+					<div class="tree" data-name="Spheres">
+						WorldEditArt currently only supports regular spheres. A sphere selection of 5 blocks radius can
+						be made by simply typing the command: <code>//sphere 5</code> (or <code>//sph 5</code> for
+						short).<br>
+						The sphere will take your current position as the center. To make the sphere take another
+						player's position as the center, like the cuboid <code>,p</code> switch, type <code>//sph 5 ,p
+						steve</code> to use <em>Steve</em>'s position as center of sphere, or <code>,b <em><span
+							class="u">name of bookmark</span></em></code> or <code>.b</code> to use bookmarks. For more
+						details, see the <a href="#bp-switches">description about cuboids</a>.
+					</div>
+				</div>
+				<div class="tree" data-name="Editing">
+					WorldEditArt supports setting blocks randomly from a weighted list, but the syntax is a bit
+					different from that in WorldEdit for Bukkit. <br>
+
+					<div class="tree" data-name="Weighted block lists">
+						A weighted block list means that instead of only replacing blocks with one block type,
+						WorldEditArt will choose random blocks from a list of block types, and you can decide which
+						block type will appear the most, which one the least, etc.<br>
+						Block types are separated by spaces. Each block type should be in one of these formats:
+						<pre>
+1. block
+2. block:damage
+3. weight/block
+4. weight/block:damage
+						</pre>
+						where <code>weight</code> should be replaced by the weight of the block (relative chance
+						to get spawned), and <code>damage</code> should be replaced by the damage value of the
+						block. The default values of them are <code>1</code> and <code>0</code> respectively.
+						<code>block</code> should be replaced by the block ID or name of the block. A list of block
+						names can be found <!--suppress HtmlUnknownAnchorTarget -->
+						<a href="items.html#no-items">here</a>.<br>
+						Examples:
+						<ul>
+							<li>
+								If you <code>//set 0.05/glowstone grass</code> on a piece of ground, you are making a
+								grass ground pierced with glowstone blocks (5 out of 105 blocks are glowstone)
+							</li>
+							<li>
+								If you <code>10/stone 10/wood coal_ore still_water cobweb 0.01/diamond_ore
+								200/air</code>, it will end up like a skygrid map that isn't in grids but random
+								positions.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tree" data-name="Developer Guide">
+			<div class="note">API documentation</div>
+		</div>
+		<div class="tree" data-name="Contact">
+			<div class="tree" data-name="IRC"><p>
+				Server: chat.freenode.net:6667<br>
+				Private message: PEMapModder<br>
+				Channel: <code>#pmplugins</code>
+			</p></div>
+			<div class="tree" data-name="Gitter">
+				<a href="https://gitter.im/PEMapModder/WorldEditArt?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge">
+					<img src="https://badges.gitter.im/Join%20Chat.svg"
+					     alt="Join the chat at https://gitter.im/PEMapModder/WorldEditArt">
+				</a>
+			</div>
+			<div class="tree" data-name="GitHub issues">
+				<div class="note">
+					Note: use GitHub issues **only** for issue reporting and enhancement suggestions.
+				</div>
+				<a href="https://github.com/PEMapModder/WorldEditArt/issues/new">WorldEditArt Issues</a>
+			</div>
+			<div class="tree" data-name="Source code">
+				<a href="https://github.com/PEMapModder/WorldEditArt">GitHub</a>
+			</div>
+		</div>
+	</div>
+	<div class="tree" data-name="Read in another language">
+		<iframe src="../" style="width: 100%"><a href="../">Read in another language</a></iframe>
+	</div>
+</div>
+</body>
+</html>
