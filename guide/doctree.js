@@ -103,8 +103,11 @@ $(document).ready(function(){
 		var anchorId = "anchor-auto-" + (nextAnchorId++);
 		$this.prepend('<a name="' + anchorId + '"></a>');
 		if(parents.length == 0){
-			tree = new Tree(name, anchorId);
-			trees[name] = tree;
+			var tmpTree = new Tree(name, anchorId);
+			trees[name] = tmpTree;
+			if(this.id === "mainTree"){
+				tree = tmpTree;
+			}
 		}else{
 			var $parent = $(parents[0]);
 			var parentTree = trees[$parent.attr("data-name")];
@@ -135,10 +138,11 @@ $(document).ready(function(){
 	switchSpoiler("0");
 	switchSpoiler("1");
 	var $contents = $("#index");
-//			$contents.append("<p style='text-align: center;'><strong>Contents</strong></p>");
-	var $ol = $("<ol></ol>");
-	tree.toOlJQuery().appendTo($ol);
-	$contents.append($ol);
+	$contents.append("<p style='text-align: center;'><strong>Contents</strong></p>");
+	var ol = tree.toOlJQuery();
+	ol.children().each(function(){
+		$contents.append(this);
+	});
 	$("a").click(function(){
 		var $this = $(this);
 		if(typeof $this.attr("href") !== typeof undefined){
