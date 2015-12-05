@@ -14,10 +14,6 @@
 				"旋風之音 (GoneTone)"
 			],
 			"updated": "1.0"
-		},
-		"comment": {
-			"value": "主要的版本會在每一次新的插件釋放時會有衝突本次的版本應該會修正此提交(包括合併提交)的en.json文件會被更新。所有未使用的翻譯作品仍必須有`更新`的權力版本被定義在meta.language.updated，有關英文的版本則被定義在meta.native.updated",
-			"updated": "1.0"
 		}
 	},
 	"error": {
@@ -30,13 +26,13 @@
 			"updated": "1.4"
 		},
 		"nosel": {
-			"value": "您沒有一個選擇！",
+			"value": "您沒有選擇任何區域！",
 			"updated": "1.5"
 		}
 	},
 	"version": {
 		"description": {
-			"value": "檢查 WorldEditArt 版本",
+			"value": "查看 WorldEditArt 版本",
 			"updated": "1.1"
 		},
 		"usage": {
@@ -44,7 +40,7 @@
 			"updated": "1.1"
 		},
 		"response": {
-			"value": "該伺服器使用 WorldEditArt 版本 %PLUGIN_VERSION% by %PLUGIN_AUTHORS%.\n您正在使用 %LANG_NAME% 翻譯 v%LANG_VERSION% by %LANG_AUTHORS%.",
+			"value": "此伺服器使用 %PLUGIN_AUTHORS% 編寫的 WorldEditArt 版本 %PLUGIN_VERSION%。\n您正在使用 %LANG_AUTHORS% 翻譯的 %LANG_NAME% v%LANG_VERSION%.",
 			"updated": "1.1",
 			"params": [
 				"PLUGIN_VERSION",
@@ -63,11 +59,11 @@
 			},
 			"usage": {
 				"1": {
-					"value": "//1 [.b] [,b <bookmark name>] [,p <player name>] [,n <selection name>]\n.b - 使用您的默認書籤，而不是您的當前位置\n,b <name> - 使用名為 <name> 的書籤，而不是您現在的位置\n,p <player> - 使用在線玩家 <player> 的位置，而不是您的位置\n,n <selection name> - 指定選擇的名稱，默認為 \"default\"",
+					"value": "//1 [.b] [,b <書籤>] [,p <玩家名稱>] [,n <區域選擇的名稱>]\n.b - 使用您的默認書籤，而不是您的當前位置\n,b <書籤名稱> - 使用名為 <書籤> 的書籤，而不是您現在的位置\n,p <玩家名稱> - 使用在線玩家 <玩家名稱> 的位置，而不是您的位置\n,n <區域選擇的名稱> - 指定目標選擇的名稱，默認為 \"default\"",
 					"updated": "1.4"
 				},
 				"2": {
-					"value": "//2 [.b] [,b <bookmark name>] [,p <player name>]\n.b - 使用您的默認書籤，而不是您的當前位置\n,b <name> - 使用名為 <name> 的書籤，而不是您現在的位置\n,p <player> - 使用在線玩家 <player> 的位置，而不是您的位置",
+					"value": "//2 [.b] [,b <書籤>] [,p <玩家名稱>] [,n <區域選擇的名稱>]\n.b - 使用您的默認書籤，而不是您的當前位置\n,b <書籤名稱> - 使用名為 <書籤> 的書籤，而不是您現在的位置\n,p <玩家名稱> - 使用在線玩家 <玩家名稱> 的位置，而不是您的位置\n,n <區域選擇的名稱> - 指定目標選擇的名稱，默認為 \"default\"",
 					"updated": "1.4"
 				}
 			},
@@ -82,27 +78,28 @@
 				]
 			},
 			"info": {
-				"value": "您當前選擇:",
+				"value": "您現在的選擇:",
 				"updated": "1.4"
 			}
 		},
 		"cylPos": {
 			"description": {
-				"value": "定義兩個基座的圓柱體的中心",
+				"value": "定義圓柱體的兩個基座中心",
 				"updated": "1.5"
 			},
 			"usage": {
 				"1": {
-					"value": "//1 [.b] [,b <bookmark name>] [,p <player name>] [,n <selection name>]\n.b - 使用您的默認書籤，而不是您的當前位置\n,b <name> - 使用名為 <name> 的書籤，而不是您現在的位置\n,p <player> - 使用在線玩家 <player> 的位置，而不是您的位置\n,n <selection name> - 指定選擇的名稱，默認為 \"default\"",
+					"value": "//1 [.b] [,b <書籤>] [,p <玩家名稱>] [,n <區域選擇的名稱>]\n.b - 使用您的默認書籤，而不是您的當前位置\n,b <書籤名稱> - 使用名為 <書籤> 的書籤，而不是您現在的位置\n,p <玩家名稱> - 使用在線玩家 <玩家名稱> 的位置，而不是您的位置\n,n <區域選擇的名稱> - 指定目標選擇的名稱，默認為 \"default\"",
 					"updated": "1.5"
 				},
 				"2": {
-					"value": "//2 [.b] [,b <bookmark name>] [,p <player name>]\n.b - 使用您的默認書籤，而不是您的當前位置\n,b <name> - 使用名為 <name> 的書籤，而不是您現在的位置\n,p <player> - 使用在線玩家 <player> 的位置，而不是您的位置",
+					"value": "//1 [.b] [,b <書籤>] [,p <玩家名稱>] [,n <區域選擇的名稱>]\n.b - 使用您的默認書籤，而不是您的當前位置\n,b <書籤名稱> - 使用名為 <書籤> 的書籤，而不是您現在的位置\n,p <玩家名稱> - 使用在線玩家 <玩家名稱> 的位置，而不是您的位置\n,n <區域選擇的名稱> - 指定目標選擇的名稱，默認為 \"default\"",
+
 					"updated": "1.5"
 				}
 			},
 			"success": {
-				"value": "選擇 (%COORD_X%, %COORD_Y%, %COORD_Z%) 為 %TOP_OR_BASE% 圓柱體的中心",
+				"value": "選擇 (%COORD_X%, %COORD_Y%, %COORD_Z%) 為 圓柱體的 %TOP_OR_BASE%",
 				"updated": "1.5",
 				"params": [
 					"COORD_X",
@@ -116,15 +113,15 @@
 	"edit": {
 		"set": {
 			"description": {
-				"value": "更改您選擇的所有塊到某些塊類型(s)",
+				"value": "更改您選擇的所有方塊到某些方塊類型",
 				"updated": "1.5"
 			},
 			"usage": {
-				"value": "//s <用逗號分隔方塊>",
+				"value": "//s <用逗號分隔方塊>\n造訪 http://lgpe.co/wea ，查看進階用法",
 				"updated": "1.5"
 			},
 			"inProgress": {
-				"value": "現在方塊設定正在進行...",
+				"value": "方塊更改正在進行...",
 				"updated": "1.5"
 			}
 		}
@@ -132,7 +129,7 @@
 	"space": {
 		"cuboid": {
 			"toString": {
-				"value": "%LENGTH_X%*%LENGTH_Y%*%LENGTH_Z% 長方體 (%TOTAL_SIZE% 方塊) 從 (%X_1%, %Y_1%, %Z_1%) 至 (%X_2%, %Y_2%, %Z_2%)",
+				"value": "從 (%X_1%, %Y_1%, %Z_1%) 至 (%X_2%, %Y_2%, %Z_2%) 的 %LENGTH_X%*%LENGTH_Y%*%LENGTH_Z% 長方體 (共 %TOTAL_SIZE% 方塊)",
 				"updated": "1.4",
 				"params": [
 					"LENGTH_X",
@@ -150,7 +147,7 @@
 		},
 		"cylinder": {
 			"toString": {
-				"value": "圓柱體的 %RADIUS% 方塊半徑從 (%X_BOTTOM%, %Y_BOTTOM%, %Z_BOTTOM%) 至 (%X_TOP%, %Y_TOP%, %Z_TOP%)",
+				"value": "從 (%X_BOTTOM%, %Y_BOTTOM%, %Z_BOTTOM%) 至 (%X_TOP%, %Y_TOP%, %Z_TOP%)、半徑 %RADIUS% 方塊的圓柱體",
 				"updated": "1.4",
 				"params": [
 					"X_BASE",
@@ -165,7 +162,7 @@
 		},
 		"sphere": {
 			"toString": {
-				"value": "球體的 %RADIUS% 方塊半徑中心在 (%X%, %Y%, %Z%)",
+				"value": "中心在 (%X%, %Y%, %Z%)、半徑 %RADIUS% 方塊的球體",
 				"updated": "1.4",
 				"params": [
 					"RADIUS",
@@ -176,7 +173,7 @@
 			}
 		},
 		"set": {
-			"value": "方塊設置在 %SPACE%",
+			"value": "%SPACE%的方塊更改",
 			"updated": "1.5",
 			"params": [
 				"SPACE"
@@ -198,7 +195,7 @@
 				]
 			},
 			"warnedEntry": {
-				"value": "%TASK_NAME%: %PROGRESS_PERC%% 完成 (%WARNINGS_CNT% 方塊已被安全模式)",
+				"value": "%TASK_NAME%: %PROGRESS_PERC%% 完成 (%WARNINGS_CNT% 方塊因安全模式而沒有更改)",
 				"updated": "1.3",
 				"params": [
 					"TASK_NAME",

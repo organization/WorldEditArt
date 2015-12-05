@@ -119,7 +119,7 @@
 				"updated": "1.5"
 			},
 			"usage": {
-				"value": "//s <blocks separated by commas>",
+				"value": "//s <blocks separated by commas>\nCheck the user guide at http://lgpe.co/wea for advanced usage",
 				"updated": "1.5"
 			},
 			"inProgress": {
