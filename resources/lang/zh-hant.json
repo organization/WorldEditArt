@@ -1,0 +1,221 @@
+{
+	"meta": {
+		"language": {
+			"value": "zh-hant",
+			"updated": "1.1"
+		},
+		"native": {
+			"value": "中文 (繁體)",
+			"updated": "1.5"
+		},
+		"authors": {
+			"value": [
+				"PEMapModder",
+				"旋風之音 (GoneTone)"
+			],
+			"updated": "1.0"
+		},
+		"comment": {
+			"value": "主要的版本會在每一次新的插件釋放時會有衝突本次的版本應該會修正此提交(包括合併提交)的en.json文件會被更新。所有未使用的翻譯作品仍必須有`更新`的權力版本被定義在meta.language.updated，有關英文的版本則被定義在meta.native.updated",
+			"updated": "1.0"
+		}
+	},
+	"error": {
+		"noperm": {
+			"value": "你沒有權限使用此指令。",
+			"updated": "1.0"
+		},
+		"offline": {
+			"value": "該玩家不在線！",
+			"updated": "1.4"
+		},
+		"nosel": {
+			"value": "您沒有一個選擇！",
+			"updated": "1.5"
+		}
+	},
+	"version": {
+		"description": {
+			"value": "檢查 WorldEditArt 版本",
+			"updated": "1.1"
+		},
+		"usage": {
+			"value": "/v",
+			"updated": "1.1"
+		},
+		"response": {
+			"value": "該伺服器使用 WorldEditArt 版本 %PLUGIN_VERSION% by %PLUGIN_AUTHORS%.\n您正在使用 %LANG_NAME% 翻譯 v%LANG_VERSION% by %LANG_AUTHORS%.",
+			"updated": "1.1",
+			"params": [
+				"PLUGIN_VERSION",
+				"PLUGIN_AUTHORS",
+				"LANG_NAME",
+				"LANG_VERSION",
+				"LANG_AUTHORS"
+			]
+		}
+	},
+	"selection": {
+		"pos": {
+			"description": {
+				"value": "定義一個你選擇的長方體的頂點位置",
+				"updated": "1.4"
+			},
+			"usage": {
+				"1": {
+					"value": "//1 [.b] [,b <bookmark name>] [,p <player name>] [,n <selection name>]\n.b - 使用您的默認書籤，而不是您的當前位置\n,b <name> - 使用名為 <name> 的書籤，而不是您現在的位置\n,p <player> - 使用在線玩家 <player> 的位置，而不是您的位置\n,n <selection name> - 指定選擇的名稱，默認為 \"default\"",
+					"updated": "1.4"
+				},
+				"2": {
+					"value": "//2 [.b] [,b <bookmark name>] [,p <player name>]\n.b - 使用您的默認書籤，而不是您的當前位置\n,b <name> - 使用名為 <name> 的書籤，而不是您現在的位置\n,p <player> - 使用在線玩家 <player> 的位置，而不是您的位置",
+					"updated": "1.4"
+				}
+			},
+			"success": {
+				"value": "選擇 (%COORD_X%, %COORD_Y%, %COORD_Z%) 為點 %POINT_ID% 的長方體。",
+				"updated": "1.4",
+				"params": [
+					"COORD_X",
+					"COORD_Y",
+					"COORD_Z",
+					"POINT_ID"
+				]
+			},
+			"info": {
+				"value": "您當前選擇:",
+				"updated": "1.4"
+			}
+		},
+		"cylPos": {
+			"description": {
+				"value": "定義兩個基座的圓柱體的中心",
+				"updated": "1.5"
+			},
+			"usage": {
+				"1": {
+					"value": "//1 [.b] [,b <bookmark name>] [,p <player name>] [,n <selection name>]\n.b - 使用您的默認書籤，而不是您的當前位置\n,b <name> - 使用名為 <name> 的書籤，而不是您現在的位置\n,p <player> - 使用在線玩家 <player> 的位置，而不是您的位置\n,n <selection name> - 指定選擇的名稱，默認為 \"default\"",
+					"updated": "1.5"
+				},
+				"2": {
+					"value": "//2 [.b] [,b <bookmark name>] [,p <player name>]\n.b - 使用您的默認書籤，而不是您的當前位置\n,b <name> - 使用名為 <name> 的書籤，而不是您現在的位置\n,p <player> - 使用在線玩家 <player> 的位置，而不是您的位置",
+					"updated": "1.5"
+				}
+			},
+			"success": {
+				"value": "選擇 (%COORD_X%, %COORD_Y%, %COORD_Z%) 為 %TOP_OR_BASE% 圓柱體的中心",
+				"updated": "1.5",
+				"params": [
+					"COORD_X",
+					"COORD_Y",
+					"COORD_Z",
+					"TOP_OR_BASE"
+				]
+			}
+		}
+	},
+	"edit": {
+		"set": {
+			"description": {
+				"value": "更改您選擇的所有塊到某些塊類型(s)",
+				"updated": "1.5"
+			},
+			"usage": {
+				"value": "//s <用逗號分隔方塊>",
+				"updated": "1.5"
+			},
+			"inProgress": {
+				"value": "現在方塊設定正在進行...",
+				"updated": "1.5"
+			}
+		}
+	},
+	"space": {
+		"cuboid": {
+			"toString": {
+				"value": "%LENGTH_X%*%LENGTH_Y%*%LENGTH_Z% 長方體 (%TOTAL_SIZE% 方塊) 從 (%X_1%, %Y_1%, %Z_1%) 至 (%X_2%, %Y_2%, %Z_2%)",
+				"updated": "1.4",
+				"params": [
+					"LENGTH_X",
+					"LENGTH_Y",
+					"LENGTH_Z",
+					"TOTAL_SIZE",
+					"X_1",
+					"Y_1",
+					"Z_1",
+					"X_2",
+					"Y_2",
+					"Z_2"
+				]
+			}
+		},
+		"cylinder": {
+			"toString": {
+				"value": "圓柱體的 %RADIUS% 方塊半徑從 (%X_BOTTOM%, %Y_BOTTOM%, %Z_BOTTOM%) 至 (%X_TOP%, %Y_TOP%, %Z_TOP%)",
+				"updated": "1.4",
+				"params": [
+					"X_BASE",
+					"Y_BASE",
+					"Z_BASE",
+					"X_TOP",
+					"Y_TOP",
+					"Z_TOP",
+					"RADIUS"
+				]
+			}
+		},
+		"sphere": {
+			"toString": {
+				"value": "球體的 %RADIUS% 方塊半徑中心在 (%X%, %Y%, %Z%)",
+				"updated": "1.4",
+				"params": [
+					"RADIUS",
+					"X",
+					"Y",
+					"Z"
+				]
+			}
+		},
+		"set": {
+			"value": "方塊設置在 %SPACE%",
+			"updated": "1.5",
+			"params": [
+				"SPACE"
+			]
+		}
+	},
+	"queue": {
+		"tip": {
+			"title": {
+				"value": "任務正在運行:",
+				"updated": "1.2"
+			},
+			"entry": {
+				"value": "%TASK_NAME%: %PROGRESS_PERC%% 完成",
+				"updated": "1.2",
+				"params": [
+					"TASK_NAME",
+					"PROGRESS_PERC"
+				]
+			},
+			"warnedEntry": {
+				"value": "%TASK_NAME%: %PROGRESS_PERC%% 完成 (%WARNINGS_CNT% 方塊已被安全模式)",
+				"updated": "1.3",
+				"params": [
+					"TASK_NAME",
+					"PROGRESS_PERC",
+					"WARNINGS_CNT"
+				]
+			}
+		}
+	},
+	"phrases": {
+		"topCenter": {
+			"value": "頂部中心",
+			"updated": "1.5"
+		},
+		"baseCenter": {
+			"value": "底座中心",
+			"updated": "1.5"
+		}
+	}
+}
