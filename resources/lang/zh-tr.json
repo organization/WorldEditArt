@@ -16,7 +16,7 @@
 			"updated": "1.0"
 		},
 		"comment": {
-			"value": "The major version will be bumped every time AFTER a new plugin release is created. The minor version should be bumped every commit (including merge commits) the en.json file is updated. All unused translation entries must still have the `update` property. The version is defined at meta.language.updated, and its relevant English version is defined at meta.native.updated",
+			"value": "主要的版本會在每一次新的插件釋放時會有衝突本次的版本應該會修正此提交(包括合併提交)的en.json文件會被更新。所有未使用的翻譯作品仍必須有`更新`的權力版本被定義在meta.language.updated，有關英文的版本則被定義在meta.native.updated",
 			"updated": "1.0"
 		}
 	},
@@ -58,7 +58,7 @@
 	"selection": {
 		"pos": {
 			"description": {
-				"value": "Define one of the vertex positions of your cuboid selection",
+				"value": "定義一個你選擇的長方體的頂點位置",
 				"updated": "1.4"
 			},
 			"usage": {
@@ -88,7 +88,7 @@
 		},
 		"cylPos": {
 			"description": {
-				"value": "Define one of the two base centers of your cylinder selection",
+				"value": "定義兩個基座的圓柱體的中心",
 				"updated": "1.5"
 			},
 			"usage": {
@@ -198,7 +198,7 @@
 				]
 			},
 			"warnedEntry": {
-				"value": "%TASK_NAME%: %PROGRESS_PERC%% 完成 (%WARNINGS_CNT% blocks blocked by safe mode)",
+				"value": "%TASK_NAME%: %PROGRESS_PERC%% 完成 (%WARNINGS_CNT% 方塊已被安全模式)",
 				"updated": "1.3",
 				"params": [
 					"TASK_NAME",
