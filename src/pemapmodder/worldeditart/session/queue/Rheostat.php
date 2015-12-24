@@ -30,6 +30,8 @@ class Rheostat{
 
 	/** @var Queue */
 	private $queue;
+	/** @var BlockFilter */
+	private $filter;
 	/**
 	 * In descending order, where the 0th record was the last action done,
 	 * and the last record was the first action done and is the last action to be undone.
@@ -62,11 +64,13 @@ class Rheostat{
 	 * Rheostat constructor.
 	 *
 	 * @param Queue                 $queue
+	 * @param BlockFilter           $filter
 	 * @param BufferedBlockIterator $blocks
 	 * @param string                $name
 	 */
-	public function __construct(Queue $queue, BufferedBlockIterator $blocks, $name){
+	public function __construct(Queue $queue, BlockFilter $filter, BufferedBlockIterator $blocks, $name){
 		$this->queue = $queue;
+		$this->filter = $filter;
 		$this->blockStream = $blocks;
 		$this->name = $name;
 	}
