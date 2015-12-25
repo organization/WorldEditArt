@@ -2,11 +2,11 @@
 	"meta": {
 		"language": {
 			"value": "en",
-			"updated": "1.5"
+			"updated": "1.6"
 		},
 		"native": {
 			"value": "English",
-			"updated": "1.5"
+			"updated": "1.6"
 		},
 		"authors": {
 			"value": [
@@ -119,12 +119,26 @@
 				"updated": "1.5"
 			},
 			"usage": {
-				"value": "//s <blocks separated by commas>\nCheck the user guide at http://lgpe.co/wea for advanced usage",
+				"value": "//s <target block list>\nCheck the user guide at http://lgpe.co/wea for advanced usage",
 				"updated": "1.5"
 			},
 			"inProgress": {
 				"value": "Block setting is taking place now...",
 				"updated": "1.5"
+			}
+		},
+		"replace": {
+			"description": {
+				"value": "Change certain block type(s) in your selection to other block type(s)",
+				"updated": "1.6"
+			},
+			"usage": {
+				"value": "//rep <source block types> <target block list>\nCheck the user guide at http://lgpee.co/wea for advanced usage",
+				"updated": "1.6"
+			},
+			"inProgress": {
+				"value": "Block replacing is taking place now...",
+				"updated": "1.6"
 			}
 		}
 	},
@@ -177,6 +191,13 @@
 		"set": {
 			"value": "Block setting in %SPACE%",
 			"updated": "1.5",
+			"params": [
+				"SPACE"
+			]
+		},
+		"replace": {
+			"value": "Block replacing in %SPACE%",
+			"updated": "1.6",
 			"params": [
 				"SPACE"
 			]

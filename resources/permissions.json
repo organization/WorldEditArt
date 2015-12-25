@@ -48,6 +48,10 @@
 							"set": {
 								"description": "Permission to use //set",
 								"default": "op"
+							},
+							"replace": {
+								"description": "Permission to use //replace",
+								"default": "op"
 							}
 						}
 					}

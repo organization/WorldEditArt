@@ -40,10 +40,14 @@ interface Lang{
 	const EDIT_SET_DESCRIPTION = "edit.set.description";
 	const EDIT_SET_USAGE = "edit.set.usage";
 	const EDIT_SET_IN_PROGRESS = "edit.set.inProgress";
+	const EDIT_REPLACE_DESCRIPTION = "edit.replace.description";
+	const EDIT_REPLACE_USAGE = "edit.replace.usage";
+	const EDIT_REPLACE_IN_PROGRESS = "edit.replace.inProgress";
 	const SPACE_CUBOID_TO_STRING = "space.cuboid.toString";
 	const SPACE_CYLINDER_TO_STRING = "space.cylinder.toString";
 	const SPACE_SPHERE_TO_STRING = "space.sphere.toString";
 	const SPACE_SET_BLOCKS = "space.set";
+	const SPACE_REPLACE_BLOCKS = "space.replace";
 	const QUEUE_TIP_TITLE = "queue.tip.title";
 	const QUEUE_TIP_ENTRY = "queue.tip.entry";
 	const QUEUE_TIP_WARNED_ENTRY = "queue.tip.warnedEntry";

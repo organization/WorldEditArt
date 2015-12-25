@@ -62,7 +62,7 @@ interface Cmd extends Lang{
 	/**
 	 * Executes the command.<br>
 	 * If a string is returned, it will be triggered upon {@link WorldEditSession::sendMessage}.<br>
-	 * If an int is returned and it is one of the <code>RET_***</code> constants in this interface,
+	 * If an int is returned and it is one of the <code>RET_***</code> constants in the {@link Cmd} interface,
 	 * action described in the constant's documentation will be executed.<br>
 	 * Nothing will be done if any other values of any types are returned.
 	 *

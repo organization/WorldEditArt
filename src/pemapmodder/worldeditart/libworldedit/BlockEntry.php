@@ -22,28 +22,39 @@ use pocketmine\item\ItemBlock;
 class BlockEntry{
 	/** @var Block */
 	public $block;
+	/** @var bool */
+	public $damageSensitive = false;
 	/** @var number */
 	public $weight;
 
-	public function __construct(Block $block, $weight){
+	protected function __construct(Block $block, $damageSensitive, $weight){
 		$this->block = $block;
+		$this->damageSensitive = $damageSensitive;
 		$this->weight = $weight;
 	}
 
-	public static function fromString($string){
-		$pos = strpos($string, "/");
+	public function matches(Block $block){
+		return $block->getId() === $this->block->getId() and ($this->damageSensitive or $block->getDamage() === $this->block->getDamage());
+	}
+
+	public static function fromString($string, $acceptWeightModification = true){
 		$weight = 1.0;
-		if($pos !== false){
-			$weight = (float) substr($string, 0, $pos);
-			$string = substr($string, $pos + 1);
+		if($acceptWeightModification){
+			$pos = strpos($string, "/");
+			if($pos !== false){
+				$weight = (float) substr($string, 0, $pos);
+				$string = substr($string, $pos + 1);
+			}
 		}
 		$pos = strpos($string, ":");
 		$damage = 0;
 		if($pos !== false){
 			$damage = (int) substr($string, $pos + 1);
 			$id = substr($string, 0, $pos);
+			$damageSensitive = true;
 		}else{
 			$id = $string;
+			$damageSensitive = false;
 		}
 		$block = Item::fromString($id);
 		if(!($block instanceof ItemBlock)){
@@ -51,6 +62,6 @@ class BlockEntry{
 		}
 		$block = $block->getBlock();
 		$block->setDamage($damage);
-		return new BlockEntry($block, $weight);
+		return new BlockEntry($block, $damageSensitive, $weight);
 	}
 }

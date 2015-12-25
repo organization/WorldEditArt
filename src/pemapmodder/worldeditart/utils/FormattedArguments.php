@@ -17,6 +17,7 @@ namespace pemapmodder\worldeditart\utils;
 
 class FormattedArguments{
 	public $plain = [];
+	private $plainStarted = false;
 	public $switches = [];
 	public $opts = [];
 	public $unterminated = false;
@@ -108,10 +109,15 @@ class FormattedArguments{
 	 * @return string|null
 	 */
 	public function nextPlain(){
-		next($this->plain);
+		if($this->plainStarted){
+			next($this->plain);
+		}else{
+			$this->plainStarted = true;
+		}
 		$c = current($this->plain);
 		return $c === false ? null : $c;
 	}
+
 	public function currentPlain(){
 		return current($this->plain);
 	}
