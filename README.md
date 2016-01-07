@@ -6,6 +6,7 @@ Please see [the webpage on gh-pages](//pemapmodder.github.io/WorldEditArt/guide/
 Check out the [Doxygen-generated API docs](//pemapmodder.github.io/WorldEditArt/doxygen).
 
 TODO list:
+
 - [ ] Gamma
     - [X] Doxygen setup
     - [ ] Frameworks
@@ -40,10 +41,10 @@ TODO list:
                 - [ ] //desel
                 - [X] //1, //2
             - [ ] Selection processing
-                - [ ] //set
-                - [ ] //replace
+                - [X] //set
+                - [X] //replace
                 - [ ] //test
-            - [ ] Copying
+            - [ ] Copying                  <--------------------------
                 - [ ] //copy
                 - [ ] //cut
                 - [ ] //paste

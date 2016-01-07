@@ -37,6 +37,7 @@ abstract class BaseDataProvider implements DataProvider{
 	}
 
 	protected abstract function loadZones();
+
 	public function onZonesLoadedCallback($zones){
 		$this->zones = $zones;
 	}
@@ -70,10 +71,14 @@ abstract class BaseDataProvider implements DataProvider{
 	}
 
 	public function addZone(Zone $zone){
-		$this->zones[$zone->getType()][$zone->getId()] = $zone;
 		$this->addZoneImpl($zone);
 	}
+
 	protected abstract function addZoneImpl(Zone $zone);
+
+	public function onAddedZoneCallback(Zone $zone){
+		$this->zones[$zone->getType()][$zone->getId()] = $zone;
+	}
 
 	public function removeZone(Zone $zone){
 		if(isset($this->zones[$zone->getType()][$zone->getId()])){
@@ -81,6 +86,7 @@ abstract class BaseDataProvider implements DataProvider{
 			$this->removeZoneImpl($zone);
 		}
 	}
+
 	protected abstract function removeZoneImpl(Zone $zone);
 
 	public function getMain(){
@@ -94,6 +100,7 @@ abstract class BaseDataProvider implements DataProvider{
 		$id = $this->main->getObjectPool()->store($session);
 		$this->loadSessionImpl($id);
 	}
+
 	protected abstract function loadSessionImpl($callbackId);
 
 	/**

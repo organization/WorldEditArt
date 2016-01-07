@@ -25,6 +25,9 @@ class FetchZonesListener implements QueryListener{
 		$main = $result->src->getMain();
 		/** @var MysqlDataProvider $db */
 		$db = $main->getDataProvider();
+		if(!($db instanceof MysqlDataProvider)){
+			return;
+		}
 		$zones = [];
 		foreach($result->rows as $row){
 			$zones[(int) $row["type"]][(int) $row["id"]] = (new Zone(unserialize($row["space"]), (int) $row["type"]))->setId((int) $row["id"]);

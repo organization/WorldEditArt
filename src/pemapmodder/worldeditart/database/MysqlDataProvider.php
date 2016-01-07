@@ -46,16 +46,20 @@ class MysqlDataProvider extends BaseDataProvider{
 	protected function loadZones(){
 		$this->stream->addQuery(new QueryRequest($this->getMain(), "SELECT * FROM wea_zones ORDER BY type", new FetchZonesListener));
 	}
+
 	protected function addZoneImpl(Zone $zone){
 		$this->stream->addQuery(new QueryRequest($this->getMain(), "INSERT INTO wea_zones (type, space)" .
-				"VALUES ({$zone->getType()}, {$this->esc(serialize($zone->getSpace()))})", new InsertZoneListener($zone)));
+			"VALUES ({$zone->getType()}, {$this->esc(serialize($zone->getSpace()))})", new InsertZoneListener($this, $zone)));
 	}
+
 	protected function removeZoneImpl(Zone $zone){
 		$this->stream->addQuery(new QueryRequest($this->getMain(), "DELETE FROM wea_zones WHERE id={$zone->getId()}"));
 	}
+
 	protected function loadSessionImpl($callbackId){
 		// TODO: Implement loadSessionImpl() method.
 	}
+
 	public function saveSession(WorldEditSession $session){
 		// TODO: Implement saveSession() method.
 	}

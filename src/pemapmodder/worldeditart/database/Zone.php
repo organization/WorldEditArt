@@ -46,10 +46,19 @@ class Zone{
 		return $this->type;
 	}
 
+	public function hasId(){
+		return isset($this->id);
+	}
+
 	public function getId(){
 		return $this->id;
 	}
 
+	/**
+	 * @param int $id
+	 *
+	 * @return Zone
+	 */
 	public function setId($id){
 		if(isset($this->id)){
 			throw new \RuntimeException("ID is already set");

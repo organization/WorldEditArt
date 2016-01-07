@@ -21,11 +21,15 @@ use pemapmodder\worldeditart\database\stream\QueryResult;
 class InsertZoneListener implements QueryListener{
 	/** @var Zone */
 	private $zone;
+	/** @var MysqlDataProvider */
+	private $dataProvider;
 
-	public function __construct(Zone $zone){
+	public function __construct(MysqlDataProvider $dataProvider, Zone $zone){
 		$this->zone = $zone;
+		$this->dataProvider = $dataProvider;
 	}
 	public function onResult(QueryResult $result){
 		$this->zone->setId($result->insertId);
+		$this->dataProvider->onAddedZoneCallback($this->zone);
 	}
 }

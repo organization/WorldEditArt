@@ -16,6 +16,7 @@
 namespace pemapmodder\worldeditart\session;
 
 use pemapmodder\worldeditart\libworldedit\space\Space;
+use pemapmodder\worldeditart\session\clips\Clipboard;
 use pemapmodder\worldeditart\session\queue\Queue;
 use pemapmodder\worldeditart\WorldEditArt;
 use pocketmine\level\Location;
@@ -36,16 +37,18 @@ abstract class WorldEditSession{
 	private $selections = [];
 	/** @var Bookmark[] */
 	private $bookmarks = [];
+	/** @var Clipboard */
+	private $clipboard;
 	/** @var Queue */
 	private $queue;
 
 	public function __construct(){
-		// TODO implement data fetching
-		$config = new UserConfiguration;
-		$config->lang = "en";
-		$config->safeModeOn = false;
-		$config->sudoModeRequired = false;
-		$this->init($config);
+		$this->getMain()->getDataProvider()->loadSession($this);
+//		$config = new UserConfiguration;
+//		$config->lang = "en";
+//		$config->safeModeOn = false;
+//		$config->sudoModeRequired = false;
+//		$this->init($config);
 	}
 
 	/**
@@ -294,5 +297,12 @@ abstract class WorldEditSession{
 			return $phrase->getValue();
 		}
 		return $phrase->format($params);
+	}
+
+	/**
+	 * @return Clipboard
+	 */
+	public function getClipboard(){
+		return $this->clipboard;
 	}
 }

@@ -20,9 +20,6 @@ use pemapmodder\worldeditart\WorldEditArt;
 use pocketmine\level\Position;
 
 interface DataProvider{
-	const ZONE_NONE = 0;
-	const ZONE_TYPE_UNDER_CONSTRUCTION = 1;
-
 	/**
 	 * Loads data for the given {@link WorldEditSession}, synchronously or asynchronously,
 	 * which will subsequently trigger {@link WorldEditSession#init $session->init()} when
