@@ -51,9 +51,10 @@ var switchSpoiler = function(id){
 	return false;
 };
 
-function Tree(name, id){
+function Tree(name, id, depthClass){
 	this.name = name;
 	this.id = id;
+	this.depthClass = depthClass;
 	this.children = {};
 }
 Tree.prototype.addChild = function(child){
@@ -61,6 +62,7 @@ Tree.prototype.addChild = function(child){
 };
 Tree.prototype.toOlJQuery = function(){
 	var out = $('<li><a class="branch" data-target="' + this.id + '" href="#' + this.id + '">' + this.name + '</a></li>');
+	out.addClass(this.depthClass);
 	var $ol = $("<ol></ol>");
 	for(var name in this.children){
 		if(this.children.hasOwnProperty(name)){
@@ -102,8 +104,9 @@ $(document).ready(function(){
 		var parents = $this.parents(".tree");
 		var anchorId = "anchor-auto-" + (nextAnchorId++);
 		$this.prepend('<a name="' + anchorId + '"></a>');
+		var clazz = "depth-" + parents.length;
 		if(parents.length == 0){
-			var tmpTree = new Tree(name, anchorId);
+			var tmpTree = new Tree(name, anchorId, clazz);
 			trees[name] = tmpTree;
 			if(this.id === "mainTree"){
 				tree = tmpTree;
@@ -112,7 +115,7 @@ $(document).ready(function(){
 			var $parent = $(parents[0]);
 			var parentTree = trees[$parent.attr("data-name")];
 			var t;
-			parentTree.addChild(t = new Tree(name, anchorId));
+			parentTree.addChild(t = new Tree(name, anchorId, clazz));
 			trees[name] = t;
 		}
 		var depth = parents.length;

@@ -1,5 +1,6 @@
 var dir_fb5a9dc6fbd8caf21b2a0be3766b884a =
 [
+    [ "clips", "dir_cbbde65ecff5ec0b738ec6521d97f089.html", "dir_cbbde65ecff5ec0b738ec6521d97f089" ],
     [ "queue", "dir_e75fb90ad09f9c9e69c811efb68da203.html", "dir_e75fb90ad09f9c9e69c811efb68da203" ],
     [ "Bookmark.php", "de/dfa/Bookmark_8php.html", [
       [ "Bookmark", "dd/d4e/classpemapmodder_1_1worldeditart_1_1session_1_1Bookmark.html", "dd/d4e/classpemapmodder_1_1worldeditart_1_1session_1_1Bookmark" ]

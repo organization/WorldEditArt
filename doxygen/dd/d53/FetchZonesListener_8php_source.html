@@ -49,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="../../namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="../../annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="../../files.html"><span>Files</span></a></li>
@@ -135,17 +136,21 @@ $(document).ready(function(){initNavTree('dd/d53/FetchZonesListener_8php_source.
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../de/d64/interfacepemapmodder_1_1worldeditart_1_1database_1_1stream_1_1QueryListener.html#abfb9e54331c7b48ada61fc263babb2da">onResult</a>(<a class="code" href="../../d0/d73/classpemapmodder_1_1worldeditart_1_1database_1_1stream_1_1QueryResult.html">QueryResult</a> $result){</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        $main = $result-&gt;src-&gt;getMain();</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        $db = $main-&gt;getDataProvider();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        $zones = [];</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">foreach</span>($result-&gt;rows as $row){</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            $zones[(int) $row[<span class="stringliteral">&quot;type&quot;</span>]][(<span class="keywordtype">int</span>) $row[<span class="stringliteral">&quot;id&quot;</span>]] = (<span class="keyword">new</span> <a class="code" href="../../d3/dc8/classpemapmodder_1_1worldeditart_1_1database_1_1Zone.html">Zone</a>(unserialize($row[<span class="stringliteral">&quot;space&quot;</span>]), (<span class="keywordtype">int</span>) $row[<span class="stringliteral">&quot;type&quot;</span>]))-&gt;setId((<span class="keywordtype">int</span>) $row[<span class="stringliteral">&quot;id&quot;</span>]);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        $db-&gt;onZonesLoadedCallback($zones);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">if</span>(!($db instanceof <a class="code" href="../../db/dc5/classpemapmodder_1_1worldeditart_1_1database_1_1MysqlDataProvider.html">MysqlDataProvider</a>)){</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        $zones = [];</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">foreach</span>($result-&gt;rows as $row){</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            $zones[(int) $row[<span class="stringliteral">&quot;type&quot;</span>]][(<span class="keywordtype">int</span>) $row[<span class="stringliteral">&quot;id&quot;</span>]] = (<span class="keyword">new</span> <a class="code" href="../../d3/dc8/classpemapmodder_1_1worldeditart_1_1database_1_1Zone.html">Zone</a>(unserialize($row[<span class="stringliteral">&quot;space&quot;</span>]), (<span class="keywordtype">int</span>) $row[<span class="stringliteral">&quot;type&quot;</span>]))-&gt;setId((<span class="keywordtype">int</span>) $row[<span class="stringliteral">&quot;id&quot;</span>]);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        $db-&gt;onZonesLoadedCallback($zones);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 <div class="ttc" id="namespacepemapmodder_1_1worldeditart_1_1database_1_1stream_1_1QueryResult_html"><div class="ttname"><a href="../../dd/ddb/namespacepemapmodder_1_1worldeditart_1_1database_1_1stream_1_1QueryResult.html">QueryResult</a></div></div>
 <div class="ttc" id="classpemapmodder_1_1worldeditart_1_1database_1_1stream_1_1QueryResult_html"><div class="ttname"><a href="../../d0/d73/classpemapmodder_1_1worldeditart_1_1database_1_1stream_1_1QueryResult.html">pemapmodder\worldeditart\database\stream\QueryResult</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dd7/QueryResult_8php_source.html#l00024">QueryResult.php:24</a></div></div>
 <div class="ttc" id="interfacepemapmodder_1_1worldeditart_1_1database_1_1stream_1_1QueryListener_html_abfb9e54331c7b48ada61fc263babb2da"><div class="ttname"><a href="../../de/d64/interfacepemapmodder_1_1worldeditart_1_1database_1_1stream_1_1QueryListener.html#abfb9e54331c7b48ada61fc263babb2da">pemapmodder\worldeditart\database\stream\QueryListener\onResult</a></div><div class="ttdeci">onResult(QueryResult $result)</div></div>
 <div class="ttc" id="namespacepemapmodder_1_1worldeditart_1_1database_1_1Zone_html"><div class="ttname"><a href="../../d7/d16/namespacepemapmodder_1_1worldeditart_1_1database_1_1Zone.html">Zone</a></div></div>
+<div class="ttc" id="classpemapmodder_1_1worldeditart_1_1database_1_1MysqlDataProvider_html"><div class="ttname"><a href="../../db/dc5/classpemapmodder_1_1worldeditart_1_1database_1_1MysqlDataProvider.html">pemapmodder\worldeditart\database\MysqlDataProvider</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/dbd/MysqlDataProvider_8php_source.html#l00025">MysqlDataProvider.php:25</a></div></div>
 <div class="ttc" id="namespacepemapmodder_1_1worldeditart_1_1database_1_1MysqlDataProvider_html"><div class="ttname"><a href="../../d0/dff/namespacepemapmodder_1_1worldeditart_1_1database_1_1MysqlDataProvider.html">MysqlDataProvider</a></div></div>
 <div class="ttc" id="namespacepemapmodder_1_1worldeditart_1_1database_1_1stream_1_1QueryListener_html"><div class="ttname"><a href="../../db/d91/namespacepemapmodder_1_1worldeditart_1_1database_1_1stream_1_1QueryListener.html">QueryListener</a></div></div>
 <div class="ttc" id="namespacepemapmodder_1_1worldeditart_1_1database_1_1listener_html"><div class="ttname"><a href="../../df/d9c/namespacepemapmodder_1_1worldeditart_1_1database_1_1listener.html">pemapmodder\worldeditart\database\listener</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d53/FetchZonesListener_8php_source.html#l00016">FetchZonesListener.php:16</a></div></div>

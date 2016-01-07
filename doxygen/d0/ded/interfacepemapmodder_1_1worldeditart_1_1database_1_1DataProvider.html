@@ -49,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="../../namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="../../annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="../../files.html"><span>Files</span></a></li>
@@ -109,8 +110,7 @@ $(document).ready(function(){initNavTree('d0/ded/interfacepemapmodder_1_1worlded
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Data Fields</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">DataProvider Interface Reference</div>  </div>
 </div><!--header-->
@@ -121,8 +121,9 @@ Inheritance diagram for DataProvider:</div>
  <div class="center">
   <img src="../../d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider.png" usemap="#DataProvider_map" alt=""/>
   <map id="DataProvider_map" name="DataProvider_map">
-<area href="../../d2/d70/classpemapmodder_1_1worldeditart_1_1database_1_1BaseDataProvider.html" alt="BaseDataProvider" shape="rect" coords="0,56,120,80"/>
-<area href="../../db/dc5/classpemapmodder_1_1worldeditart_1_1database_1_1MysqlDataProvider.html" alt="MysqlDataProvider" shape="rect" coords="0,112,120,136"/>
+<area href="../../d2/d70/classpemapmodder_1_1worldeditart_1_1database_1_1BaseDataProvider.html" alt="BaseDataProvider" shape="rect" coords="65,56,185,80"/>
+<area href="../../df/d67/classpemapmodder_1_1worldeditart_1_1database_1_1FileDataProvider.html" alt="FileDataProvider" shape="rect" coords="0,112,120,136"/>
+<area href="../../db/dc5/classpemapmodder_1_1worldeditart_1_1database_1_1MysqlDataProvider.html" alt="MysqlDataProvider" shape="rect" coords="130,112,250,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -142,13 +143,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a67755406c09db93b8f92b057b101d148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60d42f5372a99853dad902b1f1f62755"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider.html#a60d42f5372a99853dad902b1f1f62755">getMain</a> ()</td></tr>
 <tr class="separator:a60d42f5372a99853dad902b1f1f62755"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a5cfd2058e85eb7dab546db387d5324ab"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider.html#a5cfd2058e85eb7dab546db387d5324ab">ZONE_NONE</a> = 0</td></tr>
-<tr class="separator:a5cfd2058e85eb7dab546db387d5324ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4649bc25823add0f985b391faf1b4dfa"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider.html#a4649bc25823add0f985b391faf1b4dfa">ZONE_TYPE_UNDER_CONSTRUCTION</a> = 1</td></tr>
-<tr class="separator:a4649bc25823add0f985b391faf1b4dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -322,36 +316,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="../../db/dc5/classpemapmodder_1_1worldeditart_1_1database_1_1MysqlDataProvider.html#a897d131c8ee35fe2e1e35ac079e4af8c">MysqlDataProvider</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="a5cfd2058e85eb7dab546db387d5324ab"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const ZONE_NONE = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../d3/d71/DataProvider_8php_source.html#l00023">23</a> of file <a class="el" href="../../d3/d71/DataProvider_8php_source.html">DataProvider.php</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4649bc25823add0f985b391faf1b4dfa"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const ZONE_TYPE_UNDER_CONSTRUCTION = 1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../d3/d71/DataProvider_8php_source.html#l00024">24</a> of file <a class="el" href="../../d3/d71/DataProvider_8php_source.html">DataProvider.php</a>.</p>
+<p>Implemented in <a class="el" href="../../df/d67/classpemapmodder_1_1worldeditart_1_1database_1_1FileDataProvider.html#a897d131c8ee35fe2e1e35ac079e4af8c">FileDataProvider</a>, and <a class="el" href="../../db/dc5/classpemapmodder_1_1worldeditart_1_1database_1_1MysqlDataProvider.html#a897d131c8ee35fe2e1e35ac079e4af8c">MysqlDataProvider</a>.</p>
 
 </div>
 </div>

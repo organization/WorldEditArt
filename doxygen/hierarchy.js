@@ -3,6 +3,10 @@ var hierarchy =
     [ "AsyncQueryResult", "de/d4b/classpemapmodder_1_1worldeditart_1_1database_1_1async_1_1AsyncQueryResult.html", null ],
     [ "BlockCollection", "d4/dd4/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1BlockCollection.html", null ],
     [ "BlockEntry", "d5/d3b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1BlockEntry.html", null ],
+    [ "BlockFilter", "db/db2/interfacepemapmodder_1_1worldeditart_1_1session_1_1queue_1_1BlockFilter.html", [
+      [ "AcceptAllBlockFilter", "d9/dbf/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1AcceptAllBlockFilter.html", null ],
+      [ "ArrayBackedBlockFilter", "de/d22/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1ArrayBackedBlockFilter.html", null ]
+    ] ],
     [ "BufferedIterator", "d3/d80/classpemapmodder_1_1worldeditart_1_1utils_1_1BufferedIterator.html", [
       [ "BufferedBlockIterator", "d4/dbb/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1BufferedBlockIterator.html", [
         [ "CuboidBlockIterator", "d4/db4/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cuboid_1_1CuboidBlockIterator.html", [
@@ -17,8 +21,13 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "ByteBufferReader", "d0/d06/classpemapmodder_1_1worldeditart_1_1utils_1_1ByteBufferReader.html", null ],
+    [ "ByteBufferWriter", "d8/d26/classpemapmodder_1_1worldeditart_1_1utils_1_1ByteBufferWriter.html", null ],
+    [ "Clip", "d7/d6e/classpemapmodder_1_1worldeditart_1_1session_1_1clips_1_1Clip.html", null ],
+    [ "Clipboard", "de/d01/classpemapmodder_1_1worldeditart_1_1session_1_1clips_1_1Clipboard.html", null ],
     [ "DataProvider", "d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider.html", [
       [ "BaseDataProvider", "d2/d70/classpemapmodder_1_1worldeditart_1_1database_1_1BaseDataProvider.html", [
+        [ "FileDataProvider", "df/d67/classpemapmodder_1_1worldeditart_1_1database_1_1FileDataProvider.html", null ],
         [ "MysqlDataProvider", "db/dc5/classpemapmodder_1_1worldeditart_1_1database_1_1MysqlDataProvider.html", null ]
       ] ]
     ] ],
@@ -26,6 +35,7 @@ var hierarchy =
     [ "Fridge", "d0/d63/classpemapmodder_1_1worldeditart_1_1utils_1_1Fridge.html", null ],
     [ "Lang", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html", [
       [ "Cmd", "da/da0/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1Cmd.html", [
+        [ "ReplaceCmd", "d5/d31/classpemapmodder_1_1worldeditart_1_1cmd_1_1edit_1_1ReplaceCmd.html", null ],
         [ "SetCmd", "d1/d4c/classpemapmodder_1_1worldeditart_1_1cmd_1_1edit_1_1SetCmd.html", null ],
         [ "CylinderPosCmd", "d0/d54/classpemapmodder_1_1worldeditart_1_1cmd_1_1selection_1_1CylinderPosCmd.html", null ],
         [ "PosCmd", "d9/d84/classpemapmodder_1_1worldeditart_1_1cmd_1_1selection_1_1PosCmd.html", null ],

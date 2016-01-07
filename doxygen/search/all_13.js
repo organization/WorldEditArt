@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['savesession',['saveSession',['../d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider.html#a897d131c8ee35fe2e1e35ac079e4af8c',1,'pemapmodder\worldeditart\database\DataProvider\saveSession()'],['../db/dc5/classpemapmodder_1_1worldeditart_1_1database_1_1MysqlDataProvider.html#a897d131c8ee35fe2e1e35ac079e4af8c',1,'pemapmodder\worldeditart\database\MysqlDataProvider\saveSession()']]],
+  ['savesession',['saveSession',['../d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider.html#a897d131c8ee35fe2e1e35ac079e4af8c',1,'pemapmodder\worldeditart\database\DataProvider\saveSession()'],['../df/d67/classpemapmodder_1_1worldeditart_1_1database_1_1FileDataProvider.html#a897d131c8ee35fe2e1e35ac079e4af8c',1,'pemapmodder\worldeditart\database\FileDataProvider\saveSession()'],['../db/dc5/classpemapmodder_1_1worldeditart_1_1database_1_1MysqlDataProvider.html#a897d131c8ee35fe2e1e35ac079e4af8c',1,'pemapmodder\worldeditart\database\MysqlDataProvider\saveSession()']]],
   ['selection_5fcylinder_5fpos_5fdescription',['SELECTION_CYLINDER_POS_DESCRIPTION',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#ab3f136fe6ab1e528f29c7916a2832dfb',1,'pemapmodder::worldeditart::lang::Lang']]],
   ['selection_5fcylinder_5fpos_5fsuccess',['SELECTION_CYLINDER_POS_SUCCESS',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#aa28b2a2e24400378fd440ffbdcb33755',1,'pemapmodder::worldeditart::lang::Lang']]],
   ['selection_5fcylinder_5fpos_5fusage_5f1',['SELECTION_CYLINDER_POS_USAGE_1',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a27fd690221b7dca52f613bcac8e1674a',1,'pemapmodder::worldeditart::lang::Lang']]],
@@ -32,6 +32,7 @@ var searchData=
   ['space_2ephp',['Space.php',['../d2/dce/Space_8php.html',1,'']]],
   ['space_5fcuboid_5fto_5fstring',['SPACE_CUBOID_TO_STRING',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#aba7179801ed6c0a7f59106ba9306285c',1,'pemapmodder::worldeditart::lang::Lang']]],
   ['space_5fcylinder_5fto_5fstring',['SPACE_CYLINDER_TO_STRING',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a5a1fd3cdae0dcec82de65b28ee45009a',1,'pemapmodder::worldeditart::lang::Lang']]],
+  ['space_5freplace_5fblocks',['SPACE_REPLACE_BLOCKS',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#af84670d986baa477c273b06cc446474d',1,'pemapmodder::worldeditart::lang::Lang']]],
   ['space_5fset_5fblocks',['SPACE_SET_BLOCKS',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#aa6c9ce2af9624945a74e768bf63964fb',1,'pemapmodder::worldeditart::lang::Lang']]],
   ['space_5fsphere_5fto_5fstring',['SPACE_SPHERE_TO_STRING',['../db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a76eb766148fa91e034015503428c4f1d',1,'pemapmodder::worldeditart::lang::Lang']]],
   ['sphereallblocksiterator',['SphereAllBlocksIterator',['../d9/dd6/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1sphere_1_1SphereAllBlocksIterator.html',1,'pemapmodder::worldeditart::libworldedit::space::iterator::sphere']]],

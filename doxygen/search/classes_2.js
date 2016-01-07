@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['clip',['Clip',['../d7/d6e/classpemapmodder_1_1worldeditart_1_1session_1_1clips_1_1Clip.html',1,'pemapmodder::worldeditart::session::clips']]],
+  ['clipboard',['Clipboard',['../de/d01/classpemapmodder_1_1worldeditart_1_1session_1_1clips_1_1Clipboard.html',1,'pemapmodder::worldeditart::session::clips']]],
   ['cmd',['Cmd',['../da/da0/interfacepemapmodder_1_1worldeditart_1_1cmd_1_1Cmd.html',1,'pemapmodder::worldeditart::cmd']]],
   ['commandcontrolledsession',['CommandControlledSession',['../d2/d7b/classpemapmodder_1_1worldeditart_1_1session_1_1CommandControlledSession.html',1,'pemapmodder::worldeditart::session']]],
   ['cuboidallblocksiterator',['CuboidAllBlocksIterator',['../d7/d32/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cuboid_1_1CuboidAllBlocksIterator.html',1,'pemapmodder::worldeditart::libworldedit::space::iterator::cuboid']]],

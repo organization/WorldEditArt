@@ -49,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="../../namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="../../annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="../../files.html"><span>Files</span></a></li>
@@ -111,7 +112,8 @@ $(document).ready(function(){initNavTree('d5/d3b/classpemapmodder_1_1worldeditar
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-attribs">Data Fields</a>  </div>
+<a href="#pub-attribs">Data Fields</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">BlockEntry Class Reference</div>  </div>
 </div><!--header-->
@@ -119,34 +121,50 @@ $(document).ready(function(){initNavTree('d5/d3b/classpemapmodder_1_1worldeditar
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a11ffaae2c99c12285359608479ab8cdf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1BlockEntry.html#a11ffaae2c99c12285359608479ab8cdf">__construct</a> (Block $block, $weight)</td></tr>
-<tr class="separator:a11ffaae2c99c12285359608479ab8cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9be765b772a5ed7ad71b4edaa6d6ca42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1BlockEntry.html#a9be765b772a5ed7ad71b4edaa6d6ca42">matches</a> (Block $block)</td></tr>
+<tr class="separator:a9be765b772a5ed7ad71b4edaa6d6ca42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8712a32f64d2a3df634138bd3e958193"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1BlockEntry.html#a8712a32f64d2a3df634138bd3e958193">fromString</a> ($string)</td></tr>
-<tr class="separator:a8712a32f64d2a3df634138bd3e958193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeed11f9fef353642d42b2236e260a2c8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1BlockEntry.html#aeed11f9fef353642d42b2236e260a2c8">fromString</a> ($string, $acceptWeightModification=true)</td></tr>
+<tr class="separator:aeed11f9fef353642d42b2236e260a2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a7f8f86b37cd48a37bf0df573d8512d11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1BlockEntry.html#a7f8f86b37cd48a37bf0df573d8512d11">$block</a></td></tr>
 <tr class="separator:a7f8f86b37cd48a37bf0df573d8512d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a041d4b518b7a31ddba0284d391a559"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1BlockEntry.html#a1a041d4b518b7a31ddba0284d391a559">$damageSensitive</a> = false</td></tr>
+<tr class="separator:a1a041d4b518b7a31ddba0284d391a559"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee5b436bc1b075512126d3577e6db7d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1BlockEntry.html#aee5b436bc1b075512126d3577e6db7d3">$weight</a></td></tr>
 <tr class="separator:aee5b436bc1b075512126d3577e6db7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a8d97e22794079e6b92ef1e3529e33866"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1BlockEntry.html#a8d97e22794079e6b92ef1e3529e33866">__construct</a> (Block $block, $damageSensitive, $weight)</td></tr>
+<tr class="separator:a8d97e22794079e6b92ef1e3529e33866"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="../../dd/dff/BlockEntry_8php_source.html#l00022">22</a> of file <a class="el" href="../../dd/dff/BlockEntry_8php_source.html">BlockEntry.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a11ffaae2c99c12285359608479ab8cdf"></a>
+<a class="anchor" id="a8d97e22794079e6b92ef1e3529e33866"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">__construct </td>
           <td>(</td>
           <td class="paramtype">Block&#160;</td>
           <td class="paramname"><em>$block</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$damageSensitive</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -160,14 +178,19 @@ Data Fields</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/dff/BlockEntry_8php_source.html#l00028">28</a> of file <a class="el" href="../../dd/dff/BlockEntry_8php_source.html">BlockEntry.php</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dff/BlockEntry_8php_source.html#l00030">30</a> of file <a class="el" href="../../dd/dff/BlockEntry_8php_source.html">BlockEntry.php</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a8712a32f64d2a3df634138bd3e958193"></a>
+<a class="anchor" id="aeed11f9fef353642d42b2236e260a2c8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -178,8 +201,18 @@ Data Fields</h2></td></tr>
           <td class="memname">static fromString </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$string</em></td><td>)</td>
+          <td class="paramname"><em>$string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$acceptWeightModification</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -189,7 +222,25 @@ Data Fields</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/dff/BlockEntry_8php_source.html#l00033">33</a> of file <a class="el" href="../../dd/dff/BlockEntry_8php_source.html">BlockEntry.php</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dff/BlockEntry_8php_source.html#l00040">40</a> of file <a class="el" href="../../dd/dff/BlockEntry_8php_source.html">BlockEntry.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9be765b772a5ed7ad71b4edaa6d6ca42"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">matches </td>
+          <td>(</td>
+          <td class="paramtype">Block&#160;</td>
+          <td class="paramname"><em>$block</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../dd/dff/BlockEntry_8php_source.html#l00036">36</a> of file <a class="el" href="../../dd/dff/BlockEntry_8php_source.html">BlockEntry.php</a>.</p>
 
 </div>
 </div>
@@ -208,6 +259,20 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a1a041d4b518b7a31ddba0284d391a559"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$damageSensitive = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../dd/dff/BlockEntry_8php_source.html#l00026">26</a> of file <a class="el" href="../../dd/dff/BlockEntry_8php_source.html">BlockEntry.php</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aee5b436bc1b075512126d3577e6db7d3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -218,7 +283,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/dff/BlockEntry_8php_source.html#l00026">26</a> of file <a class="el" href="../../dd/dff/BlockEntry_8php_source.html">BlockEntry.php</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dff/BlockEntry_8php_source.html#l00028">28</a> of file <a class="el" href="../../dd/dff/BlockEntry_8php_source.html">BlockEntry.php</a>.</p>
 
 </div>
 </div>

@@ -49,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -97,8 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_r"><span>r</span></a></li>
       <li><a href="#index_s"><span>s</span></a></li>
       <li><a href="#index_t"><span>t</span></a></li>
-      <li><a href="#index_v"><span>v</span></a></li>
-      <li class="current"><a href="#index_z"><span>z</span></a></li>
+      <li class="current"><a href="#index_v"><span>v</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -143,6 +143,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>$block
 : <a class="el" href="d5/d3b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1BlockEntry.html#a7f8f86b37cd48a37bf0df573d8512d11">BlockEntry</a>
 </li>
+<li>$buffer
+: <a class="el" href="d8/d26/classpemapmodder_1_1worldeditart_1_1utils_1_1ByteBufferWriter.html#af1862006a19e84e552f66189adc792ae">ByteBufferWriter</a>
+</li>
 <li>$closed
 : <a class="el" href="d4/d13/classpemapmodder_1_1worldeditart_1_1session_1_1WorldEditSession.html#a520c672fe420e710c7f3b3a3abf76347">WorldEditSession</a>
 </li>
@@ -150,6 +153,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="d4/db4/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cuboid_1_1CuboidBlockIterator.html#a5ea4ac3c550bb7e04d46317b30f065d0">CuboidBlockIterator</a>
 , <a class="el" href="d7/d4c/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cylinder_1_1CylinderBlockIterator.html#a5ea4ac3c550bb7e04d46317b30f065d0">CylinderBlockIterator</a>
 , <a class="el" href="de/d21/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1sphere_1_1SphereBlockIterator.html#a5ea4ac3c550bb7e04d46317b30f065d0">SphereBlockIterator</a>
+</li>
+<li>$damageSensitive
+: <a class="el" href="d5/d3b/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1BlockEntry.html#a1a041d4b518b7a31ddba0284d391a559">BlockEntry</a>
 </li>
 <li>$error
 : <a class="el" href="de/d4b/classpemapmodder_1_1worldeditart_1_1database_1_1async_1_1AsyncQueryResult.html#aeba2ab722cedda53dbb7ec1a59f45550">AsyncQueryResult</a>
@@ -279,6 +285,15 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 
 
 <h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>EDIT_REPLACE_DESCRIPTION
+: <a class="el" href="db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a024e72a42b9c9429d4575c419f763260">Lang</a>
+</li>
+<li>EDIT_REPLACE_IN_PROGRESS
+: <a class="el" href="db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a5b12ca6aea287e6488efc86630ae11bf">Lang</a>
+</li>
+<li>EDIT_REPLACE_USAGE
+: <a class="el" href="db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#aca5fd014f800f7c6fdeb855056e21785">Lang</a>
+</li>
 <li>EDIT_SET_DESCRIPTION
 : <a class="el" href="db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#abb76f2336c777cdca40e965a53ecadfe">Lang</a>
 </li>
@@ -395,6 +410,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>SPACE_CYLINDER_TO_STRING
 : <a class="el" href="db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a5a1fd3cdae0dcec82de65b28ee45009a">Lang</a>
 </li>
+<li>SPACE_REPLACE_BLOCKS
+: <a class="el" href="db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#af84670d986baa477c273b06cc446474d">Lang</a>
+</li>
 <li>SPACE_SET_BLOCKS
 : <a class="el" href="db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#aa6c9ce2af9624945a74e768bf63964fb">Lang</a>
 </li>
@@ -442,16 +460,6 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </li>
 <li>VERSION_USAGE
 : <a class="el" href="db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#add2da98c8298da2881c44f7bd6ee7a32">Lang</a>
-</li>
-</ul>
-
-
-<h3><a class="anchor" id="index_z"></a>- z -</h3><ul>
-<li>ZONE_NONE
-: <a class="el" href="d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider.html#a5cfd2058e85eb7dab546db387d5324ab">DataProvider</a>
-</li>
-<li>ZONE_TYPE_UNDER_CONSTRUCTION
-: <a class="el" href="d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider.html#a4649bc25823add0f985b391faf1b4dfa">DataProvider</a>
 </li>
 </ul>
 </div><!-- contents -->

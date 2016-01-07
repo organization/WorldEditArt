@@ -49,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="../../namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="../../annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="../../files.html"><span>Files</span></a></li>
@@ -118,8 +119,8 @@ $(document).ready(function(){initNavTree('d3/d11/classpemapmodder_1_1worldeditar
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afeba9088a20d7a60205ad7ce7a8784f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d11/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Rheostat.html#afeba9088a20d7a60205ad7ce7a8784f1">__construct</a> (<a class="el" href="../../d4/d9a/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Queue.html">Queue</a> $queue, <a class="el" href="../../d4/dbb/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1BufferedBlockIterator.html">BufferedBlockIterator</a> $blocks, $<a class="el" href="../../d3/d11/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Rheostat.html#a4b516aaa5fa38da4fed24ab6001627e2">name</a>)</td></tr>
-<tr class="separator:afeba9088a20d7a60205ad7ce7a8784f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8498eae36af7a9e59f0dbd1b4d2499de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d11/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Rheostat.html#a8498eae36af7a9e59f0dbd1b4d2499de">__construct</a> (<a class="el" href="../../d4/d9a/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Queue.html">Queue</a> $queue, <a class="el" href="../../db/db2/interfacepemapmodder_1_1worldeditart_1_1session_1_1queue_1_1BlockFilter.html">BlockFilter</a> $filter, <a class="el" href="../../d4/dbb/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1BufferedBlockIterator.html">BufferedBlockIterator</a> $blocks, $<a class="el" href="../../d3/d11/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Rheostat.html#a4b516aaa5fa38da4fed24ab6001627e2">name</a>)</td></tr>
+<tr class="separator:a8498eae36af7a9e59f0dbd1b4d2499de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79ffb06049f5d555b96dc4b4ef75f0d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d11/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Rheostat.html#a79ffb06049f5d555b96dc4b4ef75f0d4">slide</a> ()</td></tr>
 <tr class="separator:a79ffb06049f5d555b96dc4b4ef75f0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b516aaa5fa38da4fed24ab6001627e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d11/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Rheostat.html#a4b516aaa5fa38da4fed24ab6001627e2">name</a> ()</td></tr>
@@ -154,7 +155,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d9/d4f/Rheostat_8php_source.html#l00027">27</a> of file <a class="el" href="../../d9/d4f/Rheostat_8php_source.html">Rheostat.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="afeba9088a20d7a60205ad7ce7a8784f1"></a>
+<a class="anchor" id="a8498eae36af7a9e59f0dbd1b4d2499de"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -163,6 +164,12 @@ Data Fields</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d4/d9a/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Queue.html">Queue</a>&#160;</td>
           <td class="paramname"><em>$queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/db2/interfacepemapmodder_1_1worldeditart_1_1session_1_1queue_1_1BlockFilter.html">BlockFilter</a>&#160;</td>
+          <td class="paramname"><em>$filter</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -187,13 +194,14 @@ Data Fields</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../d4/d9a/classpemapmodder_1_1worldeditart_1_1session_1_1queue_1_1Queue.html">Queue</a></td><td class="paramname">$queue</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../db/db2/interfacepemapmodder_1_1worldeditart_1_1session_1_1queue_1_1BlockFilter.html">BlockFilter</a></td><td class="paramname">$filter</td><td></td></tr>
     <tr><td class="paramtype">BufferedBlockIterator</td><td class="paramname">$blocks</td><td></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$name</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d9/d4f/Rheostat_8php_source.html#l00068">68</a> of file <a class="el" href="../../d9/d4f/Rheostat_8php_source.html">Rheostat.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d4f/Rheostat_8php_source.html#l00071">71</a> of file <a class="el" href="../../d9/d4f/Rheostat_8php_source.html">Rheostat.php</a>.</p>
 
 </div>
 </div>
@@ -211,7 +219,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/d4f/Rheostat_8php_source.html#l00141">141</a> of file <a class="el" href="../../d9/d4f/Rheostat_8php_source.html">Rheostat.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d4f/Rheostat_8php_source.html#l00145">145</a> of file <a class="el" href="../../d9/d4f/Rheostat_8php_source.html">Rheostat.php</a>.</p>
 
 </div>
 </div>
@@ -228,7 +236,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/d4f/Rheostat_8php_source.html#l00128">128</a> of file <a class="el" href="../../d9/d4f/Rheostat_8php_source.html">Rheostat.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d4f/Rheostat_8php_source.html#l00132">132</a> of file <a class="el" href="../../d9/d4f/Rheostat_8php_source.html">Rheostat.php</a>.</p>
 
 </div>
 </div>
@@ -246,7 +254,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d4f/Rheostat_8php_source.html#l00137">137</a> of file <a class="el" href="../../d9/d4f/Rheostat_8php_source.html">Rheostat.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d4f/Rheostat_8php_source.html#l00141">141</a> of file <a class="el" href="../../d9/d4f/Rheostat_8php_source.html">Rheostat.php</a>.</p>
 
 </div>
 </div>
@@ -263,7 +271,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/d4f/Rheostat_8php_source.html#l00149">149</a> of file <a class="el" href="../../d9/d4f/Rheostat_8php_source.html">Rheostat.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d4f/Rheostat_8php_source.html#l00153">153</a> of file <a class="el" href="../../d9/d4f/Rheostat_8php_source.html">Rheostat.php</a>.</p>
 
 </div>
 </div>
@@ -280,7 +288,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/d4f/Rheostat_8php_source.html#l00131">131</a> of file <a class="el" href="../../d9/d4f/Rheostat_8php_source.html">Rheostat.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d4f/Rheostat_8php_source.html#l00135">135</a> of file <a class="el" href="../../d9/d4f/Rheostat_8php_source.html">Rheostat.php</a>.</p>
 
 </div>
 </div>
@@ -297,7 +305,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/d4f/Rheostat_8php_source.html#l00118">118</a> of file <a class="el" href="../../d9/d4f/Rheostat_8php_source.html">Rheostat.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d4f/Rheostat_8php_source.html#l00122">122</a> of file <a class="el" href="../../d9/d4f/Rheostat_8php_source.html">Rheostat.php</a>.</p>
 
 </div>
 </div>
@@ -315,7 +323,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/d4f/Rheostat_8php_source.html#l00153">153</a> of file <a class="el" href="../../d9/d4f/Rheostat_8php_source.html">Rheostat.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d4f/Rheostat_8php_source.html#l00157">157</a> of file <a class="el" href="../../d9/d4f/Rheostat_8php_source.html">Rheostat.php</a>.</p>
 
 </div>
 </div>
@@ -332,7 +340,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/d4f/Rheostat_8php_source.html#l00074">74</a> of file <a class="el" href="../../d9/d4f/Rheostat_8php_source.html">Rheostat.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d4f/Rheostat_8php_source.html#l00078">78</a> of file <a class="el" href="../../d9/d4f/Rheostat_8php_source.html">Rheostat.php</a>.</p>
 
 </div>
 </div>
@@ -349,7 +357,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/d4f/Rheostat_8php_source.html#l00122">122</a> of file <a class="el" href="../../d9/d4f/Rheostat_8php_source.html">Rheostat.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d4f/Rheostat_8php_source.html#l00126">126</a> of file <a class="el" href="../../d9/d4f/Rheostat_8php_source.html">Rheostat.php</a>.</p>
 
 </div>
 </div>
@@ -366,7 +374,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/d4f/Rheostat_8php_source.html#l00145">145</a> of file <a class="el" href="../../d9/d4f/Rheostat_8php_source.html">Rheostat.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d4f/Rheostat_8php_source.html#l00149">149</a> of file <a class="el" href="../../d9/d4f/Rheostat_8php_source.html">Rheostat.php</a>.</p>
 
 </div>
 </div>

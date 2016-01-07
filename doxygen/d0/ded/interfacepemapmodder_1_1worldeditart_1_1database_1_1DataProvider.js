@@ -6,7 +6,5 @@ var interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider =
     [ "getZonesForType", "d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider.html#a411da9a59d582c15c2a404ceaca77eee", null ],
     [ "loadSession", "d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider.html#af3440b12fc3becfce3d872c3c0408e2e", null ],
     [ "removeZone", "d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider.html#a67755406c09db93b8f92b057b101d148", null ],
-    [ "saveSession", "d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider.html#a897d131c8ee35fe2e1e35ac079e4af8c", null ],
-    [ "ZONE_NONE", "d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider.html#a5cfd2058e85eb7dab546db387d5324ab", null ],
-    [ "ZONE_TYPE_UNDER_CONSTRUCTION", "d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider.html#a4649bc25823add0f985b391faf1b4dfa", null ]
+    [ "saveSession", "d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider.html#a897d131c8ee35fe2e1e35ac079e4af8c", null ]
 ];

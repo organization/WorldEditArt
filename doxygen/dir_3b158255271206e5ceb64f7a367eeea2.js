@@ -9,6 +9,9 @@ var dir_3b158255271206e5ceb64f7a367eeea2 =
     [ "DataProvider.php", "d3/d71/DataProvider_8php.html", [
       [ "DataProvider", "d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider.html", "d0/ded/interfacepemapmodder_1_1worldeditart_1_1database_1_1DataProvider" ]
     ] ],
+    [ "FileDataProvider.php", "d6/d56/FileDataProvider_8php.html", [
+      [ "FileDataProvider", "df/d67/classpemapmodder_1_1worldeditart_1_1database_1_1FileDataProvider.html", "df/d67/classpemapmodder_1_1worldeditart_1_1database_1_1FileDataProvider" ]
+    ] ],
     [ "InsertZoneListener.php", "db/dbe/InsertZoneListener_8php.html", [
       [ "InsertZoneListener", "d6/d36/classpemapmodder_1_1worldeditart_1_1database_1_1InsertZoneListener.html", "d6/d36/classpemapmodder_1_1worldeditart_1_1database_1_1InsertZoneListener" ]
     ] ],

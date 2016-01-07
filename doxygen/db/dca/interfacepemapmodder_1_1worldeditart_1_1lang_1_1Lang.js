@@ -1,5 +1,8 @@
 var interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang =
 [
+    [ "EDIT_REPLACE_DESCRIPTION", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a024e72a42b9c9429d4575c419f763260", null ],
+    [ "EDIT_REPLACE_IN_PROGRESS", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a5b12ca6aea287e6488efc86630ae11bf", null ],
+    [ "EDIT_REPLACE_USAGE", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#aca5fd014f800f7c6fdeb855056e21785", null ],
     [ "EDIT_SET_DESCRIPTION", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#abb76f2336c777cdca40e965a53ecadfe", null ],
     [ "EDIT_SET_IN_PROGRESS", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a87b04ca911319f879cf2c49713b2ab07", null ],
     [ "EDIT_SET_USAGE", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a4e300f206c919efdda0d72091a359e87", null ],
@@ -25,6 +28,7 @@ var interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang =
     [ "SELECTION_POS_USAGE_2", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a6116a573604cd3f430611b015494c32d", null ],
     [ "SPACE_CUBOID_TO_STRING", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#aba7179801ed6c0a7f59106ba9306285c", null ],
     [ "SPACE_CYLINDER_TO_STRING", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a5a1fd3cdae0dcec82de65b28ee45009a", null ],
+    [ "SPACE_REPLACE_BLOCKS", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#af84670d986baa477c273b06cc446474d", null ],
     [ "SPACE_SET_BLOCKS", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#aa6c9ce2af9624945a74e768bf63964fb", null ],
     [ "SPACE_SPHERE_TO_STRING", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a76eb766148fa91e034015503428c4f1d", null ],
     [ "VERSION_DESCRIPTION", "db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#a151830c18b7689087dd9d22b01d6ea47", null ],

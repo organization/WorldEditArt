@@ -1,6 +1,7 @@
 var NAVTREE =
 [
   [ "WorldEditArt Gamma", "index.html", [
+    [ "Deprecated List", "da/d58/deprecated.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ]
     ] ],
@@ -23,8 +24,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d5/d25/classpemapmodder_1_1worldeditart_1_1utils_1_1ReportErrorTask.html#aa2eb34e3894c9da534c026d54443ae86",
-"dd/d54/classpemapmodder_1_1worldeditart_1_1database_1_1async_1_1AsyncQueryMysqlError.html#afc441a50c992220aa745f666c462120e"
+"d5/d15/classpemapmodder_1_1worldeditart_1_1libworldedit_1_1space_1_1iterator_1_1cuboid_1_1CuboidMarginBlocksIterator.html#a37795baba4ccb93d53b4867ccd98e27e",
+"db/dca/interfacepemapmodder_1_1worldeditart_1_1lang_1_1Lang.html#aa28b2a2e24400378fd440ffbdcb33755"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

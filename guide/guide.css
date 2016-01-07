@@ -45,3 +45,18 @@ code, pre{
 .u{
 	text-decoration: underline;
 }
+li.depth-1{
+	list-style-type: decimal;
+}
+li.depth-2{
+	list-style-type: lower-alpha;
+}
+li.depth-3{
+	list-style-type: lower-roman;
+}
+li.depth-4{
+	list-style-type: upper-alpha;
+}
+li.depth-5{
+	list-style-type: upper-roman;
+}
