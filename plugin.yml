@@ -1,0 +1,20 @@
+---
+name: WorldEditArt
+authors:
+- PEMapModder
+version: Gamma_2.0.183_dev#181
+api:
+- 1.13.0
+- 2.0.0
+main: pemapmodder\worldeditart\WorldEditArt
+description: A powerful advanced world editing plugin
+website: https://github.com/PEMapModder/Small-ZC-Plugins/tree/master/WorldEditArt
+build:
+  author: PEMapModder
+  buildTime:
+    ISO8601: "2016-01-22T17:14:53+2100"
+    unix: 1452157552
+  type: dev
+  globalBuildNumber: 183
+  typeVersion: 181
+...

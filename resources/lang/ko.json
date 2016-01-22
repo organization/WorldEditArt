@@ -1,0 +1,238 @@
+{
+	"meta": {
+		"language": {
+			"value": "ko",
+			"updated": "1.6"
+		},
+		"native": {
+			"value": "한국어",
+			"updated": "1.6"
+		},
+		"authors": {
+			"value": [
+				"PEMapModder",
+				"hm"
+			],
+			"updated": "1.0"
+		}
+	},
+	"error": {
+		"noperm": {
+			"value": "이 명령을 사용할 수 있는 권한이 없습니다",
+			"updated": "1.0"
+		},
+		"offline": {
+			"value": "플레이어가 온라인 상태가 아닙니다!",
+			"updated": "1.4"
+		},
+		"nosel": {
+			"value": "당신이 만든 선택공간이 없습니다!",
+			"updated": "1.5"
+		}
+	},
+	"version": {
+		"description": {
+			"value": "WorldEditArt의 버전을 확인합니다.",
+			"updated": "1.1"
+		},
+		"usage": {
+			"value": "/v",
+			"updated": "1.1"
+		},
+		"response": {
+			"value": "이 서버는 월드에딧아트 %PLUGIN_VERSION% 버전을 사용하고 있습니다. 개발자: %PLUGIN_AUTHORS%.\n사용되는 번역은 %LANG_NAME% 입니다. v%LANG_VERSION% 번역자: %LANG_AUTHORS%.",
+			"updated": "1.1",
+			"params": [
+				"PLUGIN_VERSION",
+				"PLUGIN_AUTHORS",
+				"LANG_NAME",
+				"LANG_VERSION",
+				"LANG_AUTHORS"
+			]
+		}
+	},
+	"selection": {
+		"pos": {
+			"description": {
+				"value": "생성할 직육면체 선택공간의 꼭지점 위치중 하나를 정의합니다.",
+				"updated": "1.4"
+			},
+			"usage": {
+				"1": {
+					"value": "//1 [.b] [,b <책갈피명>] [,p <플레이어명>] [,n <선택공간명>]\n.b - 당신의 현재위치 대신 당신의 기본 책갈피를 사용합니다.\n,b <책갈피명> - 당신의 현재위치 대신 당신이 호출하는 <책갈피명>을 사용합니다.\n,p <유저명> - 당신의 위치를 사용하는 대신, 온라인 상태의 유저 <유저명>의 위치를 씁니다.\n,n <선택공간명> - 선택공간의 이름을 지정합니다. 기본명으로는  \"default\" 가 지정됩니다.",
+					"updated": "1.4"
+				},
+				"2": {
+					"value": "//2 [.b] [,b <책갈피명>] [,p <유저명>]\n.b - 당신의 현재위치 대신 당신의 기본 책갈피를 사용합니다.\n,b <책갈피명> - 당신의 현재위치 대신 당신이 호출하는 <책갈피명>을 사용합니다.\n,p <유저명> -  당신의 위치를 사용하는 대신, 온라인 상태의 유저 <유저명>의 위치를 씁니다.",
+					"updated": "1.4"
+				}
+			},
+			"success": {
+				"value": "직육면체 (%COORD_X%, %COORD_Y%, %COORD_Z%)형태로 포인트아이디 %POINT_ID% 선택공간이 생성되었습니다.",
+				"updated": "1.4",
+				"params": [
+					"COORD_X",
+					"COORD_Y",
+					"COORD_Z",
+					"POINT_ID"
+				]
+			},
+			"info": {
+				"value": "당신의 현재 선택공간 :",
+				"updated": "1.4"
+			}
+		},
+		"cylPos": {
+			"description": {
+				"value": "생성할 원통(실린더) 선택공간의 두가지 기본 점중 하나를 정의합니다.",
+				"updated": "1.5"
+			},
+			"usage": {
+				"1": {
+					"value": "//1 [.b] [,b <책갈피명>] [,p <플레이어명>] [,n <선택명>]\n.b - 당신의 현재위치 대신 당신의 기본 책갈피를 사용합니다.\n,b <책갈피명> - 당신의 현재위치 대신 당신이 호출하는 <책갈피명>을 사용합니다.\n,p <유저명> - 당신의 위치를 사용하는 대신, 온라인 상태의 유저 <유저명>의 위치를 씁니다.\n,n <선택공간명> - 선택공간의 이름을 지정합니다. 기본명으로는  \"default\" 가 지정됩니다.",
+					"updated": "1.5"
+				},
+				"2": {
+					"value": "//2 [.b] [,b <책갈피명>] [,p <유저명>]\n.b - 당신의 현재위치 대신 당신의 기본 책갈피를 사용합니다.\n,b <책갈피명> - 당신의 현재위치 대신 당신이 호출하는 <책갈피명>을 사용합니다.\n,p <유저명> -  당신의 위치를 사용하는 대신, 온라인 상태의 유저 <유저명>의 위치를 씁니다.",
+					"updated": "1.5"
+				}
+			},
+			"success": {
+				"value": "원통(%COORD_X%, %COORD_Y%, %COORD_Z%) 형태로  %TOP_OR_BASE% 중앙점이 선택공간이 생성되었습니다.",
+				"updated": "1.5",
+				"params": [
+					"COORD_X",
+					"COORD_Y",
+					"COORD_Z",
+					"TOP_OR_BASE"
+				]
+			}
+		}
+	},
+	"edit": {
+		"set": {
+			"description": {
+				"value": "선택공간내 모든 블럭들을 지정한 블록 타입으로 변경합니다.",
+				"updated": "1.5"
+			},
+			"usage": {
+				"value": "//s <변경할 블럭목록>\nhttp://lgpe.co/wea 에서 고급사용 가이드를 확인하세요.",
+				"updated": "1.5"
+			},
+			"inProgress": {
+				"value": "블록 설치가 진행중입니다 ...",
+				"updated": "1.5"
+			}
+		},
+		"replace": {
+			"description": {
+				"value": "선택공간 내 특정 블록타입들을 원하는 블럭으로 변경합니다.",
+				"updated": "1.6"
+			},
+			"usage": {
+				"value": "//rep <원래블록 형식들> <변경할 블록 목록>\n http://lgpee.co/wea 에서 고급사용 가이드를 확인하세요.",
+				"updated": "1.6"
+			},
+			"inProgress": {
+				"value": "블록 변경이 진행중입니다 ...",
+				"updated": "1.6"
+			}
+		}
+	},
+	"space": {
+		"cuboid": {
+			"toString": {
+				"value": "%LENGTH_X%*%LENGTH_Y%*%LENGTH_Z% 직육면체 (%TOTAL_SIZE% blocks) (%X_1%, %Y_1%, %Z_1%) 에서 (%X_2%, %Y_2%, %Z_2%) 까지",
+				"updated": "1.4",
+				"params": [
+					"LENGTH_X",
+					"LENGTH_Y",
+					"LENGTH_Z",
+					"TOTAL_SIZE",
+					"X_1",
+					"Y_1",
+					"Z_1",
+					"X_2",
+					"Y_2",
+					"Z_2"
+				]
+			}
+		},
+		"cylinder": {
+			"toString": {
+				"value": "원통의  %RADIUS% 블록 반경 (%X_BOTTOM%, %Y_BOTTOM%, %Z_BOTTOM%) 에서 (%X_TOP%, %Y_TOP%, %Z_TOP%) 까지",
+				"updated": "1.4",
+				"params": [
+					"X_BASE",
+					"Y_BASE",
+					"Z_BASE",
+					"X_TOP",
+					"Y_TOP",
+					"Z_TOP",
+					"RADIUS"
+				]
+			}
+		},
+		"sphere": {
+			"toString": {
+				"value": "구의 반경은 %RADIUS% 며, 블록 반경의 중심은 (%X%, %Y%, %Z%) 입니다.",
+				"updated": "1.4",
+				"params": [
+					"RADIUS",
+					"X",
+					"Y",
+					"Z"
+				]
+			}
+		},
+		"set": {
+			"value": "블록을 설정합니다. 해당위치 %SPACE%",
+			"updated": "1.5",
+			"params": [
+				"SPACE"
+			]
+		},
+		"replace": {
+			"value": "블록을 교체합니다. %SPACE%",
+			"updated": "1.6",
+			"params": [
+				"SPACE"
+			]
+		}
+	},
+	"queue": {
+		"tip": {
+			"title": {
+				"value": "실행 중인 작업들:",
+				"updated": "1.2"
+			},
+			"entry": {
+				"value": "%TASK_NAME%: %PROGRESS_PERC%% 완료",
+				"updated": "1.2",
+				"params": [
+					"TASK_NAME",
+					"PROGRESS_PERC"
+				]
+			},
+			"warnedEntry": {
+				"value": "%TASK_NAME%: %PROGRESS_PERC%% 완료 (%WARNINGS_CNT% 블록들은 안전 모드에 의해 차단됨)",
+				"updated": "1.3",
+				"params": [
+					"TASK_NAME",
+					"PROGRESS_PERC",
+					"WARNINGS_CNT"
+				]
+			}
+		}
+	},
+	"phrases": {
+		"topCenter": {
+			"value": "상단 중앙",
+			"updated": "1.5"
+		},
+		"baseCenter": {
+			"value": "중단 중앙",
+			"updated": "1.5"
+		}
+	}
+}
